@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ЗаполнитьКалендарь" id="72">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ЗаполнитьКалендарь</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ЗаполнитьКалендарьExtendedTooltip" id="153"/>
+			</Button>
+			<Button name="ЗаполнитьПоКалендарю" id="150">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ЗаполнитьПоКалендарю</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ЗаполнитьПоКалендарюExtendedTooltip" id="154"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа" id="75">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="155"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<Width>42</Width>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="156"/>
+				</InputField>
+				<InputField name="НомерТекущегоГода" id="73">
+					<DataPath>НомерТекущегоГода</DataPath>
+					<Wrap>false</Wrap>
+					<SpinButton>true</SpinButton>
+					<ContextMenu name="НомерТекущегоГодаКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="НомерТекущегоГодаExtendedTooltip" id="157"/>
+					<Events>
+						<Event name="OnChange">НомерТекущегоГодаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CalendarField name="Календарь" id="148">
+			<DataPath>Календарь</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>70</Width>
+			<Height>21</Height>
+			<ShowCurrentDate>false</ShowCurrentDate>
+			<WidthInMonths>4</WidthInMonths>
+			<HeightInMonths>3</HeightInMonths>
+			<ContextMenu name="КалендарьКонтекстноеМеню" id="149"/>
+			<ExtendedTooltip name="КалендарьExtendedTooltip" id="158"/>
+			<Events>
+				<Event name="OnPeriodOutput">КалендарьПриВыводеПериода</Event>
+				<Event name="Selection">КалендарьВыбор</Event>
+			</Events>
+		</CalendarField>
+		<LabelDecoration name="Декорация" id="151">
+			<SkipOnInput>false</SkipOnInput>
+			<TextColor>#2F5AAF</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для редактирования рабочих и выходных дней календаря используйте двойной щелчок левой кнопкой мыши</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияКонтекстноеМеню" id="152"/>
+			<ExtendedTooltip name="ДекорацияExtendedTooltip" id="159"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Календари</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НомерТекущегоГода" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Календарь" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаРегистра" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерПредыдущегоГода" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер предыдущего года</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьКалендарь" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить календарь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить календарь за указанный на форме год по пятидневной рабочей неделе без учета праздников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКалендарь</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ЗаполнитьПоКалендарю" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по календарю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить календарь за указанный на форме год по выбранному календарю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоКалендарю</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>2:17aadd5f-cda2-4785-a07f-3ab4b04434a6</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ЗагрузитьКлассификатор" id="28">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ЗагрузитьКлассификатор</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="ЗагрузитьКлассификаторExtendedTooltip" id="31"/>
+			</Button>
+			<Button name="ОчиститьКлассификатор" id="29">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ОчиститьКлассификатор</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОчиститьКлассификаторExtendedTooltip" id="32"/>
+			</Button>
+			<Button name="ПроверитьОбновление" id="30">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ПроверитьОбновление</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ПроверитьОбновлениеExtendedTooltip" id="33"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<HeightInTableRows>10</HeightInTableRows>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<BorderColor>style:BorderColor</BorderColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="34"/>
+			<SearchStringAddition name="СписокSearchString" id="35">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="36"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="38">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="39"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="41">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="42"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТипАдресногоЭлемента" id="4">
+					<DataPath>Список.ТипАдресногоЭлемента</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Height>1</Height>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ТипАдресногоЭлементаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ТипАдресногоЭлементаExtendedTooltip" id="44"/>
+				</InputField>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Код</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=21; ЧВН=</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="45"/>
+				</LabelField>
+				<InputField name="КодАдресногоОбъектаВКоде" id="8">
+					<DataPath>1/7</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СС</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодАдресногоОбъектаВКодеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="КодАдресногоОбъектаВКодеExtendedTooltip" id="46"/>
+				</InputField>
+				<InputField name="КодРайонаВКоде" id="10">
+					<DataPath>Список.КодРайонаВКоде</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РРР</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодРайонаВКодеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КодРайонаВКодеExtendedTooltip" id="47"/>
+				</InputField>
+				<InputField name="КодГородаВКоде" id="12">
+					<DataPath>Список.КодГородаВКоде</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГГГ</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодГородаВКодеКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КодГородаВКодеExtendedTooltip" id="48"/>
+				</InputField>
+				<InputField name="КодНаселенногоПунктаВКоде" id="14">
+					<DataPath>Список.КодНаселенногоПунктаВКоде</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ППП</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодНаселенногоПунктаВКодеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КодНаселенногоПунктаВКодеExtendedTooltip" id="49"/>
+				</InputField>
+				<InputField name="КодУлицыВКоде" id="16">
+					<DataPath>Список.КодУлицыВКоде</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УУУУ</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодУлицыВКодеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КодУлицыВКодеExtendedTooltip" id="50"/>
+				</InputField>
+				<InputField name="Наименование" id="18">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="51"/>
+				</InputField>
+				<InputField name="Сокращение" id="20">
+					<DataPath>Список.Сокращение</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сокр.</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="СокращениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СокращениеExtendedTooltip" id="52"/>
+				</InputField>
+				<InputField name="Индекс" id="22">
+					<DataPath>Список.Индекс</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ИндексКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ИндексExtendedTooltip" id="53"/>
+				</InputField>
+				<InputField name="АльтернативныеНазвания" id="24">
+					<DataPath>Список.АльтернативныеНазвания</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Альтернативные названия</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="АльтернативныеНазванияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="АльтернативныеНазванияExtendedTooltip" id="54"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.АдресныйКлассификатор</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОчиститьКлассификатор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить классификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить классификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+			</Use>
+			<Action>ОчиститьКлассификаторВыполнить</Action>
+		</Command>
+		<Command name="ПроверитьОбновление" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить обновление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить обновление адресных сведений на сайте 1С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+			</Use>
+			<Action>ПроверитьОбновление</Action>
+		</Command>
+		<Command name="ЗагрузитьКлассификатор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить классификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить классификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+			</Use>
+			<Action>ЗагрузитьКлассификатор</Action>
+		</Command>
+	</Commands>
+</Form>

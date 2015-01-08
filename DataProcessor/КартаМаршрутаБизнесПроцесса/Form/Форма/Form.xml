@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Карта маршрута бизнес-процесса</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Обновить" id="5">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОбновитьExtendedTooltip" id="8"/>
+			</Button>
+			<Button name="ЗадачиВТочкеМаршрута" id="7">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Задачи</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ЗадачиВТочкеМаршрутаExtendedTooltip" id="9"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="БизнесПроцесс" id="1">
+			<DataPath>БизнесПроцесс</DataPath>
+			<Wrap>false</Wrap>
+			<ContextMenu name="БизнесПроцессКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="БизнесПроцессExtendedTooltip" id="10"/>
+			<Events>
+				<Event name="OnChange">БизнесПроцессПриИзменении</Event>
+			</Events>
+		</InputField>
+		<GraphicalSchemaField name="КартаМаршрута" id="3">
+			<DataPath>КартаМаршрута</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>80</Width>
+			<Height>30</Height>
+			<Edit>false</Edit>
+			<ContextMenu name="КартаМаршрутаКонтекстноеМеню" id="4">
+				<ChildItems>
+					<Button name="Задачи" id="6">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.Задачи</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ЗадачиExtendedTooltip" id="11"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="КартаМаршрутаExtendedTooltip" id="12"/>
+			<Events>
+				<Event name="Selection">КартаМаршрутаВыбор</Event>
+			</Events>
+		</GraphicalSchemaField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КартаМаршрутаБизнесПроцесса</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="БизнесПроцесс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бизнес-процесс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:BusinessProcessRef</v8:TypeSet>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="КартаМаршрута" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Карта маршрута</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/graphscheme">d5p1:FlowchartContextType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить карту маршрута</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьВыполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Задачи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи в точке маршрута</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список задач, сформированных в выбранной точке маршрута</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Task</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗадачиВыполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="БизнесПроцесс">
+			<Type>
+				<v8:TypeSet>cfg:BusinessProcessRef</v8:TypeSet>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

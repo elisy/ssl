@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ФормаОК" id="2">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаОКExtendedTooltip" id="11"/>
+			</Button>
+			<Button name="ФормаОтмена" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаОтменаExtendedTooltip" id="12"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ДействияПриСохраненииСЭЦП" id="3">
+			<DataPath>ДействияПриСохраненииСЭЦП</DataPath>
+			<ContextMenu name="ДействияПриСохраненииСЭЦПКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДействияПриСохраненииСЭЦПExtendedTooltip" id="13"/>
+		</InputField>
+		<InputField name="РасширениеДляЗашифрованныхФайлов" id="9">
+			<DataPath>РасширениеДляЗашифрованныхФайлов</DataPath>
+			<ContextMenu name="РасширениеДляЗашифрованныхФайловКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="РасширениеДляЗашифрованныхФайловExtendedTooltip" id="14"/>
+		</InputField>
+		<InputField name="ПутьМодуляКриптографии" id="7">
+			<DataPath>ПутьМодуляКриптографии</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь модуля криптографии (для веб клиента под управлением Linux)</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Top</TitleLocation>
+			<ContextMenu name="ПутьМодуляКриптографииКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПутьМодуляКриптографииExtendedTooltip" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДействияПриСохраненииСЭЦП" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действия при сохранении с ЭЦП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ДействияПриСохраненииСЭЦП</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьМодуляКриптографии" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь модуля криптографии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасширениеДляЗашифрованныхФайлов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение для зашифрованных файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+	</Commands>
+</Form>

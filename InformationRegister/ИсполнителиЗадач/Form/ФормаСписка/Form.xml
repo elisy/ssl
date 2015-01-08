@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<Width>60</Width>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="12"/>
+			<SearchStringAddition name="СписокSearchString" id="13">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="14"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="16">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="17"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="19">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="20"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="21"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Исполнитель" id="6">
+					<DataPath>Список.Исполнитель</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="22"/>
+				</InputField>
+				<InputField name="РольИсполнителя" id="4">
+					<DataPath>Список.РольИсполнителя</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роль исполнителя</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="РольИсполнителяКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="РольИсполнителяExtendedTooltip" id="23"/>
+				</InputField>
+				<InputField name="ОсновнойОбъектАдресации" id="8">
+					<DataPath>Список.ОсновнойОбъектАдресации</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной объект адресации</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ОсновнойОбъектАдресацииКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ОсновнойОбъектАдресацииExtendedTooltip" id="24"/>
+				</InputField>
+				<InputField name="ДополнительныйОбъектАдресации" id="10">
+					<DataPath>Список.ДополнительныйОбъектАдресации</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный объект адресации</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДополнительныйОбъектАдресацииКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДополнительныйОбъектАдресацииExtendedTooltip" id="25"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ГруппаИсполнителейЗадач</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ИсполнителиЗадач</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

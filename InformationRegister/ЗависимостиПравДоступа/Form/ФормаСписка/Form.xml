@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="36"/>
+			<SearchStringAddition name="СписокSearchString" id="37">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="38"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="39"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="40">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="41"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="42"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="43">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="44"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="45"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПодчиненнаяТаблица" id="4">
+					<DataPath>Список.ПодчиненнаяТаблица</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ПодчиненнаяТаблицаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПодчиненнаяТаблицаExtendedTooltip" id="46"/>
+				</LabelField>
+				<LabelField name="ВедущаяТаблица" id="24">
+					<DataPath>Список.ВедущаяТаблица</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права на элемент данных подчиненной таблицы проверяется право и ограничение права на объект ведущей таблицы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ВедущаяТаблицаКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ВедущаяТаблицаExtendedTooltip" id="47"/>
+				</LabelField>
+				<CheckBoxField name="ОтключитьПроверкуПравВедущейТаблицы" id="34">
+					<DataPath>Список.ОтключитьПроверкуПравВедущейТаблицы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только огр.</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтключитьПроверкуПравВедущейТаблицыКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОтключитьПроверкуПравВедущейТаблицыExtendedTooltip" id="48"/>
+				</CheckBoxField>
+				<LabelField name="ПриПроверкеПраваЧтение" id="32">
+					<DataPath>Список.ПриПроверкеПраваЧтение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При чтении</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПриПроверкеПраваЧтениеКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПриПроверкеПраваЧтениеExtendedTooltip" id="49"/>
+				</LabelField>
+				<LabelField name="ПриПроверкеПраваДобавление" id="26">
+					<DataPath>Список.ПриПроверкеПраваДобавление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При добавлении</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПриПроверкеПраваДобавлениеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПриПроверкеПраваДобавлениеExtendedTooltip" id="50"/>
+				</LabelField>
+				<LabelField name="ПриПроверкеПраваИзменение" id="28">
+					<DataPath>Список.ПриПроверкеПраваИзменение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При изменении</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПриПроверкеПраваИзменениеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПриПроверкеПраваИзменениеExtendedTooltip" id="51"/>
+				</LabelField>
+				<LabelField name="ПриПроверкеПраваУдаление" id="30">
+					<DataPath>Список.ПриПроверкеПраваУдаление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При удалении</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПриПроверкеПраваУдалениеКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПриПроверкеПраваУдалениеExtendedTooltip" id="52"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийЗависимостиПравДоступа.ПодчиненнаяТаблица,
+	РегистрСведенийЗависимостиПравДоступа.ТипВедущейТаблицы,
+	ПрофилиГруппДоступаТипыСсылок.Таблица КАК ВедущаяТаблица,
+	РегистрСведенийЗависимостиПравДоступа.ОтключитьПроверкуПравВедущейТаблицы,
+	РегистрСведенийЗависимостиПравДоступа.ПриПроверкеПраваЧтение,
+	РегистрСведенийЗависимостиПравДоступа.ПриПроверкеПраваДобавление,
+	РегистрСведенийЗависимостиПравДоступа.ПриПроверкеПраваИзменение,
+	РегистрСведенийЗависимостиПравДоступа.ПриПроверкеПраваУдаление
+ИЗ
+	РегистрСведений.ЗависимостиПравДоступа КАК РегистрСведенийЗависимостиПравДоступа
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ПрофилиГруппДоступа.ТипыСсылок КАК ПрофилиГруппДоступаТипыСсылок
+		ПО РегистрСведенийЗависимостиПравДоступа.ТипВедущейТаблицы = ПрофилиГруппДоступаТипыСсылок.ТипТаблицы</QueryText>
+				<MainTable>InformationRegister.ЗависимостиПравДоступа</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

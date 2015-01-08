@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Width>48</Width>
+	<Group>Horizontal</Group>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="КнопкаЗакрыть" id="5">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="КнопкаЗакрытьExtendedTooltip" id="6"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<PictureDecoration name="Декорация2" id="3">
+			<Width>5</Width>
+			<Height>3</Height>
+			<Picture>
+				<xr:Ref>CommonPicture.Информация32</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="Декорация2ExtendedTooltip" id="7"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация1" id="1">
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данная обработка не предназначена для использования в управляемом режиме. Пожалуйста, перезапустите 1С: Предприятие в режиме обычного приложения.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1ExtendedTooltip" id="8"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УниверсальныйОбменДаннымиXML</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

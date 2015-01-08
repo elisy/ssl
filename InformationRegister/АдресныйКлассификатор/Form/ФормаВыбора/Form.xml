@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаВыбрать" id="13">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаВыбрать</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КомандаВыбратьExtendedTooltip" id="22"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="14">
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<BorderColor>style:BorderColor</BorderColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="15"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="16"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="23"/>
+			<SearchStringAddition name="СписокSearchString" id="24">
+				<Source>
+					<lf:elementId>14</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="25"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="27">
+				<Source>
+					<lf:elementId>14</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="28"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="30">
+				<Source>
+					<lf:elementId>14</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="31"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="32"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="Группа" id="21">
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаExtendedTooltip" id="33"/>
+					<ChildItems>
+						<InputField name="Наименование" id="17">
+							<DataPath>Список.Наименование</DataPath>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="34"/>
+						</InputField>
+						<InputField name="Сокращение" id="19">
+							<DataPath>Список.Сокращение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сокр.</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="СокращениеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СокращениеExtendedTooltip" id="35"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.АдресныйКлассификатор</MainTable>
+				<ListSettings>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыбрать" id="1">
+			<Picture>
+				<xr:Ref>StdPicture.ChooseFromList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаВыбратьВыполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Регион">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Район">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Город">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="НаселенныйПункт">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Улица">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Уровень">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

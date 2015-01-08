@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ОК" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ОК</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОКExtendedTooltip" id="26"/>
+			</Button>
+			<Button name="Отмена" id="8">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="27"/>
+			</Button>
+			<Button name="Справка" id="9">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="28"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Button name="УстановитьКомпонентуСканирования" id="11">
+			<Type>UsualButton</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.УстановитьКомпонентуСканирования</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="УстановитьКомпонентуСканированияExtendedTooltip" id="29"/>
+		</Button>
+		<InputField name="ВерсияКомпонентыСканирования" id="12">
+			<DataPath>ВерсияКомпонентыСканирования</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ВерсияКомпонентыСканированияКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="ВерсияКомпонентыСканированияExtendedTooltip" id="30"/>
+		</InputField>
+		<CheckBoxField name="ПоказыватьДиалогСканера" id="1">
+			<DataPath>ПоказыватьДиалогСканера</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоказыватьДиалогСканераКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПоказыватьДиалогСканераExtendedTooltip" id="31"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаНастройки" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиExtendedTooltip" id="32"/>
+			<ChildItems>
+				<InputField name="ИмяУстройства" id="4">
+					<DataPath>ИмяУстройства</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя сканера</v8:content>
+						</v8:item>
+					</Title>
+					<ChoiceListButton>true</ChoiceListButton>
+					<ContextMenu name="ИмяУстройстваКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИмяУстройстваExtendedTooltip" id="33"/>
+					<Events>
+						<Event name="OnChange">ИмяУстройстваПриИзменении</Event>
+						<Event name="ChoiceProcessing">ИмяУстройстваОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФорматСканированногоИзображения" id="18">
+					<DataPath>ФорматСканированногоИзображения</DataPath>
+					<ContextMenu name="ФорматСканированногоИзображенияКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ФорматСканированногоИзображенияExtendedTooltip" id="34"/>
+				</InputField>
+				<InputField name="Разрешение" id="14">
+					<DataPath>Разрешение</DataPath>
+					<ContextMenu name="РазрешениеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="РазрешениеExtendedTooltip" id="35"/>
+				</InputField>
+				<InputField name="Цветность" id="16">
+					<DataPath>Цветность</DataPath>
+					<ContextMenu name="ЦветностьКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ЦветностьExtendedTooltip" id="36"/>
+				</InputField>
+				<InputField name="Поворот" id="20">
+					<DataPath>Поворот</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поворот изображения</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПоворотКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПоворотExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="РазмерБумаги" id="22">
+					<DataPath>РазмерБумаги</DataPath>
+					<ContextMenu name="РазмерБумагиКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="РазмерБумагиExtendedTooltip" id="38"/>
+				</InputField>
+				<Button name="УстановитьСтандартныеНастройки" id="25">
+					<Type>UsualButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.УстановитьСтандартныеНастройки</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="УстановитьСтандартныеНастройкиExtendedTooltip" id="39"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОткрытьНомераОтсканированныхФайлов" id="10">
+			<Type>UsualButton</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.ОткрытьНомераОтсканированныхФайлов</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="ОткрытьНомераОтсканированныхФайловExtendedTooltip" id="40"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПоказыватьДиалогСканера" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать диалог сканера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяУстройства" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя устройства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияКомпонентыСканирования" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия компоненты сканирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Разрешение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.РазрешенияСканированногоИзображения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Цветность" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цветность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ЦветностиИзображения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФорматСканированногоИзображения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формат сканированного изображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ФорматыСканированногоИзображения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Поворот" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поворот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ПоворотИзображения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазмерБумаги" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер бумаги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.РазмерыБумаги</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="ОткрытьНомераОтсканированныхФайлов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть номера отсканированных файлов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть номера отсканированных файлов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНомераОтсканированныхФайлов</Action>
+		</Command>
+		<Command name="УстановитьКомпонентуСканирования" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить компоненту сканирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить компоненту сканирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьКомпонентуСканирования</Action>
+		</Command>
+		<Command name="УстановитьСтандартныеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить стандартные настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить стандартные настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтандартныеНастройки</Action>
+		</Command>
+	</Commands>
+</Form>

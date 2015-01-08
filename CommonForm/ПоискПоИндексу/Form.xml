@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выберите улицу/населенный пункт</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="НадписьОРегионеИРайоне" id="13">
+			<DataPath>НадписьОРегионеИРайоне</DataPath>
+			<TitleFont kind="AutoFont"/>
+			<TitleLocation>None</TitleLocation>
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ContextMenu name="НадписьОРегионеИРайонеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="НадписьОРегионеИРайонеExtendedTooltip" id="15"/>
+		</LabelField>
+		<Table name="НайденныеЗаписиПоИндексу" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>НайденныеЗаписиПоИндексу</DataPath>
+			<BorderColor>style:BorderColor</BorderColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НайденныеЗаписиПоИндексуКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="НайденныеЗаписиПоИндексуКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="НайденныеЗаписиПоИндексуExtendedTooltip" id="16"/>
+			<SearchStringAddition name="НайденныеЗаписиПоИндексуSearchString" id="17">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="НайденныеЗаписиПоИндексуSearchStringContextMenu" id="18"/>
+				<ExtendedTooltip name="НайденныеЗаписиПоИндексуSearchStringExtendedTooltip" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НайденныеЗаписиПоИндексуViewStatus" id="20">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="НайденныеЗаписиПоИндексуViewStatusContextMenu" id="21"/>
+				<ExtendedTooltip name="НайденныеЗаписиПоИндексуViewStatusExtendedTooltip" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НайденныеЗаписиПоИндексуSearchControl" id="23">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="НайденныеЗаписиПоИндексуSearchControlContextMenu" id="24"/>
+				<ExtendedTooltip name="НайденныеЗаписиПоИндексуSearchControlExtendedTooltip" id="25"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">НайденныеЗаписиПоИндексуВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="Улица" id="4">
+					<DataPath>НайденныеЗаписиПоИндексу.Улица</DataPath>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="УлицаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="УлицаExtendedTooltip" id="26"/>
+				</InputField>
+				<InputField name="Описание" id="6">
+					<DataPath>НайденныеЗаписиПоИндексу.Описание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город/Нас.пункт</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="27"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="Группа" id="8">
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="28"/>
+			<ChildItems>
+				<Button name="КомандаВыбрать" id="9">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаВыбрать</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="КомандаВыбратьExtendedTooltip" id="29"/>
+				</Button>
+				<Button name="КомандаЗакрыть" id="10">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаЗакрыть</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="КомандаЗакрытьExtendedTooltip" id="30"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НайденныеЗаписиПоИндексу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найденные записи по индексу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Улица" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Улица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Код" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НадписьОРегионеИРайоне" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись о регионе и районе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыбратьВыполнить</Action>
+		</Command>
+		<Command name="КомандаЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗакрытьВыполнить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НайденныйРегион">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="НайденныйРайон">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="АдресВХранилище">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

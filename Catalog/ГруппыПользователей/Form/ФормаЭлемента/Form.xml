@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Width>40</Width>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="51"/>
+		</InputField>
+		<InputField name="Родитель" id="40">
+			<DataPath>Объект.Parent</DataPath>
+			<ContextMenu name="РодительКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="РодительExtendedTooltip" id="52"/>
+			<Events>
+				<Event name="StartChoice">РодительНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ПользователиГруппы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПользователиГруппыExtendedTooltip" id="53"/>
+			<ChildItems>
+				<Table name="Состав" id="10">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<Width>30</Width>
+					<HeightInTableRows>12</HeightInTableRows>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Состав</DataPath>
+					<BorderColor>style:BorderColor</BorderColor>
+					<TitleFont ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+					<CommandSet>
+						<ExcludedCommand>Copy</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СоставКонтекстноеМеню" id="11">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="КонтекстноеМенюСоставПодобратьПользователей" id="42">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.ПодобратьПользователей</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КонтекстноеМенюСоставПодобратьПользователейExtendedTooltip" id="54"/>
+							</Button>
+							<Button name="КонтекстноеМенюСоставДобавить" id="45">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.Состав.StandardCommand.Add</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КонтекстноеМенюСоставДобавитьExtendedTooltip" id="55"/>
+							</Button>
+							<Button name="КонтекстноеМенюСоставСкопировать" id="50">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>10:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КонтекстноеМенюСоставСкопироватьExtendedTooltip" id="56"/>
+							</Button>
+							<Button name="КонтекстноеМенюСоставУдалить" id="46">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.Состав.StandardCommand.Delete</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КонтекстноеМенюСоставУдалитьExtendedTooltip" id="57"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СоставКоманднаяПанель" id="12">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="СоставПодобрать" id="31">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.ПодобратьПользователей</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставПодобратьExtendedTooltip" id="58"/>
+							</Button>
+							<Button name="СоставДобавить" id="32">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.Состав.StandardCommand.Add</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставДобавитьExtendedTooltip" id="59"/>
+							</Button>
+							<Button name="СоставСкопировать" id="49">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>10:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставСкопироватьExtendedTooltip" id="60"/>
+							</Button>
+							<Button name="СоставУдалить" id="33">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.Состав.StandardCommand.Delete</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставУдалитьExtendedTooltip" id="61"/>
+							</Button>
+							<Button name="СоставПереместитьВверх" id="43">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.Состав.StandardCommand.MoveUp</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставПереместитьВверхExtendedTooltip" id="62"/>
+							</Button>
+							<Button name="СоставПереместитьВниз" id="44">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.Состав.StandardCommand.MoveDown</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставПереместитьВнизExtendedTooltip" id="63"/>
+							</Button>
+							<Button name="СоставСортироватьПоВозрастанию" id="34">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<OnlyInAllActions>true</OnlyInAllActions>
+								<CommandName>Form.Item.Состав.StandardCommand.SortListAsc</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставСортироватьПоВозрастаниюExtendedTooltip" id="64"/>
+							</Button>
+							<Button name="СоставСортироватьПоУбыванию" id="35">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<OnlyInAllActions>true</OnlyInAllActions>
+								<CommandName>Form.Item.Состав.StandardCommand.SortListDesc</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СоставСортироватьПоУбываниюExtendedTooltip" id="65"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СоставExtendedTooltip" id="66"/>
+					<SearchStringAddition name="СоставSearchString" id="67">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="СоставSearchStringContextMenu" id="68"/>
+						<ExtendedTooltip name="СоставSearchStringExtendedTooltip" id="69"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СоставViewStatus" id="70">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="СоставViewStatusContextMenu" id="71"/>
+						<ExtendedTooltip name="СоставViewStatusExtendedTooltip" id="72"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СоставSearchControl" id="73">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="СоставSearchControlContextMenu" id="74"/>
+						<ExtendedTooltip name="СоставSearchControlExtendedTooltip" id="75"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="ChoiceProcessing">СоставОбработкаВыбора</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="Пользователь" id="15">
+							<DataPath>Объект.Состав.Пользователь</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ПользовательExtendedTooltip" id="76"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="38">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="77"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ГруппыПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодобратьПользователей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодобратьПользователей</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+</Form>

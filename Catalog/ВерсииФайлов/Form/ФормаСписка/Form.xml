@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="55"/>
+			<ChildItems>
+				<Button name="ОткрытьВерсию" id="36">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+					<Parameter xsi:nil="true"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть карточку версии</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьВерсиюExtendedTooltip" id="56"/>
+				</Button>
+				<Button name="ПометитьНаУдаление_СнятьПометку" id="42">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ПометитьНаУдаление_СнятьПометкуExtendedTooltip" id="57"/>
+				</Button>
+				<Button name="Справка" id="33">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="58"/>
+				</Button>
+				<Button name="НастройкаОтображенияДанных" id="39">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="НастройкаОтображенияДанныхExtendedTooltip" id="59"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="Список" id="2">
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<Width>40</Width>
+			<HeightInTableRows>10</HeightInTableRows>
+			<InitialListView>End</InitialListView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.ИндексКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ПиктограммыФайлов</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="10" y="10"/>
+			</RowsPicture>
+			<BorderColor>style:BorderColor</BorderColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="13">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="КонтекстноеМенюСписокОткрытьВерсию" id="43">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+						<Parameter xsi:nil="true"/>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть карточку версии</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="КонтекстноеМенюСписокОткрытьВерсиюExtendedTooltip" id="60"/>
+					</Button>
+					<Button name="КонтекстноеМенюСписокПометитьНаУдаление_СнятьПометку" id="45">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокПометитьНаУдаление_СнятьПометкуExtendedTooltip" id="61"/>
+					</Button>
+					<Button name="КонтекстноеМенюСписокКопировать" id="46">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.Список.StandardCommand.CopyToClipboard</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокКопироватьExtendedTooltip" id="62"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="22"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="63"/>
+			<SearchStringAddition name="СписокSearchString" id="64">
+				<Source>
+					<lf:elementId>2</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="65"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="66"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="67">
+				<Source>
+					<lf:elementId>2</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="68"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="69"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="70">
+				<Source>
+					<lf:elementId>2</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="71"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="72"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ПолноеНаименование" id="49">
+					<DataPath>Список.ПолноеНаименование</DataPath>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПолноеНаименованиеExtendedTooltip" id="73"/>
+				</LabelField>
+				<InputField name="Владелец" id="40">
+					<DataPath>Список.Owner</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ВладелецExtendedTooltip" id="74"/>
+				</InputField>
+				<InputField name="Автор" id="9">
+					<DataPath>Список.Автор</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор версии</v8:content>
+						</v8:item>
+					</Title>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="АвторКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="АвторExtendedTooltip" id="75"/>
+				</InputField>
+				<InputField name="Комментарий" id="8">
+					<DataPath>Список.Комментарий</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Height>1</Height>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="76"/>
+				</InputField>
+				<InputField name="ДатаСоздания" id="10">
+					<DataPath>Список.ДатаСоздания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="77"/>
+				</InputField>
+				<InputField name="Размер" id="7">
+					<DataPath>Список.Размер</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер файла</v8:content>
+						</v8:item>
+					</Title>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="РазмерКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="РазмерExtendedTooltip" id="78"/>
+				</InputField>
+				<InputField name="НомерВерсии" id="37">
+					<DataPath>Список.НомерВерсии</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер версии</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НомерВерсииКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НомерВерсииExtendedTooltip" id="79"/>
+				</InputField>
+				<CheckBoxField name="ПометкаУдаления" id="47">
+					<DataPath>Список.DeletionMark</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПометкаУдаленияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПометкаУдаленияExtendedTooltip" id="80"/>
+				</CheckBoxField>
+				<LabelField name="Размер1" id="51">
+					<DataPath>Список.Размер</DataPath>
+					<ContextMenu name="Размер1КонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="Размер1ExtendedTooltip" id="81"/>
+				</LabelField>
+				<LabelField name="Расширение" id="53">
+					<DataPath>Список.Расширение</DataPath>
+					<ContextMenu name="РасширениеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="РасширениеExtendedTooltip" id="82"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ИндексКартинки</Field>
+				<Field>Список.Расширение</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВерсииФайлов.НомерВерсии КАК НомерВерсии,
+	ВерсииФайлов.ФайлХранилище,
+	ВерсииФайлов.Размер,
+	ВерсииФайлов.Комментарий,
+	ВерсииФайлов.Автор,
+	ВерсииФайлов.ДатаСоздания,
+	ВерсииФайлов.ПолноеНаименование,
+	ВерсииФайлов.ИндексКартинки,
+	ВерсииФайлов.ПометкаУдаления,
+	ВерсииФайлов.Расширение,
+	ВерсииФайлов.Владелец
+ИЗ
+	Справочник.ВерсииФайлов КАК ВерсииФайлов</QueryText>
+				<MainTable>Catalog.ВерсииФайлов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">DeletionMark</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ДатаСоздания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>TextColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Font</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="true" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>1:409b9a53-7f7e-4178-86c1-33176c7c7a7a</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>2:409b9a53-7f7e-4178-86c1-33176c7c7a7a</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>3:409b9a53-7f7e-4178-86c1-33176c7c7a7a</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

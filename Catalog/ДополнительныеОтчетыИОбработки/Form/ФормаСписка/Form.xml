@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СписокВыполнитьОбработку" id="6">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>0</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокВыполнитьОбработкуExtendedTooltip" id="15"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>Tree</Representation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="16"/>
+			<SearchStringAddition name="СписокSearchString" id="17">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="18"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="20">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="21"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="23">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="24"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="26"/>
+				</LabelField>
+				<LabelField name="Вид" id="13">
+					<DataPath>Список.Вид</DataPath>
+					<ContextMenu name="ВидКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ВидExtendedTooltip" id="27"/>
+				</LabelField>
+				<LabelField name="Публикация" id="11">
+					<DataPath>Список.Публикация</DataPath>
+					<ContextMenu name="ПубликацияКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПубликацияExtendedTooltip" id="28"/>
+				</LabelField>
+				<LabelField name="Версия" id="9">
+					<DataPath>Список.Версия</DataPath>
+					<ContextMenu name="ВерсияКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ВерсияExtendedTooltip" id="29"/>
+				</LabelField>
+				<LabelField name="Ответственный" id="7">
+					<DataPath>Список.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="30"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДополнительныеОтчетыИОбработки.Ссылка,
+	ДополнительныеОтчетыИОбработки.ПометкаУдаления,
+	ДополнительныеОтчетыИОбработки.Наименование,
+	ДополнительныеОтчетыИОбработки.Версия,
+	ДополнительныеОтчетыИОбработки.Ответственный,
+	ДополнительныеОтчетыИОбработки.Публикация,
+	ДополнительныеОтчетыИОбработки.Вид,
+	ВЫБОР
+		КОГДА ДополнительныеОтчетыИОбработки.ЭтоГруппа
+			ТОГДА 0
+		КОГДА ДополнительныеОтчетыИОбработки.Публикация = Значение(Перечисление.ВариантыПубликацииДополнительныхОтчетовИОбработок.Используется)
+			ТОГДА 2
+		КОГДА ДополнительныеОтчетыИОбработки.Публикация = Значение(Перечисление.ВариантыПубликацииДополнительныхОтчетовИОбработок.НеИспользуется)
+			ТОГДА 1
+		КОГДА ДополнительныеОтчетыИОбработки.Публикация = Значение(Перечисление.ВариантыПубликацииДополнительныхОтчетовИОбработок.РежимОтладки)
+			ТОГДА 3
+	КОНЕЦ КАК ИндексКартинкиСтатусаПубликации
+
+ИЗ
+	Справочник.ДополнительныеОтчетыИОбработки КАК ДополнительныеОтчетыИОбработки</QueryText>
+				<MainTable>Catalog.ДополнительныеОтчетыИОбработки</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

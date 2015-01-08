@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="17"/>
+			<ChildItems>
+				<Page name="СтраницаСсылокНеНайдено" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ссылок не найдено</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ссылок не найдено</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СтраницаСсылокНеНайденоExtendedTooltip" id="18"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТекстПояснения" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текст пояснения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текст пояснения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТекстПоясненияExtendedTooltip" id="19"/>
+							<ChildItems>
+								<LabelDecoration name="ТекстПояснения" id="14">
+									<Height>3</Height>
+									<SkipOnInput>false</SkipOnInput>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылок на свойство в информационной базе не найдено (свойство не используется).
+Изменения типа значения и пометки удаления свойства разрешены.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТекстПоясненияКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ТекстПоясненияExtendedTooltip" id="20"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CommandBar name="ГруппаКнопокПояснения" id="13">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок пояснения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок пояснения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="ГруппаКнопокПоясненияExtendedTooltip" id="21"/>
+							<ChildItems>
+								<Button name="ОК" id="16">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.РазрешитьРедактирование</CommandName>
+									<Parameter xsi:nil="true"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ОК</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОКExtendedTooltip" id="22"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНайденыСсылки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница найдены ссылки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница найдены ссылки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СтраницаНайденыСсылкиExtendedTooltip" id="23"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТекстПредупреждения" id="10">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текст предупреждения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текст предупреждения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТекстПредупрежденияExtendedTooltip" id="24"/>
+							<ChildItems>
+								<LabelDecoration name="ТекстПредупреждения" id="6">
+									<Height>3</Height>
+									<SkipOnInput>false</SkipOnInput>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Внимание! Дополнительное свойство уже используется в информационной базе.
+Изменение типа может привести к потере значений уже установленных свойств.
+Вы уверены, что хотите разрешить редактирование тип значения свойства
+и пометку на удаление?</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ТекстПредупрежденияКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ТекстПредупрежденияExtendedTooltip" id="25"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CommandBar name="ГруппаКнопок" id="8">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="ГруппаКнопокExtendedTooltip" id="26"/>
+							<ChildItems>
+								<Button name="РазрешитьРедактирование" id="9">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.РазрешитьРедактирование</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="РазрешитьРедактированиеExtendedTooltip" id="27"/>
+								</Button>
+								<Button name="Отмена" id="11">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.StandardCommand.Cancel</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ОтменаExtendedTooltip" id="28"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Commands>
+		<Command name="РазрешитьРедактирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазрешитьРедактирование</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Ссылка">
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

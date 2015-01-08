@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<InformationRegister uuid="a6d48910-d526-4e8f-9414-ca776a7edaa3">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗависимостиПравДоступа" category="Record">
+				<xr:TypeId>e24f8011-70ab-41db-93ed-338b8570d411</xr:TypeId>
+				<xr:ValueId>9ab70673-58a9-45b8-ab93-8a920566788c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ЗависимостиПравДоступа" category="Manager">
+				<xr:TypeId>fea53f85-1756-4d7b-a4f8-da24cb13049f</xr:TypeId>
+				<xr:ValueId>a15d92ba-82ab-4bc3-b0f1-ec9b900a9f24</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗависимостиПравДоступа" category="Selection">
+				<xr:TypeId>fa03ea51-2caa-47b5-84ad-2ac151949287</xr:TypeId>
+				<xr:ValueId>16338066-dbaf-4cb2-bb56-f7b67d250907</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ЗависимостиПравДоступа" category="List">
+				<xr:TypeId>4e45a37a-16ad-49eb-8a57-355c6fa1fa77</xr:TypeId>
+				<xr:ValueId>02f955a6-1597-4355-a7c4-58f059317da8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗависимостиПравДоступа" category="RecordSet">
+				<xr:TypeId>77dc998b-b42d-4742-be20-f33df2848fe9</xr:TypeId>
+				<xr:ValueId>2fdba0c0-b1b0-4846-b443-8a17b0aaa9f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗависимостиПравДоступа" category="RecordKey">
+				<xr:TypeId>e16359b3-96e6-48fe-b7ad-0829703da140</xr:TypeId>
+				<xr:ValueId>a16dd6c4-bbaa-47e8-abcf-f1b46275e24c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗависимостиПравДоступа" category="RecordManager">
+				<xr:TypeId>d801de5a-bc55-4c9c-877f-2639fff669d1</xr:TypeId>
+				<xr:ValueId>dbee5daa-6c04-4f44-a652-9749dab91f07</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЗависимостиПравДоступа</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зависимости прав доступа</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<EditType>InDialog</EditType>
+			<DefaultRecordForm/>
+			<DefaultListForm>InformationRegister.ЗависимостиПравДоступа.Form.ФормаСписка</DefaultListForm>
+			<AuxiliaryRecordForm/>
+			<AuxiliaryListForm/>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Active">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="LineNumber">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Recorder">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Period">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<MainFilterOnPeriod>false</MainFilterOnPeriod>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
+			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
+			<RecordPresentation/>
+			<ExtendedRecordPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="1e8cd163-ca9b-42eb-b8c9-c3d44e7e486b">
+				<Properties>
+					<Name>ОтключитьПроверкуПравВедущейТаблицы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отключить проверку прав ведущей таблицы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Не проверять права ведущей таблицы, а проверять только ограничения прав</Comment>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверять только ограничения прав на объект ведущей таблицы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Resource uuid="6bf8f383-af77-4be9-bda4-4d4220dfe374">
+				<Properties>
+					<Name>ПриПроверкеПраваЧтение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права чтение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>При проверке права "Чтение" подчиненной таблицы, выполнить проверки объекта ведущей таблицы для права</Comment>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ВидыДоступа</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права "Чтение" подчиненной таблицы, выполнить проверку объекта ведущей таблицы для права, заданного одним из видов доступа "ПравоЧтения" или "ПравоДобавления" или "ПравоИзменения"</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Resource uuid="b5c92c97-c4d2-4b4c-86be-035bfd17f905">
+				<Properties>
+					<Name>ПриПроверкеПраваДобавление</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права добавление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>При проверке права "Добавление" подчиненной таблицы, выполнить проверки объекта ведущей таблицы для права</Comment>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ВидыДоступа</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права "Добавление" подчиненной таблицы, выполнить проверку объекта ведущей таблицы для права, заданного одним из видов доступа "ПравоЧтения" или "ПравоДобавления" или "ПравоИзменения"</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Resource uuid="a5bb3835-9dcf-4924-9c96-695e5173d702">
+				<Properties>
+					<Name>ПриПроверкеПраваИзменение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права изменение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>При проверке права "Изменение" подчиненной таблицы, выполнить проверки объекта ведущей таблицы для права</Comment>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ВидыДоступа</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права "Изменение" подчиненной таблицы, выполнить проверку объекта ведущей таблицы для права, заданного одним из видов доступа "ПравоЧтения" или "ПравоДобавления" или "ПравоИзменения"</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Resource uuid="afa26db4-77a4-437c-965a-fefc6086c1a1">
+				<Properties>
+					<Name>ПриПроверкеПраваУдаление</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права удаление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>При проверке права "Удаление" подчиненной таблицы, выполнить проверки объекта ведущей таблицы для права</Comment>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ВидыДоступа</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права "Удаление" подчиненной таблицы, выполнить проверку объекта ведущей таблицы для права, заданного одним из видов доступа "ПравоЧтения" или "ПравоДобавления" или "ПравоИзменения"</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Dimension uuid="7e005845-c321-4529-b112-2dec63720195">
+				<Properties>
+					<Name>ПодчиненнаяТаблица</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подчиненная таблица</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Полное имя подчиненной таблицы</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права на элемент данных подчиненной таблицы проверяется право и ограничение права на объект ведущей таблицы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="48f7b074-2e43-4221-a36c-e2e30c22def6">
+				<Properties>
+					<Name>ТипВедущейТаблицы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип ведущей таблицы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Тип ведущей таблицы, заданный пустой ссылкой</Comment>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При проверке права на элемент данных подчиненной таблицы проверяется право и ограничение права на объект ведущей таблицы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Dimension>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

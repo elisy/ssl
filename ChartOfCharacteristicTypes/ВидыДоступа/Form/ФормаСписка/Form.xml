@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Change</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="15"/>
+			<SearchStringAddition name="СписокSearchString" id="16">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="17"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="18"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="19">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="20"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="21"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="22">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="23"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="24"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="25"/>
+				</InputField>
+				<LabelField name="ТипЗначения" id="13">
+					<DataPath>Список.ValueType</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения или группы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя справочника значения доступа или группы доступа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ТипЗначенияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ТипЗначенияExtendedTooltip" id="26"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>ChartOfCharacteristicTypes.ВидыДоступа</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
+							<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

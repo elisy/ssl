@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мои бизнес-процессы</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПометкаУдаления" id="31">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПометкаУдаления</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаПометкаУдаленияExtendedTooltip" id="32"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="ПоказыватьЗавершенные" id="29">
+			<DataPath>ПоказыватьЗавершенные</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоказыватьЗавершенныеКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ПоказыватьЗавершенныеExtendedTooltip" id="33"/>
+			<Events>
+				<Event name="OnChange">ПоказыватьЗавершенныеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.КартинкаСтроки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.КоллекцияПиктограммЭлементов</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="34"/>
+			<SearchStringAddition name="СписокSearchString" id="35">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="36"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="38">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="39"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="41">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="42"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="43"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+				<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="Номер" id="6">
+					<DataPath>Список.Номер</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="44"/>
+				</InputField>
+				<InputField name="Наименование" id="22">
+					<DataPath>Список.Наименование</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="45"/>
+				</InputField>
+				<InputField name="Дата" id="8">
+					<DataPath>Список.Дата</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="46"/>
+				</InputField>
+				<CheckBoxField name="Стартован" id="12">
+					<DataPath>Список.Стартован</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стартован</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СтартованКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СтартованExtendedTooltip" id="47"/>
+				</CheckBoxField>
+				<CheckBoxField name="Завершен" id="10">
+					<DataPath>Список.Завершен</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершен</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗавершенКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ЗавершенExtendedTooltip" id="48"/>
+				</CheckBoxField>
+				<InputField name="ДатаЗавершения" id="16">
+					<DataPath>Список.ДатаЗавершения</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата завершения</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДатаЗавершенияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаЗавершенияExtendedTooltip" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.БизнесПроцесс</Field>
+				<Field>1/6</Field>
+				<Field>Список.Автор</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийСписокБизнесПроцессов.БизнесПроцесс,
+	РегистрСведенийСписокБизнесПроцессов.Номер,
+	РегистрСведенийСписокБизнесПроцессов.Дата,
+	РегистрСведенийСписокБизнесПроцессов.Завершен,
+	РегистрСведенийСписокБизнесПроцессов.Стартован,
+	РегистрСведенийСписокБизнесПроцессов.Автор,
+	РегистрСведенийСписокБизнесПроцессов.ДатаЗавершения,
+	РегистрСведенийСписокБизнесПроцессов.Наименование,
+	РегистрСведенийСписокБизнесПроцессов.ПометкаУдаления,
+	ВЫБОР
+		КОГДА РегистрСведенийСписокБизнесПроцессов.ПометкаУдаления
+			ТОГДА 3
+		ИНАЧЕ 2
+	КОНЕЦ КАК КартинкаСтроки
+ИЗ
+	РегистрСведений.СписокБизнесПроцессов КАК РегистрСведенийСписокБизнесПроцессов</QueryText>
+				<MainTable>InformationRegister.СписокБизнесПроцессов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Завершен</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Завершен</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Завершен</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>BackColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>TextColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:ЗавершенныйБизнесПроцесс</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПоказыватьЗавершенные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать завершенные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказыватьЗавершенные</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПометкаУдаления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление / Снять пометку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометка удаления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПометкаУдаления</Action>
+		</Command>
+	</Commands>
+</Form>

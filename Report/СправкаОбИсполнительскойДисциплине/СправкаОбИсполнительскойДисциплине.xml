@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Report uuid="19ac940e-34e2-4277-987a-53b28dde5910">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.СправкаОбИсполнительскойДисциплине" category="Object">
+				<xr:TypeId>cd5447e2-3a33-417e-9a2d-c6b84be410f0</xr:TypeId>
+				<xr:ValueId>c3873384-3ff2-40b1-afa7-131a8a3b2008</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.СправкаОбИсполнительскойДисциплине" category="Manager">
+				<xr:TypeId>9ce53b88-fe2c-44fe-be38-e1fa19d71b67</xr:TypeId>
+				<xr:ValueId>ed0d77ae-2891-4c3e-a4e7-eeb42e2031d9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СправкаОбИсполнительскойДисциплине</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справка об исполнительской дисциплине</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>Report.СправкаОбИсполнительскойДисциплине.Form.ФормаОтчета</DefaultForm>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema>Report.СправкаОбИсполнительскойДисциплине.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
+			<SettingsStorage/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаОтчета</Form>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

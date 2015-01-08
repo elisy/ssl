@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="РедактироватьСоставСвойств" id="2">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.РедактироватьСоставСвойств</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<ExtendedTooltip name="РедактироватьСоставСвойствExtendedTooltip" id="19"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаЗначенийСвойств" id="3">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<SelectionMode>SingleRow</SelectionMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>ТаблицаЗначенийСвойств</DataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.КартинкаВДеревеСвойств</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="30" y="12"/>
+			</RowsPicture>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаЗначенийСвойствКонтекстноеМеню" id="4">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="ТаблицаЗначенийСвойствКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="ТаблицаЗначенийСвойствExtendedTooltip" id="20"/>
+			<SearchStringAddition name="ТаблицаЗначенийСвойствSearchString" id="21">
+				<Source>
+					<lf:elementId>3</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ТаблицаЗначенийСвойствSearchStringContextMenu" id="22"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСвойствSearchStringExtendedTooltip" id="23"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаЗначенийСвойствViewStatus" id="24">
+				<Source>
+					<lf:elementId>3</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ТаблицаЗначенийСвойствViewStatusContextMenu" id="25"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСвойствViewStatusExtendedTooltip" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаЗначенийСвойствSearchControl" id="27">
+				<Source>
+					<lf:elementId>3</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ТаблицаЗначенийСвойствSearchControlContextMenu" id="28"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСвойствSearchControlExtendedTooltip" id="29"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ТаблицаЗначенийСвойствПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ТаблицаЗначенийСвойствПередУдалением</Event>
+				<Event name="OnStartEdit">ТаблицаЗначенийСвойствПриНачалеРедактирования</Event>
+				<Event name="OnChange">ТаблицаЗначенийСвойствПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="ТаблицаЗначенийСвойствКартинкаИСвойство" id="15">
+					<ReadOnly>true</ReadOnly>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ТаблицаЗначенийСвойствКартинкаИСвойствоExtendedTooltip" id="30"/>
+					<ChildItems>
+						<PictureField name="ТаблицаЗначенийСвойствНомерКартинки" id="6">
+							<DataPath>ТаблицаЗначенийСвойств.НомерКартинки</DataPath>
+							<Enabled>false</Enabled>
+							<TitleLocation>None</TitleLocation>
+							<Width>2</Width>
+							<Height>1</Height>
+							<ValuesPicture>
+								<xr:Ref>StdPicture.SetListItemDeletionMark</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<ContextMenu name="ТаблицаЗначенийСвойствНомерКартинкиКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ТаблицаЗначенийСвойствНомерКартинкиExtendedTooltip" id="31"/>
+						</PictureField>
+						<InputField name="ТаблицаЗначенийСвойствНаименование" id="16">
+							<DataPath>ТаблицаЗначенийСвойств.Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ТаблицаЗначенийСвойствНаименованиеКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ТаблицаЗначенийСвойствНаименованиеExtendedTooltip" id="32"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ТаблицаЗначенийСвойствЗначение" id="10">
+					<DataPath>ТаблицаЗначенийСвойств.Значение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ClearButton>true</ClearButton>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Нет; БИ=Да</v8:content>
+						</v8:item>
+					</Format>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Items.ТаблицаЗначенийСвойств.CurrentData.Свойство</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ТаблицаЗначенийСвойствЗначениеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ТаблицаЗначенийСвойствЗначениеExtendedTooltip" id="33"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ГруппаКоманд" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаКомандExtendedTooltip" id="34"/>
+			<ChildItems>
+				<Button name="КомандаОК" id="13">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаОК</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<ExtendedTooltip name="КомандаОКExtendedTooltip" id="35"/>
+				</Button>
+				<Button name="КомандаОтмена" id="14">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаОтмена</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="36"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаЗначенийСвойств" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица значений свойств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Свойство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипЗначения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Значение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
+					</Type>
+					<Edit>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ИзменениеДополнительныхСведений">true</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</Edit>
+				</Column>
+				<Column name="НомерКартинки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФорматСвойства" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат свойства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДоступныеНаборыСвойств" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступные наборы свойств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БылаНажатаКнопкаЗакрытия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Была нажата кнопка закрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНаОбъект" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РедактироватьСоставСвойств" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить состав доп. реквизитов и сведений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить состав дополнительных реквизитов и сведений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеОбменовДанными">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбменовДанными">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПроверкаДоступныхОбновленийКонфигурации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>StdPicture.ListSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РедактироватьСоставСвойств</Action>
+		</Command>
+		<Command name="КомандаОК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОКВыполнить</Action>
+		</Command>
+		<Command name="КомандаОтмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтменаВыполнить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Ссылка">
+			<Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

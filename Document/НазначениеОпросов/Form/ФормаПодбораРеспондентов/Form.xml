@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подбор респондентов</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСписки" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСпискиExtendedTooltip" id="34"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛевыйСписок" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левый список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левый список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛевыйСписокExtendedTooltip" id="35"/>
+					<ChildItems>
+						<CommandBar name="ГруппаКоманднаяПанельОтобранныеЗначения" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель отобранные значения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель отобранные значения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаКоманднаяПанельОтобранныеЗначенияExtendedTooltip" id="36"/>
+							<ChildItems>
+								<Button name="Удалить" id="29">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>23:8d772f97-c0ef-47c0-9cb0-efea28c61341</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="УдалитьExtendedTooltip" id="37"/>
+								</Button>
+								<Button name="СортироватьПоВозрастанию" id="31">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>23:2bbe4e12-06d2-409b-a972-eea585125d83</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="СортироватьПоВозрастаниюExtendedTooltip" id="38"/>
+								</Button>
+								<Button name="СортироватьПоУбыванию" id="32">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>23:58b2a785-23f6-4b0e-a324-9a1323285595</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="СортироватьПоУбываниюExtendedTooltip" id="39"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<Table name="СписокЗначений" id="23">
+							<Representation>List</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>2</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="СписокЗначенийКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="СписокЗначенийКоманднаяПанель" id="25">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокЗначенийExtendedTooltip" id="40"/>
+							<SearchStringAddition name="СписокЗначенийSearchString" id="41">
+								<Source>
+									<lf:elementId>23</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="СписокЗначенийSearchStringContextMenu" id="42"/>
+								<ExtendedTooltip name="СписокЗначенийSearchStringExtendedTooltip" id="43"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокЗначенийViewStatus" id="44">
+								<Source>
+									<lf:elementId>23</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="СписокЗначенийViewStatusContextMenu" id="45"/>
+								<ExtendedTooltip name="СписокЗначенийViewStatusExtendedTooltip" id="46"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокЗначенийSearchControl" id="47">
+								<Source>
+									<lf:elementId>23</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="СписокЗначенийSearchControlContextMenu" id="48"/>
+								<ExtendedTooltip name="СписокЗначенийSearchControlExtendedTooltip" id="49"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СписокЗначенийЗначение" id="26">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗначенийЗначениеКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СписокЗначенийЗначениеExtendedTooltip" id="50"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПравыйСписок" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правый список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правый список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПравыйСписокExtendedTooltip" id="51"/>
+					<ChildItems>
+						<CommandBar name="ГруппаКоманднаяПанельРеспонденты" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель респонденты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель респонденты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаКоманднаяПанельРеспондентыExtendedTooltip" id="52"/>
+							<ChildItems>
+								<Button name="Выбрать" id="33">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Item.Респонденты.StandardCommand.Choose</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ВыбратьExtendedTooltip" id="53"/>
+								</Button>
+								<Button name="НастроитьСписок" id="12">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<SkipOnInput>false</SkipOnInput>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>Form.Item.Респонденты.StandardCommand.ListSettings</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="НастроитьСписокExtendedTooltip" id="54"/>
+								</Button>
+								<Button name="Обновить" id="13">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>Form.Item.Респонденты.StandardCommand.Refresh</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ОбновитьExtendedTooltip" id="55"/>
+								</Button>
+								<Popup name="ГруппаРеспондентыРежимПросмотра" id="14">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа респонденты режим просмотра</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Picture>
+										<xr:Ref>StdPicture.HierarchicalView</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ГруппаРеспондентыРежимПросмотраExtendedTooltip" id="56"/>
+									<ChildItems>
+										<Button name="Список" id="15">
+											<Type>CommandBarButton</Type>
+											<SkipOnInput>false</SkipOnInput>
+											<OnlyInAllActions>true</OnlyInAllActions>
+											<CommandName>Form.Item.Респонденты.StandardCommand.List</CommandName>
+											<Parameter xsi:nil="true"/>
+											<ExtendedTooltip name="СписокExtendedTooltip" id="57"/>
+										</Button>
+										<Button name="ИерархическийСписок" id="16">
+											<Type>CommandBarButton</Type>
+											<SkipOnInput>false</SkipOnInput>
+											<OnlyInAllActions>true</OnlyInAllActions>
+											<CommandName>Form.Item.Респонденты.StandardCommand.HierarchicalList</CommandName>
+											<Parameter xsi:nil="true"/>
+											<ExtendedTooltip name="ИерархическийСписокExtendedTooltip" id="58"/>
+										</Button>
+										<Button name="Дерево" id="17">
+											<Type>CommandBarButton</Type>
+											<SkipOnInput>false</SkipOnInput>
+											<OnlyInAllActions>true</OnlyInAllActions>
+											<CommandName>Form.Item.Респонденты.StandardCommand.Tree</CommandName>
+											<Parameter xsi:nil="true"/>
+											<ExtendedTooltip name="ДеревоExtendedTooltip" id="59"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+							</ChildItems>
+						</CommandBar>
+						<Table name="Респонденты" id="1">
+							<Representation>List</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<ChoiceMode>true</ChoiceMode>
+							<MultipleChoice>true</MultipleChoice>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<DataPath>Респонденты</DataPath>
+							<RowPictureDataPath>Респонденты.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period xsi:type="v8:StandardPeriod">
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>false</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="РеспондентыКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<AutoCommandBar name="РеспондентыКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РеспондентыExtendedTooltip" id="60"/>
+							<SearchStringAddition name="РеспондентыSearchString" id="61">
+								<Source>
+									<lf:elementId>1</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="РеспондентыSearchStringContextMenu" id="62"/>
+								<ExtendedTooltip name="РеспондентыSearchStringExtendedTooltip" id="63"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РеспондентыViewStatus" id="64">
+								<Source>
+									<lf:elementId>1</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="РеспондентыViewStatusContextMenu" id="65"/>
+								<ExtendedTooltip name="РеспондентыViewStatusExtendedTooltip" id="66"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РеспондентыSearchControl" id="67">
+								<Source>
+									<lf:elementId>1</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="РеспондентыSearchControlContextMenu" id="68"/>
+								<ExtendedTooltip name="РеспондентыSearchControlExtendedTooltip" id="69"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="ValueChoice">РеспондентыВыборЗначения</Event>
+								<Event name="Selection">РеспондентыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РеспондентыНаименование" id="9">
+									<DataPath>Респонденты.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Респондент</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РеспондентыНаименованиеКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="РеспондентыНаименованиеExtendedTooltip" id="70"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодвал" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="71"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация" id="7">
+					<HorizontalStretch>true</HorizontalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<ContextMenu name="ДекорацияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДекорацияExtendedTooltip" id="72"/>
+				</LabelDecoration>
+				<Button name="КнопкаЗакрыть" id="5">
+					<Type>UsualButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="КнопкаЗакрытьExtendedTooltip" id="73"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Респонденты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Респонденты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>Респонденты.Description</Field>
+				<Field>1/4</Field>
+				<Field>Респонденты.IsFolder</Field>
+				<Field>Респонденты.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ФизическиеЛица</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

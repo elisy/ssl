@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<Wrap>false</Wrap>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="64"/>
+		</InputField>
+		<InputField name="Администратор" id="9">
+			<DataPath>Объект.Администратор</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор</v8:content>
+				</v8:item>
+			</Title>
+			<Wrap>false</Wrap>
+			<ContextMenu name="АдминистраторКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="АдминистраторExtendedTooltip" id="65"/>
+		</InputField>
+		<InputField name="КлючОбъекта" id="7">
+			<DataPath>Объект.КлючОбъекта</DataPath>
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник данных</v8:content>
+				</v8:item>
+			</Title>
+			<Wrap>false</Wrap>
+			<ContextMenu name="КлючОбъектаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлючОбъектаExtendedTooltip" id="66"/>
+		</InputField>
+		<InputField name="КлючВарианта" id="28">
+			<DataPath>Объект.КлючВарианта</DataPath>
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="КлючВариантаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="КлючВариантаExtendedTooltip" id="67"/>
+		</InputField>
+		<InputField name="ТипВариантаОтчета" id="22">
+			<DataPath>Объект.ТипВариантаОтчета</DataPath>
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип отчета</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТипВариантаОтчетаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ТипВариантаОтчетаExtendedTooltip" id="68"/>
+		</InputField>
+		<InputField name="Описание" id="20">
+			<DataPath>Объект.Описание</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="69"/>
+		</InputField>
+		<UsualGroup name="ГруппаИспользования" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользованияExtendedTooltip" id="70"/>
+			<ChildItems>
+				<Button name="НастроитьВидимостьПользователей" id="54">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.НастроитьВидимостьПользователей</CommandName>
+					<Parameter xsi:nil="true"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Быстрый доступ:</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НастроитьВидимостьПользователейExtendedTooltip" id="71"/>
+				</Button>
+				<LabelDecoration name="Использование" id="60">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ИспользованиеКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ИспользованиеExtendedTooltip" id="72"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодсистемы" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использования подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использования подсистемы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодсистемыExtendedTooltip" id="73"/>
+			<ChildItems>
+				<Button name="НастроитьПодсистемы" id="55">
+					<Type>Hyperlink</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.НастроитьПодсистемы</CommandName>
+					<Parameter xsi:nil="true"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разделы:</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НастроитьПодсистемыExtendedTooltip" id="74"/>
+				</Button>
+				<LabelDecoration name="Подсистемы" id="62">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПодсистемыКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПодсистемыExtendedTooltip" id="75"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВариантыОтчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДеревоПодсистем" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево подсистем</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПутьКПодсистеме" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к подсистеме</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Название" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Предопределенная" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Использование" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДереводПодсистемИспользуется</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДереводПодсистемНазвание</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоПодсистем.Предопределенная</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>TextColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Enabled</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ReadOnly</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Описание</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТипВариантаОтчета</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыВариантовОтчетов.Предопределенный</dcsset:right>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыВариантовОтчетов.Отчет</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ReadOnly</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьВидимостьПользователей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки видимости варианта отчета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрый доступ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьВидимостьПользователей</Action>
+		</Command>
+		<Command name="НастроитьПодсистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьПодсистемы</Action>
+		</Command>
+	</Commands>
+</Form>

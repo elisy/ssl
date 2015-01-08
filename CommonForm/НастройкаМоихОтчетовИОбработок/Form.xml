@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ОК" id="17">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.ОК</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОКExtendedTooltip" id="19"/>
+			</Button>
+			<Button name="Отмена" id="18">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаExtendedTooltip" id="21"/>
+			<ChildItems>
+				<Table name="МоиКоманды" id="1">
+					<Representation>Tree</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<SelectionMode>SingleRow</SelectionMode>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>МоиКоманды</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мои команды</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<ContextMenu name="МоиКомандыКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="МоиКомандыКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="МоиКомандыExtendedTooltip" id="22"/>
+					<SearchStringAddition name="МоиКомандыSearchString" id="23">
+						<Source>
+							<lf:elementId>1</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="МоиКомандыSearchStringContextMenu" id="24"/>
+						<ExtendedTooltip name="МоиКомандыSearchStringExtendedTooltip" id="25"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="МоиКомандыViewStatus" id="26">
+						<Source>
+							<lf:elementId>1</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="МоиКомандыViewStatusContextMenu" id="27"/>
+						<ExtendedTooltip name="МоиКомандыViewStatusExtendedTooltip" id="28"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="МоиКомандыSearchControl" id="29">
+						<Source>
+							<lf:elementId>1</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="МоиКомандыSearchControlContextMenu" id="30"/>
+						<ExtendedTooltip name="МоиКомандыSearchControlExtendedTooltip" id="31"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="МоиКомандыНаименование" id="4">
+							<DataPath>МоиКоманды.Наименование</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МоиКомандыНаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="МоиКомандыНаименованиеExtendedTooltip" id="32"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="КомандыУправленияСписком" id="12">
+					<EnableContentChange>true</EnableContentChange>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды управления списком</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="КомандыУправленияСпискомExtendedTooltip" id="33"/>
+					<ChildItems>
+						<Button name="ДобавитьКоманду" id="13">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ДобавитьКоманду</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="ДобавитьКомандуExtendedTooltip" id="34"/>
+						</Button>
+						<Button name="ДобавитьВсеКоманды" id="14">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ДобавитьВсеКоманды</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="ДобавитьВсеКомандыExtendedTooltip" id="35"/>
+						</Button>
+						<Button name="УдалитьКоманду" id="15">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.УдалитьКоманду</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УдалитьКомандуExtendedTooltip" id="36"/>
+						</Button>
+						<Button name="УдалитьВсеКоманды" id="16">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.УдалитьВсеКоманды</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УдалитьВсеКомандыExtendedTooltip" id="37"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="КомандыИсточник" id="7">
+					<Representation>Tree</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<SelectionMode>SingleRow</SelectionMode>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>КомандыИсточник</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все команды</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<ContextMenu name="КомандыИсточникКонтекстноеМеню" id="8"/>
+					<AutoCommandBar name="КомандыИсточникКоманднаяПанель" id="9"/>
+					<ExtendedTooltip name="КомандыИсточникExtendedTooltip" id="38"/>
+					<SearchStringAddition name="КомандыИсточникSearchString" id="39">
+						<Source>
+							<lf:elementId>7</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="КомандыИсточникSearchStringContextMenu" id="40"/>
+						<ExtendedTooltip name="КомандыИсточникSearchStringExtendedTooltip" id="41"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомандыИсточникViewStatus" id="42">
+						<Source>
+							<lf:elementId>7</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="КомандыИсточникViewStatusContextMenu" id="43"/>
+						<ExtendedTooltip name="КомандыИсточникViewStatusExtendedTooltip" id="44"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомандыИсточникSearchControl" id="45">
+						<Source>
+							<lf:elementId>7</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="КомандыИсточникSearchControlContextMenu" id="46"/>
+						<ExtendedTooltip name="КомандыИсточникSearchControlExtendedTooltip" id="47"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ВсеКомандыНаименование" id="10">
+							<DataPath>КомандыИсточник.Наименование</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВсеКомандыНаименованиеКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ВсеКомандыНаименованиеExtendedTooltip" id="48"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="МоиКоманды" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мои команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обработка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДополнительныеОтчетыИОбработки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяРаздела" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя раздела</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КомандыИсточник" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обработка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДополнительныеОтчетыИОбработки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяРаздела" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя раздела</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВидОбработок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид обработок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыДополнительныхОтчетовИОбработок</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоГлобальныеОбработки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это глобальные обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийРаздел" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий раздел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьКоманду" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКоманду</Action>
+		</Command>
+		<Command name="ДобавитьВсеКоманды" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt; &lt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить все команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВсеКоманды</Action>
+		</Command>
+		<Command name="УдалитьКоманду" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить команду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьКоманду</Action>
+		</Command>
+		<Command name="УдалитьВсеКоманды" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&gt; &gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеКоманды</Action>
+		</Command>
+		<Command name="ОК" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ВидОбработок">
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыДополнительныхОтчетовИОбработок</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ЭтоГлобальныеОбработки">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ТекущийРаздел">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

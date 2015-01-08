@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="10"/>
+			<SearchStringAddition name="СписокSearchString" id="11">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="12"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="14">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="15"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="17">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="18"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="20"/>
+				</LabelField>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="21"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="8">
+					<DataPath>Список.Комментарий</DataPath>
+					<AutoCellHeight>true</AutoCellHeight>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="22"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникРолиИсполнителей.Ссылка,
+	СправочникРолиИсполнителей.ПометкаУдаления,
+	СправочникРолиИсполнителей.Предопределенный,
+	СправочникРолиИсполнителей.Код,
+	СправочникРолиИсполнителей.Наименование,
+	СправочникРолиИсполнителей.ИспользуетсяБезОбъектовАдресации,
+	СправочникРолиИсполнителей.ИспользуетсяСОбъектамиАдресации,
+	СправочникРолиИсполнителей.ТипыОсновногоОбъектаАдресации,
+	СправочникРолиИсполнителей.ТипыДополнительногоОбъектаАдресации,
+	СправочникРолиИсполнителей.Комментарий,
+	ВЫБОР
+		КОГДА СправочникРолиИсполнителей.ИспользуетсяСОбъектамиАдресации 
+			ТОГДА ИСТИНА
+		КОГДА СправочникРолиИсполнителей.Ссылка В
+				(ВЫБРАТЬ ПЕРВЫЕ 1
+					РегистрСведений.ИсполнителиЗадач.РольИсполнителя.Ссылка
+				ИЗ
+					РегистрСведений.ИсполнителиЗадач
+				ГДЕ
+					РегистрСведений.ИсполнителиЗадач.РольИсполнителя = СправочникРолиИсполнителей.Ссылка)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ЕстьИсполнители
+ИЗ
+	Справочник.РолиИсполнителей КАК СправочникРолиИсполнителей</QueryText>
+				<MainTable>Catalog.РолиИсполнителей</MainTable>
+				<ListSettings>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЕстьИсполнители</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>TextColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:РольБезИсполнителей</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

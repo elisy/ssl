@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СохранитьПараметрыПодключения" id="21">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Записать</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СохранитьПараметрыПодключенияExtendedTooltip" id="24"/>
+			</Button>
+			<Button name="Закрыть" id="22">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="25"/>
+			</Button>
+			<Button name="Справка" id="23">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="26"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПодключениеКСерверу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключение к серверу</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодключениеКСерверуExtendedTooltip" id="27"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАдминистрирование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Укажите администратора информационной базы:</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаАдминистрированиеExtendedTooltip" id="28"/>
+					<ChildItems>
+						<InputField name="АдминистраторИБ" id="3">
+							<DataPath>АдминистраторИБ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Администратор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Администратор информационной базы, от имени которого выполняется принудительное отключение сеансов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Wrap>false</Wrap>
+							<ContextMenu name="АдминистраторИБКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="АдминистраторИБExtendedTooltip" id="29"/>
+						</InputField>
+						<InputField name="ПарольАдминистратораИБ" id="5">
+							<DataPath>ПарольАдминистратораИБ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль администратора информационной базы, от имени которого выполняется принудительное отключение сеансов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольАдминистратораИБКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ПарольАдминистратораИБExtendedTooltip" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="КластерТребуетАвторизации" id="7">
+					<DataPath>КластерТребуетАвторизации</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КластерТребуетАвторизацииКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="КластерТребуетАвторизацииExtendedTooltip" id="31"/>
+					<Events>
+						<Event name="OnChange">КластерТребуетАвторизацииПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаАвторизацияКластера" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры авторизации кластера серверов</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАвторизацияКластераExtendedTooltip" id="32"/>
+					<ChildItems>
+						<InputField name="ИмяАдминистратораКластера" id="10">
+							<DataPath>ИмяАдминистратораКластера</DataPath>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ИмяАдминистратораКластераКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ИмяАдминистратораКластераExtendedTooltip" id="33"/>
+						</InputField>
+						<InputField name="ПарольАдминистратораКластера" id="12">
+							<DataPath>ПарольАдминистратораКластера</DataPath>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольАдминистратораКластераКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПарольАдминистратораКластераExtendedTooltip" id="34"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="НестандартныеПорты" id="14">
+					<DataPath>НестандартныеПорты</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НестандартныеПортыКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="НестандартныеПортыExtendedTooltip" id="35"/>
+					<Events>
+						<Event name="OnChange">НестандартныеПортыПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаПорты" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порты</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПортыExtendedTooltip" id="36"/>
+					<ChildItems>
+						<InputField name="ПортКластераСерверов" id="17">
+							<DataPath>ПортКластераСерверов</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ПортКластераСерверовКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ПортКластераСерверовExtendedTooltip" id="37"/>
+						</InputField>
+						<InputField name="ПортАгентаСервера" id="19">
+							<DataPath>ПортАгентаСервера</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ПортАгентаСервераКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПортАгентаСервераExtendedTooltip" id="38"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="АдминистраторИБ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администратор ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольАдминистратораИБ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль администратора ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КластерТребуетАвторизации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кластер требует авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяАдминистратораКластера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя администратора кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольАдминистратораКластера" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль администратора кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НестандартныеПорты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключение осуществляется по нестандартным портам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортАгентаСервера" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт агента сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортКластераСерверов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт кластера серверов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
+		</Command>
+	</Commands>
+</Form>

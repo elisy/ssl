@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоСвойств" id="2">
+			<Representation>Tree</Representation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоСвойств</DataPath>
+			<RowPictureDataPath>ДеревоСвойств.DefaultPicture</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ДополнительныеРеквизитыСведения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="17" y="8"/>
+			</RowsPicture>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="ДеревоСвойствКонтекстноеМеню" id="3"/>
+			<AutoCommandBar name="ДеревоСвойствКоманднаяПанель" id="4">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДобавитьСвойство" id="7">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.ДобавитьСвойствоВНабор</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДобавитьСвойствоExtendedTooltip" id="20"/>
+					</Button>
+					<Button name="Создать" id="8">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.ДеревоСвойств.StandardCommand.Create</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СоздатьExtendedTooltip" id="21"/>
+					</Button>
+					<Button name="СоздатьГруппу" id="9">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.ДеревоСвойств.StandardCommand.CreateFolder</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СоздатьГруппуExtendedTooltip" id="22"/>
+					</Button>
+					<Button name="Изменить" id="10">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.ДеревоСвойств.StandardCommand.Change</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ИзменитьExtendedTooltip" id="23"/>
+					</Button>
+					<Button name="Скопировать" id="11">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.ДеревоСвойств.StandardCommand.Copy</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СкопироватьExtendedTooltip" id="24"/>
+					</Button>
+					<Button name="ДеревоСвойствСправка" id="19">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоСвойствСправкаExtendedTooltip" id="25"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоСвойствExtendedTooltip" id="26"/>
+			<SearchStringAddition name="ДеревоСвойствSearchString" id="27">
+				<Source>
+					<lf:elementId>2</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоСвойствSearchStringContextMenu" id="28"/>
+				<ExtendedTooltip name="ДеревоСвойствSearchStringExtendedTooltip" id="29"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоСвойствViewStatus" id="30">
+				<Source>
+					<lf:elementId>2</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоСвойствViewStatusContextMenu" id="31"/>
+				<ExtendedTooltip name="ДеревоСвойствViewStatusExtendedTooltip" id="32"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоСвойствSearchControl" id="33">
+				<Source>
+					<lf:elementId>2</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоСвойствSearchControlContextMenu" id="34"/>
+				<ExtendedTooltip name="ДеревоСвойствSearchControlExtendedTooltip" id="35"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДеревоСвойствВыбор</Event>
+				<Event name="BeforeAddRow">ДеревоСвойствПередНачаломДобавления</Event>
+				<Event name="OnActivateRow">ДеревоСвойствПриАктивизацииСтроки</Event>
+				<Event name="BeforeRowChange">ДеревоСвойствПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ДеревоСвойствСсылка" id="16">
+					<DataPath>ДеревоСвойств.Ref</DataPath>
+					<ContextMenu name="ДеревоСвойствСсылкаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДеревоСвойствСсылкаExtendedTooltip" id="36"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="12">
+			<DataPath>Комментарий</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>Top</TitleLocation>
+			<Height>2</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="37"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДеревоСвойств" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево свойств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ДеревоСвойств.НомерКартинкиСведения</Field>
+				<Field>ДеревоСвойств.Комментарий</Field>
+				<Field>ДеревоСвойств.Выбран</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Основная.Ссылка,
+	ВЫБОР
+		КОГДА Основная.Ссылка В (&amp;масВыбранных)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Выбран,
+	ВЫБОР
+		КОГДА Основная.ЭтоГруппа
+			ТОГДА 0
+		КОГДА Основная.ЭтоДополнительноеСведение
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ + ВЫБОР
+		КОГДА Основная.ПометкаУдаления
+			ТОГДА 3
+		ИНАЧЕ 0
+	КОНЕЦ КАК НомерКартинкиСведения,
+	Основная.ЭтоГруппа,
+	Основная.Комментарий КАК Комментарий,
+	Основная.ЭтоДополнительноеСведение КАК ЭтоДополнительноеСведение
+ИЗ
+	ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения КАК Основная
+</QueryText>
+				<MainTable>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</MainTable>
+				<ListSettings>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Ref</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Выбран</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>BackColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Linen</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>TextColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Font</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Комментарий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоДополнительноеСведение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это дополнительное сведение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокВыбранных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список выбранных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоСвойствСсылка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоСвойств.Выбран</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Font</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьСвойствоВНабор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в набор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить доп.реквизит/сведение в набор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСвойствоВНабор</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="МассивВыбранных">
+			<Type/>
+		</Parameter>
+		<Parameter name="ЭтоДополнительноеСведение">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

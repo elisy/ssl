@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Выбрать" id="10">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ВыбратьExtendedTooltip" id="88"/>
+			</Button>
+			<Button name="ПоказатьПодсистемы" id="78">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ПоказатьПодсистемы</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ПоказатьПодсистемыExtendedTooltip" id="89"/>
+			</Button>
+			<Button name="ИзменитьФорму" id="21">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ИзменитьФормуExtendedTooltip" id="90"/>
+			</Button>
+			<Button name="Справка" id="47">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="91"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СпособОтображения" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ отображения</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СпособОтображенияExtendedTooltip" id="92"/>
+			<ChildItems>
+				<Page name="СписокРолей" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список ролей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список ролей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СписокРолейExtendedTooltip" id="93"/>
+					<ChildItems>
+						<Table name="Роли" id="48">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<SkipOnInput>false</SkipOnInput>
+							<DefaultItem>true</DefaultItem>
+							<ChoiceMode>true</ChoiceMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Роли</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РолиКонтекстноеМеню" id="49">
+								<ChildItems>
+									<Button name="КонтекстноеМенюРолиВыбрать" id="73">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Command.Выбрать</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="КонтекстноеМенюРолиВыбратьExtendedTooltip" id="94"/>
+									</Button>
+									<Button name="КонтекстноеМенюРолиСортироватьСписокПоВозрастанию" id="69">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.Роли.StandardCommand.SortListAsc</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="КонтекстноеМенюРолиСортироватьСписокПоВозрастаниюExtendedTooltip" id="95"/>
+									</Button>
+									<Button name="КонтекстноеМенюРолиСортироватьСписокПоУбыванию" id="70">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.Роли.StandardCommand.SortListDesc</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="КонтекстноеМенюРолиСортироватьСписокПоУбываниюExtendedTooltip" id="96"/>
+									</Button>
+									<Button name="КонтекстноеМенюРолиНайти" id="86">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.Роли.StandardCommand.Find</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="КонтекстноеМенюРолиНайтиExtendedTooltip" id="97"/>
+									</Button>
+									<Button name="КонтекстноеМенюРолиОтменитьПоиск" id="87">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.Роли.StandardCommand.CancelSearch</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="КонтекстноеМенюРолиОтменитьПоискExtendedTooltip" id="98"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="РолиКоманднаяПанель" id="50"/>
+							<ExtendedTooltip name="РолиExtendedTooltip" id="99"/>
+							<SearchStringAddition name="РолиSearchString" id="100">
+								<Source>
+									<lf:elementId>48</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="РолиSearchStringContextMenu" id="101"/>
+								<ExtendedTooltip name="РолиSearchStringExtendedTooltip" id="102"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РолиViewStatus" id="103">
+								<Source>
+									<lf:elementId>48</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="РолиViewStatusContextMenu" id="104"/>
+								<ExtendedTooltip name="РолиViewStatusExtendedTooltip" id="105"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РолиSearchControl" id="106">
+								<Source>
+									<lf:elementId>48</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="РолиSearchControlContextMenu" id="107"/>
+								<ExtendedTooltip name="РолиSearchControlExtendedTooltip" id="108"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="ValueChoice">РолиВыборЗначения</Event>
+								<Event name="OnActivateRow">РолиПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="РолиСиноним" id="53">
+									<DataPath>Роли.Синоним</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиСинонимКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="РолиСинонимExtendedTooltip" id="109"/>
+								</InputField>
+								<InputField name="РолиСинонимыПодсистем" id="84">
+									<DataPath>Роли.СинонимыПодсистем</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиСинонимыПодсистемКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="РолиСинонимыПодсистемExtendedTooltip" id="110"/>
+								</InputField>
+								<InputField name="РолиИмя" id="51">
+									<DataPath>Роли.Имя</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиИмяКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="РолиИмяExtendedTooltip" id="111"/>
+								</InputField>
+								<InputField name="РолиИменаПодсистем" id="82">
+									<DataPath>Роли.ИменаПодсистем</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиИменаПодсистемКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="РолиИменаПодсистемExtendedTooltip" id="112"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="РолиПодсистем" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роли подсистем</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="РолиПодсистемExtendedTooltip" id="113"/>
+					<ChildItems>
+						<UsualGroup name="ПодсистемыИРоли" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсистемы и роли</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПодсистемыИРолиExtendedTooltip" id="114"/>
+							<ChildItems>
+								<Table name="Подсистемы" id="36">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<SkipOnInput>false</SkipOnInput>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Подсистемы</DataPath>
+									<CommandSet>
+										<ExcludedCommand>HierarchicalList</ExcludedCommand>
+										<ExcludedCommand>Tree</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>List</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="ПодсистемыКонтекстноеМеню" id="37">
+										<ChildItems>
+											<Button name="КонтекстноеМенюПодсистемыСортироватьСписокПоВозрастанию" id="43">
+												<Type>CommandBarButton</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>Form.Item.Подсистемы.StandardCommand.SortListAsc</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="КонтекстноеМенюПодсистемыСортироватьСписокПоВозрастаниюExtendedTooltip" id="115"/>
+											</Button>
+											<Button name="КонтекстноеМенюПодсистемыСортироватьСписокПоУбыванию" id="44">
+												<Type>CommandBarButton</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>Form.Item.Подсистемы.StandardCommand.SortListDesc</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="КонтекстноеМенюПодсистемыСортироватьСписокПоУбываниюExtendedTooltip" id="116"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ПодсистемыКоманднаяПанель" id="38">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПодсистемыExtendedTooltip" id="117"/>
+									<SearchStringAddition name="ПодсистемыSearchString" id="118">
+										<Source>
+											<lf:elementId>36</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="ПодсистемыSearchStringContextMenu" id="119"/>
+										<ExtendedTooltip name="ПодсистемыSearchStringExtendedTooltip" id="120"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПодсистемыViewStatus" id="121">
+										<Source>
+											<lf:elementId>36</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="ПодсистемыViewStatusContextMenu" id="122"/>
+										<ExtendedTooltip name="ПодсистемыViewStatusExtendedTooltip" id="123"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПодсистемыSearchControl" id="124">
+										<Source>
+											<lf:elementId>36</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="ПодсистемыSearchControlContextMenu" id="125"/>
+										<ExtendedTooltip name="ПодсистемыSearchControlExtendedTooltip" id="126"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">ПодсистемыПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ПодсистемыСиноним" id="41">
+											<DataPath>Подсистемы.Синоним</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПодсистемыСинонимКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ПодсистемыСинонимExtendedTooltip" id="127"/>
+										</InputField>
+										<InputField name="ПодсистемыИмя" id="39">
+											<DataPath>Подсистемы.Имя</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПодсистемыИмяКонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="ПодсистемыИмяExtendedTooltip" id="128"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="РолиТекущейПодсистемы" id="1">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<SkipOnInput>false</SkipOnInput>
+									<DefaultItem>true</DefaultItem>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>РолиТекущейПодсистемы</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Choose</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="РолиТекущейПодсистемыКонтекстноеМеню" id="2">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КонтекстноеМенюРолиТекущейПодсистемыВыбрать" id="11">
+												<Type>CommandBarButton</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>Form.Command.Выбрать</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="КонтекстноеМенюРолиТекущейПодсистемыВыбратьExtendedTooltip" id="129"/>
+											</Button>
+											<Button name="КонтекстноеМенюРолиТекущейПодсистемыСортироватьСписокПоВозрастанию" id="45">
+												<Type>CommandBarButton</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>Form.Item.РолиТекущейПодсистемы.StandardCommand.SortListAsc</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="КонтекстноеМенюРолиТекущейПодсистемыСортироватьСписокПоВозрастаниюExtendedTooltip" id="130"/>
+											</Button>
+											<Button name="КонтекстноеМенюРолиТекущейПодсистемыСортироватьСписокПоУбыванию" id="46">
+												<Type>CommandBarButton</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>Form.Item.РолиТекущейПодсистемы.StandardCommand.SortListDesc</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="КонтекстноеМенюРолиТекущейПодсистемыСортироватьСписокПоУбываниюExtendedTooltip" id="131"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="РолиТекущейПодсистемыКоманднаяПанель" id="3">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="РолиТекущейПодсистемыExtendedTooltip" id="132"/>
+									<SearchStringAddition name="РолиТекущейПодсистемыSearchString" id="133">
+										<Source>
+											<lf:elementId>1</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="РолиТекущейПодсистемыSearchStringContextMenu" id="134"/>
+										<ExtendedTooltip name="РолиТекущейПодсистемыSearchStringExtendedTooltip" id="135"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="РолиТекущейПодсистемыViewStatus" id="136">
+										<Source>
+											<lf:elementId>1</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="РолиТекущейПодсистемыViewStatusContextMenu" id="137"/>
+										<ExtendedTooltip name="РолиТекущейПодсистемыViewStatusExtendedTooltip" id="138"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="РолиТекущейПодсистемыSearchControl" id="139">
+										<Source>
+											<lf:elementId>1</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="РолиТекущейПодсистемыSearchControlContextMenu" id="140"/>
+										<ExtendedTooltip name="РолиТекущейПодсистемыSearchControlExtendedTooltip" id="141"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="ValueChoice">РолиТекущейПодсистемыВыборЗначения</Event>
+										<Event name="OnActivateRow">РолиТекущейПодсистемыПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="РолиТекущейПодсистемыСиноним" id="76">
+											<DataPath>РолиТекущейПодсистемы.Синоним</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РолиТекущейПодсистемыСинонимКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="РолиТекущейПодсистемыСинонимExtendedTooltip" id="142"/>
+										</InputField>
+										<InputField name="РолиТекущейПодсистемыИмя" id="74">
+											<DataPath>РолиТекущейПодсистемы.Имя</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РолиТекущейПодсистемыИмяКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="РолиТекущейПодсистемыИмяExtendedTooltip" id="143"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ПоказыватьРолиПодчиненныхПодсистем" id="79">
+							<DataPath>ПоказыватьРолиПодчиненныхПодсистем</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоказыватьРолиПодчиненныхПодсистемКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ПоказыватьРолиПодчиненныхПодсистемExtendedTooltip" id="144"/>
+							<Events>
+								<Event name="OnChange">ПоказыватьРолиПодчиненныхПодсистемПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Роли" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя роли</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешенное действие (роль)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИменаПодсистем" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имена подсистем</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СинонимыПодсистем" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсистемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Подсистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя подсистемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсистема</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РолиТекущейПодсистемы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роли и подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя роли</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешенное действие (роль)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоказыватьРолиПодчиненныхПодсистем" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать роли подчиненных подсистем</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказыватьРолиПодчиненныхПодсистем</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПоказыватьПодсистемы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказыватьПодсистемы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РежимПодбора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим подбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяРоль" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая роль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Выбрать</Action>
+		</Command>
+		<Command name="ПоказатьПодсистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать подсистемы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПодсистемы</Action>
+		</Command>
+	</Commands>
+</Form>

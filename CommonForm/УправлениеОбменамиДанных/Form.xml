@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обмены данными</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздать" id="91">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю создать</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюСоздатьExtendedTooltip" id="106"/>
+			</Popup>
+			<Popup name="ВыполнениеОбменаДанными" id="94">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнение обмена данными</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнение обмена данными</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>CommonPicture.ВыполнитьЗапускОбменаДанными</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+					<xr:TransparentPixel x="7" y="5"/>
+				</Picture>
+				<ExtendedTooltip name="ВыполнениеОбменаДаннымиExtendedTooltip" id="107"/>
+				<ChildItems>
+					<Button name="ВыполнитьОбменДанными" id="52">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.ВыполнитьОбменДанными</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ВыполнитьОбменДаннымиExtendedTooltip" id="108"/>
+					</Button>
+					<Button name="ВыполнитьОбменДаннымиИнтерактивно" id="92">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыполнитьОбменДаннымиИнтерактивно</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ВыполнитьОбменДаннымиИнтерактивноExtendedTooltip" id="109"/>
+					</Button>
+					<ButtonGroup name="ВыполнениеОбменаДаннымиПодгруппа" id="100">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнение обмена данными подгруппа</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнение обмена данными подгруппа</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ВыполнениеОбменаДаннымиПодгруппаExtendedTooltip" id="110"/>
+						<ChildItems>
+							<Button name="СписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="99">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхExtendedTooltip" id="111"/>
+							</Button>
+							<Button name="СписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="98">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхExtendedTooltip" id="112"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ВыполнениеОбменаДаннымиПодгруппаРасписания" id="103">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнение обмена данными подгруппа расписания</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнение обмена данными подгруппа расписания</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ВыполнениеОбменаДаннымиПодгруппаРасписанияExtendedTooltip" id="113"/>
+						<ChildItems>
+							<Button name="НастроитьРасписаниеВыполненияОбмена" id="102">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.НастроитьРасписаниеВыполненияОбмена</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="НастроитьРасписаниеВыполненияОбменаExtendedTooltip" id="114"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<Button name="СписокСостоянияУзловИзменитьУзелИнформационнойБазы" id="53">
+				<Type>CommandBarButton</Type>
+				<UserVisible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.ДобавлениеИзменениеОбменовДанными">true</xr:Value>
+				</UserVisible>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ИзменитьУзелИнформационнойБазы</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокСостоянияУзловИзменитьУзелИнформационнойБазыExtendedTooltip" id="115"/>
+			</Button>
+			<Button name="ОбновитьМонитор" id="16">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ОбновитьМонитор</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОбновитьМониторExtendedTooltip" id="116"/>
+			</Button>
+			<Button name="СписокСостоянияУзловОткрытьСписокУзловПланаОбмена" id="71">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.ОткрытьСписокУзловПланаОбмена</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокСостоянияУзловОткрытьСписокУзловПланаОбменаExtendedTooltip" id="117"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокСостоянияУзлов" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<SkipOnInput>false</SkipOnInput>
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокСостоянияУзлов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокСостоянияУзловКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="КонтекстноеМенюСписокСостоянияУзловСоздатьОбменСИнформационнойБазой" id="67">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>0</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловСоздатьОбменСИнформационнойБазойExtendedTooltip" id="118"/>
+					</Button>
+					<Button name="КонтекстноеМенюСписокСостоянияУзловИзменитьУзелИнформационнойБазы" id="54">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.ИзменитьУзелИнформационнойБазы</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловИзменитьУзелИнформационнойБазыExtendedTooltip" id="119"/>
+					</Button>
+					<Button name="КонтекстноеМенюСписокСостоянияУзловКопироватьВБуферОбмена" id="55">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.СписокСостоянияУзлов.StandardCommand.CopyToClipboard</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловКопироватьВБуферОбменаExtendedTooltip" id="120"/>
+					</Button>
+					<Button name="КонтекстноеМенюСписокСостоянияУзловВыделитьВсе" id="56">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>1:51c99108-107c-43e1-8918-e48835bf2495</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловВыделитьВсеExtendedTooltip" id="121"/>
+					</Button>
+					<ButtonGroup name="ГруппаКнопокВыполненияОбменаДанными" id="101">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кнопок выполнения обмена данными</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кнопок выполнения обмена данными</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаКнопокВыполненияОбменаДаннымиExtendedTooltip" id="122"/>
+						<ChildItems>
+							<Button name="ВыполнитьОбменДанными1" id="96">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.ВыполнитьОбменДанными</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ВыполнитьОбменДанными1ExtendedTooltip" id="123"/>
+							</Button>
+							<Button name="ВыполнитьОбменДаннымиИнтерактивно1" id="97">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыполнитьОбменДаннымиИнтерактивно</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ВыполнитьОбменДаннымиИнтерактивно1ExtendedTooltip" id="124"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="СобытияЖурналаРегистрации" id="86">
+						<ExtendedTooltip name="СобытияЖурналаРегистрацииExtendedTooltip" id="125"/>
+						<ChildItems>
+							<Button name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="85">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхExtendedTooltip" id="126"/>
+							</Button>
+							<Button name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="84">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхExtendedTooltip" id="127"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ГруппаКнопокНастройкиРасписания" id="104">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кнопок настройки расписания</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кнопок настройки расписания</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаКнопокНастройкиРасписанияExtendedTooltip" id="128"/>
+						<ChildItems>
+							<Button name="НастроитьРасписаниеВыполненияОбмена1" id="105">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.НастроитьРасписаниеВыполненияОбмена</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="НастроитьРасписаниеВыполненияОбмена1ExtendedTooltip" id="129"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокСостоянияУзловКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокСостоянияУзловExtendedTooltip" id="130"/>
+			<SearchStringAddition name="СписокСостоянияУзловSearchString" id="131">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСостоянияУзловSearchStringContextMenu" id="132"/>
+				<ExtendedTooltip name="СписокСостоянияУзловSearchStringExtendedTooltip" id="133"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостоянияУзловViewStatus" id="134">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСостоянияУзловViewStatusContextMenu" id="135"/>
+				<ExtendedTooltip name="СписокСостоянияУзловViewStatusExtendedTooltip" id="136"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокСостоянияУзловSearchControl" id="137">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСостоянияУзловSearchControlContextMenu" id="138"/>
+				<ExtendedTooltip name="СписокСостоянияУзловSearchControlExtendedTooltip" id="139"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокСостоянияУзловВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокСостоянияУзловИмяПланаОбмена" id="89">
+					<DataPath>СписокСостоянияУзлов.ИмяПланаОбмена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСостоянияУзловИмяПланаОбменаКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="СписокСостоянияУзловИмяПланаОбменаExtendedTooltip" id="140"/>
+				</InputField>
+				<InputField name="СписокСостоянияУзловУзелИнформационнойБазы" id="10">
+					<DataPath>СписокСостоянияУзлов.УзелИнформационнойБазы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСостоянияУзловУзелИнформационнойБазыКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СписокСостоянияУзловУзелИнформационнойБазыExtendedTooltip" id="141"/>
+				</InputField>
+				<ColumnGroup name="ГруппаСостоянияЗагрузки" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа состояния загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа состояния загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСостоянияЗагрузкиExtendedTooltip" id="142"/>
+					<ChildItems>
+						<PictureField name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанных" id="8">
+							<DataPath>СписокСостоянияУзлов.РезультатПоследнейЗагрузкиДанных</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СостояниеОбменаДанными</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанныхКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанныхExtendedTooltip" id="143"/>
+						</PictureField>
+						<InputField name="СписокСостоянияУзловДатаПоследнейЗагрузки" id="38">
+							<DataPath>СписокСостоянияУзлов.ДатаПоследнейЗагрузки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокСостоянияУзловДатаПоследнейЗагрузкиКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейЗагрузкиExtendedTooltip" id="144"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="СписокСостоянияУзловДатаПоследнейУспешнойЗагрузки" id="12">
+					<DataPath>СписокСостоянияУзлов.ДатаПоследнейУспешнойЗагрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСостоянияУзловДатаПоследнейУспешнойЗагрузкиКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейУспешнойЗагрузкиExtendedTooltip" id="145"/>
+				</InputField>
+				<ColumnGroup name="ГруппаСостоянияВыгрузки" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа состояния выгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа состояния выгрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСостоянияВыгрузкиExtendedTooltip" id="146"/>
+					<ChildItems>
+						<PictureField name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанных" id="6">
+							<DataPath>СписокСостоянияУзлов.РезультатПоследнейВыгрузкиДанных</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СостояниеОбменаДанными</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанныхКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанныхExtendedTooltip" id="147"/>
+						</PictureField>
+						<InputField name="СписокСостоянияУзловДатаПоследнейВыгрузки" id="36">
+							<DataPath>СписокСостоянияУзлов.ДатаПоследнейВыгрузки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокСостоянияУзловДатаПоследнейВыгрузкиКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейВыгрузкиExtendedTooltip" id="148"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="СписокСостоянияУзловДатаПоследнейУспешнойВыгрузки" id="4">
+					<DataPath>СписокСостоянияУзлов.ДатаПоследнейУспешнойВыгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСостоянияУзловДатаПоследнейУспешнойВыгрузкиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейУспешнойВыгрузкиExtendedTooltip" id="149"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокСостоянияУзлов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список состояния узлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаПоследнейУспешнойВыгрузки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата успешной выгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РезультатПоследнейВыгрузкиДанных" id="2">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РезультатПоследнейЗагрузкиДанных" id="3">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="УзелИнформационнойБазы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнейУспешнойЗагрузки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата успешной загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнейЗагрузки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнейВыгрузки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата выгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПланаОбмена" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План обмена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьМонитор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить монитор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьМонитор</Action>
+		</Command>
+		<Command name="ВыполнитьОбменДанными" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен данными с информационной базой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьОбменДанными</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ИзменитьУзелИнформационнойБазы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеОбменовДанными">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбменовДанными">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.ПроверкаДоступныхОбновленийКонфигурации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьУзелИнформационнойБазы</Action>
+		</Command>
+		<Command name="ОткрытьСписокУзловПланаОбмена" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список узлов плана обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список узлов плана обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеОбменовДанными">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбменовДанными">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.ПроверкаДоступныхОбновленийКонфигурации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+			</Use>
+			<Action>ОткрытьСписокУзловПланаОбмена</Action>
+		</Command>
+		<Command name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События загрузки данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в журнал регистрации событий загрузки данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</Action>
+		</Command>
+		<Command name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События выгрузки данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в журнал регистрации событий загрузки данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</Action>
+		</Command>
+		<Command name="ВыполнитьОбменДаннымиИнтерактивно" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить интерактивно...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен данными интерактивно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SyncContents</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьОбменДаннымиИнтерактивно</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НастроитьРасписаниеВыполненияОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить сценарии обмена данными...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание выполнения обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписаниеВыполненияОбмена</Action>
+		</Command>
+	</Commands>
+</Form>

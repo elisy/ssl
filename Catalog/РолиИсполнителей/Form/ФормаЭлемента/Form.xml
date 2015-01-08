@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="24">
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="28"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="29"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Width>8</Width>
+					<Wrap>false</Wrap>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="30"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАдресации" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адресация роли</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАдресацииExtendedTooltip" id="31"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресации" id="5">
+					<DataPath>Объект.ИспользуетсяБезОбъектовАдресации</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роль может назначаться исполнителям без указания других объектов адресации (основного или дополнительного).</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресацииКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресацииExtendedTooltip" id="32"/>
+				</CheckBoxField>
+				<CheckBoxField name="ИспользуетсяВКонтекстеДругихИзмеренийАдресации" id="7">
+					<DataPath>Объект.ИспользуетсяСОбъектамиАдресации</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роль может назначаться исполнителям с указанием определенных объектов адресации.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользуетсяВКонтекстеДругихИзмеренийАдресацииКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИспользуетсяВКонтекстеДругихИзмеренийАдресацииExtendedTooltip" id="33"/>
+					<Events>
+						<Event name="OnChange">ИспользуетсяВКонтекстеДругихИзмеренийАдресацииПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаТипыОбъектовАдресации" id="22">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТипыОбъектовАдресацииExtendedTooltip" id="34"/>
+					<ChildItems>
+						<InputField name="ТипыОсновногоОбъектаАдресации" id="18">
+							<DataPath>Объект.ТипыОсновногоОбъектаАдресации</DataPath>
+							<Wrap>false</Wrap>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ТипыОсновногоОбъектаАдресацииКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ТипыОсновногоОбъектаАдресацииExtendedTooltip" id="35"/>
+						</InputField>
+						<InputField name="ТипыДополнительногоОбъектаАдресации" id="20">
+							<DataPath>Объект.ТипыДополнительногоОбъектаАдресации</DataPath>
+							<Wrap>false</Wrap>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ТипыДополнительногоОбъектаАдресацииКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ТипыДополнительногоОбъектаАдресацииExtendedTooltip" id="36"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомментарий" id="27">
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомментарийExtendedTooltip" id="37"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="25">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.РолиИсполнителей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

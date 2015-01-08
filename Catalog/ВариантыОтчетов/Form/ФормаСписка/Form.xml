@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СписокИзменить" id="26">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изменить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СписокИзменитьExtendedTooltip" id="32"/>
+			</Button>
+			<Button name="СписокНайти" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокНайтиExtendedTooltip" id="33"/>
+			</Button>
+			<Button name="СписокОтменитьПоиск" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокОтменитьПоискExtendedTooltip" id="34"/>
+			</Button>
+			<Button name="СписокУстановитьПометкуУдаления" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокУстановитьПометкуУдаленияExtendedTooltip" id="35"/>
+			</Button>
+			<Button name="СписокОбновить" id="28">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокОбновитьExtendedTooltip" id="36"/>
+			</Button>
+			<Button name="СписокИзменитьФорму" id="29">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокИзменитьФормуExtendedTooltip" id="37"/>
+			</Button>
+			<Button name="СписокВключитьРазделы" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.НастроитьГруппировкуПоРазделам</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СписокВключитьРазделыExtendedTooltip" id="38"/>
+			</Button>
+			<Button name="ФормаСправка" id="31">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="39"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<SkipOnInput>false</SkipOnInput>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="40"/>
+			<SearchStringAddition name="СписокSearchString" id="41">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="42"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="43"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="44">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="45"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="46"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="47">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="48"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="49"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПредставлениеОбъекта" id="17">
+					<DataPath>Список.ПредставлениеОбъекта</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПредставлениеОбъектаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПредставлениеОбъектаExtendedTooltip" id="50"/>
+				</LabelField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование варинта</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="51"/>
+				</InputField>
+				<InputField name="ТипНастройки" id="8">
+					<DataPath>Список.ТипВариантаОтчета</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ТипНастройкиКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ТипНастройкиExtendedTooltip" id="52"/>
+				</InputField>
+				<InputField name="Администратор" id="15">
+					<DataPath>Список.Администратор</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="АдминистраторКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="АдминистраторExtendedTooltip" id="53"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаОписание" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОписаниеExtendedTooltip" id="54"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаИнфо" id="22">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка инфо</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаИнфоКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КартинкаИнфоExtendedTooltip" id="55"/>
+				</PictureDecoration>
+				<LabelField name="Описание" id="19">
+					<DataPath>Items.Список.CurrentData.Описание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Height>2</Height>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="56"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ВариантыОтчетов</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьГруппировкуПоРазделам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить группировку по разделам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить группировку по разделам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Раздел</Action>
+		</Command>
+	</Commands>
+</Form>

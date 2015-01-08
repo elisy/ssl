@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ОК" id="8">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ЗаполнитьДопПараметрыИВернуться</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОКExtendedTooltip" id="61"/>
+			</Button>
+			<Button name="Отмена" id="10">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="62"/>
+			</Button>
+			<Button name="Справка" id="9">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="63"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НастройкаПортовСервера" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порты сервера</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка портов сервера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="НастройкаПортовСервераExtendedTooltip" id="64"/>
+			<ChildItems>
+				<UsualGroup name="Порты" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПортыExtendedTooltip" id="65"/>
+					<ChildItems>
+						<InputField name="ПортPOP3" id="12">
+							<DataPath>ПортPOP3</DataPath>
+							<Width>6</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ПортPOP3КонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПортPOP3ExtendedTooltip" id="66"/>
+						</InputField>
+						<InputField name="ПортSMTP" id="14">
+							<DataPath>ПортSMTP</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Width>6</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ПортSMTPКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПортSMTPExtendedTooltip" id="67"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="ГруппаУстановитьПоУмолчанию" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа установить по умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа установить по умолчанию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ГруппаУстановитьПоУмолчаниюExtendedTooltip" id="68"/>
+					<ChildItems>
+						<Button name="УстановитьПортыПоУмолчанию" id="25">
+							<Type>CommandBarButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.УстановитьПортыПоУмолчанию</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УстановитьПортыПоУмолчаниюExtendedTooltip" id="69"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Дополнительно" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДополнительноExtendedTooltip" id="70"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаPOP3Аутентификация" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа POP3 аутентификация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа POP3 аутентификация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаPOP3АутентификацияExtendedTooltip" id="71"/>
+					<ChildItems>
+						<InputField name="СпособPOP3Аутентификации" id="48">
+							<DataPath>СпособPOP3Аутентификации</DataPath>
+							<Width>16</Width>
+							<Wrap>false</Wrap>
+							<ChoiceButton>false</ChoiceButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>APOP</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.СпособыPOP3Аутентификации.EnumValue.APOP</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Cram MD5</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.СпособыPOP3Аутентификации.EnumValue.CramMD5</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обычная</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.СпособыPOP3Аутентификации.EnumValue.Обычная</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="СпособPOP3АутентификацииКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="СпособPOP3АутентификацииExtendedTooltip" id="72"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОставлятьКопииСообщенийНаСервере" id="54">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОставлятьКопииСообщенийНаСервереExtendedTooltip" id="73"/>
+					<ChildItems>
+						<CheckBoxField name="ОставлятьКопииСообщенийНаСервере" id="52">
+							<DataPath>ОставлятьКопииСообщенийНаСервере</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОставлятьКопииСообщенийНаСервереКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ОставлятьКопииСообщенийНаСервереExtendedTooltip" id="74"/>
+							<Events>
+								<Event name="OnChange">ОставлятьКопииСообщенийНаСервереПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ОставлятьКопииСообщенийЧислоДней" id="50">
+							<DataPath>ОставлятьКопииСообщенийЧислоДней</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалять собщения с сервера через n дней</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оставлять копии сообщений на сервере</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<SpinButton>true</SpinButton>
+							<MinValue xsi:type="xs:decimal">1</MinValue>
+							<MaxValue xsi:type="xs:decimal">600</MaxValue>
+							<ContextMenu name="ОставлятьКопииСообщенийЧислоДнейКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ОставлятьКопииСообщенийЧислоДнейExtendedTooltip" id="75"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДлительностьОжидания" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа длительность ожидания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа длительность ожидания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДлительностьОжиданияExtendedTooltip" id="76"/>
+					<ChildItems>
+						<InputField name="ДлительностьОжиданияСервера" id="28">
+							<DataPath>ДлительностьОжиданияСервера</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ДлительностьОжиданияСервераКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ДлительностьОжиданияСервераExtendedTooltip" id="77"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="СерверИсходящейПочты" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервер исходящей почты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервер исходящей почты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="СерверИсходящейПочтыExtendedTooltip" id="78"/>
+					<ChildItems>
+						<CheckBoxField name="SMTPАутентификацияУстановлена" id="22">
+							<DataPath>SMTPАутентификацияУстановлена</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SMTPАутентификацияУстановленаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="SMTPАутентификацияУстановленаExtendedTooltip" id="79"/>
+							<Events>
+								<Event name="OnChange">SMTPАутентификацияУстановленаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<RadioButtonField name="SMTPАутентификация" id="38">
+							<DataPath>SMTPАутентификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Аналогично серверу входящей почты</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыSMTPАутентификации.EnumValue.АналогичноPOP3</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Задать параметры аутентификации</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыSMTPАутентификации.EnumValue.ЗадаетсяПараметрами</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Зайти на сервер входящей почты перед отправкой</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыSMTPАутентификации.EnumValue.POP3ПередSMTP</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="SMTPАутентификацияКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="SMTPАутентификацияExtendedTooltip" id="80"/>
+							<Events>
+								<Event name="OnChange">SMTPАутентификацияПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<Pages name="ГруппаАутентификацияSMTP" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификация SMTP</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификация SMTP</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаАутентификацияSMTPExtendedTooltip" id="81"/>
+							<ChildItems>
+								<Page name="ГруппаПустаяСтраница" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пустая страница</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пустая страница</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаПустаяСтраницаExtendedTooltip" id="82"/>
+									<ChildItems>
+										<LabelField name="ПустоеПоле" id="45">
+											<DataPath>ПустойРеквизит</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ПустоеПолеКонтекстноеМеню" id="46"/>
+											<ExtendedTooltip name="ПустоеПолеExtendedTooltip" id="83"/>
+										</LabelField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаПараметры" id="1">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>STMP аутентификация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Требуется STMP аутентификация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаПараметрыExtendedTooltip" id="84"/>
+									<ChildItems>
+										<InputField name="ПользовательSMTP" id="4">
+											<DataPath>ПользовательSMTP</DataPath>
+											<Width>15</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<ContextMenu name="ПользовательSMTPКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="ПользовательSMTPExtendedTooltip" id="85"/>
+										</InputField>
+										<InputField name="ПарольSMTP" id="2">
+											<DataPath>ПарольSMTP</DataPath>
+											<Width>15</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="3"/>
+											<ExtendedTooltip name="ПарольSMTPExtendedTooltip" id="86"/>
+										</InputField>
+										<InputField name="СпособSMTPАутентификации" id="6">
+											<DataPath>СпособSMTPАутентификации</DataPath>
+											<Width>15</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>CramMD5</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СпособыSMTPАутентификации.EnumValue.CramMD5</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Login</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СпособыSMTPАутентификации.EnumValue.Login</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Plain</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СпособыSMTPАутентификации.EnumValue.Plain</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По умолчанию</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СпособыSMTPАутентификации.EnumValue.ПоУмолчанию</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ChoiceListButton>true</ChoiceListButton>
+											<ContextMenu name="СпособSMTPАутентификацииКонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="СпособSMTPАутентификацииExtendedTooltip" id="87"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СпособSMTPАутентификации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ SMTP аутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СпособыSMTPАутентификации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательSMTP" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь SMTP</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольSMTP" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль SMTP</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортSMTP" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>SMTP-сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортPOP3" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>POP3-сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СпособPOP3Аутентификации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>POP3 аутентификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СпособыPOP3Аутентификации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SMTPАутентификацияУстановлена" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>SMTP серверу требуется проверка подлинности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДлительностьОжиданияСервера" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длительность ожидания сервера (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ОставлятьКопииСообщенийЧислоДней" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оставлять копии сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Подпись" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подпись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SMTPАутентификация" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>SMTPАутентификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВариантыSMTPАутентификации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодписьДлительностьОжидания" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подпись длительность ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПустойРеквизит" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пустой реквизит</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОставлятьКопииСообщенийНаСервере" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оставлять копии сообщений на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокSMTPАутентификация_СП" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список значений перечислений SMTPАутентификация. Используется для оптимизации обращений к перечислению SMTPАутентификация.</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокСпособSMTPАутентификации_СП" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список способ SMTPАутентификации СП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ссылка" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьДопПараметрыИВернуться" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить параметры и вернуться к основной форме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДопПараметрыИВернутьсяВыполнить</Action>
+		</Command>
+		<Command name="УстановитьПортыПоУмолчанию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить порты по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьПортыПоУмолчаниюВыполнить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Ссылка">
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

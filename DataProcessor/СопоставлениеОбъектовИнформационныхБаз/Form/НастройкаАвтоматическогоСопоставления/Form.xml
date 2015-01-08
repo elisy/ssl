@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокПолейСопоставления" id="1">
+			<Representation>List</Representation>
+			<SkipOnInput>false</SkipOnInput>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>СписокПолейСопоставления</DataPath>
+			<RowPictureDataPath>СписокПолейСопоставления.Picture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Pickup</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="СписокПолейСопоставленияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокПолейСопоставленияКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокПолейСопоставленияExtendedTooltip" id="12"/>
+			<SearchStringAddition name="СписокПолейСопоставленияSearchString" id="13">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПолейСопоставленияSearchStringContextMenu" id="14"/>
+				<ExtendedTooltip name="СписокПолейСопоставленияSearchStringExtendedTooltip" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПолейСопоставленияViewStatus" id="16">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПолейСопоставленияViewStatusContextMenu" id="17"/>
+				<ExtendedTooltip name="СписокПолейСопоставленияViewStatusExtendedTooltip" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПолейСопоставленияSearchControl" id="19">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПолейСопоставленияSearchControlContextMenu" id="20"/>
+				<ExtendedTooltip name="СписокПолейСопоставленияSearchControlExtendedTooltip" id="21"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="СписокПолейСопоставленияПометка" id="6">
+					<DataPath>СписокПолейСопоставления.Check</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокПолейСопоставленияПометкаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="СписокПолейСопоставленияПометкаExtendedTooltip" id="22"/>
+				</CheckBoxField>
+				<InputField name="СписокПолейСопоставленияЗначение" id="4">
+					<DataPath>СписокПолейСопоставления.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокПолейСопоставленияЗначениеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СписокПолейСопоставленияЗначениеExtendedTooltip" id="23"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ПанельКнопок" id="11">
+			<EnableContentChange>true</EnableContentChange>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ПанельКнопокExtendedTooltip" id="24"/>
+			<ChildItems>
+				<Button name="ВыполнитьСопоставление" id="8">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.ВыполнитьСопоставление</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ВыполнитьСопоставлениеExtendedTooltip" id="25"/>
+				</Button>
+				<Button name="Отмена" id="9">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.Отмена</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ОтменаExtendedTooltip" id="26"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокПолейСопоставления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список полей сопоставления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьСопоставление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить сопоставление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить сопоставление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьСопоставление</Action>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>

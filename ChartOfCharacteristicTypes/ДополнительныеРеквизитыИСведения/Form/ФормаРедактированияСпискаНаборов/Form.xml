@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Наборы</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Завершить" id="9">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Завершить</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ЗавершитьExtendedTooltip" id="11"/>
+			</Button>
+			<Button name="Отмена" id="10">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="12"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоНаборов" id="1">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<SelectionMode>SingleRow</SelectionMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>ДеревоНаборов</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоНаборовКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДеревоНаборовКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ДеревоНаборовExtendedTooltip" id="13"/>
+			<SearchStringAddition name="ДеревоНаборовSearchString" id="14">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоНаборовSearchStringContextMenu" id="15"/>
+				<ExtendedTooltip name="ДеревоНаборовSearchStringExtendedTooltip" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоНаборовViewStatus" id="17">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоНаборовViewStatusContextMenu" id="18"/>
+				<ExtendedTooltip name="ДеревоНаборовViewStatusExtendedTooltip" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоНаборовSearchControl" id="20">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоНаборовSearchControlContextMenu" id="21"/>
+				<ExtendedTooltip name="ДеревоНаборовSearchControlExtendedTooltip" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="Группа" id="8">
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаExtendedTooltip" id="23"/>
+					<ChildItems>
+						<CheckBoxField name="Выбран" id="4">
+							<DataPath>ДеревоНаборов.Выбран</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ThreeState>true</ThreeState>
+							<ContextMenu name="ВыбранКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ВыбранExtendedTooltip" id="24"/>
+							<Events>
+								<Event name="OnChange">ВыбранПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="Набор" id="6">
+							<DataPath>ДеревоНаборов.Набор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Wrap>false</Wrap>
+							<ContextMenu name="НаборКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="НаборExtendedTooltip" id="25"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДеревоНаборов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево наборов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Выбран" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Набор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НаборыДополнительныхРеквизитовИСведений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="БылаНажатаКлавишаЗакрытия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Была нажата клавиша закрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Завершить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗавершитьВыполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Close</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтменаВыполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ВыбранныеНаборы">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ЭтоДополнительноеСведение">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

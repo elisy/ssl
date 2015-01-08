@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обмен с информационной базой</v8:content>
+		</v8:item>
+	</Title>
+	<Width>70</Width>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ВыполнитьОбменДанными" id="10">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ВыполнитьОбменДанными</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ВыполнитьОбменДаннымиExtendedTooltip" id="58"/>
+			</Button>
+			<Button name="Закрыть" id="50">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="59"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ВидТранспортаСообщенийОбмена" id="7">
+			<DataPath>ВидТранспортаСообщенийОбмена</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ChoiceButton>false</ChoiceButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceListButton>true</ChoiceListButton>
+			<ContextMenu name="ВидТранспортаСообщенийОбменаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВидТранспортаСообщенийОбменаExtendedTooltip" id="60"/>
+			<Events>
+				<Event name="OnChange">ВидТранспортаСообщенийОбменаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Button name="ОткрытьКаталогОбменаИнформацией" id="57">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.ОткрытьКаталогОбменаИнформацией</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="ОткрытьКаталогОбменаИнформациейExtendedTooltip" id="61"/>
+		</Button>
+		<Button name="НастроитьПараметрыТранспортаСообщенийОбмена" id="45">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.НастроитьПараметрыТранспортаСообщенийОбмена</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="НастроитьПараметрыТранспортаСообщенийОбменаExtendedTooltip" id="62"/>
+		</Button>
+		<UsualGroup name="ГруппаОсновная" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="63"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЗагрузкиДанных" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузки данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузки данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗагрузкиДанныхExtendedTooltip" id="64"/>
+					<ChildItems>
+						<Pages name="СтраницыСтатусаЗагрузкиДанных" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы статуса загрузки данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы статуса загрузки данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыСтатусаЗагрузкиДанныхExtendedTooltip" id="65"/>
+							<ChildItems>
+								<Page name="СтатусЗагрузкиНеопределено" id="24">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусЗагрузкиНеопределеноExtendedTooltip" id="66"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаНеопределено" id="41">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка неопределено</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="КартинкаНеопределеноКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="КартинкаНеопределеноExtendedTooltip" id="67"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтатусЗагрузкиУспех" id="25">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки успех</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусЗагрузкиУспехExtendedTooltip" id="68"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаУспех" id="27">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка успех</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.СостояниеОбменаДаннымиУспех</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаУспехКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="КартинкаУспехExtendedTooltip" id="69"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтатусЗагрузкиОшибка" id="26">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки ошибка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусЗагрузкиОшибкаExtendedTooltip" id="70"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаОшибка" id="29">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.СостояниеОбменаДаннымиОшибка</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаОшибкаКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="КартинкаОшибкаExtendedTooltip" id="71"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтатусЗагрузкиПредупреждение" id="54">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки предупреждение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусЗагрузкиПредупреждениеExtendedTooltip" id="72"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаПредупреждение1" id="55">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.Внимание</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаПредупреждение1КонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="КартинкаПредупреждение1ExtendedTooltip" id="73"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<Button name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="44">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</CommandName>
+							<Parameter xsi:nil="true"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>События загрузки данных</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхExtendedTooltip" id="74"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыгрузкиДанных" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выгрузки данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузки данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыгрузкиДанныхExtendedTooltip" id="75"/>
+					<ChildItems>
+						<Pages name="СтраницыСтатусаВыгрузкиДанных" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы статуса выгрузки данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы статуса выгрузки данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыСтатусаВыгрузкиДанныхExtendedTooltip" id="76"/>
+							<ChildItems>
+								<Page name="СтатусВыгрузкиНеопределено" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус выгрузки неопределено</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусВыгрузкиНеопределеноExtendedTooltip" id="77"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаНеопределено1" id="39">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка неопределено</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="КартинкаНеопределено1КонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="КартинкаНеопределено1ExtendedTooltip" id="78"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтатусВыгрузкиУспех" id="33">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус выгрузки успех</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусВыгрузкиУспехExtendedTooltip" id="79"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаУспех1" id="34">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка успех</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.СостояниеОбменаДаннымиУспех</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаУспех1КонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="КартинкаУспех1ExtendedTooltip" id="80"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтатусВыгрузкиОшибка" id="36">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус выгрузки ошибка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусВыгрузкиОшибкаExtendedTooltip" id="81"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаОшибка1" id="37">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.СостояниеОбменаДаннымиОшибка</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаОшибка1КонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="КартинкаОшибка1ExtendedTooltip" id="82"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтатусВыгрузкиПредупреждение" id="51">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус выгрузки предупреждение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус загрузки неопределено</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтатусВыгрузкиПредупреждениеExtendedTooltip" id="83"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаПредупреждение" id="52">
+											<Width>2</Width>
+											<Height>1</Height>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.Внимание</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаПредупреждениеКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="КартинкаПредупреждениеExtendedTooltip" id="84"/>
+										</PictureDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<Button name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="43">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</CommandName>
+							<Parameter xsi:nil="true"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>События выгрузки данных</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхExtendedTooltip" id="85"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="УзелИнформационнойБазы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с информационной базой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидТранспортаСообщенийОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Укажите способ обмена данными</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыТранспортаСообщенийОбмена</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатЗагрузкиДанных" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатВыгрузкиДанных" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьОбменДанными" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен данными</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВыполнитьЗапускОбменаДанными</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="7" y="5"/>
+			</Picture>
+			<Action>ВыполнитьОбменДанными</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в журнал регистрации событий выгрузки данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в журнал регистрации событий выгрузки данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</Action>
+		</Command>
+		<Command name="ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в журнал регистрации событий загрузки данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в журнал регистрации событий загрузки данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</Action>
+		</Command>
+		<Command name="НастроитьПараметрыТранспортаСообщенийОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить параметры транспорта сообщений обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить параметры транспорта сообщений обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПараметрыОбменаДанными</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьПараметрыТранспортаСообщенийОбмена</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьКаталогОбменаИнформацией" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог обмена информацией</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог обмена информацией</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКаталогОбменаИнформацией</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

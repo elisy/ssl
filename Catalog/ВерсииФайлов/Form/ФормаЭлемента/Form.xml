@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="48"/>
+			<ChildItems>
+				<Button name="Открыть" id="26">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.Открыть</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="ОткрытьExtendedTooltip" id="49"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<InputField name="Владелец" id="6">
+			<DataPath>Объект.Owner</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ВладелецExtendedTooltip" id="50"/>
+		</InputField>
+		<UsualGroup name="НаименованиеКод" id="31">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НаименованиеКодExtendedTooltip" id="51"/>
+			<ChildItems>
+				<InputField name="ПолноеНаименование" id="29">
+					<DataPath>Объект.ПолноеНаименование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПолноеНаименованиеExtendedTooltip" id="52"/>
+					<Events>
+						<Event name="OnChange">ПолноеНаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Код" id="2">
+					<DataPath>Объект.Code</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодКонтекстноеМеню" id="3"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="53"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="РодительскаяВерсия" id="33">
+			<DataPath>Объект.РодительскаяВерсия</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Wrap>false</Wrap>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Отбор.Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Объект.Owner</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<ContextMenu name="РодительскаяВерсияКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="РодительскаяВерсияExtendedTooltip" id="54"/>
+		</InputField>
+		<UsualGroup name="РасширениеКартинка" id="32">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение картинка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РасширениеКартинкаExtendedTooltip" id="55"/>
+			<ChildItems>
+				<InputField name="Размер" id="8">
+					<DataPath>Объект.Размер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="РазмерКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="РазмерExtendedTooltip" id="56"/>
+				</InputField>
+				<InputField name="Расширение" id="10">
+					<DataPath>Объект.Расширение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="РасширениеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РасширениеExtendedTooltip" id="57"/>
+				</InputField>
+				<PictureField name="Картинка" id="20">
+					<DataPath>Объект.ИндексКартинки</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ПиктограммыФайлов</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:TransparentPixel x="10" y="10"/>
+					</ValuesPicture>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+					</Border>
+					<ContextMenu name="КартинкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КартинкаExtendedTooltip" id="58"/>
+				</PictureField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="12">
+			<DataPath>Объект.Комментарий</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий к версии</v8:content>
+				</v8:item>
+			</Title>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Height>2</Height>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="59"/>
+		</InputField>
+		<InputField name="Автор" id="14">
+			<DataPath>Объект.Автор</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор версии</v8:content>
+				</v8:item>
+			</Title>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="АвторКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="АвторExtendedTooltip" id="60"/>
+		</InputField>
+		<UsualGroup name="ДатаИНомер" id="35">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и номер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДатаИНомерExtendedTooltip" id="61"/>
+			<ChildItems>
+				<InputField name="ДатаСоздания" id="16">
+					<DataPath>Объект.ДатаСоздания</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="62"/>
+				</InputField>
+				<InputField name="НомерВерсии" id="36">
+					<DataPath>Объект.НомерВерсии</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="НомерВерсииКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="НомерВерсииExtendedTooltip" id="63"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаХранение" id="38">
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа хранение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа хранение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаХранениеExtendedTooltip" id="64"/>
+			<ChildItems>
+				<InputField name="ТипХраненияФайла" id="39">
+					<DataPath>Объект.ТипХраненияФайла</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ТипХраненияФайлаКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ТипХраненияФайлаExtendedTooltip" id="65"/>
+				</InputField>
+				<UsualGroup name="ГруппаТом" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа том</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа том</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТомExtendedTooltip" id="66"/>
+					<ChildItems>
+						<InputField name="Том" id="41">
+							<DataPath>Объект.Том</DataPath>
+							<UserVisible>
+								<xr:Common>true</xr:Common>
+								<xr:Value name="">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+								<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+								<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+								<xr:Value name="Role.Администрирование">false</xr:Value>
+								<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+								<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+								<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+								<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+								<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+								<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+								<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+								<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+								<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+								<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+								<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+								<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+								<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+								<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+								<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+								<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+								<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+								<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+							</UserVisible>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ТомКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ТомExtendedTooltip" id="67"/>
+						</InputField>
+						<InputField name="ТомПолныйПуть" id="45">
+							<DataPath>ТомПолныйПуть</DataPath>
+							<UserVisible>
+								<xr:Common>true</xr:Common>
+								<xr:Value name="">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+								<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+								<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+								<xr:Value name="Role.Администрирование">false</xr:Value>
+								<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+								<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+								<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+								<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+								<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+								<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+								<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+								<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+								<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+								<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+								<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+								<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+								<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+								<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+								<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+								<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+								<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+								<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+								<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+							</UserVisible>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Полный путь тома</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТомПолныйПутьКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ТомПолныйПутьExtendedTooltip" id="68"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ПутьКФайлу" id="43">
+					<DataPath>Объект.ПутьКФайлу</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ПутьКФайлуExtendedTooltip" id="69"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВерсииФайлов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.ТекстХранилище</Field>
+				<Field>Объект.ФайлХранилище</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ТомПолныйПуть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Том полный путь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Открыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОткрыть</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьВыполнить</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>2:40e2fb30-bb03-4178-a8eb-ddf48337ef23</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

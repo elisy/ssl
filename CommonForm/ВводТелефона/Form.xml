@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ПредставлениеСВидом" id="16">
+			<DataPath>ПредставлениеСВидом</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ContextMenu name="ПредставлениеСВидомКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПредставлениеСВидомExtendedTooltip" id="20"/>
+		</LabelField>
+		<InputField name="КодСтраны" id="1">
+			<DataPath>КодСтраны</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код &amp;страны</v8:content>
+				</v8:item>
+			</Title>
+			<Wrap>false</Wrap>
+			<Mask>#####</Mask>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="КодСтраныКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодСтраныExtendedTooltip" id="21"/>
+			<Events>
+				<Event name="OnChange">ПолеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="КодГорода" id="3">
+			<DataPath>КодГорода</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&amp;Код города</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<Wrap>false</Wrap>
+			<Mask>#######</Mask>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="КодГородаКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="КодГородаExtendedTooltip" id="22"/>
+			<Events>
+				<Event name="OnChange">ПолеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="НомерТелефона" id="5">
+			<DataPath>НомерТелефона</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&amp;Номер телефона</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="НомерТелефонаExtendedTooltip" id="23"/>
+			<Events>
+				<Event name="OnChange">ПолеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Добавочный" id="7">
+			<DataPath>Добавочный</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&amp;Добавочный номер</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<Wrap>false</Wrap>
+			<Mask>#####</Mask>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="ДобавочныйКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДобавочныйExtendedTooltip" id="24"/>
+			<Events>
+				<Event name="OnChange">ПолеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Комментарий" id="18">
+			<DataPath>Комментарий</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="25"/>
+			<Events>
+				<Event name="OnChange">ПолеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CommandBar name="Группа" id="13">
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="26"/>
+			<ChildItems>
+				<Button name="КомандаОК" id="14">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаОК</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="КомандаОКExtendedTooltip" id="27"/>
+				</Button>
+				<Button name="КомандаОтмена" id="15">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаОтмена</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="28"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КодСтраны" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код страны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодГорода" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код города</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НомерТелефона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер телефона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Добавочный" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавочный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Представление" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПредставлениеСВидом" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление с видом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеВида" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование вида</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БылиНажатыКнопкиЗакрытия" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Были нажаты кнопки закрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Комментарий" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОКВыполнить</Action>
+		</Command>
+		<Command name="КомандаОтмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтменаВыполнить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ЗначенияПолей">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Представление">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Вид">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыКонтактнойИнформации</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="БылиВнесеныИзменения">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Заголовок">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

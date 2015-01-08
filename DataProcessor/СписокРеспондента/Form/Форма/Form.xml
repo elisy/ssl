@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Доступные анкеты</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Респондент" id="1">
+			<DataPath>Объект.Респондент</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РеспондентКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="РеспондентExtendedTooltip" id="13"/>
+			<Events>
+				<Event name="OnChange">РеспондентПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="ДеревоАнкет" id="3">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<Header>false</Header>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоАнкет</DataPath>
+			<RowPictureDataPath>ДеревоАнкет.КодКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.КоллекцияКартинокДоступныеАнкеты</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоАнкетКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ДеревоАнкетКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоАнкетExtendedTooltip" id="14"/>
+			<SearchStringAddition name="ДеревоАнкетSearchString" id="15">
+				<Source>
+					<lf:elementId>3</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоАнкетSearchStringContextMenu" id="16"/>
+				<ExtendedTooltip name="ДеревоАнкетSearchStringExtendedTooltip" id="17"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоАнкетViewStatus" id="18">
+				<Source>
+					<lf:elementId>3</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоАнкетViewStatusContextMenu" id="19"/>
+				<ExtendedTooltip name="ДеревоАнкетViewStatusExtendedTooltip" id="20"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоАнкетSearchControl" id="21">
+				<Source>
+					<lf:elementId>3</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоАнкетSearchControlContextMenu" id="22"/>
+				<ExtendedTooltip name="ДеревоАнкетSearchControlExtendedTooltip" id="23"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeRowChange">ДеревоАнкетПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоАнкетПредставление" id="10">
+					<DataPath>ДеревоАнкет.Представление</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоАнкетПредставлениеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДеревоАнкетПредставлениеExtendedTooltip" id="24"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="АрхивАнкет" id="12">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.АрхивАнкет</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="АрхивАнкетExtendedTooltip" id="25"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СписокРеспондента</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоАнкет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево анкет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Статус" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="АнкетаОпрос" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анкета опрос</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Анкета</v8:Type>
+						<v8:Type>cfg:DocumentRef.НазначениеОпросов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодКартинки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="АрхивАнкет" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архив анкет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архив анкет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АрхивАнкет</Action>
+		</Command>
+	</Commands>
+</Form>

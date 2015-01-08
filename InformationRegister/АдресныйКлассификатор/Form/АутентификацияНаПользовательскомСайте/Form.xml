@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Продолжить" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.СохранитьДанныеАутентификацииИПродолжить</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ПродолжитьExtendedTooltip" id="14"/>
+			</Button>
+			<Button name="Отмена" id="3">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="15"/>
+			</Button>
+			<Button name="Справка" id="2">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="16"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КодПользователя" id="10">
+			<DataPath>КодПользователя</DataPath>
+			<Wrap>false</Wrap>
+			<ContextMenu name="КодПользователяКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КодПользователяExtendedTooltip" id="17"/>
+		</InputField>
+		<InputField name="Пароль" id="8">
+			<DataPath>Пароль</DataPath>
+			<Wrap>false</Wrap>
+			<PasswordMode>true</PasswordMode>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ПарольExtendedTooltip" id="18"/>
+		</InputField>
+		<CheckBoxField name="СохранятьПароль" id="4">
+			<DataPath>СохранятьПароль</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СохранятьПарольКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СохранятьПарольExtendedTooltip" id="19"/>
+		</CheckBoxField>
+		<LabelField name="СсылкаНаПользовательскийСайт" id="12">
+			<DataPath>СсылкаНаПользовательскийСайт</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="СсылкаНаПользовательскийСайтКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="СсылкаНаПользовательскийСайтExtendedTooltip" id="20"/>
+			<Events>
+				<Event name="Click">СсылкаНаПользовательскийСайтНажатие</Event>
+			</Events>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Пароль" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СохранятьПароль" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранять пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодПользователя" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНаПользовательскийСайт" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на пользовательский сайт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьДанныеАутентификацииИПродолжить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить данные аутентификации и продолжить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+			</Use>
+			<Action>СохранитьДанныеАутентификацииИПродолжитьВыполнить</Action>
+		</Command>
+	</Commands>
+</Form>
