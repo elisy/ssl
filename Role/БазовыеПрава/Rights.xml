@@ -149,6 +149,13 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ВидыКонтактнойИнформации</name>
 		<right>
 			<name>Read</name>
@@ -321,6 +328,13 @@
 		<name>CommonForm.ВыборПутиКАрхивуФайловТомов</name>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.ОбменВнешнимиЗаданиями</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>

@@ -24,7 +24,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>96633537-96d9-4113-8593-6bd21eba806e</xr:ObjectId>
+				<xr:ObjectId>9ea9fdc5-e76c-4298-854e-d5bc13a591bc</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -43,7 +43,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>1.1.2.3</Version>
+			<Version>1.1.3.1</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -279,6 +279,8 @@
 			<CommonPicture>УдалитьПользовательскийМакет</CommonPicture>
 			<CommonPicture>ЭлектронноеПисьмоВходящее</CommonPicture>
 			<CommonPicture>ЭлектронноеПисьмоИсходящее</CommonPicture>
+			<CommonPicture>ЗаполнитьПоОснованию</CommonPicture>
+			<CommonPicture>КартинкаОбновитьИзФайлаНаДиске</CommonPicture>
 			<SessionParameter>ВидыДоступаБезГруппЗначенияДоступа</SessionParameter>
 			<SessionParameter>ВидыДоступаБезОграничения</SessionParameter>
 			<SessionParameter>ВидыДоступаЕдинственныеДляТипаЗначенияДоступа</SessionParameter>
@@ -363,6 +365,7 @@
 			<CommonModule>АнкетированиеКлиентСервер</CommonModule>
 			<CommonModule>БизнесПроцессыИЗадачиВызовСервера</CommonModule>
 			<CommonModule>БизнесПроцессыИЗадачиКлиент</CommonModule>
+			<CommonModule>БизнесПроцессыИЗадачиКлиентПереопределяемый</CommonModule>
 			<CommonModule>БизнесПроцессыИЗадачиПереопределяемый</CommonModule>
 			<CommonModule>БизнесПроцессыИЗадачиСервер</CommonModule>
 			<CommonModule>БизнесПроцессыИЗадачиСобытия</CommonModule>
@@ -379,6 +382,8 @@
 			<CommonModule>ВзаимодействияКлиентСервер</CommonModule>
 			<CommonModule>ВзаимодействияКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>ВзаимодействияПереопределяемый</CommonModule>
+			<CommonModule>ВнешниеЗадачиВызовСервера</CommonModule>
+			<CommonModule>ВнешниеЗадачиПереопределяемыйВызовСервера</CommonModule>
 			<CommonModule>ВнешниеПользователи</CommonModule>
 			<CommonModule>ГрупповоеИзменениеОбъектовКлиент</CommonModule>
 			<CommonModule>ДатыЗапретаИзменения</CommonModule>
@@ -402,6 +407,8 @@
 			<CommonModule>НастройкаПорядкаЭлементов</CommonModule>
 			<CommonModule>НастройкаПорядкаЭлементовКлиент</CommonModule>
 			<CommonModule>НастройкаПорядкаЭлементовСобытия</CommonModule>
+			<CommonModule>ОбменВнешнимиЗаданиямиСервер</CommonModule>
+			<CommonModule>ОбменВнешнимиЗаданиямиСобытия</CommonModule>
 			<CommonModule>ОбменДаннымиКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
 			<CommonModule>ОбменДаннымиПовтИсп</CommonModule>
@@ -444,6 +451,12 @@
 			<CommonModule>ПрисоединенныеФайлыКлиент</CommonModule>
 			<CommonModule>ПрисоединенныеФайлыСобытия</CommonModule>
 			<CommonModule>ПроверкаЛегальностиПолученияОбновленияКлиент</CommonModule>
+			<CommonModule>РаботаС1СДокументооборот</CommonModule>
+			<CommonModule>РаботаС1СДокументооборотВызовСервера</CommonModule>
+			<CommonModule>РаботаС1СДокументооборотКлиент</CommonModule>
+			<CommonModule>РаботаС1СДокументооборотКлиентПовтИсп</CommonModule>
+			<CommonModule>РаботаС1СДокументооборотПереопределяемый</CommonModule>
+			<CommonModule>РаботаС1СДокументооборотПовтИсп</CommonModule>
 			<CommonModule>РаботаСБиблиотекойФайлов</CommonModule>
 			<CommonModule>РаботаСБиблиотекойФайловПереопределяемый</CommonModule>
 			<CommonModule>РаботаСКурсамиВалют</CommonModule>
@@ -453,6 +466,7 @@
 			<CommonModule>РаботаСПочтовымиСообщениями</CommonModule>
 			<CommonModule>РаботаСПочтовымиСообщениямиКлиент</CommonModule>
 			<CommonModule>РаботаСФайламиВызовСервера</CommonModule>
+			<CommonModule>РаботаСФайламиВызовСервераПереопределяемый</CommonModule>
 			<CommonModule>РаботаСФайламиКлиент</CommonModule>
 			<CommonModule>РаботаСФайламиКлиентПовтИсп</CommonModule>
 			<CommonModule>РаботаСФайламиКлиентСервер</CommonModule>
@@ -500,6 +514,7 @@
 			<CommonModule>ФайловыеФункцииКлиентПовтИсп</CommonModule>
 			<CommonModule>ФайловыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>ФайловыеФункцииПереопределяемый</CommonModule>
+			<CommonModule>ФайловыеФункцииПовтИсп</CommonModule>
 			<CommonModule>ФизическиеЛица</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиент</CommonModule>
 			<CommonModule>ФизическиеЛицаПереопределяемый</CommonModule>
@@ -509,6 +524,8 @@
 			<CommonModule>ЭлектроннаяЦифроваяПодписьКлиент</CommonModule>
 			<CommonModule>ЭлектроннаяЦифроваяПодписьКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяЦифроваяПодписьПовтИсп</CommonModule>
+			<ExchangePlan>ОбменВнешнимиЗаданиями</ExchangePlan>
+			<ExchangePlan>ОбменВнешнимиЗаданиямиС1СДокументооборот</ExchangePlan>
 			<XDTOPackage>Files</XDTOPackage>
 			<WebService>Files</WebService>
 			<EventSubscription>ЗаписатьВСписокБизнесПроцессов</EventSubscription>
@@ -516,6 +533,10 @@
 			<EventSubscription>ЗаписатьЗависимыеНаборыЗначенийДоступа</EventSubscription>
 			<EventSubscription>ЗаписатьНаборыЗначенийДоступа</EventSubscription>
 			<EventSubscription>ЗаполнитьКонтактнуюИнформацию</EventSubscription>
+			<EventSubscription>ОбменДаннымиОбменВнешнимиЗаданиямиПередЗаписью</EventSubscription>
+			<EventSubscription>ОбменДаннымиОбменВнешнимиЗаданиямиПередУдалением</EventSubscription>
+			<EventSubscription>ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередЗаписью</EventSubscription>
+			<EventSubscription>ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередУдалением</EventSubscription>
 			<EventSubscription>ОбменДаннымиПередЗаписьюУзлаПланаОбмена</EventSubscription>
 			<EventSubscription>ОбменДаннымиПередУдалениемУзлаПланаОбмена</EventSubscription>
 			<EventSubscription>ОбновитьПредставлениеВнешнегоПользователя</EventSubscription>
@@ -523,6 +544,8 @@
 			<EventSubscription>ПрисоединенныйФайлПередЗаписьюВзаимодействия</EventSubscription>
 			<EventSubscription>ПрисоединенныйФайлПередУдалениемВзаимодействия</EventSubscription>
 			<EventSubscription>ПрисоединенныйФайлПриЗаписиВзаимодействия</EventSubscription>
+			<EventSubscription>СтартВнешнегоЗаданияПередЗаписьюЗадач</EventSubscription>
+			<EventSubscription>СтартВнешнегоЗаданияПриЗаписиЗадач</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияЗадач</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияПрисоединенныхФайловВзаимодействия</EventSubscription>
 			<ScheduledJob>ВыполнениеОбменаДанными</ScheduledJob>
@@ -560,6 +583,8 @@
 			<FunctionalOption>ИспользоватьДополнительныеОтчетыИОбработкиПечатныеФормы</FunctionalOption>
 			<FunctionalOption>ИспользоватьДополнительныеОтчетыИОбработкиСозданиеСвязанныхОбъектов</FunctionalOption>
 			<FunctionalOption>ИспользоватьДополнительныеРеквизитыИСведения</FunctionalOption>
+			<FunctionalOption>ИспользоватьИнтеграциюКонфигураций</FunctionalOption>
+			<FunctionalOption>ИспользоватьИнтеграциюС1СДокументооборот</FunctionalOption>
 			<FunctionalOption>ИспользоватьОбменДанными</FunctionalOption>
 			<FunctionalOption>ИспользоватьПодчиненныеБизнесПроцессы</FunctionalOption>
 			<FunctionalOption>ИспользоватьПолнотекстовыйПоиск</FunctionalOption>
@@ -601,12 +626,18 @@
 			<CommonCommand>СтруктураПодчиненности</CommonCommand>
 			<CommonCommand>УстановитьРасширениеРаботыСФайлами</CommonCommand>
 			<CommonCommand>ФайлыВТоме</CommonCommand>
+			<CommonCommand>ДокументооборотДокументы</CommonCommand>
+			<CommonCommand>ДокументооборотЗадачи</CommonCommand>
+			<CommonCommand>ДокументооборотСоздатьБизнесПроцесс</CommonCommand>
+			<CommonCommand>ДокументооборотФайлы</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
 			<CommandGroup>ВыполнениеОбменаДанными</CommandGroup>
 			<CommandGroup>ПараметрыОбменаДанными</CommandGroup>
 			<CommandGroup>Печать</CommandGroup>
+			<CommandGroup>Документооборот</CommandGroup>
 			<Constant>URLБиблиотекиФайлов</Constant>
 			<Constant>АдресатыПолученияОтчетаПоЖурналуРегистрации</Constant>
+			<Constant>АдресВебСервиса1СДокументооборот</Constant>
 			<Constant>АлгоритмПодписи</Constant>
 			<Constant>АлгоритмХеширования</Constant>
 			<Constant>АлгоритмШифрования</Constant>
@@ -616,6 +647,7 @@
 			<Constant>ДатаУведомленияОНовыхЗадачах</Constant>
 			<Constant>ЗаголовокСистемы</Constant>
 			<Constant>ЗапретЗагрузкиФайловПоРасширению</Constant>
+			<Constant>ИдентификаторКорневойПапкиФайлов1СДокументооборот</Constant>
 			<Constant>ИзвлекатьТекстыФайловНаСервере</Constant>
 			<Constant>ИзменятьЗаданияЗаднимЧислом</Constant>
 			<Constant>ИмяПользователяБиблиотекиФайлов</Constant>
@@ -624,17 +656,21 @@
 			<Constant>ИспользоватьБизнесПроцессыИЗадачи</Constant>
 			<Constant>ИспользоватьВерсионированиеОбъектов</Constant>
 			<Constant>ИспользоватьВзаимодействия</Constant>
+			<Constant>ИспользоватьВнешниеЗадачи</Constant>
 			<Constant>ИспользоватьВнешнихПользователей</Constant>
 			<Constant>ИспользоватьГруппыПользователей</Constant>
 			<Constant>ИспользоватьДатуИВремяВСрокахЗадач</Constant>
 			<Constant>ИспользоватьДатуНачалаЗадач</Constant>
 			<Constant>ИспользоватьДополнительныеРеквизитыИСведения</Constant>
+			<Constant>ИспользоватьИнтеграциюС1СДокументооборот</Constant>
 			<Constant>ИспользоватьОбменДанными</Constant>
 			<Constant>ИспользоватьПодчиненныеБизнесПроцессы</Constant>
 			<Constant>ИспользоватьПолнотекстовыйПоиск</Constant>
 			<Constant>ИспользоватьЭлектронныеЦифровыеПодписи</Constant>
 			<Constant>КодКорневойПапкиБиблиотекиФайлов</Constant>
 			<Constant>МаксимальныйРазмерФайла</Constant>
+			<Constant>МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</Constant>
+			<Constant>НаименованиеКорневойПапкиФайлов1СДокументооборот</Constant>
 			<Constant>НастройкаПодчиненногоУзлаРИБЗавершена</Constant>
 			<Constant>НастройкаПроксиСервера</Constant>
 			<Constant>НастройкиПодчиненногоУзлаРИБ</Constant>
@@ -647,6 +683,7 @@
 			<Constant>СтатусОбновленияКонфигурации</Constant>
 			<Constant>ТипПровайдераЭЦП</Constant>
 			<Constant>ТипХраненияФайлов</Constant>
+			<CommonForm>АвторизацияВ1СДокументооборот</CommonForm>
 			<CommonForm>АдреснаяКнига</CommonForm>
 			<CommonForm>БиблиотекаФайлов</CommonForm>
 			<CommonForm>ВводАдреса</CommonForm>
@@ -665,6 +702,33 @@
 			<CommonForm>ВыборУзловПлановОбмена</CommonForm>
 			<CommonForm>ВыполнениеОбменаДанными</CommonForm>
 			<CommonForm>ДобавлениеПодписиИзФайла</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессИсполнение</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессОбработкаВходящегоДокумента</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессОзнакомление</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессПоручение</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессРассмотрение</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессРегистрация</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессСогласование</CommonForm>
+			<CommonForm>ДокументооборотБизнесПроцессУтверждение</CommonForm>
+			<CommonForm>ДокументооборотВнутреннийДокумент</CommonForm>
+			<CommonForm>ДокументооборотВходящийДокумент</CommonForm>
+			<CommonForm>ДокументооборотВыборИзСписка</CommonForm>
+			<CommonForm>ДокументооборотВыборИсполнителяБизнесПроцесса</CommonForm>
+			<CommonForm>ДокументооборотВыборОбъектовАдресацииРоли</CommonForm>
+			<CommonForm>ДокументооборотВыборОдногоТипаИзСоставногоТипа</CommonForm>
+			<CommonForm>ДокументооборотВыборПользователяСПодразделениями</CommonForm>
+			<CommonForm>ДокументооборотВыборФайла</CommonForm>
+			<CommonForm>ДокументооборотДокументы</CommonForm>
+			<CommonForm>ДокументооборотЗадачи</CommonForm>
+			<CommonForm>ДокументооборотИсходящийДокумент</CommonForm>
+			<CommonForm>ДокументооборотКарточкаЗадачи</CommonForm>
+			<CommonForm>ДокументооборотКарточкаФайла</CommonForm>
+			<CommonForm>ДокументооборотНастройкаКаталогаФайлов</CommonForm>
+			<CommonForm>ДокументооборотПоискВСписке</CommonForm>
+			<CommonForm>ДокументооборотСозданиеНовогоФайла</CommonForm>
+			<CommonForm>ДокументооборотФайлы</CommonForm>
 			<CommonForm>ДополнительныеОтчетыИОбработки</CommonForm>
 			<CommonForm>ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации</CommonForm>
 			<CommonForm>КарточкаФайлаИзБиблиотекиФайлов</CommonForm>
@@ -682,6 +746,7 @@
 			<CommonForm>ПараметрыПроксиСервера</CommonForm>
 			<CommonForm>ПерсональныеНастройкиЭЦП</CommonForm>
 			<CommonForm>ПечатьДокументов</CommonForm>
+			<CommonForm>ПодписьЭЦП</CommonForm>
 			<CommonForm>ПодтверждениеПароляУчетнойЗаписи</CommonForm>
 			<CommonForm>ПоискПоИндексу</CommonForm>
 			<CommonForm>ПрисоединенныеФайлы</CommonForm>
@@ -715,6 +780,7 @@
 			<Catalog>Календари</Catalog>
 			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
 			<Catalog>НазначенияСертификатовЭЦП</Catalog>
+			<Catalog>НастройкиЗаполненияОбъектов1СДокументооборота</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>ПапкиФайлов</Catalog>
 			<Catalog>Пользователи</Catalog>
@@ -742,6 +808,7 @@
 			<Enum>ВариантыВажностиВзаимодействия</Enum>
 			<Enum>ВариантыВажностиЗадачи</Enum>
 			<Enum>ВариантыВерсионированияОбъектов</Enum>
+			<Enum>ВариантыПравилЗаполненияРеквизитов</Enum>
 			<Enum>ВариантыПубликацииДополнительныхОтчетовИОбработок</Enum>
 			<Enum>ВариантыСжатияTIFF</Enum>
 			<Enum>ВерсииПодсистемыОбменаДанными</Enum>
@@ -781,6 +848,7 @@
 			<Enum>ЦветностиИзображения</Enum>
 			<Report>АнализОпроса</Report>
 			<Report>АнкетированиеАналитическийОтчет</Report>
+			<Report>ДатыЗапретаЗагрузки</Report>
 			<Report>ДатыЗапретаИзменения</Report>
 			<Report>Задачи</Report>
 			<Report>ОтчетПоБизнесПроцессам</Report>
@@ -835,6 +903,7 @@
 			<InformationRegister>ЗначенияГруппДоступа</InformationRegister>
 			<InformationRegister>ИдентификаторыПолученныхЭлектронныхПисем</InformationRegister>
 			<InformationRegister>ИсполнителиЗадач</InformationRegister>
+			<InformationRegister>ИсточникиВнешнихЗадач</InformationRegister>
 			<InformationRegister>КалендарныеГрафики</InformationRegister>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>НаборыЗначенийДоступа</InformationRegister>

@@ -6,6 +6,18 @@
       <Path>BusinessProcess\Задание\Flowchart.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>BusinessProcess.Задание.Form.ВнешнееДействиеВыполнить.Form.Module.txt</Id>
+      <Path>BusinessProcess\Задание\Form\ВнешнееДействиеВыполнить\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>BusinessProcess.Задание.Form.ВнешнееДействиеВыполнить.Form.xml</Id>
+      <Path>BusinessProcess\Задание\Form\ВнешнееДействиеВыполнить\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>BusinessProcess.Задание.Form.ВнешнееДействиеВыполнить.xml</Id>
+      <Path>BusinessProcess\Задание\Form\ВнешнееДействиеВыполнить\ВнешнееДействиеВыполнить.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>BusinessProcess.Задание.Form.ДействиеВыполнить.Form.Module.txt</Id>
       <Path>BusinessProcess\Задание\Form\ДействиеВыполнить\Module.txt</Path>
     </FileInfo>
@@ -1130,6 +1142,90 @@
       <Path>Catalog\НазначенияСертификатовЭЦП\НазначенияСертификатовЭЦП.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ВыборОбъектаМетаданных.Form.Module.txt</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ВыборОбъектаМетаданных\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ВыборОбъектаМетаданных.Form.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ВыборОбъектаМетаданных\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ВыборОбъектаМетаданных.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ВыборОбъектаМетаданных\ВыборОбъектаМетаданных.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ВыборРеквизита.Form.Module.txt</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ВыборРеквизита\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ВыборРеквизита.Form.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ВыборРеквизита\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ВыборРеквизита.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ВыборРеквизита\ВыборРеквизита.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаПравила.Form.Module.txt</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаПравила\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаПравила.Form.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаПравила\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаПравила.Help.ru.html</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаПравила\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаПравила.Help.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаПравила\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаПравила.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаПравила\ФормаПравила.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаСписка.Form.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаСписка\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаСписка.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаСписка\ФормаСписка.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаЭлемента.Form.Module.txt</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаЭлемента\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаЭлемента.Form.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаЭлемента\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Form.ФормаЭлемента.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Form\ФормаЭлемента\ФормаЭлемента.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Help.ru.html</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.Help.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.ManagerModule.txt</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\ManagerModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.ObjectModule.txt</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\ObjectModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.НастройкиЗаполненияОбъектов1СДокументооборота.xml</Id>
+      <Path>Catalog\НастройкиЗаполненияОбъектов1СДокументооборота\НастройкиЗаполненияОбъектов1СДокументооборота.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Catalog.Организации.Form.ФормаЭлемента.Form.Module.txt</Id>
       <Path>Catalog\Организации\Form\ФормаЭлемента\Module.txt</Path>
     </FileInfo>
@@ -2158,6 +2254,14 @@
       <Path>Catalog\Файлы\Файлы.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Catalog.ФизическиеЛица.Form.ФормаГруппы.Form.xml</Id>
+      <Path>Catalog\ФизическиеЛица\Form\ФормаГруппы\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Catalog.ФизическиеЛица.Form.ФормаГруппы.xml</Id>
+      <Path>Catalog\ФизическиеЛица\Form\ФормаГруппы\ФормаГруппы.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Catalog.ФизическиеЛица.Help.ru.html</Id>
       <Path>Catalog\ФизическиеЛица\Help\ru.html</Path>
     </FileInfo>
@@ -2518,6 +2622,10 @@
       <Path>CommandGroup\ВыполнениеОбменаДанными\ВыполнениеОбменаДанными.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommandGroup.Документооборот.xml</Id>
+      <Path>CommandGroup\Документооборот\Документооборот.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommandGroup.ПараметрыОбменаДанными.xml</Id>
       <Path>CommandGroup\ПараметрыОбменаДанными\ПараметрыОбменаДанными.xml</Path>
     </FileInfo>
@@ -2548,6 +2656,38 @@
     <FileInfo>
       <Id>CommonCommand.ВыполнитьОбменДаннымиИнтерактивно.xml</Id>
       <Path>CommonCommand\ВыполнитьОбменДаннымиИнтерактивно\ВыполнитьОбменДаннымиИнтерактивно.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотДокументы.CommandModule.txt</Id>
+      <Path>CommonCommand\ДокументооборотДокументы\CommandModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотДокументы.xml</Id>
+      <Path>CommonCommand\ДокументооборотДокументы\ДокументооборотДокументы.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотЗадачи.CommandModule.txt</Id>
+      <Path>CommonCommand\ДокументооборотЗадачи\CommandModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотЗадачи.xml</Id>
+      <Path>CommonCommand\ДокументооборотЗадачи\ДокументооборотЗадачи.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотСоздатьБизнесПроцесс.CommandModule.txt</Id>
+      <Path>CommonCommand\ДокументооборотСоздатьБизнесПроцесс\CommandModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотСоздатьБизнесПроцесс.xml</Id>
+      <Path>CommonCommand\ДокументооборотСоздатьБизнесПроцесс\ДокументооборотСоздатьБизнесПроцесс.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотФайлы.CommandModule.txt</Id>
+      <Path>CommonCommand\ДокументооборотФайлы\CommandModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonCommand.ДокументооборотФайлы.xml</Id>
+      <Path>CommonCommand\ДокументооборотФайлы\ДокументооборотФайлы.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonCommand.ДополнительныеОтчетыИОбработкиЗаполнениеОбъекта.CommandModule.txt</Id>
@@ -2764,6 +2904,26 @@
     <FileInfo>
       <Id>CommonCommand.ФайлыВТоме.xml</Id>
       <Path>CommonCommand\ФайлыВТоме\ФайлыВТоме.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.АвторизацияВ1СДокументооборот.Form.Module.txt</Id>
+      <Path>CommonForm\АвторизацияВ1СДокументооборот\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.АвторизацияВ1СДокументооборот.Form.xml</Id>
+      <Path>CommonForm\АвторизацияВ1СДокументооборот\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.АвторизацияВ1СДокументооборот.Help.ru.html</Id>
+      <Path>CommonForm\АвторизацияВ1СДокументооборот\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.АвторизацияВ1СДокументооборот.Help.xml</Id>
+      <Path>CommonForm\АвторизацияВ1СДокументооборот\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.АвторизацияВ1СДокументооборот.xml</Id>
+      <Path>CommonForm\АвторизацияВ1СДокументооборот\АвторизацияВ1СДокументооборот.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonForm.АдреснаяКнига.Form.Module.txt</Id>
@@ -3054,6 +3214,530 @@
       <Path>CommonForm\ДобавлениеПодписиИзФайла\ДобавлениеПодписиИзФайла.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессИсполнение.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессИсполнение\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессИсполнение.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессИсполнение\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессИсполнение.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессИсполнение\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессИсполнение.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессИсполнение\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессИсполнение.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессИсполнение\ДокументооборотБизнесПроцессИсполнение.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента\ДокументооборотБизнесПроцессОбработкаВнутреннегоДокумента.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВходящегоДокумента.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВходящегоДокумента\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВходящегоДокумента.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВходящегоДокумента\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВходящегоДокумента.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВходящегоДокумента\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВходящегоДокумента.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВходящегоДокумента\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаВходящегоДокумента.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаВходящегоДокумента\ДокументооборотБизнесПроцессОбработкаВходящегоДокумента.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента\ДокументооборотБизнесПроцессОбработкаИсходящегоДокумента.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОзнакомление.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОзнакомление\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОзнакомление.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОзнакомление\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОзнакомление.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОзнакомление\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОзнакомление.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОзнакомление\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессОзнакомление.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессОзнакомление\ДокументооборотБизнесПроцессОзнакомление.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессПоручение.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессПоручение\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессПоручение.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессПоручение\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессПоручение.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессПоручение\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессПоручение.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессПоручение\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессПоручение.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессПоручение\ДокументооборотБизнесПроцессПоручение.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРассмотрение.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРассмотрение\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРассмотрение.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРассмотрение\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРассмотрение.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРассмотрение\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРассмотрение.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРассмотрение\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРассмотрение.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРассмотрение\ДокументооборотБизнесПроцессРассмотрение.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРегистрация.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРегистрация\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРегистрация.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРегистрация\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРегистрация.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРегистрация\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРегистрация.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРегистрация\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессРегистрация.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессРегистрация\ДокументооборотБизнесПроцессРегистрация.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессСогласование.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессСогласование\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессСогласование.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессСогласование\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессСогласование.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессСогласование\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессСогласование.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессСогласование\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессСогласование.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессСогласование\ДокументооборотБизнесПроцессСогласование.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессУтверждение.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессУтверждение\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессУтверждение.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессУтверждение\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессУтверждение.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессУтверждение\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессУтверждение.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессУтверждение\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотБизнесПроцессУтверждение.xml</Id>
+      <Path>CommonForm\ДокументооборотБизнесПроцессУтверждение\ДокументооборотБизнесПроцессУтверждение.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВнутреннийДокумент.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВнутреннийДокумент\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВнутреннийДокумент.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВнутреннийДокумент\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВнутреннийДокумент.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВнутреннийДокумент\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВнутреннийДокумент.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВнутреннийДокумент\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВнутреннийДокумент.xml</Id>
+      <Path>CommonForm\ДокументооборотВнутреннийДокумент\ДокументооборотВнутреннийДокумент.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВходящийДокумент.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВходящийДокумент\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВходящийДокумент.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВходящийДокумент\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВходящийДокумент.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВходящийДокумент\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВходящийДокумент.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВходящийДокумент\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВходящийДокумент.xml</Id>
+      <Path>CommonForm\ДокументооборотВходящийДокумент\ДокументооборотВходящийДокумент.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИзСписка.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВыборИзСписка\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИзСписка.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборИзСписка\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИзСписка.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборИзСписка\ДокументооборотВыборИзСписка.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИсполнителяБизнесПроцесса.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВыборИсполнителяБизнесПроцесса\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИсполнителяБизнесПроцесса.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборИсполнителяБизнесПроцесса\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИсполнителяБизнесПроцесса.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВыборИсполнителяБизнесПроцесса\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИсполнителяБизнесПроцесса.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборИсполнителяБизнесПроцесса\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборИсполнителяБизнесПроцесса.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборИсполнителяБизнесПроцесса\ДокументооборотВыборИсполнителяБизнесПроцесса.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОбъектовАдресацииРоли.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВыборОбъектовАдресацииРоли\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОбъектовАдресацииРоли.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборОбъектовАдресацииРоли\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОбъектовАдресацииРоли.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВыборОбъектовАдресацииРоли\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОбъектовАдресацииРоли.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборОбъектовАдресацииРоли\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОбъектовАдресацииРоли.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборОбъектовАдресацииРоли\ДокументооборотВыборОбъектовАдресацииРоли.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОдногоТипаИзСоставногоТипа.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВыборОдногоТипаИзСоставногоТипа\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОдногоТипаИзСоставногоТипа.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборОдногоТипаИзСоставногоТипа\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОдногоТипаИзСоставногоТипа.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВыборОдногоТипаИзСоставногоТипа\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОдногоТипаИзСоставногоТипа.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборОдногоТипаИзСоставногоТипа\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборОдногоТипаИзСоставногоТипа.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборОдногоТипаИзСоставногоТипа\ДокументооборотВыборОдногоТипаИзСоставногоТипа.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборПользователяСПодразделениями.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВыборПользователяСПодразделениями\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборПользователяСПодразделениями.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборПользователяСПодразделениями\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборПользователяСПодразделениями.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВыборПользователяСПодразделениями\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборПользователяСПодразделениями.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборПользователяСПодразделениями\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборПользователяСПодразделениями.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборПользователяСПодразделениями\ДокументооборотВыборПользователяСПодразделениями.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборФайла.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотВыборФайла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборФайла.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборФайла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборФайла.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотВыборФайла\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборФайла.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборФайла\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотВыборФайла.xml</Id>
+      <Path>CommonForm\ДокументооборотВыборФайла\ДокументооборотВыборФайла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотДокументы.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотДокументы\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотДокументы.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотДокументы\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотДокументы.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотДокументы\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотДокументы.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотДокументы\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотДокументы.xml</Id>
+      <Path>CommonForm\ДокументооборотДокументы\ДокументооборотДокументы.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотЗадачи.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотЗадачи\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотЗадачи.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотЗадачи\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотЗадачи.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотЗадачи\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотЗадачи.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотЗадачи\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотЗадачи.xml</Id>
+      <Path>CommonForm\ДокументооборотЗадачи\ДокументооборотЗадачи.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотИсходящийДокумент.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотИсходящийДокумент\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотИсходящийДокумент.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотИсходящийДокумент\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотИсходящийДокумент.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотИсходящийДокумент\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотИсходящийДокумент.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотИсходящийДокумент\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотИсходящийДокумент.xml</Id>
+      <Path>CommonForm\ДокументооборотИсходящийДокумент\ДокументооборотИсходящийДокумент.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаЗадачи.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотКарточкаЗадачи\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаЗадачи.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотКарточкаЗадачи\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаЗадачи.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотКарточкаЗадачи\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаЗадачи.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотКарточкаЗадачи\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаЗадачи.xml</Id>
+      <Path>CommonForm\ДокументооборотКарточкаЗадачи\ДокументооборотКарточкаЗадачи.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаФайла.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотКарточкаФайла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаФайла.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотКарточкаФайла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаФайла.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотКарточкаФайла\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаФайла.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотКарточкаФайла\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотКарточкаФайла.xml</Id>
+      <Path>CommonForm\ДокументооборотКарточкаФайла\ДокументооборотКарточкаФайла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотНастройкаКаталогаФайлов.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотНастройкаКаталогаФайлов\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотНастройкаКаталогаФайлов.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотНастройкаКаталогаФайлов\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотНастройкаКаталогаФайлов.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотНастройкаКаталогаФайлов\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотНастройкаКаталогаФайлов.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотНастройкаКаталогаФайлов\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотНастройкаКаталогаФайлов.xml</Id>
+      <Path>CommonForm\ДокументооборотНастройкаКаталогаФайлов\ДокументооборотНастройкаКаталогаФайлов.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотПоискВСписке.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотПоискВСписке\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотПоискВСписке.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотПоискВСписке\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотПоискВСписке.xml</Id>
+      <Path>CommonForm\ДокументооборотПоискВСписке\ДокументооборотПоискВСписке.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотСозданиеНовогоФайла.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотСозданиеНовогоФайла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотСозданиеНовогоФайла.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотСозданиеНовогоФайла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотСозданиеНовогоФайла.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотСозданиеНовогоФайла\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотСозданиеНовогоФайла.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотСозданиеНовогоФайла\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотСозданиеНовогоФайла.xml</Id>
+      <Path>CommonForm\ДокументооборотСозданиеНовогоФайла\ДокументооборотСозданиеНовогоФайла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотФайлы.Form.Module.txt</Id>
+      <Path>CommonForm\ДокументооборотФайлы\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотФайлы.Form.xml</Id>
+      <Path>CommonForm\ДокументооборотФайлы\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотФайлы.Help.ru.html</Id>
+      <Path>CommonForm\ДокументооборотФайлы\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотФайлы.Help.xml</Id>
+      <Path>CommonForm\ДокументооборотФайлы\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ДокументооборотФайлы.xml</Id>
+      <Path>CommonForm\ДокументооборотФайлы\ДокументооборотФайлы.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonForm.ДополнительныеОтчетыИОбработки.Form.Module.txt</Id>
       <Path>CommonForm\ДополнительныеОтчетыИОбработки\Module.txt</Path>
     </FileInfo>
@@ -3296,6 +3980,26 @@
     <FileInfo>
       <Id>CommonForm.ПечатьДокументов.xml</Id>
       <Path>CommonForm\ПечатьДокументов\ПечатьДокументов.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ПодписьЭЦП.Form.Module.txt</Id>
+      <Path>CommonForm\ПодписьЭЦП\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ПодписьЭЦП.Form.xml</Id>
+      <Path>CommonForm\ПодписьЭЦП\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ПодписьЭЦП.Help.ru.html</Id>
+      <Path>CommonForm\ПодписьЭЦП\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ПодписьЭЦП.Help.xml</Id>
+      <Path>CommonForm\ПодписьЭЦП\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ПодписьЭЦП.xml</Id>
+      <Path>CommonForm\ПодписьЭЦП\ПодписьЭЦП.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonForm.ПодтверждениеПароляУчетнойЗаписи.Form.Module.txt</Id>
@@ -3578,6 +4282,14 @@
       <Path>CommonModule\БизнесПроцессыИЗадачиКлиент\БизнесПроцессыИЗадачиКлиент.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonModule.БизнесПроцессыИЗадачиКлиентПереопределяемый.Module.txt</Id>
+      <Path>CommonModule\БизнесПроцессыИЗадачиКлиентПереопределяемый\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.БизнесПроцессыИЗадачиКлиентПереопределяемый.xml</Id>
+      <Path>CommonModule\БизнесПроцессыИЗадачиКлиентПереопределяемый\БизнесПроцессыИЗадачиКлиентПереопределяемый.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonModule.БизнесПроцессыИЗадачиПереопределяемый.Module.txt</Id>
       <Path>CommonModule\БизнесПроцессыИЗадачиПереопределяемый\Module.txt</Path>
     </FileInfo>
@@ -3704,6 +4416,22 @@
     <FileInfo>
       <Id>CommonModule.ВзаимодействияПереопределяемый.xml</Id>
       <Path>CommonModule\ВзаимодействияПереопределяемый\ВзаимодействияПереопределяемый.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ВнешниеЗадачиВызовСервера.Module.txt</Id>
+      <Path>CommonModule\ВнешниеЗадачиВызовСервера\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ВнешниеЗадачиВызовСервера.xml</Id>
+      <Path>CommonModule\ВнешниеЗадачиВызовСервера\ВнешниеЗадачиВызовСервера.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ВнешниеЗадачиПереопределяемыйВызовСервера.Module.txt</Id>
+      <Path>CommonModule\ВнешниеЗадачиПереопределяемыйВызовСервера\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ВнешниеЗадачиПереопределяемыйВызовСервера.xml</Id>
+      <Path>CommonModule\ВнешниеЗадачиПереопределяемыйВызовСервера\ВнешниеЗадачиПереопределяемыйВызовСервера.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonModule.ВнешниеПользователи.Module.txt</Id>
@@ -3888,6 +4616,22 @@
     <FileInfo>
       <Id>CommonModule.НастройкаПорядкаЭлементовСобытия.xml</Id>
       <Path>CommonModule\НастройкаПорядкаЭлементовСобытия\НастройкаПорядкаЭлементовСобытия.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОбменВнешнимиЗаданиямиСервер.Module.txt</Id>
+      <Path>CommonModule\ОбменВнешнимиЗаданиямиСервер\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОбменВнешнимиЗаданиямиСервер.xml</Id>
+      <Path>CommonModule\ОбменВнешнимиЗаданиямиСервер\ОбменВнешнимиЗаданиямиСервер.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОбменВнешнимиЗаданиямиСобытия.Module.txt</Id>
+      <Path>CommonModule\ОбменВнешнимиЗаданиямиСобытия\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОбменВнешнимиЗаданиямиСобытия.xml</Id>
+      <Path>CommonModule\ОбменВнешнимиЗаданиямиСобытия\ОбменВнешнимиЗаданиямиСобытия.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonModule.ОбменДаннымиКлиент.Module.txt</Id>
@@ -4226,6 +4970,54 @@
       <Path>CommonModule\ПроверкаЛегальностиПолученияОбновленияКлиент\ПроверкаЛегальностиПолученияОбновленияКлиент.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборот.Module.txt</Id>
+      <Path>CommonModule\РаботаС1СДокументооборот\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборот.xml</Id>
+      <Path>CommonModule\РаботаС1СДокументооборот\РаботаС1СДокументооборот.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотВызовСервера.Module.txt</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотВызовСервера\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотВызовСервера.xml</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотВызовСервера\РаботаС1СДокументооборотВызовСервера.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотКлиент.Module.txt</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотКлиент\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотКлиент.xml</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотКлиент\РаботаС1СДокументооборотКлиент.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотКлиентПовтИсп.Module.txt</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотКлиентПовтИсп\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотКлиентПовтИсп.xml</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотКлиентПовтИсп\РаботаС1СДокументооборотКлиентПовтИсп.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотПереопределяемый.Module.txt</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотПереопределяемый\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотПереопределяемый.xml</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотПереопределяемый\РаботаС1СДокументооборотПереопределяемый.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотПовтИсп.Module.txt</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотПовтИсп\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаС1СДокументооборотПовтИсп.xml</Id>
+      <Path>CommonModule\РаботаС1СДокументооборотПовтИсп\РаботаС1СДокументооборотПовтИсп.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonModule.РаботаСБиблиотекойФайлов.Module.txt</Id>
       <Path>CommonModule\РаботаСБиблиотекойФайлов\Module.txt</Path>
     </FileInfo>
@@ -4296,6 +5088,14 @@
     <FileInfo>
       <Id>CommonModule.РаботаСФайламиВызовСервера.xml</Id>
       <Path>CommonModule\РаботаСФайламиВызовСервера\РаботаСФайламиВызовСервера.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаСФайламиВызовСервераПереопределяемый.Module.txt</Id>
+      <Path>CommonModule\РаботаСФайламиВызовСервераПереопределяемый\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.РаботаСФайламиВызовСервераПереопределяемый.xml</Id>
+      <Path>CommonModule\РаботаСФайламиВызовСервераПереопределяемый\РаботаСФайламиВызовСервераПереопределяемый.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonModule.РаботаСФайламиКлиент.Module.txt</Id>
@@ -4672,6 +5472,14 @@
     <FileInfo>
       <Id>CommonModule.ФайловыеФункцииПереопределяемый.xml</Id>
       <Path>CommonModule\ФайловыеФункцииПереопределяемый\ФайловыеФункцииПереопределяемый.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ФайловыеФункцииПовтИсп.Module.txt</Id>
+      <Path>CommonModule\ФайловыеФункцииПовтИсп\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ФайловыеФункцииПовтИсп.xml</Id>
+      <Path>CommonModule\ФайловыеФункцииПовтИсп\ФайловыеФункцииПовтИсп.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonModule.ФизическиеЛица.Module.txt</Id>
@@ -5250,6 +6058,18 @@
       <Path>CommonPicture\ЗапланированноеВзаимодействие\ЗапланированноеВзаимодействие.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonPicture.ЗаполнитьПоОснованию.Picture.Picture.png</Id>
+      <Path>CommonPicture\ЗаполнитьПоОснованию\Picture.png</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.ЗаполнитьПоОснованию.Picture.xml</Id>
+      <Path>CommonPicture\ЗаполнитьПоОснованию\Picture.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.ЗаполнитьПоОснованию.xml</Id>
+      <Path>CommonPicture\ЗаполнитьПоОснованию\ЗаполнитьПоОснованию.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonPicture.ЗапуститьОтдельныйСеансДляВыполненияРегламентныхЗаданий.Picture.Picture.png</Id>
       <Path>CommonPicture\ЗапуститьОтдельныйСеансДляВыполненияРегламентныхЗаданий\Picture.png</Path>
     </FileInfo>
@@ -5428,6 +6248,18 @@
     <FileInfo>
       <Id>CommonPicture.КартинкаЗанять.xml</Id>
       <Path>CommonPicture\КартинкаЗанять\КартинкаЗанять.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.КартинкаОбновитьИзФайлаНаДиске.Picture.Picture.png</Id>
+      <Path>CommonPicture\КартинкаОбновитьИзФайлаНаДиске\Picture.png</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.КартинкаОбновитьИзФайлаНаДиске.Picture.xml</Id>
+      <Path>CommonPicture\КартинкаОбновитьИзФайлаНаДиске\Picture.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.КартинкаОбновитьИзФайлаНаДиске.xml</Id>
+      <Path>CommonPicture\КартинкаОбновитьИзФайлаНаДиске\КартинкаОбновитьИзФайлаНаДиске.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonPicture.КартинкаОпубликовать.Picture.Picture.png</Id>
@@ -6562,6 +7394,10 @@
       <Path>Constant\АдресатыПолученияОтчетаПоЖурналуРегистрации\АдресатыПолученияОтчетаПоЖурналуРегистрации.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Constant.АдресВебСервиса1СДокументооборот.xml</Id>
+      <Path>Constant\АдресВебСервиса1СДокументооборот\АдресВебСервиса1СДокументооборот.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Constant.АлгоритмПодписи.xml</Id>
       <Path>Constant\АлгоритмПодписи\АлгоритмПодписи.xml</Path>
     </FileInfo>
@@ -6606,6 +7442,10 @@
       <Path>Constant\ЗапретЗагрузкиФайловПоРасширению\ЗапретЗагрузкиФайловПоРасширению.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Constant.ИдентификаторКорневойПапкиФайлов1СДокументооборот.xml</Id>
+      <Path>Constant\ИдентификаторКорневойПапкиФайлов1СДокументооборот\ИдентификаторКорневойПапкиФайлов1СДокументооборот.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Constant.ИзвлекатьТекстыФайловНаСервере.xml</Id>
       <Path>Constant\ИзвлекатьТекстыФайловНаСервере\ИзвлекатьТекстыФайловНаСервере.xml</Path>
     </FileInfo>
@@ -6642,6 +7482,10 @@
       <Path>Constant\ИспользоватьВзаимодействия\ИспользоватьВзаимодействия.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Constant.ИспользоватьВнешниеЗадачи.xml</Id>
+      <Path>Constant\ИспользоватьВнешниеЗадачи\ИспользоватьВнешниеЗадачи.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Constant.ИспользоватьВнешнихПользователей.xml</Id>
       <Path>Constant\ИспользоватьВнешнихПользователей\ИспользоватьВнешнихПользователей.xml</Path>
     </FileInfo>
@@ -6660,6 +7504,10 @@
     <FileInfo>
       <Id>Constant.ИспользоватьДополнительныеРеквизитыИСведения.xml</Id>
       <Path>Constant\ИспользоватьДополнительныеРеквизитыИСведения\ИспользоватьДополнительныеРеквизитыИСведения.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Constant.ИспользоватьИнтеграциюС1СДокументооборот.xml</Id>
+      <Path>Constant\ИспользоватьИнтеграциюС1СДокументооборот\ИспользоватьИнтеграциюС1СДокументооборот.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Constant.ИспользоватьОбменДанными.ValueManagerModule.txt</Id>
@@ -6688,6 +7536,14 @@
     <FileInfo>
       <Id>Constant.МаксимальныйРазмерФайла.xml</Id>
       <Path>Constant\МаксимальныйРазмерФайла\МаксимальныйРазмерФайла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Constant.МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот.xml</Id>
+      <Path>Constant\МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот\МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Constant.НаименованиеКорневойПапкиФайлов1СДокументооборот.xml</Id>
+      <Path>Constant\НаименованиеКорневойПапкиФайлов1СДокументооборот\НаименованиеКорневойПапкиФайлов1СДокументооборот.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Constant.НастройкаПодчиненногоУзлаРИБЗавершена.xml</Id>
@@ -8462,6 +9318,10 @@
       <Path>Enum\ВариантыВерсионированияОбъектов\ВариантыВерсионированияОбъектов.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Enum.ВариантыПравилЗаполненияРеквизитов.xml</Id>
+      <Path>Enum\ВариантыПравилЗаполненияРеквизитов\ВариантыПравилЗаполненияРеквизитов.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Enum.ВариантыПубликацииДополнительныхОтчетовИОбработок.xml</Id>
       <Path>Enum\ВариантыПубликацииДополнительныхОтчетовИОбработок\ВариантыПубликацииДополнительныхОтчетовИОбработок.xml</Path>
     </FileInfo>
@@ -8642,6 +9502,22 @@
       <Path>EventSubscription\ЗаполнитьКонтактнуюИнформацию\ЗаполнитьКонтактнуюИнформацию.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>EventSubscription.ОбменДаннымиОбменВнешнимиЗаданиямиПередЗаписью.xml</Id>
+      <Path>EventSubscription\ОбменДаннымиОбменВнешнимиЗаданиямиПередЗаписью\ОбменДаннымиОбменВнешнимиЗаданиямиПередЗаписью.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>EventSubscription.ОбменДаннымиОбменВнешнимиЗаданиямиПередУдалением.xml</Id>
+      <Path>EventSubscription\ОбменДаннымиОбменВнешнимиЗаданиямиПередУдалением\ОбменДаннымиОбменВнешнимиЗаданиямиПередУдалением.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>EventSubscription.ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередЗаписью.xml</Id>
+      <Path>EventSubscription\ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередЗаписью\ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередЗаписью.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>EventSubscription.ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередУдалением.xml</Id>
+      <Path>EventSubscription\ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередУдалением\ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередУдалением.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>EventSubscription.ОбменДаннымиПередЗаписьюУзлаПланаОбмена.xml</Id>
       <Path>EventSubscription\ОбменДаннымиПередЗаписьюУзлаПланаОбмена\ОбменДаннымиПередЗаписьюУзлаПланаОбмена.xml</Path>
     </FileInfo>
@@ -8670,12 +9546,172 @@
       <Path>EventSubscription\ПрисоединенныйФайлПриЗаписиВзаимодействия\ПрисоединенныйФайлПриЗаписиВзаимодействия.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>EventSubscription.СтартВнешнегоЗаданияПередЗаписьюЗадач.xml</Id>
+      <Path>EventSubscription\СтартВнешнегоЗаданияПередЗаписьюЗадач\СтартВнешнегоЗаданияПередЗаписьюЗадач.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>EventSubscription.СтартВнешнегоЗаданияПриЗаписиЗадач.xml</Id>
+      <Path>EventSubscription\СтартВнешнегоЗаданияПриЗаписиЗадач\СтартВнешнегоЗаданияПриЗаписиЗадач.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>EventSubscription.УстановитьПометкуУдаленияЗадач.xml</Id>
       <Path>EventSubscription\УстановитьПометкуУдаленияЗадач\УстановитьПометкуУдаленияЗадач.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловВзаимодействия.xml</Id>
       <Path>EventSubscription\УстановитьПометкуУдаленияПрисоединенныхФайловВзаимодействия\УстановитьПометкуУдаленияПрисоединенныхФайловВзаимодействия.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Content.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Content.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаНастройкиЗначенийПоУмолчанию.Form.Module.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаНастройкиЗначенийПоУмолчанию\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаНастройкиЗначенийПоУмолчанию.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаНастройкиЗначенийПоУмолчанию\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаНастройкиЗначенийПоУмолчанию.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаНастройкиЗначенийПоУмолчанию\ФормаНастройкиЗначенийПоУмолчанию.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаНастройкиУзла.Form.Module.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаНастройкиУзла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаНастройкиУзла.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаНастройкиУзла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаНастройкиУзла.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаНастройкиУзла\ФормаНастройкиУзла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаСписка.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаСписка\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаСписка.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаСписка\ФормаСписка.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаУзла.Form.Module.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаУзла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаУзла.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаУзла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Form.ФормаУзла.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Form\ФормаУзла\ФормаУзла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.ManagerModule.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\ManagerModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.ObjectModule.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\ObjectModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Template.ПравилаОбмена.Template.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Template\ПравилаОбмена\Template.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Template.ПравилаОбмена.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Template\ПравилаОбмена\ПравилаОбмена.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Template.ПравилаРегистрации.Template.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Template\ПравилаРегистрации\Template.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.Template.ПравилаРегистрации.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\Template\ПравилаРегистрации\ПравилаРегистрации.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиями.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиями\ОбменВнешнимиЗаданиями.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Content.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Content.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаНастройкиЗначенийПоУмолчанию.Form.Module.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаНастройкиЗначенийПоУмолчанию\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаНастройкиЗначенийПоУмолчанию.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаНастройкиЗначенийПоУмолчанию\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаНастройкиЗначенийПоУмолчанию.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаНастройкиЗначенийПоУмолчанию\ФормаНастройкиЗначенийПоУмолчанию.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаНастройкиУзла.Form.Module.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаНастройкиУзла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаНастройкиУзла.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаНастройкиУзла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаНастройкиУзла.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаНастройкиУзла\ФормаНастройкиУзла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаСписка.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаСписка\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаСписка.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаСписка\ФормаСписка.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаУзла.Form.Module.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаУзла\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаУзла.Form.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаУзла\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Form.ФормаУзла.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Form\ФормаУзла\ФормаУзла.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.ManagerModule.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\ManagerModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.ObjectModule.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\ObjectModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Template.ПравилаОбмена.Template.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Template\ПравилаОбмена\Template.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Template.ПравилаОбмена.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Template\ПравилаОбмена\ПравилаОбмена.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Template.ПравилаРегистрации.Template.txt</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Template\ПравилаРегистрации\Template.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.Template.ПравилаРегистрации.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\Template\ПравилаРегистрации\ПравилаРегистрации.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>ExchangePlan.ОбменВнешнимиЗаданиямиС1СДокументооборот.xml</Id>
+      <Path>ExchangePlan\ОбменВнешнимиЗаданиямиС1СДокументооборот\ОбменВнешнимиЗаданиямиС1СДокументооборот.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>FilterCriterion.ВзаимодействияКонтакта.xml</Id>
@@ -8768,6 +9804,14 @@
     <FileInfo>
       <Id>FunctionalOption.ИспользоватьДополнительныеРеквизитыИСведения.xml</Id>
       <Path>FunctionalOption\ИспользоватьДополнительныеРеквизитыИСведения\ИспользоватьДополнительныеРеквизитыИСведения.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>FunctionalOption.ИспользоватьИнтеграциюКонфигураций.xml</Id>
+      <Path>FunctionalOption\ИспользоватьИнтеграциюКонфигураций\ИспользоватьИнтеграциюКонфигураций.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>FunctionalOption.ИспользоватьИнтеграциюС1СДокументооборот.xml</Id>
+      <Path>FunctionalOption\ИспользоватьИнтеграциюС1СДокументооборот\ИспользоватьИнтеграциюС1СДокументооборот.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>FunctionalOption.ИспользоватьОбменДанными.xml</Id>
@@ -9250,6 +10294,10 @@
       <Path>InformationRegister\ИсполнителиЗадач\ИсполнителиЗадач.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>InformationRegister.ИсточникиВнешнихЗадач.xml</Id>
+      <Path>InformationRegister\ИсточникиВнешнихЗадач\ИсточникиВнешнихЗадач.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>InformationRegister.КалендарныеГрафики.Help.ru.html</Id>
       <Path>InformationRegister\КалендарныеГрафики\Help\ru.html</Path>
     </FileInfo>
@@ -9724,6 +10772,34 @@
     <FileInfo>
       <Id>Report.АнкетированиеАналитическийОтчет.xml</Id>
       <Path>Report\АнкетированиеАналитическийОтчет\АнкетированиеАналитическийОтчет.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.Form.ФормаОтчета.Form.Module.txt</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\Form\ФормаОтчета\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.Form.ФормаОтчета.Form.xml</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\Form\ФормаОтчета\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.Form.ФормаОтчета.xml</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\Form\ФормаОтчета\ФормаОтчета.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.ObjectModule.txt</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\ObjectModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.Template.ОсновнаяСхемаКомпоновкиДанных.Template.xml</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\Template\ОсновнаяСхемаКомпоновкиДанных\Template.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.Template.ОсновнаяСхемаКомпоновкиДанных.xml</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\Template\ОсновнаяСхемаКомпоновкиДанных\ОсновнаяСхемаКомпоновкиДанных.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Report.ДатыЗапретаЗагрузки.xml</Id>
+      <Path>Report\ДатыЗапретаЗагрузки\ДатыЗапретаЗагрузки.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Report.ДатыЗапретаИзменения.Form.ФормаОтчета.Form.Module.txt</Id>
@@ -10814,6 +11890,10 @@
       <Path>Subsystem\СтандартныеПодсистемы\Subsystem\Взаимодействия\Взаимодействия.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Subsystem.СтандартныеПодсистемы.Subsystem.ВнешниеБизнесПроцессыИЗадачи.xml</Id>
+      <Path>Subsystem\СтандартныеПодсистемы\Subsystem\ВнешниеБизнесПроцессыИЗадачи\ВнешниеБизнесПроцессыИЗадачи.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Subsystem.СтандартныеПодсистемы.Subsystem.ГрупповоеИзменениеОбъектов.Help.ru.html</Id>
       <Path>Subsystem\СтандартныеПодсистемы\Subsystem\ГрупповоеИзменениеОбъектов\Help\ru.html</Path>
     </FileInfo>
@@ -10868,6 +11948,10 @@
     <FileInfo>
       <Id>Subsystem.СтандартныеПодсистемы.Subsystem.ЗапретРедактированияРеквизитовОбъектов.xml</Id>
       <Path>Subsystem\СтандартныеПодсистемы\Subsystem\ЗапретРедактированияРеквизитовОбъектов\ЗапретРедактированияРеквизитовОбъектов.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Subsystem.СтандартныеПодсистемы.Subsystem.ИнтеграцияС1СДокументооборот.xml</Id>
+      <Path>Subsystem\СтандартныеПодсистемы\Subsystem\ИнтеграцияС1СДокументооборот\ИнтеграцияС1СДокументооборот.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Subsystem.СтандартныеПодсистемы.Subsystem.КалендарныеГрафики.Help.ru.html</Id>

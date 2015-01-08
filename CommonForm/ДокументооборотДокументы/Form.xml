@@ -1,0 +1,1009 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Документы 1С:Документооборота</v8:content>
+		</v8:item>
+	</Title>
+	<Width>70</Width>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДокументДО" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документ ДО</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документ ДО</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДокументДОExtendedTooltip" id="61"/>
+			<ChildItems>
+				<InputField name="Документ" id="20">
+					<DataPath>Документ</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ из "1С:Документооборот", соответствующий текущему объекту</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<OpenButton>true</OpenButton>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ДокументКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДокументExtendedTooltip" id="62"/>
+					<Events>
+						<Event name="Opening">ДокументОткрытие</Event>
+						<Event name="Clearing">ДокументОчистка</Event>
+					</Events>
+				</InputField>
+				<CommandBar name="ГруппаКоманднаяПанель" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="63"/>
+					<ChildItems>
+						<Popup name="ГруппаСоздать" id="10">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать документ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ГруппаСоздатьExtendedTooltip" id="64"/>
+							<ChildItems>
+								<Button name="СоздатьВходящийДокумент" id="12">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьВходящийДокумент</CommandName>
+									<Parameter xsi:nil="true"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Входящий документ</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СоздатьВходящийДокументExtendedTooltip" id="65"/>
+								</Button>
+								<Button name="СоздатьИсходящийДокумент" id="13">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьИсходящийДокумент</CommandName>
+									<Parameter xsi:nil="true"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исходящий документ</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СоздатьИсходящийДокументExtendedTooltip" id="66"/>
+								</Button>
+								<Button name="СоздатьВнутреннийДокумент" id="11">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьВнутреннийДокумент</CommandName>
+									<Parameter xsi:nil="true"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Внутренний документ</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СоздатьВнутреннийДокументExtendedTooltip" id="67"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Button name="Выбрать" id="24">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Command.Выбрать</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="ВыбратьExtendedTooltip" id="68"/>
+						</Button>
+						<Button name="Справка" id="25">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="69"/>
+						</Button>
+						<Button name="СоздатьБизнесПроцессОсновнойДокумент" id="42">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СоздатьБизнесПроцессОсновнойДокумент</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="СоздатьБизнесПроцессОсновнойДокументExtendedTooltip" id="70"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтступ" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отступ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтступExtendedTooltip" id="71"/>
+			<ChildItems>
+				<Table name="СписокДокументов" id="1">
+					<Representation>Tree</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<DefaultItem>true</DefaultItem>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокДокументов</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связанные документы</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<ContextMenu name="СписокДокументовКонтекстноеМеню" id="2">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Popup name="СписокДокументовКонтекстноеМенюГруппаСоздать" id="53">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Создать</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список документов контекстное меню группа создать</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Picture>
+									<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Representation>PictureAndText</Representation>
+								<ExtendedTooltip name="СписокДокументовКонтекстноеМенюГруппаСоздатьExtendedTooltip" id="72"/>
+								<ChildItems>
+									<Button name="СписокДокументовКонтекстноеМенюСоздатьСвязанныйВходящий" id="54">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьСвязанныйВходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокДокументовКонтекстноеМенюСоздатьСвязанныйВходящийExtendedTooltip" id="73"/>
+									</Button>
+									<Button name="СписокДокументовКонтекстноеМенюСоздатьСвязанныйИсходящий" id="55">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьСвязанныйИсходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокДокументовКонтекстноеМенюСоздатьСвязанныйИсходящийExtendedTooltip" id="74"/>
+									</Button>
+									<Button name="СписокДокументовКонтекстноеМенюСоздатьСвязанныйВнутренний" id="56">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьСвязанныйВнутренний</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокДокументовКонтекстноеМенюСоздатьСвязанныйВнутреннийExtendedTooltip" id="75"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Popup name="СписокДокументовКонтекстноеМенюГруппаПрисоединить" id="57">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Приложить</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список документов контекстное меню группа присоединить</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="СписокДокументовКонтекстноеМенюГруппаПрисоединитьExtendedTooltip" id="76"/>
+								<ChildItems>
+									<Button name="СписокДокументовКонтекстноеМенюПрисоединитьСвязанныйВходящий" id="58">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрисоединитьСвязанныйВходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокДокументовКонтекстноеМенюПрисоединитьСвязанныйВходящийExtendedTooltip" id="77"/>
+									</Button>
+									<Button name="СписокДокументовКонтекстноеМенюПрисоединитьСвязанныйИсходящий" id="59">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрисоединитьСвязанныйИсходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокДокументовКонтекстноеМенюПрисоединитьСвязанныйИсходящийExtendedTooltip" id="78"/>
+									</Button>
+									<Button name="СписокДокументовКонтекстноеМенюПрисоединитьСвязанныйВнутренний" id="60">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрисоединитьСвязанныйВнутренний</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокДокументовКонтекстноеМенюПрисоединитьСвязанныйВнутреннийExtendedTooltip" id="79"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Button name="СписокДокументовИзменитьСвязанный" id="40">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.СписокДокументов.StandardCommand.Change</CommandName>
+								<Parameter xsi:nil="true"/>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Открыть</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокДокументовИзменитьСвязанныйExtendedTooltip" id="80"/>
+							</Button>
+							<Button name="СписокДокументовОбновитьСвязанные" id="39">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОбновитьСвязанные</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокДокументовОбновитьСвязанныеExtendedTooltip" id="81"/>
+							</Button>
+							<ButtonGroup name="СписокДокументовКонтекстноеМенюГруппа" id="41">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список документов контекстное меню группа</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список документов контекстное меню группа</v8:content>
+									</v8:item>
+								</ToolTip>
+								<CommandSource>Item.СписокДокументов</CommandSource>
+								<ExtendedTooltip name="СписокДокументовКонтекстноеМенюГруппаExtendedTooltip" id="82"/>
+							</ButtonGroup>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Popup name="СписокДокументовГруппаСоздать" id="31">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Создать</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Создать связанный документ</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Picture>
+									<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Representation>PictureAndText</Representation>
+								<ExtendedTooltip name="СписокДокументовГруппаСоздатьExtendedTooltip" id="83"/>
+								<ChildItems>
+									<Button name="СоздатьСвязанныйВходящий" id="33">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьСвязанныйВходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СоздатьСвязанныйВходящийExtendedTooltip" id="84"/>
+									</Button>
+									<Button name="СоздатьСвязанныйИсходящий" id="34">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьСвязанныйИсходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СоздатьСвязанныйИсходящийExtendedTooltip" id="85"/>
+									</Button>
+									<Button name="СоздатьСвязанныйВнутренний" id="32">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьСвязанныйВнутренний</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СоздатьСвязанныйВнутреннийExtendedTooltip" id="86"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Popup name="СписокДокументовГруппаПрисоединить" id="35">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Приложить</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Добавить документ в список связанных</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="СписокДокументовГруппаПрисоединитьExtendedTooltip" id="87"/>
+								<ChildItems>
+									<Button name="ПрисоединитьСвязанныйВходящий" id="37">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрисоединитьСвязанныйВходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="ПрисоединитьСвязанныйВходящийExtendedTooltip" id="88"/>
+									</Button>
+									<Button name="ПрисоединитьСвязанныйИсходящий" id="38">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрисоединитьСвязанныйИсходящий</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="ПрисоединитьСвязанныйИсходящийExtendedTooltip" id="89"/>
+									</Button>
+									<Button name="ПрисоединитьСвязанныйВнутренний" id="36">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрисоединитьСвязанныйВнутренний</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="ПрисоединитьСвязанныйВнутреннийExtendedTooltip" id="90"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Button name="СписокДокументовСоздатьБизнесПроцессСвязанныйДокумент" id="43">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СоздатьБизнесПроцессСвязанныйДокумент</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокДокументовСоздатьБизнесПроцессСвязанныйДокументExtendedTooltip" id="91"/>
+							</Button>
+							<Button name="ИзменитьСвязанный" id="29">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ИзменитьСвязанный</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ИзменитьСвязанныйExtendedTooltip" id="92"/>
+							</Button>
+							<Popup name="СписокДокументовГруппаУдалить" id="44">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удалить</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удалить связь или связанный документ</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Picture>
+									<xr:Ref>StdPicture.Delete</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокДокументовГруппаУдалитьExtendedTooltip" id="93"/>
+								<ChildItems>
+									<Button name="УдалитьСвязь" id="45">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьСвязь</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="УдалитьСвязьExtendedTooltip" id="94"/>
+									</Button>
+									<Button name="УдалитьСвязанный" id="30">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьСвязанный</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="УдалитьСвязанныйExtendedTooltip" id="95"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокДокументовExtendedTooltip" id="96"/>
+					<SearchStringAddition name="СписокДокументовSearchString" id="97">
+						<Source>
+							<lf:elementId>1</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="СписокДокументовSearchStringContextMenu" id="98"/>
+						<ExtendedTooltip name="СписокДокументовSearchStringExtendedTooltip" id="99"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокДокументовViewStatus" id="100">
+						<Source>
+							<lf:elementId>1</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="СписокДокументовViewStatusContextMenu" id="101"/>
+						<ExtendedTooltip name="СписокДокументовViewStatusExtendedTooltip" id="102"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокДокументовSearchControl" id="103">
+						<Source>
+							<lf:elementId>1</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="СписокДокументовSearchControlContextMenu" id="104"/>
+						<ExtendedTooltip name="СписокДокументовSearchControlExtendedTooltip" id="105"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокДокументовВыбор</Event>
+						<Event name="OnActivateRow">СписокДокументовПриАктивизацииСтроки</Event>
+						<Event name="BeforeRowChange">СписокДокументовПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="Заголовок" id="4">
+							<DataPath>СписокДокументов.Заголовок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗаголовокКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ЗаголовокExtendedTooltip" id="106"/>
+						</InputField>
+						<InputField name="РегистрационныйНомер" id="6">
+							<DataPath>СписокДокументов.РегистрационныйНомер</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="РегистрационныйНомерКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="РегистрационныйНомерExtendedTooltip" id="107"/>
+						</InputField>
+						<InputField name="ДатаРегистрации" id="8">
+							<DataPath>СписокДокументов.ДатаРегистрации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>от</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ДатаРегистрацииКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДатаРегистрацииExtendedTooltip" id="108"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаИнфо" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инфо</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инфо</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнфоExtendedTooltip" id="109"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияВнимание" id="47">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация внимание</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.Внимание</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияВниманиеКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ДекорацияВниманиеExtendedTooltip" id="110"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияИнфо" id="49">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не настроено заполнение документа 1С:Документооборота из</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияИнфоКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ДекорацияИнфоExtendedTooltip" id="111"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияСсылка" id="51">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>[?]</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияСсылкаКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ДекорацияСсылкаExtendedTooltip" id="112"/>
+							<Events>
+								<Event name="Click">ДекорацияСсылкаНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокДокументов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Заголовок" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РегистрационныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрационный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаРегистрации" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ID" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Документ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументID" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументТип" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяПотребителя" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя потребителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьВходящийДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать входящий документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать входящий документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВходящийДокумент</Action>
+		</Command>
+		<Command name="СоздатьИсходящийДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать исходящий документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать исходящий документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИсходящийДокумент</Action>
+		</Command>
+		<Command name="СоздатьВнутреннийДокумент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать внутренний документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать внутренний документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВнутреннийДокумент</Action>
+		</Command>
+		<Command name="Выбрать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Выбрать</Action>
+		</Command>
+		<Command name="СоздатьСвязанныйВходящий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящий документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать связанный входящий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьСвязанныйВходящий</Action>
+		</Command>
+		<Command name="ПрисоединитьСвязанныйВходящий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящий документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присоединить связанный входящий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрисоединитьСвязанныйВходящий</Action>
+		</Command>
+		<Command name="УдалитьСвязанный" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить документ на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить связанный документ на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСвязанный</Action>
+		</Command>
+		<Command name="ИзменитьСвязанный" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить связанный документ (F2)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьСвязанный</Action>
+		</Command>
+		<Command name="СоздатьСвязанныйИсходящий" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходящий документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать связанный входящий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьСвязанныйИсходящий</Action>
+		</Command>
+		<Command name="СоздатьСвязанныйВнутренний" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внутренний документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать связанный входящий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьСвязанныйВнутренний</Action>
+		</Command>
+		<Command name="ПрисоединитьСвязанныйИсходящий" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходящий документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присоединить связанный входящий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрисоединитьСвязанныйИсходящий</Action>
+		</Command>
+		<Command name="ПрисоединитьСвязанныйВнутренний" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внутренний документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присоединить связанный входящий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрисоединитьСвязанныйВнутренний</Action>
+		</Command>
+		<Command name="ОбновитьСвязанные" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить связанные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСвязанные</Action>
+		</Command>
+		<Command name="СоздатьБизнесПроцессОсновнойДокумент" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать бизнес-процесс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать бизнес-процесс документооборота по основному документу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьБизнесПроцессОсновнойДокумент</Action>
+		</Command>
+		<Command name="СоздатьБизнесПроцессСвязанныйДокумент" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать бизнес-процесс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать бизнес-процесс документооборота по связанному документу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьБизнесПроцессСвязанныйДокумент</Action>
+		</Command>
+		<Command name="УдалитьСвязь" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить связь с документом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить связь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСвязь</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ВнешнийОбъект">
+			<Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

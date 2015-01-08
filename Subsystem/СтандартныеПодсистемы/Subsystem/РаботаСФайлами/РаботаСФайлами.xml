@@ -52,6 +52,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияМногостраничныхФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияОдностраничныхФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВызовСервераПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

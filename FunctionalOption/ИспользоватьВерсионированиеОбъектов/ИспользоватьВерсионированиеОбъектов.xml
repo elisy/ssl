@@ -15,7 +15,6 @@
 			<Content>
 				<xr:Object>InformationRegister.НастройкаВерсионированияОбъектов</xr:Object>
 				<xr:Object>InformationRegister.ВерсииОбъектов</xr:Object>
-				<xr:Object>Report.ОтчетПоИзменениямВерсийОбъектов</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

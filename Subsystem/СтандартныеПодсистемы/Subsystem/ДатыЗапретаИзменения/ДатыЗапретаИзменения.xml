@@ -25,6 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПересчетТекущихЗначенийОтносительныхДатЗапретаИзменения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНазначенияДатЗапрета</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммыПланОбменаУзел</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДатыЗапретаЗагрузки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

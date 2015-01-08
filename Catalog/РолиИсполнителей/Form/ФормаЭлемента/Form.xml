@@ -6,26 +6,27 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="24">
 			<Group>Horizontal</Group>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="28"/>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="33"/>
 			<ChildItems>
 				<InputField name="Наименование" id="3">
 					<DataPath>Объект.Description</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="29"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="34"/>
 				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<Width>8</Width>
 					<Wrap>false</Wrap>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="КодExtendedTooltip" id="30"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="35"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -38,8 +39,54 @@
 			</Title>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаАдресацииExtendedTooltip" id="31"/>
+			<ExtendedTooltip name="ГруппаАдресацииExtendedTooltip" id="36"/>
 			<ChildItems>
+				<UsualGroup name="ГруппаВнешняяРоль" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа внешняя роль</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа внешняя роль</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВнешняяРольExtendedTooltip" id="37"/>
+					<ChildItems>
+						<CheckBoxField name="ВнешняяРоль" id="28">
+							<DataPath>Объект.ВнешняяРоль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внешняя роль. Исполнители роли определены в информационной базе:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВнешняяРольКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ВнешняяРольExtendedTooltip" id="38"/>
+							<Events>
+								<Event name="OnChange">ВнешняяРольПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="УзелОбмена" id="30">
+							<DataPath>Объект.УзелОбмена</DataPath>
+							<Enabled>false</Enabled>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="УзелОбменаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="УзелОбменаExtendedTooltip" id="39"/>
+							<Events>
+								<Event name="StartChoice">УзелОбменаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 				<CheckBoxField name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресации" id="5">
 					<DataPath>Объект.ИспользуетсяБезОбъектовАдресации</DataPath>
 					<TitleLocation>Right</TitleLocation>
@@ -51,7 +98,7 @@
 					</ToolTip>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресацииКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресацииExtendedTooltip" id="32"/>
+					<ExtendedTooltip name="ИспользуетсяБезКонтекстаДругихИзмеренийАдресацииExtendedTooltip" id="40"/>
 				</CheckBoxField>
 				<CheckBoxField name="ИспользуетсяВКонтекстеДругихИзмеренийАдресации" id="7">
 					<DataPath>Объект.ИспользуетсяСОбъектамиАдресации</DataPath>
@@ -64,7 +111,7 @@
 					</ToolTip>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ИспользуетсяВКонтекстеДругихИзмеренийАдресацииКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="ИспользуетсяВКонтекстеДругихИзмеренийАдресацииExtendedTooltip" id="33"/>
+					<ExtendedTooltip name="ИспользуетсяВКонтекстеДругихИзмеренийАдресацииExtendedTooltip" id="41"/>
 					<Events>
 						<Event name="OnChange">ИспользуетсяВКонтекстеДругихИзмеренийАдресацииПриИзменении</Event>
 					</Events>
@@ -72,21 +119,21 @@
 				<UsualGroup name="ГруппаТипыОбъектовАдресации" id="22">
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаТипыОбъектовАдресацииExtendedTooltip" id="34"/>
+					<ExtendedTooltip name="ГруппаТипыОбъектовАдресацииExtendedTooltip" id="42"/>
 					<ChildItems>
 						<InputField name="ТипыОсновногоОбъектаАдресации" id="18">
 							<DataPath>Объект.ТипыОсновногоОбъектаАдресации</DataPath>
 							<Wrap>false</Wrap>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ТипыОсновногоОбъектаАдресацииКонтекстноеМеню" id="19"/>
-							<ExtendedTooltip name="ТипыОсновногоОбъектаАдресацииExtendedTooltip" id="35"/>
+							<ExtendedTooltip name="ТипыОсновногоОбъектаАдресацииExtendedTooltip" id="43"/>
 						</InputField>
 						<InputField name="ТипыДополнительногоОбъектаАдресации" id="20">
 							<DataPath>Объект.ТипыДополнительногоОбъектаАдресации</DataPath>
 							<Wrap>false</Wrap>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ТипыДополнительногоОбъектаАдресацииКонтекстноеМеню" id="21"/>
-							<ExtendedTooltip name="ТипыДополнительногоОбъектаАдресацииExtendedTooltip" id="36"/>
+							<ExtendedTooltip name="ТипыДополнительногоОбъектаАдресацииExtendedTooltip" id="44"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -95,12 +142,12 @@
 		<UsualGroup name="ГруппаКомментарий" id="27">
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКомментарийExtendedTooltip" id="37"/>
+			<ExtendedTooltip name="ГруппаКомментарийExtendedTooltip" id="45"/>
 			<ChildItems>
 				<InputField name="Комментарий" id="25">
 					<DataPath>Объект.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="38"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="46"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

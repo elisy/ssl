@@ -386,6 +386,7 @@
 					</Synonym>
 					<Comment>Владелец файла</Comment>
 					<Type>
+						<v8:Type>cfg:BusinessProcessRef.Задание</v8:Type>
 						<v8:Type>cfg:CatalogRef.ПапкиФайлов</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>

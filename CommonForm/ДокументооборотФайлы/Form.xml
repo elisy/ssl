@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокФайлов" id="1">
+			<Representation>List</Representation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокФайлов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокФайловКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокФайловКонтекстноеМенюСоздатьФайл" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьФайл</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокФайловКонтекстноеМенюСоздатьФайлExtendedTooltip" id="47"/>
+					</Button>
+					<ButtonGroup name="СписокФайловКонтекстноеМенюГруппаСтандартные" id="45">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список файлов контекстное меню группа стандартные</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список файлов контекстное меню группа стандартные</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Item.СписокФайлов</CommandSource>
+						<ExtendedTooltip name="СписокФайловКонтекстноеМенюГруппаСтандартныеExtendedTooltip" id="48"/>
+						<ChildItems>
+							<Button name="СписокФайловКонтекстноеМенюОбновить" id="41">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Обновить</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюОбновитьExtendedTooltip" id="49"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ГруппаРаботыСФайлами" id="42">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа работы с файлами</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа работы с файлами</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаРаботыСФайламиExtendedTooltip" id="50"/>
+						<ChildItems>
+							<Button name="СписокФайловКонтекстноеМенюОткрытьФайл" id="44">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьФайл</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюОткрытьФайлExtendedTooltip" id="51"/>
+							</Button>
+							<Button name="СписокФайловКонтекстноеМенюСохранитьКак" id="28">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СохранитьКак</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюСохранитьКакExtendedTooltip" id="52"/>
+							</Button>
+							<Button name="СписокФайловКонтекстноеМенюОбновитьИзФайлаНаДиске" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОбновитьИзФайлаНаДиске</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюОбновитьИзФайлаНаДискеExtendedTooltip" id="53"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ГруппаЭЦП" id="36">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЭЦП</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЭЦП</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаЭЦПExtendedTooltip" id="54"/>
+						<ChildItems>
+							<Button name="СписокФайловКонтекстноеМенюПодписать" id="39">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Подписать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюПодписатьExtendedTooltip" id="55"/>
+							</Button>
+							<Button name="СписокФайловКонтекстноеМенюДобавитьЭЦПИзФайла" id="37">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьЭЦПИзФайла</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюДобавитьЭЦПИзФайлаExtendedTooltip" id="56"/>
+							</Button>
+							<Button name="СписокФайловКонтекстноеМенюСохранитьВместеСЭЦП" id="38">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СохранитьВместеСЭЦП</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловКонтекстноеМенюСохранитьВместеСЭЦПExtendedTooltip" id="57"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокФайловКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокФайловСоздатьФайл" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьФайл</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокФайловСоздатьФайлExtendedTooltip" id="58"/>
+					</Button>
+					<ButtonGroup name="СписокФайловГруппаКоммандФайлов" id="43">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список файлов группа комманд файлов</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список файлов группа комманд файлов</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокФайловГруппаКоммандФайловExtendedTooltip" id="59"/>
+						<ChildItems>
+							<Button name="СписокФайловОткрытьФайл" id="25">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.ОткрытьФайл</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловОткрытьФайлExtendedTooltip" id="60"/>
+							</Button>
+							<Button name="СписокФайловСохранитьКак" id="27">
+								<Type>CommandBarButton</Type>
+								<OnlyInAllActions>false</OnlyInAllActions>
+								<CommandName>Form.Command.СохранитьКак</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловСохранитьКакExtendedTooltip" id="61"/>
+							</Button>
+							<Button name="СписокФайловОбновитьИзФайлаНаДиске" id="31">
+								<Type>CommandBarButton</Type>
+								<OnlyInAllActions>false</OnlyInAllActions>
+								<CommandName>Form.Command.ОбновитьИзФайлаНаДиске</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловОбновитьИзФайлаНаДискеExtendedTooltip" id="62"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ФормаГруппаЭЦП" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЭЦП</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЭЦП</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ФормаГруппаЭЦПExtendedTooltip" id="63"/>
+						<ChildItems>
+							<Button name="СписокФайловПодписать" id="33">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Подписать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловПодписатьExtendedTooltip" id="64"/>
+							</Button>
+							<Button name="СписокФайловДобавитьЭЦПИзФайла" id="34">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьЭЦПИзФайла</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловДобавитьЭЦПИзФайлаExtendedTooltip" id="65"/>
+							</Button>
+							<Button name="СписокФайловСохранитьВместеСЭЦП" id="35">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СохранитьВместеСЭЦП</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокФайловСохранитьВместеСЭЦПExtendedTooltip" id="66"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<ButtonGroup name="ГруппаКомандСписка" id="29">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа команд списка</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа команд списка</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Item.СписокФайлов</CommandSource>
+						<ExtendedTooltip name="ГруппаКомандСпискаExtendedTooltip" id="67"/>
+					</ButtonGroup>
+					<Button name="СписокФайловОбновить" id="40">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокФайловОбновитьExtendedTooltip" id="68"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокФайловExtendedTooltip" id="69"/>
+			<SearchStringAddition name="СписокФайловSearchString" id="70">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокФайловSearchStringContextMenu" id="71"/>
+				<ExtendedTooltip name="СписокФайловSearchStringExtendedTooltip" id="72"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокФайловViewStatus" id="73">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокФайловViewStatusContextMenu" id="74"/>
+				<ExtendedTooltip name="СписокФайловViewStatusExtendedTooltip" id="75"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокФайловSearchControl" id="76">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокФайловSearchControlContextMenu" id="77"/>
+				<ExtendedTooltip name="СписокФайловSearchControlExtendedTooltip" id="78"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="DragCheck">СписокФайловПроверкаПеретаскивания</Event>
+				<Event name="Selection">СписокФайловВыбор</Event>
+				<Event name="BeforeAddRow">СписокФайловПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокФайловПередУдалением</Event>
+				<Event name="OnActivateRow">СписокФайловПриАктивизацииСтроки</Event>
+				<Event name="Drag">СписокФайловПеретаскивание</Event>
+				<Event name="BeforeRowChange">СписокФайловПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="СписокФайловПодписанЭЦП" id="17">
+					<DataPath>СписокФайлов.ПодписанЭЦП</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="СписокФайловПодписанЭЦПКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокФайловПодписанЭЦПExtendedTooltip" id="79"/>
+				</PictureField>
+				<ColumnGroup name="ГруппаКартинкаИНаименование" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинка и наименование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинка и наименование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаКартинкаИНаименованиеExtendedTooltip" id="80"/>
+					<ChildItems>
+						<PictureField name="СписокФайловИндексКартинки" id="12">
+							<DataPath>СписокФайлов.ИндексКартинки</DataPath>
+							<ShowInHeader>false</ShowInHeader>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.ПиктограммыФайлов</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="СписокФайловИндексКартинкиКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="СписокФайловИндексКартинкиExtendedTooltip" id="81"/>
+						</PictureField>
+						<InputField name="СписокФайловФайл" id="4">
+							<DataPath>СписокФайлов.Наименование</DataPath>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="СписокФайловФайлКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="СписокФайловФайлExtendedTooltip" id="82"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="СписокФайловОписание" id="8">
+					<DataPath>СписокФайлов.Описание</DataPath>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СписокФайловОписаниеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="СписокФайловОписаниеExtendedTooltip" id="83"/>
+				</InputField>
+				<InputField name="СписокФайловРазмер" id="10">
+					<DataPath>СписокФайлов.Размер</DataPath>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СписокФайловРазмерКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СписокФайловРазмерExtendedTooltip" id="84"/>
+				</InputField>
+				<InputField name="СписокФайловДатаСоздания" id="21">
+					<DataPath>СписокФайлов.ДатаСоздания</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</EditFormat>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СписокФайловДатаСозданияКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="СписокФайловДатаСозданияExtendedTooltip" id="85"/>
+				</InputField>
+				<InputField name="СписокФайловАвтор" id="19">
+					<DataPath>СписокФайлов.Автор</DataPath>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СписокФайловАвторКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СписокФайловАвторExtendedTooltip" id="86"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокФайлов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расширение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Размер" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер (Кб)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="УникальныйИдентификатор" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодписанЭЦП" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписан ЭЦП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Автор" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСоздания" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаМодификацииУниверсальная" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата модификации универсальная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Зашифрован" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зашифрован</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Редактируется" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактируется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаПодписей" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица подписей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<AdditionalColumns table="СписокФайлов.ТаблицаПодписей">
+					<Column name="КомуВыданСертификат" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кому выдан сертификат</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДатаПодписи" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата подписи</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="Комментарий" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Комментарий</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Статус" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статус</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="АдресПодписи" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Адрес подписи</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Отпечаток" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отпечаток</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Неверна" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Неверна</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ИндексКартинки" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Индекс картинки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="УстановившийПодпись" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Установивший подпись</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="АдресСертификата" id="10">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Адрес сертификата</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Объект" id="11">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объект</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ИмяФайлаПодписи" id="12">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя файла подписи</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="УстановившийПодписьИд" id="13">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Установивший подпись ид</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОбъектСсылка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КаталогДляСохраненияДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог для сохранения данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийИдентификаторФайла" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий идентификатор файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторКорневойПапки1СДокументооборот" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор корневой папки 1C документооборот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьФайл" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотреть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл для просмотра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОткрыть</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьФайл</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СоздатьФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый файл (Ins)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьФайл</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СохранитьКак" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить как...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить файл на диск или другое устройство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаСохранитьКак</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьКак</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОбновитьИзФайлаНаДиске" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из файла на диске</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из файла на диске</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОбновитьИзФайлаНаДиске</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьИзФайлаНаДиске</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Подписать" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="10" y="2"/>
+			</Picture>
+			<Action>Подписать</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="ДобавитьЭЦПИзФайла" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ЭЦП из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ЭЦП из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЭЦПИзФайла</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="СохранитьВместеСЭЦП" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить вместе с ЭЦП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить вместе СЭЦП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВместеСЭЦП</Action>
+		</Command>
+		<Command name="Обновить" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
+</Form>

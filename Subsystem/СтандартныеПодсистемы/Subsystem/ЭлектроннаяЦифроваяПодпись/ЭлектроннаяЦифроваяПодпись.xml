@@ -35,6 +35,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяЦифроваяПодписьКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборСертификата</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДействияПриСохраненииСЭЦП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПодписьЭЦП</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

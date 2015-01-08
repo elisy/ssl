@@ -55,6 +55,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ФайлЗанятыйТекущимПользователем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайловыеФункцииПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменФайламиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаОбновитьИзФайлаНаДиске</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайловыеФункцииПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

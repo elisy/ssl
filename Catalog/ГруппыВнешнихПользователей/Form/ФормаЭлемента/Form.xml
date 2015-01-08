@@ -463,9 +463,6 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-			<Save>
-				<Field>ПоказатьТолькоВыбранныеРоли</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ДействияВФорме" id="5">
 			<Title>

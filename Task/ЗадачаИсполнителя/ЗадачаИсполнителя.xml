@@ -893,6 +893,48 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="5e28e22a-dd6e-4703-92bd-13f5cb0dc023">
+				<Properties>
+					<Name>АвторСтрокой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор строкой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
 			<Form>Дополнительно</Form>
 			<Form>ЗадачиПоБизнесПроцессу</Form>
 			<Form>ЗадачиПоПредмету</Form>
@@ -901,6 +943,50 @@
 			<Form>ПеренаправитьЗадачи</Form>
 			<Form>ФормаЗадачи</Form>
 			<Form>ФормаСписка</Form>
+			<AddressingAttribute uuid="0408002c-9255-43a2-8022-82f02ee0e8f4">
+				<Properties>
+					<Name>ДополнительныйОбъектАдресации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный объект адресации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.ОбъектыАдресацииЗадач</v8:TypeSet>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный объект адресации, если задача адресована роли исполнителя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xr:DesignTimeRef">ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.EmptyRef</FillValue>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>Index</Indexing>
+					<AddressingDimension>InformationRegister.ИсполнителиЗадач.Dimension.ДополнительныйОбъектАдресации</AddressingDimension>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</AddressingAttribute>
 			<AddressingAttribute uuid="88f44c9b-216d-4d7e-bc88-1e6b253ed01e">
 				<Properties>
 					<Name>Исполнитель</Name>
@@ -942,50 +1028,6 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Indexing>Index</Indexing>
 					<AddressingDimension>InformationRegister.ИсполнителиЗадач.Dimension.Исполнитель</AddressingDimension>
-					<FullTextSearch>Use</FullTextSearch>
-				</Properties>
-			</AddressingAttribute>
-			<AddressingAttribute uuid="bc5eca9b-32d8-44e0-a127-8ad1f47d7957">
-				<Properties>
-					<Name>РольИсполнителя</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Роль исполнителя</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.РолиИсполнителей</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Роль исполнителя, которой адресована задача</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">Catalog.РолиИсполнителей.EmptyRef</FillValue>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>DontUse</QuickChoice>
-					<CreateOnInput>Use</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>Index</Indexing>
-					<AddressingDimension>InformationRegister.ИсполнителиЗадач.Dimension.РольИсполнителя</AddressingDimension>
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</AddressingAttribute>
@@ -1033,18 +1075,18 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</AddressingAttribute>
-			<AddressingAttribute uuid="0408002c-9255-43a2-8022-82f02ee0e8f4">
+			<AddressingAttribute uuid="bc5eca9b-32d8-44e0-a127-8ad1f47d7957">
 				<Properties>
-					<Name>ДополнительныйОбъектАдресации</Name>
+					<Name>РольИсполнителя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дополнительный объект адресации</v8:content>
+							<v8:content>Роль исполнителя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:Characteristic.ОбъектыАдресацииЗадач</v8:TypeSet>
+						<v8:Type>cfg:CatalogRef.РолиИсполнителей</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -1052,7 +1094,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дополнительный объект адресации, если задача адресована роли исполнителя</v8:content>
+							<v8:content>Роль исполнителя, которой адресована задача</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -1062,18 +1104,18 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.EmptyRef</FillValue>
+					<FillValue xsi:type="xr:DesignTimeRef">Catalog.РолиИсполнителей.EmptyRef</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
+					<QuickChoice>DontUse</QuickChoice>
+					<CreateOnInput>Use</CreateOnInput>
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Indexing>Index</Indexing>
-					<AddressingDimension>InformationRegister.ИсполнителиЗадач.Dimension.ДополнительныйОбъектАдресации</AddressingDimension>
+					<AddressingDimension>InformationRegister.ИсполнителиЗадач.Dimension.РольИсполнителя</AddressingDimension>
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</AddressingAttribute>

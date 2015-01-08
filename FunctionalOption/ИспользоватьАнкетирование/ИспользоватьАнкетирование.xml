@@ -21,7 +21,6 @@
 				<xr:Object>Report.АнализОпроса</xr:Object>
 				<xr:Object>Catalog.ШаблоныАнкет</xr:Object>
 				<xr:Object>Catalog.ВопросыШаблонаАнкеты</xr:Object>
-				<xr:Object>Subsystem.СтандартныеПодсистемы.Subsystem.Анкетирование</xr:Object>
 				<xr:Object>Report.АнкетированиеАналитическийОтчет</xr:Object>
 			</Content>
 		</Properties>

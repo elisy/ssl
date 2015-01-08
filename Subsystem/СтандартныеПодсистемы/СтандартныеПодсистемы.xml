@@ -26,11 +26,13 @@
 			<Subsystem>ВебСервисыРаботыСФайлами</Subsystem>
 			<Subsystem>ВерсионированиеОбъектов</Subsystem>
 			<Subsystem>Взаимодействия</Subsystem>
+			<Subsystem>ВнешниеБизнесПроцессыИЗадачи</Subsystem>
 			<Subsystem>ГрупповоеИзменениеОбъектов</Subsystem>
 			<Subsystem>ДатыЗапретаИзменения</Subsystem>
 			<Subsystem>ДополнительныеОтчетыИОбработки</Subsystem>
 			<Subsystem>ЗавершениеРаботыПользователей</Subsystem>
 			<Subsystem>ЗапретРедактированияРеквизитовОбъектов</Subsystem>
+			<Subsystem>ИнтеграцияС1СДокументооборот</Subsystem>
 			<Subsystem>КалендарныеГрафики</Subsystem>
 			<Subsystem>КонтактнаяИнформация</Subsystem>
 			<Subsystem>КонтрольДинамическогоОбновленияКонфигурации</Subsystem>

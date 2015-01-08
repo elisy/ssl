@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Width>80</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТипОбъектаПотребителя" id="5">
+			<DataPath>ПредставлениеОбъектаПотребителя</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ТипОбъектаПотребителяКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ТипОбъектаПотребителяExtendedTooltip" id="44"/>
+			<Events>
+				<Event name="StartChoice">ТипОбъектаПотребителяНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТипОбъектаДокументооборота" id="7">
+			<DataPath>ПредставлениеОбъектаДокументооборота</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект 1С:Документооборота</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ТипОбъектаДокументооборотаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТипОбъектаДокументооборотаExtendedTooltip" id="45"/>
+			<Events>
+				<Event name="StartChoice">ТипОбъектаДокументооборотаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаОтступ" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отступ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отступ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтступExtendedTooltip" id="46"/>
+			<ChildItems>
+				<Table name="ПравилаЗаполненияРеквизитов" id="9">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Height>22</Height>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ПравилаЗаполненияРеквизитов</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПравилаЗаполненияРеквизитовКонтекстноеМеню" id="10">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ПравилаЗаполненияРеквизитовКонтекстноеМенюИзменить" id="43">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПравилаЗаполненияРеквизитов.StandardCommand.Change</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ПравилаЗаполненияРеквизитовКонтекстноеМенюИзменитьExtendedTooltip" id="47"/>
+							</Button>
+							<Button name="ПравилаЗаполненияРеквизитовКонтекстноеМенюУдалить" id="41">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПравилаЗаполненияРеквизитов.StandardCommand.Delete</CommandName>
+								<Parameter xsi:nil="true"/>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Очистить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПравилаЗаполненияРеквизитовКонтекстноеМенюУдалитьExtendedTooltip" id="48"/>
+							</Button>
+							<ButtonGroup name="ПравилаЗаполненияРеквизитовКонтекстноеМенюГруппа" id="42">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила заполнения реквизитов контекстное меню группа</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила заполнения реквизитов контекстное меню группа</v8:content>
+									</v8:item>
+								</ToolTip>
+								<CommandSource>Item.ПравилаЗаполненияРеквизитов</CommandSource>
+								<ExtendedTooltip name="ПравилаЗаполненияРеквизитовКонтекстноеМенюГруппаExtendedTooltip" id="49"/>
+							</ButtonGroup>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="ПравилаЗаполненияРеквизитовКоманднаяПанель" id="11">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ПравилаЗаполненияРеквизитовИзменить" id="29">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<OnlyInAllActions>true</OnlyInAllActions>
+								<CommandName>Form.Item.ПравилаЗаполненияРеквизитов.StandardCommand.Change</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ПравилаЗаполненияРеквизитовИзменитьExtendedTooltip" id="50"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПравилаЗаполненияРеквизитовExtendedTooltip" id="51"/>
+					<SearchStringAddition name="ПравилаЗаполненияРеквизитовSearchString" id="52">
+						<Source>
+							<lf:elementId>9</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ПравилаЗаполненияРеквизитовSearchStringContextMenu" id="53"/>
+						<ExtendedTooltip name="ПравилаЗаполненияРеквизитовSearchStringExtendedTooltip" id="54"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПравилаЗаполненияРеквизитовViewStatus" id="55">
+						<Source>
+							<lf:elementId>9</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ПравилаЗаполненияРеквизитовViewStatusContextMenu" id="56"/>
+						<ExtendedTooltip name="ПравилаЗаполненияРеквизитовViewStatusExtendedTooltip" id="57"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПравилаЗаполненияРеквизитовSearchControl" id="58">
+						<Source>
+							<lf:elementId>9</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ПравилаЗаполненияРеквизитовSearchControlContextMenu" id="59"/>
+						<ExtendedTooltip name="ПравилаЗаполненияРеквизитовSearchControlExtendedTooltip" id="60"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ПравилаЗаполненияРеквизитовПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ПравилаЗаполненияРеквизитовПередУдалением</Event>
+						<Event name="BeforeRowChange">ПравилаЗаполненияРеквизитовПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ПредставлениеРеквизитаОбъектаДокументооборота" id="33">
+							<DataPath>ПравилаЗаполненияРеквизитов.ПредставлениеРеквизитаОбъектаДокументооборота</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизит 1С:Документооборота</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>38</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ПредставлениеРеквизитаОбъектаДокументооборотаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ПредставлениеРеквизитаОбъектаДокументооборотаExtendedTooltip" id="61"/>
+						</InputField>
+						<ColumnGroup name="ПравилаЗаполненияРеквизитовГруппа" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правило заполнения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила заполнения реквизитов группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>InCell</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<ExtendedTooltip name="ПравилаЗаполненияРеквизитовГруппаExtendedTooltip" id="62"/>
+							<ChildItems>
+								<InputField name="ИмяРеквизитаОбъектаПотребителя" id="35">
+									<DataPath>ПравилаЗаполненияРеквизитов.ИмяРеквизитаОбъектаПотребителя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<ContextMenu name="ИмяРеквизитаОбъектаПотребителяКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ИмяРеквизитаОбъектаПотребителяExtendedTooltip" id="63"/>
+								</InputField>
+								<InputField name="ЗначениеРеквизитаДокументооборота" id="37">
+									<DataPath>ПравилаЗаполненияРеквизитов.ЗначениеРеквизитаДокументооборота</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<ContextMenu name="ЗначениеРеквизитаДокументооборотаКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ЗначениеРеквизитаДокументооборотаExtendedTooltip" id="64"/>
+								</InputField>
+								<InputField name="ВычисляемоеВыражение" id="39">
+									<DataPath>ПравилаЗаполненияРеквизитов.ВычисляемоеВыражение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<ContextMenu name="ВычисляемоеВыражениеКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ВычисляемоеВыражениеExtendedTooltip" id="65"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+				<InputField name="Комментарий" id="30">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="66"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиЗаполненияОбъектов1СДокументооборота</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.ПравилаЗаполненияРеквизитов"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПредставлениеОбъектаПотребителя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление объекта потребителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеОбъектаДокументооборота" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление объекта документооборота</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилаЗаполненияРеквизитов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила заполнения реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяРеквизитаОбъектаДокументооборота" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита объекта документооборота</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВариантПравилаЗаполненияРеквизитов" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант правила заполнения реквизитов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыПравилЗаполненияРеквизитов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяРеквизитаОбъектаПотребителя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита объекта потребителя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗначениеРеквизитаДокументооборота" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение реквизита документооборота</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторЗначенияРеквизита" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор значения реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипЗначенияРеквизита" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВычисляемоеВыражение" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вычисляемое выражение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипРеквизитаОбъектаДокументооборота" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип реквизита объекта документооборота</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеРеквизитаОбъектаДокументооборота" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление реквизита объекта документооборота</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДополнительныйРеквизит" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДополнительныйРеквизитID" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДополнительныйРеквизитТип" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

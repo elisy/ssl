@@ -44,7 +44,7 @@
 				<PictureSize>AutoSize</PictureSize>
 			</Properties>
 			<Events>
-				<Event name="BeforeStart"/>
+				<Event name="BeforeStart">СтартПередСтартом</Event>
 			</Events>
 		</Start>
 		<ConnectionLine id="2">
@@ -121,23 +121,23 @@
 				<Explanation>Исполнитель</Explanation>
 				<Group>false</Group>
 				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
-					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
-					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 				</AddressingAttributes>
 			</Properties>
 			<Events>
 				<Event name="InteractiveActivationProcessing"/>
-				<Event name="BeforeCreateTasks"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
 				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
 				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
 				<Event name="CheckExecutionProcessing"/>
@@ -219,16 +219,16 @@
 				<Explanation>Проверяющий</Explanation>
 				<Group>false</Group>
 				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
-					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
-					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 				</AddressingAttributes>

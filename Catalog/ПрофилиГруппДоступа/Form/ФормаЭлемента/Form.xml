@@ -822,9 +822,6 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-			<Save>
-				<Field>ПоказатьТолькоВыбранныеРоли</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="НадписьВидДоступа" id="7">
 			<Title>
