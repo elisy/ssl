@@ -14,7 +14,7 @@
 				<v8:Type>cfg:CatalogObject.ВнешниеПользователи</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
-			<Handler>CommonModule.ВнешниеПользователиСобытия.ОбновитьПредставлениеВнешнегоПользователя</Handler>
+			<Handler>CommonModule.ПользователиСобытия.ОбновитьПредставлениеВнешнегоПользователя</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

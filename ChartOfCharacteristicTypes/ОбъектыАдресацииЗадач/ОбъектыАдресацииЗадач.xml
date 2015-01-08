@@ -109,7 +109,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование объекта адресации задач</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -305,7 +310,12 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект адресации задач</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>

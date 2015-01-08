@@ -2,7 +2,30 @@
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>true</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>Catalog.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
 	<object>
 		<name>Catalog.ШаблоныАнкет</name>
 		<right>
@@ -51,6 +74,29 @@
 	</object>
 	<object>
 		<name>Catalog.ВариантыОтчетов</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.РазделыДатЗапретаИзменения</name>
 		<right>
 			<name>InteractiveDelete</name>
 			<value>false</value>
@@ -165,6 +211,29 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ЗапланированноеВзаимодействиеПрисоединенныеФайлы</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ФизическиеЛица</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -248,6 +317,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ТелефонныйЗвонок</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.РолиИсполнителей</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -267,6 +343,43 @@
 		</right>
 		<right>
 			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ТелефонныйЗвонокПрисоединенныеФайлы</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЗапланированноеВзаимодействие</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Встреча</name>
+		<right>
+			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -347,6 +460,29 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ВидыКонтактнойИнформации</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -389,6 +525,13 @@
 		</right>
 		<right>
 			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЭлектронноеПисьмоИсходящее</name>
+		<right>
+			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -669,6 +812,29 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВстречаПрисоединенныеФайлы</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ТомаХраненияФайлов</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -787,6 +953,13 @@
 		</right>
 		<right>
 			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЭлектронноеПисьмоВходящее</name>
+		<right>
+			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
 	</object>

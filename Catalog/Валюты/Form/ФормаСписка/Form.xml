@@ -7,13 +7,13 @@
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ЗагрузитьКурсыВалют</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаЗагрузитьКурсыВалютExtendedTooltip" id="45"/>
+				<ExtendedTooltip name="ФормаЗагрузитьКурсыВалютExtendedTooltip" id="49"/>
 			</Button>
 			<Button name="ФормаПодборИзОКВ" id="44">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПодборИзОКВ</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаПодборИзОКВExtendedTooltip" id="46"/>
+				<ExtendedTooltip name="ФормаПодборИзОКВExtendedTooltip" id="50"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -47,30 +47,30 @@
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<ContextMenu name="ВалютыКонтекстноеМеню" id="26"/>
 			<AutoCommandBar name="ВалютыКоманднаяПанель" id="27"/>
-			<ExtendedTooltip name="ВалютыExtendedTooltip" id="47"/>
-			<SearchStringAddition name="ВалютыSearchString" id="48">
+			<ExtendedTooltip name="ВалютыExtendedTooltip" id="51"/>
+			<SearchStringAddition name="ВалютыSearchString" id="52">
 				<Source>
 					<lf:elementId>25</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="ВалютыSearchStringContextMenu" id="49"/>
-				<ExtendedTooltip name="ВалютыSearchStringExtendedTooltip" id="50"/>
+				<ContextMenu name="ВалютыSearchStringContextMenu" id="53"/>
+				<ExtendedTooltip name="ВалютыSearchStringExtendedTooltip" id="54"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ВалютыViewStatus" id="51">
+			<ViewStatusAddition name="ВалютыViewStatus" id="55">
 				<Source>
 					<lf:elementId>25</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="ВалютыViewStatusContextMenu" id="52"/>
-				<ExtendedTooltip name="ВалютыViewStatusExtendedTooltip" id="53"/>
+				<ContextMenu name="ВалютыViewStatusContextMenu" id="56"/>
+				<ExtendedTooltip name="ВалютыViewStatusExtendedTooltip" id="57"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ВалютыSearchControl" id="54">
+			<SearchControlAddition name="ВалютыSearchControl" id="58">
 				<Source>
 					<lf:elementId>25</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="ВалютыSearchControlContextMenu" id="55"/>
-				<ExtendedTooltip name="ВалютыSearchControlExtendedTooltip" id="56"/>
+				<ContextMenu name="ВалютыSearchControlContextMenu" id="59"/>
+				<ExtendedTooltip name="ВалютыSearchControlExtendedTooltip" id="60"/>
 			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="Код" id="28">
@@ -78,61 +78,53 @@
 					<Width>3</Width>
 					<Wrap>false</Wrap>
 					<ContextMenu name="КодКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="КодExtendedTooltip" id="57"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="61"/>
 				</InputField>
 				<InputField name="Наименование" id="32">
 					<DataPath>Список.Description</DataPath>
 					<Width>5</Width>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="58"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="62"/>
 				</InputField>
 				<InputField name="НаименованиеПолное" id="40">
 					<DataPath>Список.НаименованиеПолное</DataPath>
 					<Width>20</Width>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="НаименованиеПолноеExtendedTooltip" id="59"/>
+					<ExtendedTooltip name="НаименованиеПолноеExtendedTooltip" id="63"/>
 				</InputField>
-				<ColumnGroup name="КурсКратность" id="42">
+				<LabelField name="Курс" id="38">
+					<DataPath>Список.Курс</DataPath>
+					<Width>8</Width>
+					<ContextMenu name="КурсКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КурсExtendedTooltip" id="64"/>
+				</LabelField>
+				<LabelField name="РубЗа" id="45">
+					<DataPath>Список.РубЗа</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="РубЗаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="РубЗаExtendedTooltip" id="65"/>
+				</LabelField>
+				<LabelField name="Кратность" id="36">
+					<DataPath>Список.Кратность</DataPath>
+					<TitleLocation>None</TitleLocation>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Курс кратность</v8:content>
+							<v8:content>кратность равная единице не отображается</v8:content>
 						</v8:item>
 					</ToolTip>
-					<HorizontalStretch>true</HorizontalStretch>
-					<Group>InCell</Group>
-					<ExtendedTooltip name="КурсКратностьExtendedTooltip" id="60"/>
-					<ChildItems>
-						<InputField name="Курс" id="38">
-							<DataPath>Список.Курс</DataPath>
-							<Width>8</Width>
-							<Wrap>false</Wrap>
-							<ContextMenu name="КурсКонтекстноеМеню" id="39"/>
-							<ExtendedTooltip name="КурсExtendedTooltip" id="61"/>
-						</InputField>
-						<InputField name="Кратность" id="36">
-							<DataPath>Список.Кратность</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>кратность</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>кратность равная единице не отображается</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Width>5</Width>
-							<Wrap>false</Wrap>
-							<ContextMenu name="КратностьКонтекстноеМеню" id="37"/>
-							<ExtendedTooltip name="КратностьExtendedTooltip" id="62"/>
-						</InputField>
-					</ChildItems>
-				</ColumnGroup>
+					<Width>5</Width>
+					<ContextMenu name="КратностьКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="КратностьExtendedTooltip" id="66"/>
+				</LabelField>
+				<LabelField name="КраткоеНаименование" id="47">
+					<DataPath>Список.КраткоеНаименование</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="КраткоеНаименованиеКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КраткоеНаименованиеExtendedTooltip" id="67"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -155,8 +147,20 @@
 		КОГДА КурсыВалют.Кратность = 1 ТОГДА
 			" "
 		Иначе
+			"руб. за"
+	Конец Как РубЗа,
+	ВЫБОР 
+		КОГДА КурсыВалют.Кратность = 1 ТОГДА
+			" "
+		Иначе
 			КурсыВалют.Кратность
-	Конец Как Кратность
+	Конец Как Кратность,
+	ВЫБОР 
+		КОГДА КурсыВалют.Кратность = 1 ТОГДА
+			" "
+		Иначе
+			Валюты.Наименование
+	Конец Как КраткоеНаименование
 ИЗ
 	Справочник.Валюты как Валюты
 ЛЕВОЕ ВНЕШНЕЕ СОЕДИНЕНИЕ	

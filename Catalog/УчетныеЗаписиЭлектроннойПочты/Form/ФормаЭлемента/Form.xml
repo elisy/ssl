@@ -123,12 +123,6 @@
 								</v8:item>
 							</Title>
 							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ыв</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ПользовательПарольExtendedTooltip" id="67"/>
 							<ChildItems>
@@ -191,22 +185,22 @@
 							<Representation>None</Representation>
 							<ExtendedTooltip name="СведенияОСервереExtendedTooltip" id="72"/>
 							<ChildItems>
-								<InputField name="POP3Сервер" id="9">
-									<DataPath>Объект.POP3Сервер</DataPath>
+								<InputField name="СерверВходящейПочтыPOP3" id="9">
+									<DataPath>Объект.СерверВходящейПочтыPOP3</DataPath>
 									<Width>15</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Wrap>false</Wrap>
-									<ContextMenu name="POP3СерверКонтекстноеМеню" id="10"/>
-									<ExtendedTooltip name="POP3СерверExtendedTooltip" id="73"/>
+									<ContextMenu name="СерверВходящейПочтыPOP3КонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="СерверВходящейПочтыPOP3ExtendedTooltip" id="73"/>
 								</InputField>
-								<InputField name="SMTPСервер" id="7">
-									<DataPath>Объект.SMTPСервер</DataPath>
+								<InputField name="СерверИсходящейПочтыSMTP" id="7">
+									<DataPath>Объект.СерверИсходящейПочтыSMTP</DataPath>
 									<Width>15</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Wrap>false</Wrap>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
-									<ContextMenu name="SMTPСерверКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="SMTPСерверExtendedTooltip" id="74"/>
+									<ContextMenu name="СерверИсходящейПочтыSMTPКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="СерверИсходящейПочтыSMTPExtendedTooltip" id="74"/>
 								</InputField>
 								<Button name="ДополнительныеНастройкиСервераПочты" id="50">
 									<Type>Hyperlink</Type>
@@ -310,6 +304,7 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
 	<Commands>

@@ -201,7 +201,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Серия документа удостоверяющего личность</v8:content>
+							<v8:content>Серия документа</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -248,7 +248,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер документа удостоверяющего личность</v8:content>
+							<v8:content>Номер документа</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -291,7 +291,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата выдачи документа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -332,7 +337,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок действия документа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -377,7 +387,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Кем выдан документ удостоверяющий личность</v8:content>
+							<v8:content>Кем выдан документ</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -421,7 +431,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код подразделения документа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -449,7 +464,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Является документом удостоверяющим личность</v8:content>
+							<v8:content>Является документом, удостоверяющим личность</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -459,7 +474,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Признак того, что документ является удостоверением личности</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -501,7 +521,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление документа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>true</MultiLine>
@@ -628,7 +653,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа физического лица</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

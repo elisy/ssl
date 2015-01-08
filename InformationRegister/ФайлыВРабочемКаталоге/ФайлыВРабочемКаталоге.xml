@@ -183,7 +183,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Относительный путь к файлу (путь к рабочему каталогу сюда не входит)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -226,7 +231,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер файла в байтах</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -257,7 +267,7 @@
 							<v8:content>Дата помещения в рабочий каталог</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Дата помещения в рабочий каталог</Comment>
+					<Comment>Дата помещения файла в рабочий каталог</Comment>
 					<Type>
 						<v8:Type>xs:dateTime</v8:Type>
 						<v8:DateQualifiers>
@@ -267,7 +277,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата помещения файла в рабочий каталог</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -305,7 +320,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл помещен на чтение</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -343,7 +363,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>если Истина - файл находится в рабочем каталоге владельца, если Ложь - в локальном кэше файлов</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -381,7 +406,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия файла</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -415,14 +445,19 @@
 							<v8:content>Пользователь</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Пользователь</Comment>
+					<Comment>Пользователь информационной базы</Comment>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь информационной базы</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

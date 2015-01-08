@@ -231,7 +231,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование организации</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -256,7 +261,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код организации как элемента справочника.</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -339,7 +349,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Используется при нумерации документов. В начало каждого номера документов данной организации добавляется не более двух буквенных символов.</v8:content>
+							<v8:content>Используется при нумерации документов. В начало каждого номера документов данной организации добавляется два символа префикса.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -384,7 +394,12 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хранение контактной информации (адреса, веб-страницы, номера телефонов и др.)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
 						<xr:StandardAttribute name="LineNumber">
@@ -432,7 +447,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип контактной информации (телефон, адрес и т.п.)</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -468,7 +488,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид контактной информации</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -508,7 +533,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление контактной информации для отображения в формах</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -548,7 +578,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Служебное поле, для хранения контактной информации</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -588,7 +623,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страна (заполняется для адреса)</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -628,7 +668,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регион (заполняется для адреса)</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -668,7 +713,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Город (заполняется для адреса)</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -708,7 +758,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес электронной почты</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -748,7 +803,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доменное имя сервера электронной почты или веб-страницы</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -788,7 +848,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Полный номер телефона</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -828,7 +893,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер телефона без кодов и добавочного номера</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>

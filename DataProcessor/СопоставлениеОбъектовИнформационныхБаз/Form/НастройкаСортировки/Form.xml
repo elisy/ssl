@@ -10,6 +10,7 @@
 		<Table name="ТаблицаСортировки" id="1">
 			<Representation>List</Representation>
 			<SkipOnInput>false</SkipOnInput>
+			<ChangeRowSet>false</ChangeRowSet>
 			<RowSelectionMode>Row</RowSelectionMode>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>

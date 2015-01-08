@@ -149,7 +149,6 @@
 			</Title>
 			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 			<Height>2</Height>
-			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="13"/>
 			<ExtendedTooltip name="КомментарийExtendedTooltip" id="59"/>
@@ -260,7 +259,7 @@
 								<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
-								<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+								<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
@@ -301,7 +300,7 @@
 								<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
-								<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+								<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
 								<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>

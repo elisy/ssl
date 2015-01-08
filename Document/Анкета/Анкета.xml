@@ -225,7 +225,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опрос, в рамках которого заполняется анкета</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -258,12 +263,21 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Респондент, заполнивший анкету</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -304,7 +318,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего редактирования анкеты</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -347,7 +366,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раздел, который редактировался в момент сохранения анкеты</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -438,7 +462,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вопрос шаблона анкеты</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -474,7 +503,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Элементарный вопрос, на который дан ответ</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -515,7 +549,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер строки, или номер ячейки табличного вопроса. </v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -551,7 +590,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ответ на вопрос.</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -591,7 +635,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий к ответу.</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>

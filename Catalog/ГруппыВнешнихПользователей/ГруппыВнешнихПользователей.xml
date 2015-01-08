@@ -241,7 +241,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование группы внешних пользователей</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -350,7 +355,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Произвольная строка</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -637,7 +647,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разрешенное действие (роль), заданное для группы внешних пользователей</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>

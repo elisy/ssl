@@ -58,6 +58,9 @@
 				<ContextMenu name="СписокSearchControlContextMenu" id="16"/>
 				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="17"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="Наименование" id="4">
 					<DataPath>Список.Description</DataPath>
@@ -79,6 +82,9 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>

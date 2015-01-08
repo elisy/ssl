@@ -6,16 +6,16 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настроить параметры транспорта сообщений обмена</v8:content>
+					<v8:content>Параметры транспорта сообщений</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Group>CommandGroup.ПараметрыОбменаДанными</Group>
+			<Group>FormCommandBarImportant</Group>
 			<Representation>Auto</Representation>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки параметров транспорта</v8:content>
+					<v8:content>Настройка параметров транспорта сообщений обмена</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture/>

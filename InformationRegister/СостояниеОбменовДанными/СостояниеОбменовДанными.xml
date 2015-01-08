@@ -42,8 +42,8 @@
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
 			<EditType>InList</EditType>
-			<DefaultRecordForm>InformationRegister.СостояниеОбменовДанными.Form.ФормаЗаписи</DefaultRecordForm>
-			<DefaultListForm>InformationRegister.СостояниеОбменовДанными.Form.ФормаСписка</DefaultListForm>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -160,7 +160,12 @@
 			<ExtendedRecordPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
-			<Explanation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется для хранения информации состояния последней итерации обмена данными.</v8:content>
+				</v8:item>
+			</Explanation>
 		</Properties>
 		<ChildObjects>
 			<Resource uuid="45d61391-4cf7-4f45-8775-ada582c42400">
@@ -179,7 +184,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат выполнения действия обмена данными.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -220,7 +230,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала выполнения действия обмена данными.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -261,7 +276,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания выполнения действия обмена данными.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -299,7 +319,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел плана обмена, для которого используется информация состояния обмена</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -340,7 +365,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие, для которого используется информация состояния обмена (выгрузка/загрузка данных)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -365,8 +395,6 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Form>ФормаЗаписи</Form>
-			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

@@ -61,7 +61,7 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="Наименование" id="4">
-					<DataPath>Список.Description</DataPath>
+					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
@@ -82,9 +82,30 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>1/16</Field>
+				<Field>Список.Ref</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Профили.Ссылка,
+	Профили.ПометкаУдаления,
+	Профили.Предопределенный,
+	Профили.Родитель,
+	Профили.ЭтоГруппа,
+	Профили.Наименование КАК Наименование,
+	Профили.ПоставляемыйПрофильИзменен,
+	Профили.Комментарий
+ИЗ
+	Справочник.ПрофилиГруппДоступа КАК Профили
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;РежимВыбораТолькоГрупп
+				ТОГДА Профили.ЭтоГруппа
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ</QueryText>
 				<MainTable>Catalog.ПрофилиГруппДоступа</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -93,6 +114,12 @@
 							<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
 							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ПрофилиГруппДоступа.Администратор</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
 				</ListSettings>

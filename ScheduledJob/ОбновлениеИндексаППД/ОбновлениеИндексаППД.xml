@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<MethodName>CommonModule.ПолнотекстовыйПоискСервер.ОбновлениеИндексаППД</MethodName>
-			<Description/>
+			<Description>Обновление индекса ППД</Description>
 			<Key/>
 			<Use>true</Use>
 			<Predefined>true</Predefined>

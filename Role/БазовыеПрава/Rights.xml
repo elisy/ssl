@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
-	<setForAttributesByDefault>false</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>InformationRegister.НаборыЗначенийДоступа</name>
 	</object>
@@ -14,13 +14,16 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.СвязиПараметровВыбора</name>
+		<name>InformationRegister.НаличиеПрисоединенныхФайлов</name>
 		<right>
-			<name>View</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>CommonForm.РазмерФайлаВРабочемКаталогеОтличается</name>
 		<right>
-			<name>Edit</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -28,24 +31,6 @@
 		<name>Catalog.НаборыДополнительныхРеквизитовИСведений</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.АдресТолькоРоссийский</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.Attribute.ИспользуютсяДопСведения</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -61,17 +46,6 @@
 "ДополнительныеСведения","Ссылка","ИЛИ",
 "Условие","НЕ ЭтоДополнительноеСведение","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","", "","","")</condition>
 			</restrictionByCondition>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.Attribute.ПрерыватьПриОшибке</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -92,10 +66,17 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.ВводПароляСОписаниями</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ЗначенияГруппДоступа</name>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.Тип</name>
+		<name>CommonForm.ДобавлениеПодписиИзФайла</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -109,38 +90,9 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.ВыборГруппИЭлементов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonForm.ПараметрыПроксиСервера</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.РедактированиеТолькоВДиалоге</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.ВидОперации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -155,6 +107,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.ПрисоединенныйФайл</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonForm.ПоискПоИндексу</name>
 		<right>
 			<name>View</name>
@@ -162,25 +121,14 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.Значение</name>
+		<name>CommonForm.ОтчетОСохраненииФайлов</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты</name>
-	</object>
-	<object>
-		<name>CommonForm.НастройкиЭЦП</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>Catalog.ВидыДокументовФизическихЛиц</name>
@@ -201,17 +149,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.Изменять</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ВидыКонтактнойИнформации</name>
 		<right>
 			<name>Read</name>
@@ -227,91 +164,30 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Predefined</name>
+		<name>CommonForm.ВыборПодписей</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Ref</name>
+		<name>CommonForm.ВыборСертификата</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.DeletionMark</name>
+		<name>CommonForm.ВыборСертификатовШифрования</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.IsFolder</name>
+		<name>CommonForm.НапоминаниеПриРедактировании</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.Attribute.ИзменятьВТранзакции</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.ЗаблокированныйРеквизит</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.Attribute.ИспользуютсяДопРеквизиты</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -319,46 +195,6 @@
 		<name>DataProcessor.ПолнотекстовыйПоискВДанных.Command.ПолнотекстовыйПоиск</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.ОбъектыДляИзменения</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.РеквизитДопУпорядочивания</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.ПараметрыВыбора</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.ИмяРеквизита</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -371,13 +207,6 @@
 	</object>
 	<object>
 		<name>CommonForm.НастройкаЛокальногоКэшаФайлов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.Attribute.Вес</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -399,70 +228,28 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.Predefined</name>
+		<name>CommonForm.СертификатЭЦП</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.Ref</name>
+		<name>CommonForm.ПрисоединенныеФайлы</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.DeletionMark</name>
+		<name>CommonForm.ВРабочемКаталогеБолееНовыйФайл</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ЗначенияСвойствОбъектов.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.ФормаСертификатаЭЦП</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.ВыборСертификатаЭЦПДляПодписи</name>
+		<name>CommonForm.УстановкаПодписиЭЦП</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -476,64 +263,9 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonForm.ПечатьДокументов</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.ОбъектыДляИзменения.Attribute.СоставДопСведений</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.Свойство</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.ОбъектыДляИзменения.Attribute.Ссылка</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.Представление</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -545,28 +277,10 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.МожноИзменятьСпособРедактирования</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ГруппыДоступа</name>
 	</object>
 	<object>
 		<name>InformationRegister.ГруппыЗначенийДоступа</name>
-	</object>
-	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.Операции.Attribute.ДопустимыеТипы</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>DataProcessor.ГрупповоеИзменениеОбъектов</name>
@@ -580,17 +294,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ГрупповоеИзменениеОбъектов.TabularSection.ОбъектыДляИзменения.Attribute.СоставДопРеквизитов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonCommand.ПерсональнаяНастройкаПроксиСервера</name>
 		<right>
 			<name>View</name>
@@ -598,7 +301,28 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonCommand.ПрисоединенныеФайлыКОбъекту</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПрофилиГруппДоступа</name>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПрисоединенныхФайлов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПутиКАрхивуФайловТомов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
 	</object>
 	<restrictionTemplate>
 		<name>ПоЗначениям</name>

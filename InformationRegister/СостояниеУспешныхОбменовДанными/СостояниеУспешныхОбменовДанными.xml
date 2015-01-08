@@ -42,8 +42,8 @@
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm>InformationRegister.СостояниеУспешныхОбменовДанными.Form.ФормаЗаписи</DefaultRecordForm>
-			<DefaultListForm>InformationRegister.СостояниеУспешныхОбменовДанными.Form.ФормаСписка</DefaultListForm>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -160,7 +160,12 @@
 			<ExtendedRecordPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
-			<Explanation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется для хранения информации состояния последней успешной итерации обмена данными.</v8:content>
+				</v8:item>
+			</Explanation>
 		</Properties>
 		<ChildObjects>
 			<Resource uuid="134c1054-8d65-405f-ba3b-5beeca803a72">
@@ -182,7 +187,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания выполнения успешного действия обмена данными.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -220,7 +230,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел плана обмена, для которого используется информация состояния обмена.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -261,7 +276,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие, для которого используется информация состояния обмена (выгрузка/загрузка данных).</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -286,8 +306,6 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаЗаписи</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

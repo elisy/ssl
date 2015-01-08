@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Файл</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="13">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаЗакрытьExtendedTooltip" id="14"/>
+			</Button>
+			<Button name="ФормаОткрыть" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Открыть</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаОткрытьExtendedTooltip" id="15"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Файл" id="1">
+			<DataPath>Файл</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ФайлКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ФайлExtendedTooltip" id="16"/>
+		</InputField>
+		<UsualGroup name="ГруппаРасширениеРазмерКод" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расширение размер код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расширение размер код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасширениеРазмерКодExtendedTooltip" id="17"/>
+			<ChildItems>
+				<InputField name="Расширение" id="3">
+					<DataPath>Расширение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>4</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="РасширениеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="РасширениеExtendedTooltip" id="18"/>
+				</InputField>
+				<InputField name="Размер" id="9">
+					<DataPath>Размер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>12</Width>
+					<ContextMenu name="РазмерКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="РазмерExtendedTooltip" id="19"/>
+				</InputField>
+				<InputField name="Код" id="5">
+					<DataPath>Код</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КодКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="20"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Описание" id="7">
+			<DataPath>Описание</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Файл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Расширение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Описание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Размер" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Код" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Открыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл для просмотра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОткрыть</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьФайл</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

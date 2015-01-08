@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WebService uuid="dba0d5db-9499-42c0-b4e0-2dd9f7ec462b">
+		<Properties>
+			<Name>Files</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Files</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Namespace>http://www.1c.ru/docmng</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage.Files</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>files.1cws</DescriptorFileName>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="8ecfdcbc-099e-4206-b3d8-541517117ac5">
+				<Properties>
+					<Name>GetFileList</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get file list</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/docmng">d6p1:FileList</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>ПолучитьСписокФайлов</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="9f845a0d-b0cb-40c3-9e70-04f4b473990c">
+						<Properties>
+							<Name>Folder</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Folder</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://www.1c.ru/docmng">d8p1:Folder</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="30c0ab17-d8c7-46c3-82e2-b67572db0a83">
+				<Properties>
+					<Name>AddFolder</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Add folder</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/docmng">d6p1:Folder</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>ДобавитьПапку</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="e82dbb36-a077-47d9-a904-f01ce82b4c19">
+						<Properties>
+							<Name>ParentFolder</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Parent folder</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://www.1c.ru/docmng">d8p1:Folder</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="f4afbbd8-c503-4715-b0f2-476e0dcbf14c">
+						<Properties>
+							<Name>NewFolderName</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>New folder name</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="65625b4e-9ff9-4e15-b3f1-cc0003df25ea">
+						<Properties>
+							<Name>NewFolderDescr</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>New folder descr</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="5feb2e44-9d15-4bf8-9f7d-efea6b13e402">
+				<Properties>
+					<Name>GetFile</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get file</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/docmng">d6p1:File</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>ПолучитьФайл</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="619f64ea-78da-448b-86c7-fbb561500211">
+						<Properties>
+							<Name>Code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="820d02c2-2cdd-4b09-ab65-98048daef9a0">
+				<Properties>
+					<Name>AddFile</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Add file</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/docmng">d6p1:ShortFileInfo</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>ДобавитьФайл</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="b0d36a9d-9ef9-4eff-9360-aeca38d7e967">
+						<Properties>
+							<Name>Folder</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Folder</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://www.1c.ru/docmng">d8p1:Folder</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="7e283796-d8a9-442b-b646-92e85beec1e3">
+						<Properties>
+							<Name>File</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>File</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://www.1c.ru/docmng">d8p1:File</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="5c79771f-f98c-453d-9672-8aff65978e20">
+				<Properties>
+					<Name>DeleteFile</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Delete file</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:boolean</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>УдалитьФайл</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="51656bbb-096b-4be7-95fb-801e84651d32">
+						<Properties>
+							<Name>Code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="f9b36fd7-095a-48ef-80a6-87415eac7225">
+				<Properties>
+					<Name>FindFolder</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Find folder</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/docmng">d6p1:Folder</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>НайтиПапку</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="1dbecc5f-fe9c-4d8b-a96b-c4c49c06d088">
+						<Properties>
+							<Name>ParentFolder</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Parent folder</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://www.1c.ru/docmng">d8p1:Folder</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="97414063-7575-4bb2-9246-a5565fccc1e1">
+						<Properties>
+							<Name>Name</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Name</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>

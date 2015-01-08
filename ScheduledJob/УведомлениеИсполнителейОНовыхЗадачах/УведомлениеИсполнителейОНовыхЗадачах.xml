@@ -10,8 +10,8 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.БизнесПроцессыИЗадачиСервер.УведомитьИсполнителейОНовыхЗадачах</MethodName>
-			<Description/>
+			<MethodName>CommonModule.БизнесПроцессыИЗадачиВызовСервера.УведомитьИсполнителейОНовыхЗадачах</MethodName>
+			<Description>Уведомление исполнителей о новых задачах</Description>
 			<Key/>
 			<Use>true</Use>
 			<Predefined>true</Predefined>

@@ -22,11 +22,18 @@
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="РеспондентКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="РеспондентExtendedTooltip" id="13"/>
+			<ExtendedTooltip name="РеспондентExtendedTooltip" id="14"/>
 			<Events>
 				<Event name="OnChange">РеспондентПриИзменении</Event>
 			</Events>
 		</InputField>
+		<Button name="Обновить" id="13">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<CommandName>Form.Command.Обновить</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="ОбновитьExtendedTooltip" id="15"/>
+		</Button>
 		<Table name="ДеревоАнкет" id="3">
 			<Representation>Tree</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
@@ -64,30 +71,30 @@
 			<AutoCommandBar name="ДеревоАнкетКоманднаяПанель" id="5">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="ДеревоАнкетExtendedTooltip" id="14"/>
-			<SearchStringAddition name="ДеревоАнкетSearchString" id="15">
+			<ExtendedTooltip name="ДеревоАнкетExtendedTooltip" id="16"/>
+			<SearchStringAddition name="ДеревоАнкетSearchString" id="17">
 				<Source>
 					<lf:elementId>3</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="ДеревоАнкетSearchStringContextMenu" id="16"/>
-				<ExtendedTooltip name="ДеревоАнкетSearchStringExtendedTooltip" id="17"/>
+				<ContextMenu name="ДеревоАнкетSearchStringContextMenu" id="18"/>
+				<ExtendedTooltip name="ДеревоАнкетSearchStringExtendedTooltip" id="19"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ДеревоАнкетViewStatus" id="18">
+			<ViewStatusAddition name="ДеревоАнкетViewStatus" id="20">
 				<Source>
 					<lf:elementId>3</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="ДеревоАнкетViewStatusContextMenu" id="19"/>
-				<ExtendedTooltip name="ДеревоАнкетViewStatusExtendedTooltip" id="20"/>
+				<ContextMenu name="ДеревоАнкетViewStatusContextMenu" id="21"/>
+				<ExtendedTooltip name="ДеревоАнкетViewStatusExtendedTooltip" id="22"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ДеревоАнкетSearchControl" id="21">
+			<SearchControlAddition name="ДеревоАнкетSearchControl" id="23">
 				<Source>
 					<lf:elementId>3</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="ДеревоАнкетSearchControlContextMenu" id="22"/>
-				<ExtendedTooltip name="ДеревоАнкетSearchControlExtendedTooltip" id="23"/>
+				<ContextMenu name="ДеревоАнкетSearchControlContextMenu" id="24"/>
+				<ExtendedTooltip name="ДеревоАнкетSearchControlExtendedTooltip" id="25"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeRowChange">ДеревоАнкетПередНачаломИзменения</Event>
@@ -98,7 +105,7 @@
 					<TitleLocation>None</TitleLocation>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ДеревоАнкетПредставлениеКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ДеревоАнкетПредставлениеExtendedTooltip" id="24"/>
+					<ExtendedTooltip name="ДеревоАнкетПредставлениеExtendedTooltip" id="26"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -107,7 +114,7 @@
 			<SkipOnInput>false</SkipOnInput>
 			<CommandName>Form.Command.АрхивАнкет</CommandName>
 			<Parameter xsi:nil="true"/>
-			<ExtendedTooltip name="АрхивАнкетExtendedTooltip" id="25"/>
+			<ExtendedTooltip name="АрхивАнкетExtendedTooltip" id="27"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -204,6 +211,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>АрхивАнкет</Action>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
 		</Command>
 	</Commands>
 </Form>

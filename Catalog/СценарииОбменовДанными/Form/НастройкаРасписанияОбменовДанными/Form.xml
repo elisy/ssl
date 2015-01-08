@@ -21,7 +21,7 @@
 						<v8:content>Включить или отключить загрузку и выгрузку данных</v8:content>
 					</v8:item>
 				</ToolTip>
-				<ExtendedTooltip name="ВключитьОтключитьВыгрузкуЗагрузкуExtendedTooltip" id="32"/>
+				<ExtendedTooltip name="ВключитьОтключитьВыгрузкуЗагрузкуExtendedTooltip" id="34"/>
 				<ChildItems>
 					<Button name="ФормаВключитьОтключитьЗагрузкуВыгрузку" id="31">
 						<Type>CommandBarButton</Type>
@@ -33,7 +33,7 @@
 								<v8:content>Загрузка и выгрузка</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="ФормаВключитьОтключитьЗагрузкуВыгрузкуExtendedTooltip" id="33"/>
+						<ExtendedTooltip name="ФормаВключитьОтключитьЗагрузкуВыгрузкуExtendedTooltip" id="35"/>
 					</Button>
 					<Button name="ФормаВключитьОтключитьЗагрузку" id="29">
 						<Type>CommandBarButton</Type>
@@ -45,7 +45,7 @@
 								<v8:content>Загрузка</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="ФормаВключитьОтключитьЗагрузкуExtendedTooltip" id="34"/>
+						<ExtendedTooltip name="ФормаВключитьОтключитьЗагрузкуExtendedTooltip" id="36"/>
 					</Button>
 					<Button name="ФормаВключитьОтключитьВыгрузку1" id="30">
 						<Type>CommandBarButton</Type>
@@ -57,7 +57,7 @@
 								<v8:content>Выгрузка</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="ФормаВключитьОтключитьВыгрузку1ExtendedTooltip" id="35"/>
+						<ExtendedTooltip name="ФормаВключитьОтключитьВыгрузку1ExtendedTooltip" id="37"/>
 					</Button>
 				</ChildItems>
 			</Popup>
@@ -65,13 +65,13 @@
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СоздатьСценарийОбменаДанными</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="СоздатьExtendedTooltip" id="36"/>
+				<ExtendedTooltip name="СоздатьExtendedTooltip" id="38"/>
 			</Button>
 			<Button name="ИзменитьСценарийОбменаДанными" id="14">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИзменитьСценарийОбменаДанными</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ИзменитьСценарийОбменаДаннымиExtendedTooltip" id="37"/>
+				<ExtendedTooltip name="ИзменитьСценарийОбменаДаннымиExtendedTooltip" id="39"/>
 			</Button>
 			<ButtonGroup name="ГруппаКнопок" id="17">
 				<Title>
@@ -86,22 +86,21 @@
 						<v8:content>Группа кнопок</v8:content>
 					</v8:item>
 				</ToolTip>
-				<ExtendedTooltip name="ГруппаКнопокExtendedTooltip" id="38"/>
+				<ExtendedTooltip name="ГруппаКнопокExtendedTooltip" id="40"/>
 				<ChildItems>
 					<Button name="ФормаВключитьОтключитьРегламентноеЗадание" id="15">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ВключитьОтключитьРегламентноеЗадание</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="ФормаВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="39"/>
+						<ExtendedTooltip name="ФормаВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="41"/>
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
-			<Button name="ФормаЗакрыть" id="20">
+			<Button name="ФормаВыполнитьСценарий" id="32">
 				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
-				<CommandName>Form.StandardCommand.Close</CommandName>
+				<CommandName>Form.Command.ВыполнитьСценарий</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаЗакрытьExtendedTooltip" id="40"/>
+				<ExtendedTooltip name="ФормаВыполнитьСценарийExtendedTooltip" id="42"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -149,19 +148,19 @@
 								<v8:content>Группа кнопок включения загрузки выгрузки данных</v8:content>
 							</v8:item>
 						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокВключенияЗагрузкиВыгрузкиДанныхExtendedTooltip" id="41"/>
+						<ExtendedTooltip name="ГруппаКнопокВключенияЗагрузкиВыгрузкиДанныхExtendedTooltip" id="43"/>
 						<ChildItems>
 							<Button name="СписокКонтекстноеМенюВключитьОтключитьЗагрузку" id="27">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВключитьОтключитьЗагрузку</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьЗагрузкуExtendedTooltip" id="42"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьЗагрузкуExtendedTooltip" id="44"/>
 							</Button>
 							<Button name="ФормаВключитьОтключитьВыгрузку" id="26">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВключитьОтключитьВыгрузку</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ФормаВключитьОтключитьВыгрузкуExtendedTooltip" id="43"/>
+								<ExtendedTooltip name="ФормаВключитьОтключитьВыгрузкуExtendedTooltip" id="45"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
@@ -178,51 +177,57 @@
 								<v8:content>Список контекстное меню группа кнопок</v8:content>
 							</v8:item>
 						</ToolTip>
-						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаКнопокExtendedTooltip" id="44"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаКнопокExtendedTooltip" id="46"/>
 						<ChildItems>
 							<Button name="СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗадание" id="16">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВключитьОтключитьРегламентноеЗадание</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="45"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="47"/>
 							</Button>
 							<Button name="СписокКонтекстноеМенюОткрытьСценарийОбменаДанными" id="19">
 								<Type>CommandBarButton</Type>
 								<CommandName>0</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="СписокКонтекстноеМенюОткрытьСценарийОбменаДаннымиExtendedTooltip" id="46"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюОткрытьСценарийОбменаДаннымиExtendedTooltip" id="48"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
+					<Button name="СписокКонтекстноеМенюВыполнитьСценарий" id="33">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыполнитьСценарий</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийExtendedTooltip" id="49"/>
+					</Button>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="47"/>
-			<SearchStringAddition name="СписокSearchString" id="48">
+			<ExtendedTooltip name="СписокExtendedTooltip" id="50"/>
+			<SearchStringAddition name="СписокSearchString" id="51">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchStringContextMenu" id="49"/>
-				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="50"/>
+				<ContextMenu name="СписокSearchStringContextMenu" id="52"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="53"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокViewStatus" id="51">
+			<ViewStatusAddition name="СписокViewStatus" id="54">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокViewStatusContextMenu" id="52"/>
-				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="53"/>
+				<ContextMenu name="СписокViewStatusContextMenu" id="55"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="56"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокSearchControl" id="54">
+			<SearchControlAddition name="СписокSearchControl" id="57">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchControlContextMenu" id="55"/>
-				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="56"/>
+				<ContextMenu name="СписокSearchControlContextMenu" id="58"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="59"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СписокВыбор</Event>
@@ -238,7 +243,7 @@
 					</Title>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ФлагИспользованияЗагрузкиКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ФлагИспользованияЗагрузкиExtendedTooltip" id="57"/>
+					<ExtendedTooltip name="ФлагИспользованияЗагрузкиExtendedTooltip" id="60"/>
 				</CheckBoxField>
 				<CheckBoxField name="ФлагИспользованияВыгрузки" id="21">
 					<DataPath>Список.ФлагИспользованияВыгрузки</DataPath>
@@ -250,7 +255,7 @@
 					</Title>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ФлагИспользованияВыгрузкиКонтекстноеМеню" id="22"/>
-					<ExtendedTooltip name="ФлагИспользованияВыгрузкиExtendedTooltip" id="58"/>
+					<ExtendedTooltip name="ФлагИспользованияВыгрузкиExtendedTooltip" id="61"/>
 				</CheckBoxField>
 				<LabelField name="Наименование" id="4">
 					<DataPath>Список.Description</DataPath>
@@ -261,7 +266,7 @@
 						</v8:item>
 					</Title>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="59"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="62"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -478,6 +483,27 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВключитьОтключитьЗагрузкуВыгрузку</Action>
+		</Command>
+		<Command name="ВыполнитьСценарий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен данными по сценарию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВыполнитьЗапускОбменаДанными</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="7" y="5"/>
+			</Picture>
+			<Action>ВыполнитьСценарий</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>

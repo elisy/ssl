@@ -14,8 +14,8 @@
 			<Representation>Auto</Representation>
 			<ToolTip/>
 			<Picture>
-				<xr:Ref>StdPicture.SyncContents</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:Ref>CommonPicture.ВыполнитьОбменДаннымиИнтерактивно</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Shortcut/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>

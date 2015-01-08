@@ -40,13 +40,13 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>0</CodeLength>
+			<CodeLength>5</CodeLength>
 			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
-			<CheckUnique>false</CheckUnique>
-			<Autonumbering>false</Autonumbering>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<StandardAttributes>
 				<xr:StandardAttribute name="PredefinedDataName">
@@ -231,7 +231,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование сценария обмена данными.</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -310,7 +315,12 @@
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
-			<Explanation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется для задания сценариев обмена данными.</v8:content>
+				</v8:item>
+			</Explanation>
 			<CreateOnInput>Use</CreateOnInput>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
@@ -331,7 +341,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Признак использования расписания регламентного задания.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -374,7 +389,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Краткое описание сценария.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -417,7 +437,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строковое представление уникального идентификатора регламентного задания.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -460,7 +485,12 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Содержит последовательно выполняемые действия сценария обмена.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
 						<xr:StandardAttribute name="LineNumber">
@@ -508,7 +538,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Узел плана обмена, для которого предназначено действие сценария обмена.</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -544,7 +579,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Транспорт сообщений обмена, который будет использоваться для текущего действия.</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -580,7 +620,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действие сценарий обмена (выгрузка/загрузка данных).</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -621,7 +666,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество элементов на одну транзакцию выгрузки или загрузки данных. 0 – данные будут выгружены или загружены в одной транзакции.</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>

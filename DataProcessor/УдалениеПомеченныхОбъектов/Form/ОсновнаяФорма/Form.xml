@@ -242,23 +242,23 @@
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="ПричиныНеудаления" id="39">
+				<Page name="ПричиныНевозможностиУдаления" id="39">
 					<EnableContentChange>true</EnableContentChange>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Причины неудаления</v8:content>
+							<v8:content>Причины невозможности удаления</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Причины неудаления</v8:content>
+							<v8:content>Причины невозможности удаления</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ПричиныНеудаленияExtendedTooltip" id="72"/>
+					<ExtendedTooltip name="ПричиныНевозможностиУдаленияExtendedTooltip" id="72"/>
 					<ChildItems>
-						<Table name="ДеревоНеудаленныхОбъектов" id="40">
+						<Table name="ДеревоОставшихсяОбъектов" id="40">
 							<Representation>Tree</Representation>
 							<TitleLocation>Top</TitleLocation>
 							<CommandBarLocation>None</CommandBarLocation>
@@ -268,8 +268,8 @@
 							<ChangeRowOrder>false</ChangeRowOrder>
 							<Header>false</Header>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<DataPath>ДеревоНеудаленныхОбъектов</DataPath>
-							<RowPictureDataPath>ДеревоНеудаленныхОбъектов.НомерКартинки</RowPictureDataPath>
+							<DataPath>ДеревоОставшихсяОбъектов</DataPath>
+							<RowPictureDataPath>ДеревоОставшихсяОбъектов.НомерКартинки</RowPictureDataPath>
 							<RowsPicture>
 								<xr:Ref>CommonPicture.КоллекцияДляПомеченныхНаУдалениеОбъектов</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -279,7 +279,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Неудаленные объекты</v8:content>
+									<v8:content>Объекты, которые невозможно удалить</v8:content>
 								</v8:item>
 							</Title>
 							<CommandSet>
@@ -301,44 +301,44 @@
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
-							<ContextMenu name="ДеревоНеудаленныхОбъектовКонтекстноеМеню" id="41"/>
-							<AutoCommandBar name="ДеревоНеудаленныхОбъектовКоманднаяПанель" id="42"/>
-							<ExtendedTooltip name="ДеревоНеудаленныхОбъектовExtendedTooltip" id="73"/>
-							<SearchStringAddition name="ДеревоНеудаленныхОбъектовSearchString" id="74">
+							<ContextMenu name="ДеревоОставшихсяОбъектовКонтекстноеМеню" id="41"/>
+							<AutoCommandBar name="ДеревоОставшихсяОбъектовКоманднаяПанель" id="42"/>
+							<ExtendedTooltip name="ДеревоОставшихсяОбъектовExtendedTooltip" id="73"/>
+							<SearchStringAddition name="ДеревоОставшихсяОбъектовSearchString" id="74">
 								<Source>
 									<lf:elementId>40</lf:elementId>
 									<lf:additionId>0</lf:additionId>
 								</Source>
-								<ContextMenu name="ДеревоНеудаленныхОбъектовSearchStringContextMenu" id="75"/>
-								<ExtendedTooltip name="ДеревоНеудаленныхОбъектовSearchStringExtendedTooltip" id="76"/>
+								<ContextMenu name="ДеревоОставшихсяОбъектовSearchStringContextMenu" id="75"/>
+								<ExtendedTooltip name="ДеревоОставшихсяОбъектовSearchStringExtendedTooltip" id="76"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ДеревоНеудаленныхОбъектовViewStatus" id="77">
+							<ViewStatusAddition name="ДеревоОставшихсяОбъектовViewStatus" id="77">
 								<Source>
 									<lf:elementId>40</lf:elementId>
 									<lf:additionId>1</lf:additionId>
 								</Source>
-								<ContextMenu name="ДеревоНеудаленныхОбъектовViewStatusContextMenu" id="78"/>
-								<ExtendedTooltip name="ДеревоНеудаленныхОбъектовViewStatusExtendedTooltip" id="79"/>
+								<ContextMenu name="ДеревоОставшихсяОбъектовViewStatusContextMenu" id="78"/>
+								<ExtendedTooltip name="ДеревоОставшихсяОбъектовViewStatusExtendedTooltip" id="79"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ДеревоНеудаленныхОбъектовSearchControl" id="80">
+							<SearchControlAddition name="ДеревоОставшихсяОбъектовSearchControl" id="80">
 								<Source>
 									<lf:elementId>40</lf:elementId>
 									<lf:additionId>2</lf:additionId>
 								</Source>
-								<ContextMenu name="ДеревоНеудаленныхОбъектовSearchControlContextMenu" id="81"/>
-								<ExtendedTooltip name="ДеревоНеудаленныхОбъектовSearchControlExtendedTooltip" id="82"/>
+								<ContextMenu name="ДеревоОставшихсяОбъектовSearchControlContextMenu" id="81"/>
+								<ExtendedTooltip name="ДеревоОставшихсяОбъектовSearchControlExtendedTooltip" id="82"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="Selection">ДеревоНеудаленныхОбъектовВыбор</Event>
+								<Event name="Selection">ДеревоОставшихсяОбъектовВыбор</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="ПредставлениеНеудаленного" id="43">
-									<DataPath>ДеревоНеудаленныхОбъектов.Представление</DataPath>
+								<InputField name="ПредставлениеОставшегося" id="43">
+									<DataPath>ДеревоОставшихсяОбъектов.Представление</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Wrap>false</Wrap>
 									<BorderColor>style:BorderColor</BorderColor>
-									<ContextMenu name="ПредставлениеНеудаленногоКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="ПредставлениеНеудаленногоExtendedTooltip" id="83"/>
+									<ContextMenu name="ПредставлениеОставшегосяКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ПредставлениеОставшегосяExtendedTooltip" id="83"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -528,11 +528,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ДеревоНеудаленныхОбъектов" id="8">
+		<Attribute name="ДеревоОставшихсяОбъектов" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Дерево неудаленных объектов</v8:content>
+					<v8:content>Дерево оставшихся объектов</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -603,11 +603,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="КоличествоНеудаленныхОбъектов" id="3">
+		<Attribute name="КоличествоНеУдаленныхОбъектов" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Количество неудаленных объектов</v8:content>
+					<v8:content>Количество оставшихся (не удаленных) объектов</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

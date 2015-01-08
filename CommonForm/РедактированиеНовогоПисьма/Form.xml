@@ -261,6 +261,24 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаУчетнаяЗаписьExtendedTooltip" id="72"/>
 			<ChildItems>
+				<InputField name="АдресОтвета" id="38">
+					<DataPath>АдресОтвета</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Введите адрес электронной почты на который вы хотите получить ответ на это письмо</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Wrap>false</Wrap>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="АдресОтветаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="АдресОтветаExtendedTooltip" id="73"/>
+					<Events>
+						<Event name="Clearing">АдресОтветаОчистка</Event>
+						<Event name="TextEditEnd">АдресОтветаОкончаниеВводаТекста</Event>
+						<Event name="ChoiceProcessing">АдресОтветаОбработкаВыбора</Event>
+					</Events>
+				</InputField>
 				<InputField name="УчетнаяЗапись" id="25">
 					<DataPath>УчетнаяЗапись</DataPath>
 					<TitleLocation>Left</TitleLocation>
@@ -276,29 +294,20 @@
 					<SpinButton>false</SpinButton>
 					<OpenButton>false</OpenButton>
 					<TextEdit>false</TextEdit>
+					<ChoiceParameters>
+						<app:item name="Отбор.ИспользоватьДляОтправки">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:boolean">true</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
 					<ChoiceListButton>false</ChoiceListButton>
 					<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="УчетнаяЗаписьExtendedTooltip" id="73"/>
+					<ExtendedTooltip name="УчетнаяЗаписьExtendedTooltip" id="74"/>
 					<Events>
+						<Event name="StartChoice">УчетнаяЗаписьНачалоВыбора</Event>
 						<Event name="ChoiceProcessing">УчетнаяЗаписьОбработкаВыбора</Event>
-					</Events>
-				</InputField>
-				<InputField name="АдресОтвета" id="38">
-					<DataPath>АдресОтвета</DataPath>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Введите адрес электронной почты на который вы хотите получить ответ на это письмо</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Wrap>false</Wrap>
-					<ClearButton>true</ClearButton>
-					<ContextMenu name="АдресОтветаКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="АдресОтветаExtendedTooltip" id="74"/>
-					<Events>
-						<Event name="Clearing">АдресОтветаОчистка</Event>
-						<Event name="TextEditEnd">АдресОтветаОкончаниеВводаТекста</Event>
-						<Event name="ChoiceProcessing">АдресОтветаОбработкаВыбора</Event>
 					</Events>
 				</InputField>
 			</ChildItems>
@@ -469,6 +478,17 @@
 			<Settings xsi:type="v8:TypeDescription">
 				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
 			</Settings>
+		</Attribute>
+		<Attribute name="УчетнаяЗаписьУказана" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись указана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

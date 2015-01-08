@@ -25,7 +25,11 @@
 			<Subsystem>БизнесПроцессыИЗадачи</Subsystem>
 			<Subsystem>Валюты</Subsystem>
 			<Subsystem>ВариантыОтчетов</Subsystem>
+			<Subsystem>ВебСервисыРаботыСФайлами</Subsystem>
 			<Subsystem>ВерсионированиеОбъектов</Subsystem>
+			<Subsystem>Взаимодействия</Subsystem>
+			<Subsystem>ГрупповоеИзменениеОбъектов</Subsystem>
+			<Subsystem>ДатыЗапретаИзменения</Subsystem>
 			<Subsystem>ДополнительныеОтчетыИОбработки</Subsystem>
 			<Subsystem>ЗавершениеРаботыПользователей</Subsystem>
 			<Subsystem>ЗапретРедактированияРеквизитовОбъектов</Subsystem>
@@ -43,15 +47,19 @@
 			<Subsystem>ПолучениеФайловИзИнтернета</Subsystem>
 			<Subsystem>Пользователи</Subsystem>
 			<Subsystem>ПрефиксацияОбъектов</Subsystem>
+			<Subsystem>ПрисоединенныеФайлы</Subsystem>
 			<Subsystem>ПроверкаЛегальностиПолученияОбновления</Subsystem>
 			<Subsystem>РаботаСПочтовымиСообщениями</Subsystem>
 			<Subsystem>РаботаСФайлами</Subsystem>
 			<Subsystem>РегламентныеЗадания</Subsystem>
+			<Subsystem>РезервноеКопированиеИБ</Subsystem>
 			<Subsystem>Свойства</Subsystem>
 			<Subsystem>СтруктураПодчиненности</Subsystem>
 			<Subsystem>УправлениеДоступом</Subsystem>
 			<Subsystem>УправлениеИтогамиИАгрегатами</Subsystem>
+			<Subsystem>ФайловыеФункции</Subsystem>
 			<Subsystem>ФизическиеЛица</Subsystem>
+			<Subsystem>ЭлектроннаяЦифроваяПодпись</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

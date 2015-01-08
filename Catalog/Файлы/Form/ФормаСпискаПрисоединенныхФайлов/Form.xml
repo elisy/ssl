@@ -501,31 +501,31 @@
 				<Event name="Drag">СписокПеретаскивание</Event>
 			</Events>
 			<ChildItems>
-				<PictureField name="Подписан" id="91">
-					<DataPath>Список.Подписан</DataPath>
+				<PictureField name="ПодписанЭЦП" id="91">
+					<DataPath>Список.ПодписанЭЦП</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подписан</v8:content>
+							<v8:content>Подписан ЭЦП</v8:content>
 						</v8:item>
 					</Title>
 					<TitleLocation>None</TitleLocation>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подписан</v8:content>
+							<v8:content>Подписан ЭЦП</v8:content>
 						</v8:item>
 					</ToolTip>
 					<HeaderPicture>
-						<xr:Ref>CommonPicture.Подписан</xr:Ref>
+						<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</HeaderPicture>
 					<ValuesPicture>
-						<xr:Ref>CommonPicture.Подписан</xr:Ref>
+						<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</ValuesPicture>
-					<ContextMenu name="ПодписанКонтекстноеМеню" id="92"/>
-					<ExtendedTooltip name="ПодписанExtendedTooltip" id="170"/>
+					<ContextMenu name="ПодписанЭЦПКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ПодписанЭЦПExtendedTooltip" id="170"/>
 				</PictureField>
 				<PictureField name="Зашифрован" id="93">
 					<DataPath>Список.Зашифрован</DataPath>
@@ -706,7 +706,8 @@
 				<Field>Список.РедактируетТекущийПользователь</Field>
 				<Field>Список.ХранитьВерсии</Field>
 				<Field>Список.Зашифрован</Field>
-				<Field>Список.Подписан</Field>
+				<Field>1/48</Field>
+				<Field>Список.ПодписанЭЦП</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -735,7 +736,7 @@
 		ИНАЧЕ ЛОЖЬ
 	КОНЕЦ КАК РедактируетТекущийПользователь,
 	Файлы.Зашифрован,
-	Файлы.Подписан
+	Файлы.ПодписанЭЦП
 ИЗ
 	Справочник.Файлы КАК Файлы
 ГДЕ
@@ -961,7 +962,7 @@
 			</ToolTip>
 			<Action>ДобавитьЭЦПИзФайла</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Подписать" id="13">
@@ -978,13 +979,13 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Подписан</xr:Ref>
+				<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="10" y="2"/>
 			</Picture>
 			<Action>Подписать</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Расшифровать" id="14">
@@ -1002,7 +1003,7 @@
 			</ToolTip>
 			<Action>Расшифровать</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="СохранитьВместеСЭЦП" id="15">
@@ -1020,7 +1021,7 @@
 			</ToolTip>
 			<Action>СохранитьВместеСЭЦП</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Зашифровать" id="16">
@@ -1042,7 +1043,7 @@
 			</Picture>
 			<Action>Зашифровать</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 	</Commands>

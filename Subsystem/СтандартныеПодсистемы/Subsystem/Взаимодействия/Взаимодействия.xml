@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Subsystem uuid="fe9a1d1a-19c0-499f-8e1b-09cadabe882f">
+		<Properties>
+			<Name>Взаимодействия</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаимодействия</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействияКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействияКлиентСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Взаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеЭлектроннойПочтой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеЭлектроннойПочтойКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ВзаимодействияКонтакта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеИОтправкаЭлектронныхПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.АдреснаяКнига</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборКонтакта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УточнениеКонтактов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.Взаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Взаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗапланированноеВзаимодействие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Встреча</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТелефонныйЗвонок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоВходящее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоИсходящее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.Взаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыВажностиВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыИсходящегоЭлектронногоПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИдентификаторыПолученныхЭлектронныхПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеВзаимодействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Встреча</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗапланированноеВзаимодействие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Найти</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтветитьНаЭлектронноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтветитьНаЭлектронноеПисьмоВсем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереслатьЭлектронноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТелефонныйЗвонок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭлектронноеПисьмоВходящее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭлектронноеПисьмоИсходящее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтправитьЭлектронноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействияУстановитьОтветственного</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействияОтложитьОбработку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействияУстановитьПредмет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействияУстановитьФлагОтработано</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВстречаПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗапланированноеВзаимодействиеПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТелефонныйЗвонокПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПрисоединенныйФайлПередЗаписьюВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПрисоединенныйФайлПередУдалениемВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПрисоединенныйФайлПриЗаписиВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействияВызовСервера</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

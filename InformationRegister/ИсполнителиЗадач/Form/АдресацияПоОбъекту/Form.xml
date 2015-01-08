@@ -59,6 +59,9 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="30" y="2"/>
 			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+			</CommandSet>
 			<SearchStringLocation>None</SearchStringLocation>
 			<ViewStatusLocation>None</ViewStatusLocation>
 			<SearchControlLocation>None</SearchControlLocation>

@@ -28,6 +28,45 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="e4abafc6-f859-4d96-9818-5b9bf8d66d69">
+				<Properties>
+					<Name>БлокировкаУстановкиСоединенийВключена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Блокировка установки соединений включена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Признак того, что блокировка установки соединений с ИБ включена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="801adeeb-8a7f-44c1-b649-a7dfffc7b65d">
 				<Properties>
 					<Name>КодРазрешения</Name>
@@ -73,7 +112,7 @@
 			</Attribute>
 			<Attribute uuid="ac4e0868-ba49-46b4-8872-d42483a5591f">
 				<Properties>
-					<Name>НачалоБлокировки</Name>
+					<Name>НачалоДействияБлокировки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -115,7 +154,7 @@
 			</Attribute>
 			<Attribute uuid="45e6c4a6-1d63-4b94-a7d2-fbd3fb68061b">
 				<Properties>
-					<Name>ОкончаниеБлокировки</Name>
+					<Name>ОкончаниеДействияБлокировки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -135,7 +174,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Момент времени окончания действия блокировка установки соединений с ИБ</v8:content>
+							<v8:content>Момент времени окончания действия блокировки установки соединений с ИБ</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -178,46 +217,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сообщение, объясняющее причину блокировки. Выводится пользователю при попытке установки соединения с заблокированной ИБ.</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="e4abafc6-f859-4d96-9818-5b9bf8d66d69">
-				<Properties>
-					<Name>УстановитьБлокировкуСоединений</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Блокировка установки соединений включена</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Флаг включения действия блокировки установки соединений с ИБ</v8:content>
+							<v8:content>Сообщение с причиной блокировки, выводится пользователю при попытке установки соединения с заблокированной ИБ</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>

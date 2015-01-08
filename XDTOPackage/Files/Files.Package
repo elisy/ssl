@@ -1,0 +1,23 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/docmng">
+	<objectType name="Folder">
+		<property name="Code" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+	</objectType>
+	<objectType name="File">
+		<property name="Code" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Extension" type="xs:string"/>
+		<property lowerBound="0" name="BinaryData" type="xs:base64Binary"/>
+	</objectType>
+	<objectType name="ShortFileInfo">
+		<property name="Code" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Extension" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+		<property name="Size" type="xs:long"/>
+	</objectType>
+	<objectType name="FileList">
+		<property xmlns:d3p1="http://www.1c.ru/docmng" lowerBound="0" name="Files" type="d3p1:ShortFileInfo" upperBound="-1"/>
+	</objectType>
+</package>

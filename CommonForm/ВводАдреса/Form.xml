@@ -8,9 +8,41 @@
 	</Title>
 	<AutoTitle>false</AutoTitle>
 	<Customizable>false</Customizable>
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаОК" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаОК</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="КомандаОКExtendedTooltip" id="73"/>
+			</Button>
+			<Button name="КомандаОтмена" id="8">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаОтмена</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="74"/>
+			</Button>
+			<Button name="ФормаСправка" id="72">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="75"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
@@ -18,8 +50,8 @@
 	</Events>
 	<ChildItems>
 		<CommandBar name="Панель" id="64">
-			<CommandSource>Form</CommandSource>
-			<ExtendedTooltip name="ПанельExtendedTooltip" id="72"/>
+			<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+			<ExtendedTooltip name="ПанельExtendedTooltip" id="76"/>
 			<ChildItems>
 				<Button name="Классификатор" id="67">
 					<Type>CommandBarButton</Type>
@@ -27,7 +59,7 @@
 					<OnlyInAllActions>false</OnlyInAllActions>
 					<CommandName>Form.Command.Классификатор</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="КлассификаторExtendedTooltip" id="73"/>
+					<ExtendedTooltip name="КлассификаторExtendedTooltip" id="77"/>
 				</Button>
 				<Button name="КомандаОчистить" id="68">
 					<Type>CommandBarButton</Type>
@@ -35,7 +67,7 @@
 					<OnlyInAllActions>false</OnlyInAllActions>
 					<CommandName>Form.Command.КомандаОчистить</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="КомандаОчиститьExtendedTooltip" id="74"/>
+					<ExtendedTooltip name="КомандаОчиститьExtendedTooltip" id="78"/>
 				</Button>
 			</ChildItems>
 		</CommandBar>
@@ -43,7 +75,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаСтранаИКодExtendedTooltip" id="75"/>
+			<ExtendedTooltip name="ГруппаСтранаИКодExtendedTooltip" id="79"/>
 			<ChildItems>
 				<InputField name="Страна" id="40">
 					<DataPath>Страна</DataPath>
@@ -53,7 +85,7 @@
 					<OpenButton>false</OpenButton>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="СтранаКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="СтранаExtendedTooltip" id="76"/>
+					<ExtendedTooltip name="СтранаExtendedTooltip" id="80"/>
 					<Events>
 						<Event name="OnChange">СтранаПриИзменении</Event>
 					</Events>
@@ -64,7 +96,7 @@
 					<TitleLocation>None</TitleLocation>
 					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 					<ContextMenu name="КодСтраныКонтекстноеМеню" id="71"/>
-					<ExtendedTooltip name="КодСтраныExtendedTooltip" id="77"/>
+					<ExtendedTooltip name="КодСтраныExtendedTooltip" id="81"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
@@ -76,7 +108,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="ИндексКонтекстноеМеню" id="16"/>
-			<ExtendedTooltip name="ИндексExtendedTooltip" id="78"/>
+			<ExtendedTooltip name="ИндексExtendedTooltip" id="82"/>
 			<Events>
 				<Event name="OnChange">ИндексПриИзменении</Event>
 			</Events>
@@ -88,7 +120,7 @@
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="РегионКонтекстноеМеню" id="18"/>
-			<ExtendedTooltip name="РегионExtendedTooltip" id="79"/>
+			<ExtendedTooltip name="РегионExtendedTooltip" id="83"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 				<Event name="AutoComplete">ПолеАвтоПодбор</Event>
@@ -102,7 +134,7 @@
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="РайонКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="РайонExtendedTooltip" id="80"/>
+			<ExtendedTooltip name="РайонExtendedTooltip" id="84"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 				<Event name="AutoComplete">ПолеАвтоПодбор</Event>
@@ -116,7 +148,7 @@
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="ГородКонтекстноеМеню" id="22"/>
-			<ExtendedTooltip name="ГородExtendedTooltip" id="81"/>
+			<ExtendedTooltip name="ГородExtendedTooltip" id="85"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 				<Event name="AutoComplete">ПолеАвтоПодбор</Event>
@@ -130,7 +162,7 @@
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="НаселенныйПунктКонтекстноеМеню" id="24"/>
-			<ExtendedTooltip name="НаселенныйПунктExtendedTooltip" id="82"/>
+			<ExtendedTooltip name="НаселенныйПунктExtendedTooltip" id="86"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 				<Event name="AutoComplete">ПолеАвтоПодбор</Event>
@@ -144,7 +176,7 @@
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="УлицаКонтекстноеМеню" id="26"/>
-			<ExtendedTooltip name="УлицаExtendedTooltip" id="83"/>
+			<ExtendedTooltip name="УлицаExtendedTooltip" id="87"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 				<Event name="AutoComplete">ПолеАвтоПодбор</Event>
@@ -163,14 +195,14 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаДомКорпусКвартираExtendedTooltip" id="84"/>
+			<ExtendedTooltip name="ГруппаДомКорпусКвартираExtendedTooltip" id="88"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаТипы" id="48">
 					<Width>10</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаТипыExtendedTooltip" id="85"/>
+					<ExtendedTooltip name="ГруппаТипыExtendedTooltip" id="89"/>
 					<ChildItems>
 						<InputField name="ТипДома" id="28">
 							<DataPath>ТипДома</DataPath>
@@ -199,7 +231,7 @@
 							<ChoiceListButton>true</ChoiceListButton>
 							<BackColor>web:Cream</BackColor>
 							<ContextMenu name="ТипДомаКонтекстноеМеню" id="29"/>
-							<ExtendedTooltip name="ТипДомаExtendedTooltip" id="86"/>
+							<ExtendedTooltip name="ТипДомаExtendedTooltip" id="90"/>
 							<Events>
 								<Event name="OnChange">ПолеПриИзменении</Event>
 							</Events>
@@ -231,7 +263,7 @@
 							<BackColor>web:Cream</BackColor>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="ТипКорпусаКонтекстноеМеню" id="33"/>
-							<ExtendedTooltip name="ТипКорпусаExtendedTooltip" id="87"/>
+							<ExtendedTooltip name="ТипКорпусаExtendedTooltip" id="91"/>
 							<Events>
 								<Event name="OnChange">ПолеПриИзменении</Event>
 							</Events>
@@ -263,7 +295,7 @@
 							<BackColor>web:Cream</BackColor>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="ТипКвартирыКонтекстноеМеню" id="37"/>
-							<ExtendedTooltip name="ТипКвартирыExtendedTooltip" id="88"/>
+							<ExtendedTooltip name="ТипКвартирыExtendedTooltip" id="92"/>
 							<Events>
 								<Event name="OnChange">ПолеПриИзменении</Event>
 							</Events>
@@ -273,7 +305,7 @@
 				<UsualGroup name="ГруппаЗначения" id="49">
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаЗначенияExtendedTooltip" id="89"/>
+					<ExtendedTooltip name="ГруппаЗначенияExtendedTooltip" id="93"/>
 					<ChildItems>
 						<InputField name="Дом" id="30">
 							<DataPath>Дом</DataPath>
@@ -282,7 +314,7 @@
 							<Wrap>false</Wrap>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="ДомКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="ДомExtendedTooltip" id="90"/>
+							<ExtendedTooltip name="ДомExtendedTooltip" id="94"/>
 							<Events>
 								<Event name="OnChange">ПолеПриИзменении</Event>
 							</Events>
@@ -294,7 +326,7 @@
 							<Wrap>false</Wrap>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="КорпусКонтекстноеМеню" id="35"/>
-							<ExtendedTooltip name="КорпусExtendedTooltip" id="91"/>
+							<ExtendedTooltip name="КорпусExtendedTooltip" id="95"/>
 							<Events>
 								<Event name="OnChange">ПолеПриИзменении</Event>
 							</Events>
@@ -306,7 +338,7 @@
 							<Wrap>false</Wrap>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="КвартираКонтекстноеМеню" id="39"/>
-							<ExtendedTooltip name="КвартираExtendedTooltip" id="92"/>
+							<ExtendedTooltip name="КвартираExtendedTooltip" id="96"/>
 							<Events>
 								<Event name="OnChange">ПолеПриИзменении</Event>
 							</Events>
@@ -321,47 +353,8 @@
 			<Height>3</Height>
 			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 			<ContextMenu name="ПредставлениеСВидомКонтекстноеМеню" id="53"/>
-			<ExtendedTooltip name="ПредставлениеСВидомExtendedTooltip" id="93"/>
+			<ExtendedTooltip name="ПредставлениеСВидомExtendedTooltip" id="97"/>
 		</LabelField>
-		<CommandBar name="ПанельКнопок" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Панель кнопок</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Панель кнопок</v8:content>
-				</v8:item>
-			</ToolTip>
-			<HorizontalLocation>Right</HorizontalLocation>
-			<ExtendedTooltip name="ПанельКнопокExtendedTooltip" id="94"/>
-			<ChildItems>
-				<Button name="КомандаОК" id="7">
-					<Type>CommandBarButton</Type>
-					<DefaultButton>true</DefaultButton>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.КомандаОК</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="КомандаОКExtendedTooltip" id="95"/>
-				</Button>
-				<Button name="КомандаОтмена" id="8">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.КомандаОтмена</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="96"/>
-				</Button>
-			</ChildItems>
-		</CommandBar>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Индекс" id="4">
@@ -752,6 +745,11 @@
 					<v8:content>Загрузить адресный классификатор</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
 			<Action>КлассификаторВыполнить</Action>
 		</Command>
 	</Commands>

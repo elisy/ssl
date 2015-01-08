@@ -206,7 +206,12 @@
 					<xr:FillFromFillingValue>true</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Папка, объединяющая группы доступа для удобства поиска</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -220,7 +225,7 @@
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
+					<xr:FillValue xsi:type="xr:DesignTimeRef">Catalog.ГруппыДоступа.EmptyRef</xr:FillValue>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
@@ -231,7 +236,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование группы доступа</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -287,10 +297,10 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.ГруппыДоступа.Form.ФормаЭлемента</DefaultObjectForm>
-			<DefaultFolderForm/>
+			<DefaultFolderForm>Catalog.ГруппыДоступа.Form.ФормаГруппы</DefaultFolderForm>
 			<DefaultListForm>Catalog.ГруппыДоступа.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm/>
-			<DefaultFolderChoiceForm/>
+			<DefaultChoiceForm>Catalog.ГруппыДоступа.Form.ФормаСписка</DefaultChoiceForm>
+			<DefaultFolderChoiceForm>Catalog.ГруппыДоступа.Form.ФормаСписка</DefaultFolderChoiceForm>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
 			<AuxiliaryListForm/>
@@ -331,7 +341,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Профиль группы доступа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -340,7 +355,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:type="xr:DesignTimeRef">Catalog.ПрофилиГруппДоступа.EmptyRef</FillValue>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -354,13 +369,102 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c12c90e4-7c40-489b-b14b-6b9442016e0f">
+			<Attribute uuid="fb79315a-8d27-4c5e-9cfb-c7778dabedef">
 				<Properties>
-					<Name>Комментарий</Name>
+					<Name>ТипПользователей</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Комментарий</v8:content>
+							<v8:content>Тип пользователей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>В качестве типа используется пустая ссылка</Comment>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип объектов информационной базы, которые могут быть в составе участников группы доступа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5f93d2af-64ff-41cc-8403-4a0e83160fea">
+				<Properties>
+					<Name>Пользователь</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Только для персональных групп доступа</Comment>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец персональной группы доступа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c12c90e4-7c40-489b-b14b-6b9442016e0f">
+				<Properties>
+					<Name>Описание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -374,7 +478,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Краткое описание назначения группы доступа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -397,16 +506,16 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="fb79315a-8d27-4c5e-9cfb-c7778dabedef">
+			<Attribute uuid="6371e288-3502-4d66-9006-b5a36107c0b7">
 				<Properties>
-					<Name>ТипПользователей</Name>
+					<Name>Администратор</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Участники группы</v8:content>
+							<v8:content>Администратор</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>В качестве типа используется пустая ссылка</Comment>
+					<Comment/>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
@@ -416,7 +525,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип объектов информационной базы</v8:content>
+							<v8:content>Пользователь, которой может изменять состав участников группы доступа</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -512,7 +621,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Участник группы доступа</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -602,7 +716,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид доступа по которому возможно ограничение доступа в группе доступа</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -638,7 +757,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Флажок установлен Истина, когда разрешены все значения доступа, кроме списка исключений</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -728,7 +852,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид доступа, по которому задано значение доступа</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -764,7 +893,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение доступа, заданное по виду доступа</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -787,47 +921,40 @@
 							<FullTextSearch>Use</FullTextSearch>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="0cad5590-295e-494b-a09e-95f73254f646">
-						<Properties>
-							<Name>ДоступРазрешен</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Доступ разрешен</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:boolean</v8:Type>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-							<Indexing>DontIndex</Indexing>
-							<FullTextSearch>DontUse</FullTextSearch>
-						</Properties>
-					</Attribute>
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
+			<Form>ФормаГруппы</Form>
 			<Form>ОбновлениеДанныхОграниченияДоступа</Form>
+			<Form>ПраваДоступа</Form>
+			<Form>ПраваДоступаУпрощенно</Form>
+			<Form>ВыборПоАдминистратору</Form>
+			<Command uuid="08efd7c8-3ac1-46c5-862c-2b4816b8081f">
+				<Properties>
+					<Name>ПраваДоступа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Права доступа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
+						<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

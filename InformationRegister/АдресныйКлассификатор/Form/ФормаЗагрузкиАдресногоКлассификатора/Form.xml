@@ -75,7 +75,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Выбор адресных объектв</v8:content>
+							<v8:content>Выбор адресных объектов</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -758,7 +758,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>

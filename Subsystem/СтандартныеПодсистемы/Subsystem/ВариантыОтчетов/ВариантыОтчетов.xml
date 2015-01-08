@@ -26,7 +26,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВсеОтчеты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВариантыОтчетовКлиентПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеВариантовОтчетов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Информация</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗакрепитьВариантОтчета</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОткрепитьВариантОтчета</xr:Item>
 			</Content>

@@ -13,14 +13,12 @@
 		<HorizontalAlign>Right</HorizontalAlign>
 		<Autofill>false</Autofill>
 		<ChildItems>
-			<Button name="Закрыть" id="1">
+			<Button name="ФормаОК" id="6">
 				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
 				<DefaultButton>true</DefaultButton>
-				<SkipOnInput>false</SkipOnInput>
-				<CommandName>Form.StandardCommand.OK</CommandName>
+				<CommandName>Form.Command.ОК</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="6"/>
+				<ExtendedTooltip name="ФормаОКExtendedTooltip" id="7"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -34,14 +32,14 @@
 			<Width>35</Width>
 			<Height>10</Height>
 			<ContextMenu name="ТекстНапоминанияКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ТекстНапоминанияExtendedTooltip" id="7"/>
+			<ExtendedTooltip name="ТекстНапоминанияExtendedTooltip" id="8"/>
 		</LabelField>
 		<CheckBoxField name="ПоказыватьНапоминаниеПриРедактировании" id="2">
 			<DataPath>БольшеНеПоказывать</DataPath>
 			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ПоказыватьНапоминаниеПриРедактированииКонтекстноеМеню" id="3"/>
-			<ExtendedTooltip name="ПоказыватьНапоминаниеПриРедактированииExtendedTooltip" id="8"/>
+			<ExtendedTooltip name="ПоказыватьНапоминаниеПриРедактированииExtendedTooltip" id="9"/>
 		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
@@ -72,4 +70,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+	</Commands>
 </Form>

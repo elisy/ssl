@@ -30,9 +30,8 @@
 				<xr:Object>CommonCommand.ОткрытьПравилаКонвертацииОбъектов</xr:Object>
 				<xr:Object>CommonCommand.ОткрытьПравилаРегистрацииОбъектов</xr:Object>
 				<xr:Object>DataProcessor.ПомощникСозданияОбменаДанными</xr:Object>
-				<xr:Object>DataProcessor.ЗагрузкаПравилКонвертацииОбъектов</xr:Object>
 				<xr:Object>DataProcessor.СопоставлениеОбъектовИнформационныхБаз</xr:Object>
-				<xr:Object>DataProcessor.ПомощникСопоставленияОбъектовИнформационныхБаз</xr:Object>
+				<xr:Object>DataProcessor.ПомощникИнтерактивногоОбменаДанными</xr:Object>
 				<xr:Object>InformationRegister.СостояниеУспешныхОбменовДанными</xr:Object>
 				<xr:Object>DataProcessor.КонвертацияОбъектовРаспределенныхИнформационныхБаз</xr:Object>
 				<xr:Object>CommonCommand.ОткрытьФормуУправленияОбменамиДанных</xr:Object>
@@ -40,6 +39,9 @@
 				<xr:Object>CommonCommand.ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</xr:Object>
 				<xr:Object>CommonCommand.ОткрытьСценарииОбменовДанными</xr:Object>
 				<xr:Object>Enum.ВерсииПодсистемыОбменаДанными</xr:Object>
+				<xr:Object>Enum.РежимыВыгрузкиОбъектовОбмена</xr:Object>
+				<xr:Object>InformationRegister.ОбщиеНастройкиУзловИнформационныхБаз</xr:Object>
+				<xr:Object>Constant.НастройкиПодчиненногоУзлаРИБ</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

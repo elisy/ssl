@@ -28,7 +28,7 @@
 					<v8:content>Основная командная панель</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="41"/>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="45"/>
 			<ChildItems>
 				<Button name="Выбрать" id="35">
 					<Type>CommandBarButton</Type>
@@ -36,21 +36,21 @@
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ВыбратьExtendedTooltip" id="42"/>
+					<ExtendedTooltip name="ВыбратьExtendedTooltip" id="46"/>
 				</Button>
 				<Button name="Изменить" id="33">
 					<Type>CommandBarButton</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ИзменитьExtendedTooltip" id="43"/>
+					<ExtendedTooltip name="ИзменитьExtendedTooltip" id="47"/>
 				</Button>
 				<Button name="Справка" id="30">
 					<Type>CommandBarButton</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.StandardCommand.Help</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="СправкаExtendedTooltip" id="44"/>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="48"/>
 				</Button>
 			</ChildItems>
 		</CommandBar>
@@ -65,7 +65,7 @@
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаСпискиExtendedTooltip" id="45"/>
+			<ExtendedTooltip name="ГруппаСпискиExtendedTooltip" id="49"/>
 			<ChildItems>
 				<Table name="Папки" id="11">
 					<Representation>Tree</Representation>
@@ -100,30 +100,30 @@
 					<UpdateOnDataChange>Auto</UpdateOnDataChange>
 					<ContextMenu name="ПапкиКонтекстноеМеню" id="12"/>
 					<AutoCommandBar name="ПапкиКоманднаяПанель" id="13"/>
-					<ExtendedTooltip name="ПапкиExtendedTooltip" id="46"/>
-					<SearchStringAddition name="ПапкиSearchString" id="47">
+					<ExtendedTooltip name="ПапкиExtendedTooltip" id="50"/>
+					<SearchStringAddition name="ПапкиSearchString" id="51">
 						<Source>
 							<lf:elementId>11</lf:elementId>
 							<lf:additionId>0</lf:additionId>
 						</Source>
-						<ContextMenu name="ПапкиSearchStringContextMenu" id="48"/>
-						<ExtendedTooltip name="ПапкиSearchStringExtendedTooltip" id="49"/>
+						<ContextMenu name="ПапкиSearchStringContextMenu" id="52"/>
+						<ExtendedTooltip name="ПапкиSearchStringExtendedTooltip" id="53"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="ПапкиViewStatus" id="50">
+					<ViewStatusAddition name="ПапкиViewStatus" id="54">
 						<Source>
 							<lf:elementId>11</lf:elementId>
 							<lf:additionId>1</lf:additionId>
 						</Source>
-						<ContextMenu name="ПапкиViewStatusContextMenu" id="51"/>
-						<ExtendedTooltip name="ПапкиViewStatusExtendedTooltip" id="52"/>
+						<ContextMenu name="ПапкиViewStatusContextMenu" id="55"/>
+						<ExtendedTooltip name="ПапкиViewStatusExtendedTooltip" id="56"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="ПапкиSearchControl" id="53">
+					<SearchControlAddition name="ПапкиSearchControl" id="57">
 						<Source>
 							<lf:elementId>11</lf:elementId>
 							<lf:additionId>2</lf:additionId>
 						</Source>
-						<ContextMenu name="ПапкиSearchControlContextMenu" id="54"/>
-						<ExtendedTooltip name="ПапкиSearchControlExtendedTooltip" id="55"/>
+						<ContextMenu name="ПапкиSearchControlContextMenu" id="58"/>
+						<ExtendedTooltip name="ПапкиSearchControlExtendedTooltip" id="59"/>
 					</SearchControlAddition>
 					<Events>
 						<Event name="OnActivateRow">ГруппыПриАктивизацииСтроки</Event>
@@ -143,7 +143,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>InCell</Group>
-							<ExtendedTooltip name="КартинкаИНаименованиеПапокExtendedTooltip" id="56"/>
+							<ExtendedTooltip name="КартинкаИНаименованиеПапокExtendedTooltip" id="60"/>
 							<ChildItems>
 								<PictureField name="ИндексКартинки" id="37">
 									<DataPath>Группы.ИндексКартинки</DataPath>
@@ -152,7 +152,7 @@
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ValuesPicture>
 									<ContextMenu name="ИндексКартинкиКонтекстноеМеню" id="38"/>
-									<ExtendedTooltip name="ИндексКартинкиExtendedTooltip" id="57"/>
+									<ExtendedTooltip name="ИндексКартинкиExtendedTooltip" id="61"/>
 								</PictureField>
 								<InputField name="Папка" id="14">
 									<DataPath>Группы.Description</DataPath>
@@ -166,7 +166,7 @@
 									<Wrap>false</Wrap>
 									<BorderColor>style:BorderColor</BorderColor>
 									<ContextMenu name="ПапкаКонтекстноеМеню" id="15"/>
-									<ExtendedTooltip name="ПапкаExtendedTooltip" id="58"/>
+									<ExtendedTooltip name="ПапкаExtendedTooltip" id="62"/>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
@@ -202,32 +202,84 @@
 					<UpdateOnDataChange>Auto</UpdateOnDataChange>
 					<ContextMenu name="СписокКонтекстноеМеню" id="3"/>
 					<AutoCommandBar name="СписокКоманднаяПанель" id="4"/>
-					<ExtendedTooltip name="СписокExtendedTooltip" id="59"/>
-					<SearchStringAddition name="СписокSearchString" id="60">
+					<ExtendedTooltip name="СписокExtendedTooltip" id="63"/>
+					<SearchStringAddition name="СписокSearchString" id="64">
 						<Source>
 							<lf:elementId>2</lf:elementId>
 							<lf:additionId>0</lf:additionId>
 						</Source>
-						<ContextMenu name="СписокSearchStringContextMenu" id="61"/>
-						<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="62"/>
+						<ContextMenu name="СписокSearchStringContextMenu" id="65"/>
+						<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="66"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="СписокViewStatus" id="63">
+					<ViewStatusAddition name="СписокViewStatus" id="67">
 						<Source>
 							<lf:elementId>2</lf:elementId>
 							<lf:additionId>1</lf:additionId>
 						</Source>
-						<ContextMenu name="СписокViewStatusContextMenu" id="64"/>
-						<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="65"/>
+						<ContextMenu name="СписокViewStatusContextMenu" id="68"/>
+						<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="69"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="СписокSearchControl" id="66">
+					<SearchControlAddition name="СписокSearchControl" id="70">
 						<Source>
 							<lf:elementId>2</lf:elementId>
 							<lf:additionId>2</lf:additionId>
 						</Source>
-						<ContextMenu name="СписокSearchControlContextMenu" id="67"/>
-						<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="68"/>
+						<ContextMenu name="СписокSearchControlContextMenu" id="71"/>
+						<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="72"/>
 					</SearchControlAddition>
 					<ChildItems>
+						<PictureField name="ПодписанЭЦП" id="41">
+							<DataPath>Список.ПодписанЭЦП</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подписан ЭЦП</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подписан ЭЦП</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</HeaderPicture>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ПодписанЭЦПКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ПодписанЭЦПExtendedTooltip" id="73"/>
+						</PictureField>
+						<PictureField name="Зашифрован" id="43">
+							<DataPath>Список.Зашифрован</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Зашифрован</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Зашифрован</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.Зашифрован</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</HeaderPicture>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Зашифрован</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ЗашифрованКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ЗашифрованExtendedTooltip" id="74"/>
+						</PictureField>
 						<ColumnGroup name="КартинкаИНаименование" id="34">
 							<Title>
 								<v8:item>
@@ -242,7 +294,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>InCell</Group>
-							<ExtendedTooltip name="КартинкаИНаименованиеExtendedTooltip" id="69"/>
+							<ExtendedTooltip name="КартинкаИНаименованиеExtendedTooltip" id="75"/>
 							<ChildItems>
 								<PictureField name="Картинка" id="25">
 									<DataPath>Список.ИндексКартинки</DataPath>
@@ -259,7 +311,7 @@
 										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
 									</Border>
 									<ContextMenu name="КартинкаКонтекстноеМеню" id="26"/>
-									<ExtendedTooltip name="КартинкаExtendedTooltip" id="70"/>
+									<ExtendedTooltip name="КартинкаExtendedTooltip" id="76"/>
 								</PictureField>
 								<InputField name="Наименование" id="5">
 									<DataPath>Список.Description</DataPath>
@@ -274,7 +326,7 @@
 									<Wrap>false</Wrap>
 									<BorderColor>style:BorderColor</BorderColor>
 									<ContextMenu name="НаименованиеКонтекстноеМеню" id="6"/>
-									<ExtendedTooltip name="НаименованиеExtendedTooltip" id="71"/>
+									<ExtendedTooltip name="НаименованиеExtendedTooltip" id="77"/>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
@@ -284,7 +336,7 @@
 							<Wrap>false</Wrap>
 							<MultiLine>false</MultiLine>
 							<ContextMenu name="ОписаниеКонтекстноеМеню" id="32"/>
-							<ExtendedTooltip name="ОписаниеExtendedTooltip" id="72"/>
+							<ExtendedTooltip name="ОписаниеExtendedTooltip" id="78"/>
 						</InputField>
 						<InputField name="Автор" id="21">
 							<DataPath>Список.Автор</DataPath>
@@ -292,7 +344,7 @@
 							<Wrap>false</Wrap>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="АвторКонтекстноеМеню" id="22"/>
-							<ExtendedTooltip name="АвторExtendedTooltip" id="73"/>
+							<ExtendedTooltip name="АвторExtendedTooltip" id="79"/>
 						</InputField>
 						<InputField name="ДатаСоздания" id="23">
 							<DataPath>Список.ДатаСоздания</DataPath>
@@ -300,7 +352,7 @@
 							<Wrap>false</Wrap>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="24"/>
-							<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="74"/>
+							<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="80"/>
 						</InputField>
 						<LabelField name="Ссылка" id="39">
 							<DataPath>Список.Ref</DataPath>
@@ -308,7 +360,7 @@
 								<xr:Common>false</xr:Common>
 							</UserVisible>
 							<ContextMenu name="СсылкаКонтекстноеМеню" id="40"/>
-							<ExtendedTooltip name="СсылкаExtendedTooltip" id="75"/>
+							<ExtendedTooltip name="СсылкаExtendedTooltip" id="81"/>
 						</LabelField>
 					</ChildItems>
 				</Table>
@@ -338,12 +390,14 @@
 	Файлы.ИндексКартинки,
 	Файлы.Описание,
 	Файлы.ПолноеНаименование,
-	Файлы.ВладелецФайла
+	Файлы.ВладелецФайла,
+	Файлы.ПодписанЭЦП,
+	Файлы.Зашифрован
 ИЗ
 	Справочник.Файлы КАК Файлы
 ГДЕ
 	Файлы.ВладелецФайла = &amp;Владелец
-	И Файлы.ПометкаУдаления = Ложь</QueryText>
+	И Файлы.ПометкаУдаления = ЛОЖЬ</QueryText>
 				<MainTable>Catalog.Файлы</MainTable>
 				<ListSettings/>
 			</Settings>

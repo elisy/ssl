@@ -42,8 +42,8 @@
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
 			<EditType>InList</EditType>
-			<DefaultRecordForm>InformationRegister.СоответствиеОбъектовИнформационныхБаз.Form.ФормаЗаписи</DefaultRecordForm>
-			<DefaultListForm>InformationRegister.СоответствиеОбъектовИнформационныхБаз.Form.ФормаСписка</DefaultListForm>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -160,7 +160,12 @@
 			<ExtendedRecordPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
-			<Explanation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется для хранения информации сопоставления объектов этой информационной базы с объектами информационной базы корреспондента обмена.</v8:content>
+				</v8:item>
+			</Explanation>
 		</Properties>
 		<ChildObjects>
 			<Resource uuid="7bfb78de-899f-4a4d-a8b2-ebadeccf3921">
@@ -183,7 +188,13 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строковое представление типа объекта информационной базы корреспондента.
+Строка уникального идентификатора объекта ссылочного типа этой информационной базы (производная от значения измерения УникальныйИдентификаторИсточника).</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -205,6 +216,49 @@
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Resource>
+			<Attribute uuid="68a72014-4b2e-4347-aaa7-54d95b8eb919">
+				<Properties>
+					<Name>ОбъектВыгруженПоСсылке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект выгружен по ссылке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Признак того, что запись регистра используется для идентификации объектов, выгруженных по ссылке. При загрузке данных такие записи удаляются по возможности.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
 			<Dimension uuid="a71d9c41-7510-4d38-90df-1034977b8f45">
 				<Properties>
 					<Name>УзелИнформационнойБазы</Name>
@@ -221,7 +275,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел плана обмена, в разрезе которого храниться информация сопоставления объектов.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -262,7 +321,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на любой объект ссылочного типа этой информационной базы.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -307,7 +371,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строка уникального идентификатора объекта ссылочного типа информационной базы корреспондента.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -352,7 +421,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строковое представление типа объекта информационной базы корреспондента.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -397,7 +471,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строковое представление типа объекта этой информационной базы.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -422,8 +501,6 @@
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаЗаписи</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

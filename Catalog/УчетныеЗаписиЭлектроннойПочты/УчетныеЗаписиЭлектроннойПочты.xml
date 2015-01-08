@@ -294,7 +294,7 @@
 			<DefaultObjectForm>Catalog.УчетныеЗаписиЭлектроннойПочты.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm>Catalog.УчетныеЗаписиЭлектроннойПочты.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm/>
+			<DefaultChoiceForm>Catalog.УчетныеЗаписиЭлектроннойПочты.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -418,7 +418,7 @@
 			</Attribute>
 			<Attribute uuid="ee7d970c-cef7-4740-a357-1fe78f88a6e6">
 				<Properties>
-					<Name>SMTPСервер</Name>
+					<Name>СерверИсходящейПочтыSMTP</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -466,7 +466,7 @@
 			</Attribute>
 			<Attribute uuid="73f89524-dbe8-426f-8ee6-1277eb1967cc">
 				<Properties>
-					<Name>POP3Сервер</Name>
+					<Name>СерверВходящейПочтыPOP3</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -940,7 +940,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Длительность ожидания сервера (сек)</v8:content>
+							<v8:content>Время ожидания сервера (сек)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -958,7 +958,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Длительность ожидания сервера до разрыва соединения</v8:content>
+							<v8:content>Время ожидания сервера до разрыва соединения</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -1252,9 +1252,10 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
+			<Form>ДополнительныеСвойстваУчетнойЗаписи</Form>
+			<Form>ФормаВыбора</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
-			<Form>ДополнительныеСвойстваУчетнойЗаписи</Form>
 			<Command uuid="56b570b1-93b0-468a-9672-9c71113753f3">
 				<Properties>
 					<Name>ПроверкаУчетнойЗаписи</Name>

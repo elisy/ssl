@@ -215,6 +215,12 @@
 						</CheckBoxField>
 						<InputField name="СписокМакетовИспользованиеСтрока" id="43">
 							<DataPath>СписокМакетов.ИспользованиеСтрока</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используемый макет</v8:content>
+								</v8:item>
+							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="СписокМакетовИспользованиеСтрокаКонтекстноеМеню" id="44"/>
 							<ExtendedTooltip name="СписокМакетовИспользованиеСтрокаExtendedTooltip" id="70"/>

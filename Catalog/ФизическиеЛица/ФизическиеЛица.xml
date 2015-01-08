@@ -244,7 +244,7 @@
 					<xr:ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фамилия, имя, отчество</v8:content>
+							<v8:content>Имя физического лица или группы физических лиц</v8:content>
 						</v8:item>
 					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -259,7 +259,7 @@
 					<xr:Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ФИО</v8:content>
+							<v8:content>Имя</v8:content>
 						</v8:item>
 					</xr:Synonym>
 					<xr:Comment/>
@@ -354,7 +354,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата рождения физического лица</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -393,7 +398,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пол физического лица</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

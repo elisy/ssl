@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СоздатьКонтакт" id="34">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.СоздатьКонтакт</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СоздатьКонтактExtendedTooltip" id="56"/>
+			</Button>
+			<Button name="СоздатьСделку" id="35">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>0</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СоздатьСделкуExtendedTooltip" id="57"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДатаНомер" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и номер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата номер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаНомерExtendedTooltip" id="58"/>
+			<ChildItems>
+				<CheckBoxField name="Входящий" id="49">
+					<DataPath>Объект.Входящий</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходящийКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ВходящийExtendedTooltip" id="59"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКонтактнаяИнформация" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контактная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа контактная информация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияExtendedTooltip" id="60"/>
+			<ChildItems>
+				<InputField name="АбонентПредставление" id="5">
+					<DataPath>Объект.АбонентПредставление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Абонент</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="АбонентПредставлениеКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="АбонентПредставлениеExtendedTooltip" id="61"/>
+					<Events>
+						<Event name="OnChange">ПредставлениеКонтактаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="АбонентКакСвязаться" id="7">
+					<DataPath>Объект.АбонентКакСвязаться</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Как связаться</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="АбонентКакСвязатьсяКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АбонентКакСвязатьсяExtendedTooltip" id="62"/>
+				</InputField>
+				<InputField name="АбонентКонтакт" id="9">
+					<DataPath>Объект.АбонентКонтакт</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакт</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="АбонентКонтактКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="АбонентКонтактExtendedTooltip" id="63"/>
+					<Events>
+						<Event name="OnChange">КонтактПриИзменении</Event>
+						<Event name="StartChoice">КонтактНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСодержание" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Содержание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Содержание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСодержаниеExtendedTooltip" id="64"/>
+			<ChildItems>
+				<UsualGroup name="Группа" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаExtendedTooltip" id="65"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПредметОтветственный" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предмет и ответственный</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа предмет и ответственный</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПредметОтветственныйExtendedTooltip" id="66"/>
+							<ChildItems>
+								<InputField name="Предмет" id="15">
+									<DataPath>Объект.Предмет</DataPath>
+									<Wrap>false</Wrap>
+									<ClearButton>true</ClearButton>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="ПредметКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ПредметExtendedTooltip" id="67"/>
+								</InputField>
+								<InputField name="Ответственный" id="19">
+									<DataPath>Объект.Ответственный</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="68"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВажностьОтработать" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Важность и отработать</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа важность и отработать</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВажностьОтработатьExtendedTooltip" id="69"/>
+							<ChildItems>
+								<InputField name="Важность" id="41">
+									<DataPath>Объект.Важность</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Важность</v8:content>
+										</v8:item>
+									</Title>
+									<Width>17</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ВажностьКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ВажностьExtendedTooltip" id="70"/>
+								</InputField>
+								<UsualGroup name="ГруппаОтработать" id="52">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отработать</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отработать</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтработатьExtendedTooltip" id="71"/>
+									<ChildItems>
+										<InputField name="ОтработатьПосле" id="36">
+											<DataPath>Объект.ОтработатьПосле</DataPath>
+											<Wrap>false</Wrap>
+											<ChoiceListButton>true</ChoiceListButton>
+											<ContextMenu name="ОтработатьПослеКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ОтработатьПослеExtendedTooltip" id="72"/>
+											<Events>
+												<Event name="ChoiceProcessing">ОтработатьПослеОбработкаВыбора</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="Отработан" id="21">
+											<DataPath>Объект.Отработано</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отработано </v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОтработанКонтекстноеМеню" id="22"/>
+											<ExtendedTooltip name="ОтработанExtendedTooltip" id="73"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОписание" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа описание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>7</Height>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОписаниеExtendedTooltip" id="74"/>
+					<ChildItems>
+						<InputField name="Описание" id="11">
+							<DataPath>Объект.Описание</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ОписаниеExtendedTooltip" id="75"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАвторДатаРегистрации" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор, дата регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор, дата регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАвторДатаРегистрацииExtendedTooltip" id="76"/>
+			<ChildItems>
+				<InputField name="Автор" id="38">
+					<DataPath>Объект.Автор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>25</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="АвторКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="АвторExtendedTooltip" id="77"/>
+				</InputField>
+				<InputField name="Дата" id="53">
+					<DataPath>Объект.Date</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd MMMM yyyy "г."'</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="78"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ТелефонныйЗвонок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="НеобходимоОповещение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необходимо оповещение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВзаимодействиеОснование" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаимодействие основание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЭлектронноеПисьмоИсходящее</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗапланированноеВзаимодействие</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЭлектронноеПисьмоВходящее</v8:Type>
+				<v8:Type>cfg:DocumentRef.ТелефонныйЗвонок</v8:Type>
+				<v8:Type>cfg:DocumentRef.Встреча</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИнтерактивноСоздаваемыхКонтактов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список интерактивно создаваемых контактов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьКонтакт" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать контакт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать контакт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AddListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьКонтактВыполнить</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="СвязанныеВзаимодействия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные взаимодействия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаимодействия, связанные с текущим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ДополнительныеСведения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="1" y="8"/>
+			</Picture>
+			<Action>СвязанныеВзаимодействияВыполнить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>3</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3:33e0072d-7d5b-4298-ae77-31a7cb358f5d</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.ТелефонныйЗвонок.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.ЭлектронноеПисьмоИсходящее.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.ЗапланированноеВзаимодействие.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.Встреча.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

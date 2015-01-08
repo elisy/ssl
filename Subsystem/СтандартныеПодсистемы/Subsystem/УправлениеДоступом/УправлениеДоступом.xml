@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture>
@@ -22,7 +22,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ВидыДоступаЕдинственныеДляТипаЗначенияДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ВидыДоступаБезГруппЗначенияДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВиду</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПользователейИГруппДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИзменениеУчастниковГруппДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступомПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступом</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаписатьГруппыИВидыДоступа</xr:Item>
@@ -41,10 +41,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗаполнениеДанныхДляОграниченияДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПраваПоЗначениямДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ВидыДоступаЧерезПраваПоЗначениямДоступа</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПраваПоЗначениюДоступа</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПраваПоЗначениямДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РаспространяетсяВИерархии</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПраваПользователяПоЗначениямДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаписатьЗависимыеНаборыЗначенийДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуПравоЧтения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуУсловие</xr:Item>
@@ -55,9 +52,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуПравоИзменения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуВнешниеПользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ВидыДоступаБезОграничения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПраваВнешнегоПользователяПоЗначениямДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуДополнительныеСведения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуУчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПраваДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЗапрещенноеПравоДоступа</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

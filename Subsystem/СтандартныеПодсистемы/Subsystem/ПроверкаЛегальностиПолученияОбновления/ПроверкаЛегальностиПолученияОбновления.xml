@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
 			<Content>

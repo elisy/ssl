@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
@@ -54,9 +54,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ПараметрыОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникСозданияОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПараметрыОбменаДанными</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПравилКонвертацииОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СопоставлениеОбъектовИнформационныхБаз</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникСопоставленияОбъектовИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникИнтерактивногоОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТранспортСообщенийОбменаFTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТранспортСообщенийОбменаEMAIL</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеОбменаДанными</xr:Item>
@@ -70,7 +69,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыполнениеОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеОбменаДаннымиУспех</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеОбменаДаннымиОшибка</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаРедактировать</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УправлениеОбменамиДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Внимание</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеОбменовДанными</xr:Item>
@@ -78,8 +76,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ВыполнениеОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВыполнитьОбменДаннымиИнтерактивно</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВерсииПодсистемыОбменаДанными</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ПоясняющийТекст</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УниверсальныйОбменДаннымиXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыполнитьОбменДаннымиИнтерактивно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РежимыВыгрузкиОбъектовОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбщиеНастройкиУзловИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкиПодчиненногоУзлаРИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкаПодчиненногоУзлаРИБЗавершена</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

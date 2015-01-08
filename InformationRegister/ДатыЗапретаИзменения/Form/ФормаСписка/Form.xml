@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаДатыЗапретаИзмененияДанных" id="16">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДатыЗапретаИзмененияДанных</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаДатыЗапретаИзмененияДанныхExtendedTooltip" id="17"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="18"/>
+			<SearchStringAddition name="СписокSearchString" id="19">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="20"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="22">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="23"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="24"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="25">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="26"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="27"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Пользователь" id="8">
+					<DataPath>Список.Пользователь</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ПользовательExtendedTooltip" id="28"/>
+				</LabelField>
+				<LabelField name="Раздел" id="4">
+					<DataPath>Список.Раздел</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="РазделКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="РазделExtendedTooltip" id="29"/>
+				</LabelField>
+				<LabelField name="Объект" id="6">
+					<DataPath>Список.Объект</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ОбъектКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ОбъектExtendedTooltip" id="30"/>
+				</LabelField>
+				<LabelField name="ОписаниеДатыЗапрета" id="12">
+					<DataPath>Список.ОписаниеДатыЗапрета</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Width>22</Width>
+					<ContextMenu name="ОписаниеДатыЗапретаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ОписаниеДатыЗапретаExtendedTooltip" id="31"/>
+				</LabelField>
+				<LabelField name="ДатаЗапрета" id="10">
+					<DataPath>Список.ДатаЗапрета</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаЗапретаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаЗапретаExtendedTooltip" id="32"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="14">
+					<DataPath>Список.Комментарий</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Width>25</Width>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="33"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ДатаЗапрета</Field>
+				<Field>Список.Объект</Field>
+				<Field>Список.ОписаниеДатыЗапрета</Field>
+				<Field>Список.Пользователь</Field>
+				<Field>Список.Раздел</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ДатыЗапретаИзменения</MainTable>
+				<ListSettings>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Пользователь</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Раздел</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Объект</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДатыЗапретаИзмененияДанных" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты запрета изменения данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты запрета изменения данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДатыЗапретаИзмененияДанных</Action>
+		</Command>
+	</Commands>
+</Form>

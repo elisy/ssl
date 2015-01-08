@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="14"/>
+			<SearchStringAddition name="СписокSearchString" id="15">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="16"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="17"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="18">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="19"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="20"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="21">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="22"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="23"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Дата" id="4">
+					<DataPath>Список.Date</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="24"/>
+				</LabelField>
+				<LabelField name="Номер" id="6">
+					<DataPath>Список.Number</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="25"/>
+				</LabelField>
+				<LabelField name="Описание" id="8">
+					<DataPath>Список.Описание</DataPath>
+					<Height>1</Height>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="26"/>
+				</LabelField>
+				<LabelField name="Предмет" id="10">
+					<DataPath>Список.Предмет</DataPath>
+					<ContextMenu name="ПредметКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПредметExtendedTooltip" id="27"/>
+				</LabelField>
+				<LabelField name="АбонентПредставление" id="12">
+					<DataPath>Список.АбонентПредставление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Абонент</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="АбонентПредставлениеКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="АбонентПредставлениеExtendedTooltip" id="28"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ТелефонныйЗвонок</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

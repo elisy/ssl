@@ -8,11 +8,13 @@
 // Document - документ (печатная форма)
 // Тип - тип печатной формы ("ODT")
 //
-//
 
 ////////////////////////////////////////////////////////////////////////////////
 // Экспортные функции
 
+// Инициализация печатной формы: создается COM - объект,
+// ему устанавливаются свойства.
+//
 Функция ИнициализироватьПечатнуюФормуOOWriter() Экспорт
 	
 	Попытка
@@ -48,6 +50,8 @@
 	
 КонецФункции
 
+// Возвращает структуру с макетом печатной формы
+//
 // Параметры:
 // ДвоичныеДанныеМакета - ДвоичныеДанные - двоичные данные макета
 // Возвращаемое значение:
@@ -95,19 +99,8 @@
 	
 КонецФункции
 
-Функция ПолучитьComSafeArray()
-	
-#Если ВебКлиент Тогда	
-	scr = Новый COMОбъект("MSScriptControl.ScriptControl");
-	scr.language = "javascript";
-	scr.eval("Массив=new Array()");
-	Возврат scr.eval("Массив");
-#Иначе
-	Возврат Новый COMSafeArray("VT_DISPATCH", 1);
-#КонецЕсли
-	
-КонецФункции
-
+// Закрывает макет печатной формы и затирает ссылки на COM объект
+//
 Функция ЗакрытьСоединение(Handler, знач ЗакрытьПриложение) Экспорт
 	
 	Если ЗакрытьПриложение Тогда
@@ -164,12 +157,16 @@
 	
 КонецФункции
 
+// Получает область верхнего колонтитула
+//
 Функция ПолучитьОбластьВерхнегоКолонтитула(знач МакетСсылка) Экспорт
 	
 	Возврат Новый Структура("Document, ServiceManager", МакетСсылка.Document, МакетСсылка.ServiceManager);
 	
 КонецФункции
 
+// Получает область нижнего колонтитула
+//
 Функция ПолучитьОбластьНижнегоКолонтитула(МакетСсылка) Экспорт
 	
 	Возврат Новый Структура("Document, ServiceManager", МакетСсылка.Document, МакетСсылка.ServiceManager);
@@ -192,6 +189,8 @@
 	
 КонецПроцедуры
 
+// Добавляет верхний колонтитул к печатной форме
+//
 Процедура ДобавитьВерхнийКолонтитул(знач ПечатнаяФорма,
 									знач Область) Экспорт
 	
@@ -205,6 +204,8 @@
 	
 КонецПроцедуры
 
+// Добавляет нижний колонтитул к печатной форме
+//
 Процедура ДобавитьНижнийКолонтитул(знач ПечатнаяФорма,
 									знач Область) Экспорт
 	
@@ -257,6 +258,8 @@
 	
 КонецПроцедуры
 
+// Заполняет параметры в табличном поле печатной формы
+//
 Процедура ЗаполнитьПараметры(ПечатнаяФорма, Данные) Экспорт
 	
 	Для Каждого КлючЗначение Из Данные Цикл
@@ -271,6 +274,8 @@
 	
 КонецПроцедуры
 
+// Добавляет область коллекции к печатной форме
+//
 Процедура ПрисоединитьИЗаполнитьКоллекцию(знач ПечатнаяФормаHandler,
 										  знач ОбластьHandler,
 										  знач Данные,
@@ -301,6 +306,8 @@
 	
 КонецПроцедуры
 
+// Устанавливает курсор в конец документа ДокументСсылка
+//
 Процедура УстановитьОсновнойКурсорНаТелоДокумента(знач ДокументСсылка) Экспорт
 	
 	oDoc = ДокументСсылка.Document;
@@ -310,6 +317,34 @@
 	oViewCursor.gotoEnd(Ложь);
 	
 КонецПроцедуры
+
+// Устанавливает курсор на верхний колонтитул
+//
+Функция УстановитьОсновнойКурсорНаВерхнийКолонтитул(знач ДокументСсылка) Экспорт
+	
+	xCursor = ДокументСсылка.Document.getCurrentController().getViewCursor();
+	PageStyleName = xCursor.getPropertyValue("PageStyleName");
+	oPStyle = ДокументСсылка.Document.getStyleFamilies().getByName("PageStyles").getByName(PageStyleName);
+	oPStyle.HeaderIsOn = Истина;
+	HeaderTextCursor = oPStyle.getPropertyValue("HeaderText").createTextCursor();
+	xCursor.gotoRange(HeaderTextCursor, Ложь);
+	Возврат xCursor;
+	
+КонецФункции
+
+// Устанавливает курсор на нижний колонтитул
+//
+Функция УстановитьОсновнойКурсорНаНижнийКолонтитул(знач ДокументСсылка) Экспорт
+	
+	xCursor = ДокументСсылка.Document.getCurrentController().getViewCursor();
+	PageStyleName = xCursor.getPropertyValue("PageStyleName");
+	oPStyle = ДокументСсылка.Document.getStyleFamilies().getByName("PageStyles").getByName(PageStyleName);
+	oPStyle.FooterIsOn = Истина;
+	FooterTextCursor = oPStyle.getPropertyValue("FooterText").createTextCursor();
+	xCursor.gotoRange(FooterTextCursor, Ложь);
+	Возврат xCursor;
+	
+КонецФункции
 
 ////////////////////////////////////////////////////////////////////////////////
 // Служебные функции
@@ -381,26 +416,15 @@
 	
 КонецПроцедуры
 
-Функция УстановитьОсновнойКурсорНаВерхнийКолонтитул(знач ДокументСсылка) Экспорт
+Функция ПолучитьComSafeArray()
 	
-	xCursor = ДокументСсылка.Document.getCurrentController().getViewCursor();
-	PageStyleName = xCursor.getPropertyValue("PageStyleName");
-	oPStyle = ДокументСсылка.Document.getStyleFamilies().getByName("PageStyles").getByName(PageStyleName);
-	oPStyle.HeaderIsOn = Истина;
-	HeaderTextCursor = oPStyle.getPropertyValue("HeaderText").createTextCursor();
-	xCursor.gotoRange(HeaderTextCursor, Ложь);
-	Возврат xCursor;
-	
-КонецФункции
-
-Функция УстановитьОсновнойКурсорНаНижнийКолонтитул(знач ДокументСсылка) Экспорт
-	
-	xCursor = ДокументСсылка.Document.getCurrentController().getViewCursor();
-	PageStyleName = xCursor.getPropertyValue("PageStyleName");
-	oPStyle = ДокументСсылка.Document.getStyleFamilies().getByName("PageStyles").getByName(PageStyleName);
-	oPStyle.FooterIsOn = Истина;
-	FooterTextCursor = oPStyle.getPropertyValue("FooterText").createTextCursor();
-	xCursor.gotoRange(FooterTextCursor, Ложь);
-	Возврат xCursor;
+#Если ВебКлиент Тогда
+	scr = Новый COMОбъект("MSScriptControl.ScriptControl");
+	scr.language = "javascript";
+	scr.eval("Массив=new Array()");
+	Возврат scr.eval("Массив");
+#Иначе
+	Возврат Новый COMSafeArray("VT_DISPATCH", 1);
+#КонецЕсли
 	
 КонецФункции

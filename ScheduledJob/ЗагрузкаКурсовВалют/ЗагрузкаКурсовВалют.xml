@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<MethodName>CommonModule.РаботаСКурсамиВалютСобытия.ЗагрузитьАктуальныйКурс</MethodName>
-			<Description/>
+			<Description>Загрузка курсов валют</Description>
 			<Key/>
 			<Use>true</Use>
 			<Predefined>true</Predefined>

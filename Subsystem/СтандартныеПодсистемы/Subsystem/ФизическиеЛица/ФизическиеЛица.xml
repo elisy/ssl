@@ -24,6 +24,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФизическиеЛица</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФизическиеЛицаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФизическиеЛицаПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

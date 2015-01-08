@@ -24,7 +24,10 @@
 			</Picture>
 			<Shortcut/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<CommandParameterType/>
+			<CommandParameterType>
+				<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</CommandParameterType>
 			<ParameterUseMode>Single</ParameterUseMode>
 			<ModifiesData>false</ModifiesData>
 		</Properties>

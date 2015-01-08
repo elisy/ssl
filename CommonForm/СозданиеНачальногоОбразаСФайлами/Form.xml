@@ -8,9 +8,43 @@
 	</Title>
 	<Width>75</Width>
 	<AutoTitle>false</AutoTitle>
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СоздатьНачальныйОбраз" id="43">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.СоздатьНачальныйОбраз</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СоздатьНачальныйОбразExtendedTooltip" id="46"/>
+			</Button>
+			<Button name="Закрыть" id="44">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="47"/>
+			</Button>
+			<Button name="Справка" id="45">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="48"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -48,7 +82,7 @@
 				</xr:Item>
 			</ChoiceList>
 			<ContextMenu name="ВидБазыКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ВидБазыExtendedTooltip" id="43"/>
+			<ExtendedTooltip name="ВидБазыExtendedTooltip" id="49"/>
 			<Events>
 				<Event name="OnChange">ВидБазыПриИзменении</Event>
 			</Events>
@@ -66,7 +100,7 @@
 					<v8:content>Параметры</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="ПараметрыExtendedTooltip" id="44"/>
+			<ExtendedTooltip name="ПараметрыExtendedTooltip" id="50"/>
 			<ChildItems>
 				<Pages name="Страницы" id="4">
 					<Title>
@@ -82,7 +116,7 @@
 						</v8:item>
 					</ToolTip>
 					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="СтраницыExtendedTooltip" id="45"/>
+					<ExtendedTooltip name="СтраницыExtendedTooltip" id="51"/>
 					<ChildItems>
 						<Page name="ЗаполнитьПараметрыФайловойБазы" id="5">
 							<Title>
@@ -97,7 +131,7 @@
 									<v8:content>Заполнить параметры файловой базы</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ЗаполнитьПараметрыФайловойБазыExtendedTooltip" id="46"/>
+							<ExtendedTooltip name="ЗаполнитьПараметрыФайловойБазыExtendedTooltip" id="52"/>
 							<ChildItems>
 								<InputField name="ЯзыкФайловойБазы" id="7">
 									<DataPath>Язык</DataPath>
@@ -105,7 +139,7 @@
 									<ListChoiceMode>true</ListChoiceMode>
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="ЯзыкФайловойБазыКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="ЯзыкФайловойБазыExtendedTooltip" id="47"/>
+									<ExtendedTooltip name="ЯзыкФайловойБазыExtendedTooltip" id="53"/>
 								</InputField>
 								<UsualGroup name="ГруппаПутьФайловойБазы" id="37">
 									<Title>
@@ -121,7 +155,7 @@
 										</v8:item>
 									</ToolTip>
 									<Representation>StrongSeparation</Representation>
-									<ExtendedTooltip name="ГруппаПутьФайловойБазыExtendedTooltip" id="48"/>
+									<ExtendedTooltip name="ГруппаПутьФайловойБазыExtendedTooltip" id="54"/>
 									<ChildItems>
 										<InputField name="ПолноеИмяФайловойБазы" id="35">
 											<DataPath>ПолноеИмяФайловойБазыWindows</DataPath>
@@ -134,7 +168,7 @@
 											<TitleLocation>Top</TitleLocation>
 											<TitleHeight>1</TitleHeight>
 											<ContextMenu name="ПолноеИмяФайловойБазыКонтекстноеМеню" id="36"/>
-											<ExtendedTooltip name="ПолноеИмяФайловойБазыExtendedTooltip" id="49"/>
+											<ExtendedTooltip name="ПолноеИмяФайловойБазыExtendedTooltip" id="55"/>
 										</InputField>
 										<InputField name="ПолноеИмяФайловойБазыLinux" id="38">
 											<DataPath>ПолноеИмяФайловойБазыLinux</DataPath>
@@ -146,7 +180,7 @@
 											</Title>
 											<TitleLocation>Top</TitleLocation>
 											<ContextMenu name="ПолноеИмяФайловойБазыLinuxКонтекстноеМеню" id="39"/>
-											<ExtendedTooltip name="ПолноеИмяФайловойБазыLinuxExtendedTooltip" id="50"/>
+											<ExtendedTooltip name="ПолноеИмяФайловойБазыLinuxExtendedTooltip" id="56"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -165,17 +199,17 @@
 									<v8:content>Заполнить параметры серверной базы</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ЗаполнитьПараметрыСервернойБазыExtendedTooltip" id="51"/>
+							<ExtendedTooltip name="ЗаполнитьПараметрыСервернойБазыExtendedTooltip" id="57"/>
 							<ChildItems>
 								<InputField name="Сервер" id="9">
 									<DataPath>Сервер</DataPath>
 									<ContextMenu name="СерверКонтекстноеМеню" id="10"/>
-									<ExtendedTooltip name="СерверExtendedTooltip" id="52"/>
+									<ExtendedTooltip name="СерверExtendedTooltip" id="58"/>
 								</InputField>
 								<InputField name="ИмяБазы" id="11">
 									<DataPath>ИмяБазы</DataPath>
 									<ContextMenu name="ИмяБазыКонтекстноеМеню" id="12"/>
-									<ExtendedTooltip name="ИмяБазыExtendedTooltip" id="53"/>
+									<ExtendedTooltip name="ИмяБазыExtendedTooltip" id="59"/>
 								</InputField>
 								<InputField name="ЗащищенноеСоединение" id="13">
 									<DataPath>ЗащищенноеСоединение</DataPath>
@@ -225,7 +259,7 @@
 										</xr:Item>
 									</ChoiceList>
 									<ContextMenu name="ЗащищенноеСоединениеКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="ЗащищенноеСоединениеExtendedTooltip" id="54"/>
+									<ExtendedTooltip name="ЗащищенноеСоединениеExtendedTooltip" id="60"/>
 								</InputField>
 								<InputField name="ТипСУБД" id="15">
 									<DataPath>ТипСУБД</DataPath>
@@ -288,33 +322,33 @@
 										</xr:Item>
 									</ChoiceList>
 									<ContextMenu name="ТипСУБДКонтекстноеМеню" id="16"/>
-									<ExtendedTooltip name="ТипСУБДExtendedTooltip" id="55"/>
+									<ExtendedTooltip name="ТипСУБДExtendedTooltip" id="61"/>
 								</InputField>
 								<InputField name="СерверБазыДанных" id="17">
 									<DataPath>СерверБазыДанных</DataPath>
 									<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
 									<Wrap>false</Wrap>
 									<ContextMenu name="СерверБазыДанныхКонтекстноеМеню" id="18"/>
-									<ExtendedTooltip name="СерверБазыДанныхExtendedTooltip" id="56"/>
+									<ExtendedTooltip name="СерверБазыДанныхExtendedTooltip" id="62"/>
 								</InputField>
 								<InputField name="ИмяБазыДанных" id="19">
 									<DataPath>ИмяБазыДанных</DataPath>
 									<Wrap>false</Wrap>
 									<ContextMenu name="ИмяБазыДанныхКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="ИмяБазыДанныхExtendedTooltip" id="57"/>
+									<ExtendedTooltip name="ИмяБазыДанныхExtendedTooltip" id="63"/>
 								</InputField>
 								<InputField name="ПользовательБазыДанных" id="21">
 									<DataPath>ПользовательБазыДанных</DataPath>
 									<Wrap>false</Wrap>
 									<ContextMenu name="ПользовательБазыДанныхКонтекстноеМеню" id="22"/>
-									<ExtendedTooltip name="ПользовательБазыДанныхExtendedTooltip" id="58"/>
+									<ExtendedTooltip name="ПользовательБазыДанныхExtendedTooltip" id="64"/>
 								</InputField>
 								<InputField name="ПарольПользователя" id="23">
 									<DataPath>ПарольПользователя</DataPath>
 									<Wrap>false</Wrap>
 									<PasswordMode>true</PasswordMode>
 									<ContextMenu name="ПарольПользователяКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="ПарольПользователяExtendedTooltip" id="59"/>
+									<ExtendedTooltip name="ПарольПользователяExtendedTooltip" id="65"/>
 								</InputField>
 								<InputField name="СмещениеДат" id="25">
 									<DataPath>СмещениеДат</DataPath>
@@ -349,7 +383,7 @@
 										</xr:Item>
 									</ChoiceList>
 									<ContextMenu name="СмещениеДатКонтекстноеМеню" id="26"/>
-									<ExtendedTooltip name="СмещениеДатExtendedTooltip" id="60"/>
+									<ExtendedTooltip name="СмещениеДатExtendedTooltip" id="66"/>
 								</InputField>
 								<InputField name="ЯзыкБазыСервера" id="27">
 									<DataPath>Язык</DataPath>
@@ -357,7 +391,7 @@
 									<ListChoiceMode>true</ListChoiceMode>
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="ЯзыкБазыСервераКонтекстноеМеню" id="28"/>
-									<ExtendedTooltip name="ЯзыкБазыСервераExtendedTooltip" id="61"/>
+									<ExtendedTooltip name="ЯзыкБазыСервераExtendedTooltip" id="67"/>
 								</InputField>
 							</ChildItems>
 						</Page>
@@ -379,7 +413,7 @@
 				</v8:item>
 			</ToolTip>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаПутьКАрхивуСФайламиТомовExtendedTooltip" id="62"/>
+			<ExtendedTooltip name="ГруппаПутьКАрхивуСФайламиТомовExtendedTooltip" id="68"/>
 			<ChildItems>
 				<InputField name="ПутьКАрхивуСФайламиТомов" id="33">
 					<DataPath>ПутьКАрхивуСФайламиТомовWindows</DataPath>
@@ -391,7 +425,7 @@
 					</Title>
 					<TitleLocation>Top</TitleLocation>
 					<ContextMenu name="ПутьКАрхивуСФайламиТомовКонтекстноеМеню" id="34"/>
-					<ExtendedTooltip name="ПутьКАрхивуСФайламиТомовExtendedTooltip" id="63"/>
+					<ExtendedTooltip name="ПутьКАрхивуСФайламиТомовExtendedTooltip" id="69"/>
 				</InputField>
 				<InputField name="ПутьКАрхивуСФайламиТомовLinux" id="41">
 					<DataPath>ПутьКАрхивуСФайламиТомовLinux</DataPath>
@@ -403,7 +437,7 @@
 					</Title>
 					<TitleLocation>Top</TitleLocation>
 					<ContextMenu name="ПутьКАрхивуСФайламиТомовLinuxКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ПутьКАрхивуСФайламиТомовLinuxExtendedTooltip" id="64"/>
+					<ExtendedTooltip name="ПутьКАрхивуСФайламиТомовLinuxExtendedTooltip" id="70"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -421,38 +455,7 @@
 				</v8:item>
 			</ToolTip>
 			<HorizontalLocation>Right</HorizontalLocation>
-			<ExtendedTooltip name="ПанельДействийExtendedTooltip" id="65"/>
-			<ChildItems>
-				<Button name="СоздатьНачальныйОбраз" id="30">
-					<Type>CommandBarButton</Type>
-					<DefaultButton>true</DefaultButton>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.СоздатьНачальныйОбраз</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="СоздатьНачальныйОбразExtendedTooltip" id="66"/>
-				</Button>
-				<Button name="Закрыть" id="31">
-					<Type>CommandBarButton</Type>
-					<Representation>Text</Representation>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.StandardCommand.Close</CommandName>
-					<Parameter xsi:nil="true"/>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отмена</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="67"/>
-				</Button>
-				<Button name="Справка" id="32">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.StandardCommand.Help</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="СправкаExtendedTooltip" id="68"/>
-				</Button>
-			</ChildItems>
+			<ExtendedTooltip name="ПанельДействийExtendedTooltip" id="71"/>
 		</CommandBar>
 	</ChildItems>
 	<Attributes>

@@ -34,7 +34,7 @@
 			</ToolTip>
 			<ExtendedTooltip name="ОперацииExtendedTooltip" id="328"/>
 			<ChildItems>
-				<Page name="БыстыйДоступ" id="6">
+				<Page name="БыстрыйДоступ" id="6">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -48,9 +48,9 @@
 						</v8:item>
 					</ToolTip>
 					<VerticalStretch>true</VerticalStretch>
-					<ExtendedTooltip name="БыстыйДоступExtendedTooltip" id="329"/>
+					<ExtendedTooltip name="БыстрыйДоступExtendedTooltip" id="329"/>
 					<ChildItems>
-						<UsualGroup name="БыстыйДоступИтоги" id="212">
+						<UsualGroup name="БыстрыйДоступИтоги" id="212">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -61,30 +61,30 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Быстый доступ итоги</v8:content>
+									<v8:content>Быстрый доступ итоги</v8:content>
 								</v8:item>
 							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Representation>NormalSeparation</Representation>
-							<ExtendedTooltip name="БыстыйДоступИтогиExtendedTooltip" id="330"/>
+							<ExtendedTooltip name="БыстрыйДоступИтогиExtendedTooltip" id="330"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаУстановкаПериодаРасчитанныхИтогов" id="278">
+								<UsualGroup name="ГруппаУстановкаПериодаРассчитанныхИтогов" id="278">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа установка периода расчитанных итогов</v8:content>
+											<v8:content>Группа установка периода рассчитанных итогов</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа установка периода расчитанных итогов</v8:content>
+											<v8:content>Группа установка периода рассчитанных итогов</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаУстановкаПериодаРасчитанныхИтоговExtendedTooltip" id="331"/>
+									<ExtendedTooltip name="ГруппаУстановкаПериодаРассчитанныхИтоговExtendedTooltip" id="331"/>
 									<ChildItems>
 										<Button name="УстановитьПериодРасчитанныхИтогов" id="219">
 											<Type>UsualButton</Type>
@@ -167,7 +167,7 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа быстрый доступ аггрегаты</v8:content>
+									<v8:content>Группа быстрый доступ агрегаты</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Representation>NormalSeparation</Representation>

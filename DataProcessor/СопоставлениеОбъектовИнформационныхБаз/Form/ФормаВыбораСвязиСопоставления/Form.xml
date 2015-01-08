@@ -17,7 +17,7 @@
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.Выбрать</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ВыбратьExtendedTooltip" id="19"/>
+				<ExtendedTooltip name="ВыбратьExtendedTooltip" id="21"/>
 			</Button>
 			<Button name="Закрыть" id="18">
 				<Type>CommandBarButton</Type>
@@ -31,7 +31,7 @@
 						<v8:content>Отмена</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="20"/>
+				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="22"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -44,6 +44,8 @@
 			<CommandBarLocation>None</CommandBarLocation>
 			<ReadOnly>true</ReadOnly>
 			<SkipOnInput>false</SkipOnInput>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
 			<RowSelectionMode>Row</RowSelectionMode>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
@@ -71,36 +73,37 @@
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ТаблицаВыбораКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="ТаблицаВыбораКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="ТаблицаВыбораExtendedTooltip" id="21"/>
-			<SearchStringAddition name="ТаблицаВыбораSearchString" id="22">
+			<ExtendedTooltip name="ТаблицаВыбораExtendedTooltip" id="23"/>
+			<SearchStringAddition name="ТаблицаВыбораSearchString" id="24">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="ТаблицаВыбораSearchStringContextMenu" id="23"/>
-				<ExtendedTooltip name="ТаблицаВыбораSearchStringExtendedTooltip" id="24"/>
+				<ContextMenu name="ТаблицаВыбораSearchStringContextMenu" id="25"/>
+				<ExtendedTooltip name="ТаблицаВыбораSearchStringExtendedTooltip" id="26"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ТаблицаВыбораViewStatus" id="25">
+			<ViewStatusAddition name="ТаблицаВыбораViewStatus" id="27">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="ТаблицаВыбораViewStatusContextMenu" id="26"/>
-				<ExtendedTooltip name="ТаблицаВыбораViewStatusExtendedTooltip" id="27"/>
+				<ContextMenu name="ТаблицаВыбораViewStatusContextMenu" id="28"/>
+				<ExtendedTooltip name="ТаблицаВыбораViewStatusExtendedTooltip" id="29"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ТаблицаВыбораSearchControl" id="28">
+			<SearchControlAddition name="ТаблицаВыбораSearchControl" id="30">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="ТаблицаВыбораSearchControlContextMenu" id="29"/>
-				<ExtendedTooltip name="ТаблицаВыбораSearchControlExtendedTooltip" id="30"/>
+				<ContextMenu name="ТаблицаВыбораSearchControlContextMenu" id="31"/>
+				<ExtendedTooltip name="ТаблицаВыбораSearchControlExtendedTooltip" id="32"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">ТаблицаВыбораВыбор</Event>
 			</Events>
 			<ChildItems>
 				<ColumnGroup name="ГруппировкаПолей" id="14">
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -113,37 +116,52 @@
 							<v8:content>Группировка полей</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ГруппировкаПолейExtendedTooltip" id="31"/>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппировкаПолейExtendedTooltip" id="33"/>
 					<ChildItems>
+						<PictureField name="ТаблицаВыбораИндексКартинки" id="19">
+							<DataPath>ТаблицаВыбора.ИндексКартинки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<ShowInFooter>false</ShowInFooter>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ТаблицаВыбораИндексКартинкиКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ТаблицаВыбораИндексКартинкиExtendedTooltip" id="34"/>
+						</PictureField>
 						<InputField name="ТаблицаВыбораПолеСортировки1" id="4">
 							<DataPath>ТаблицаВыбора.ПолеСортировки1</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТаблицаВыбораПолеСортировки1КонтекстноеМеню" id="5"/>
-							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки1ExtendedTooltip" id="32"/>
+							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки1ExtendedTooltip" id="35"/>
 						</InputField>
 						<InputField name="ТаблицаВыбораПолеСортировки2" id="6">
 							<DataPath>ТаблицаВыбора.ПолеСортировки2</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТаблицаВыбораПолеСортировки2КонтекстноеМеню" id="7"/>
-							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки2ExtendedTooltip" id="33"/>
+							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки2ExtendedTooltip" id="36"/>
 						</InputField>
 						<InputField name="ТаблицаВыбораПолеСортировки3" id="8">
 							<DataPath>ТаблицаВыбора.ПолеСортировки3</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТаблицаВыбораПолеСортировки3КонтекстноеМеню" id="9"/>
-							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки3ExtendedTooltip" id="34"/>
+							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки3ExtendedTooltip" id="37"/>
 						</InputField>
 						<InputField name="ТаблицаВыбораПолеСортировки4" id="10">
 							<DataPath>ТаблицаВыбора.ПолеСортировки4</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТаблицаВыбораПолеСортировки4КонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки4ExtendedTooltip" id="35"/>
+							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки4ExtendedTooltip" id="38"/>
 						</InputField>
 						<InputField name="ТаблицаВыбораПолеСортировки5" id="12">
 							<DataPath>ТаблицаВыбора.ПолеСортировки5</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТаблицаВыбораПолеСортировки5КонтекстноеМеню" id="13"/>
-							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки5ExtendedTooltip" id="36"/>
+							<ExtendedTooltip name="ТаблицаВыбораПолеСортировки5ExtendedTooltip" id="39"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -256,6 +274,22 @@
 							<v8:Digits>14</v8:Digits>
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>

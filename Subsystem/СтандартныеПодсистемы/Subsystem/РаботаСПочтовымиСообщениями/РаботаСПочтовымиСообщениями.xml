@@ -10,12 +10,12 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочтаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочтаКлиентПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениями</xr:Item>

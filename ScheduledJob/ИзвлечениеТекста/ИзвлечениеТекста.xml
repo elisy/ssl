@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<MethodName>CommonModule.ФайловыеФункции.ИзвлечениеТекста</MethodName>
-			<Description/>
+			<Description>Извлечение текста</Description>
 			<Key/>
 			<Use>true</Use>
 			<Predefined>true</Predefined>

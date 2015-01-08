@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
@@ -26,7 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьБизнесПроцессыИЗадачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РолиИсполнителей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыВажностиЗадачи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокИстекающихЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокЗадачИстекающихНаДату</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокПросроченныхЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СправкаОбИсполнительскойДисциплине</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Задачи</xr:Item>
@@ -36,7 +36,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СписокБизнесПроцессов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЗадачиПоПредмету</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РолеваяАдресацияПоОбъекту</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РолиИИсполнителиЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.Задание</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаИсполнителя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Subsystem.СтандартныеПодсистемы.Subsystem.БизнесПроцессыИЗадачи</xr:Item>
@@ -61,6 +61,16 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИзменениеВыполнениеЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.РольБезИсполнителей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияБизнесПроцессов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КомандыРаботыСБизнесПроцессамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗнакСтоп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗнакСтопЧБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьПодчиненныеБизнесПроцессы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПередЗаписьюБизнесПроцесса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВосклицательныйЗнакСерый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияЗадачиИБизнесПроцессы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.НеПринятыеКИсполнениюЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БизнесПроцессыИЗадачиВызовСервера</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

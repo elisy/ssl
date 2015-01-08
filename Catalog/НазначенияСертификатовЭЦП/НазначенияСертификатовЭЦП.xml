@@ -231,7 +231,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование назначения</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -241,8 +246,13 @@
 					<xr:PasswordMode>false</xr:PasswordMode>
 					<xr:MarkNegatives>false</xr:MarkNegatives>
 					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
-					<xr:Comment/>
+					<xr:Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</xr:Synonym>
+					<xr:Comment>Наименование</xr:Comment>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
 					<xr:FillValue xsi:nil="true"/>
@@ -256,7 +266,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код назначения</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -266,8 +281,13 @@
 					<xr:PasswordMode>false</xr:PasswordMode>
 					<xr:MarkNegatives>false</xr:MarkNegatives>
 					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
-					<xr:Comment/>
+					<xr:Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</xr:Synonym>
+					<xr:Comment>Код</xr:Comment>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
 					<xr:FillValue xsi:nil="true"/>
@@ -302,7 +322,12 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначение сертификата ЭЦП</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
@@ -312,6 +337,7 @@
 		</Properties>
 		<ChildObjects>
 			<Template>НазначенияСертификатов</Template>
+			<Template>УдаленныйНазначенияСертификатов</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

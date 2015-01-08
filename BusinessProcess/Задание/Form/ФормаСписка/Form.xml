@@ -1,7 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОстановить" id="51">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Остановить</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаОстановитьExtendedTooltip" id="53"/>
+			</Button>
+			<Button name="ФормаПродолжитьБизнесПроцесс" id="52">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПродолжитьБизнесПроцесс</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаПродолжитьБизнесПроцессExtendedTooltip" id="54"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
@@ -16,7 +31,7 @@
 			</Title>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="46"/>
+			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="55"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаПоРеквизитам" id="21">
 					<Title>
@@ -28,13 +43,13 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПоРеквизитамExtendedTooltip" id="47"/>
+					<ExtendedTooltip name="ГруппаПоРеквизитамExtendedTooltip" id="56"/>
 					<ChildItems>
 						<InputField name="ПоАвтору" id="14">
 							<DataPath>ПоАвтору</DataPath>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ПоАвторуКонтекстноеМеню" id="15"/>
-							<ExtendedTooltip name="ПоАвторуExtendedTooltip" id="48"/>
+							<ExtendedTooltip name="ПоАвторуExtendedTooltip" id="57"/>
 							<Events>
 								<Event name="OnChange">ПоАвторуПриИзменении</Event>
 							</Events>
@@ -43,7 +58,7 @@
 							<DataPath>ПоИсполнителю</DataPath>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ПоИсполнителюКонтекстноеМеню" id="18"/>
-							<ExtendedTooltip name="ПоИсполнителюExtendedTooltip" id="49"/>
+							<ExtendedTooltip name="ПоИсполнителюExtendedTooltip" id="58"/>
 							<Events>
 								<Event name="OnChange">ПоИсполнителюПриИзменении</Event>
 							</Events>
@@ -52,23 +67,53 @@
 							<DataPath>ПоПроверяющему</DataPath>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ПоПроверяющемуКонтекстноеМеню" id="20"/>
-							<ExtendedTooltip name="ПоПроверяющемуExtendedTooltip" id="50"/>
+							<ExtendedTooltip name="ПоПроверяющемуExtendedTooltip" id="59"/>
 							<Events>
 								<Event name="OnChange">ПоПроверяющемуПриИзменении</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<CheckBoxField name="ПоказыватьЗавершенныеЗадания" id="22">
-					<DataPath>ПоказыватьЗавершенныеЗадания</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПоказыватьЗавершенныеЗаданияКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ПоказыватьЗавершенныеЗаданияExtendedTooltip" id="51"/>
-					<Events>
-						<Event name="OnChange">ПоказыватьЗавершенныеЗаданияПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
+				<UsualGroup name="Флажки" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флажки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флажки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ФлажкиExtendedTooltip" id="60"/>
+					<ChildItems>
+						<CheckBoxField name="ПоказыватьЗавершенныеЗадания" id="22">
+							<DataPath>ПоказыватьЗавершенныеЗадания</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоказыватьЗавершенныеЗаданияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПоказыватьЗавершенныеЗаданияExtendedTooltip" id="61"/>
+							<Events>
+								<Event name="OnChange">ПоказыватьЗавершенныеЗаданияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ПоказыватьОстановленные" id="48">
+							<DataPath>ПоказыватьОстановленные</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоказыватьОстановленныеКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ПоказыватьОстановленныеExtendedTooltip" id="62"/>
+							<Events>
+								<Event name="OnChange">ПоказыватьОстановленныеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Список" id="1">
@@ -101,30 +146,30 @@
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="52"/>
-			<SearchStringAddition name="СписокSearchString" id="53">
+			<ExtendedTooltip name="СписокExtendedTooltip" id="63"/>
+			<SearchStringAddition name="СписокSearchString" id="64">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchStringContextMenu" id="54"/>
-				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="55"/>
+				<ContextMenu name="СписокSearchStringContextMenu" id="65"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="66"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокViewStatus" id="56">
+			<ViewStatusAddition name="СписокViewStatus" id="67">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокViewStatusContextMenu" id="57"/>
-				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="58"/>
+				<ContextMenu name="СписокViewStatusContextMenu" id="68"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="69"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокSearchControl" id="59">
+			<SearchControlAddition name="СписокSearchControl" id="70">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchControlContextMenu" id="60"/>
-				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="61"/>
+				<ContextMenu name="СписокSearchControlContextMenu" id="71"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="72"/>
 			</SearchControlAddition>
 			<ChildItems>
 				<PictureField name="ВажностьКартинка" id="24">
@@ -135,7 +180,27 @@
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</ValuesPicture>
 					<ContextMenu name="ВажностьКартинкаКонтекстноеМеню" id="25"/>
-					<ExtendedTooltip name="ВажностьКартинкаExtendedTooltip" id="62"/>
+					<ExtendedTooltip name="ВажностьКартинкаExtendedTooltip" id="73"/>
+				</PictureField>
+				<PictureField name="Остановлен" id="46">
+					<DataPath>Список.Остановлен</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бизнес-процесс остановлен</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ЗнакСтопЧБ</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ЗнакСтоп</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ОстановленКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ОстановленExtendedTooltip" id="74"/>
 				</PictureField>
 				<LabelField name="Номер" id="4">
 					<DataPath>Список.Number</DataPath>
@@ -144,32 +209,32 @@
 					</UserVisible>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НомерКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НомерExtendedTooltip" id="63"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="75"/>
 				</LabelField>
 				<LabelField name="Дата" id="6">
 					<DataPath>Список.Date</DataPath>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ДатаExtendedTooltip" id="64"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="76"/>
 				</LabelField>
 				<LabelField name="Наименование" id="26">
 					<DataPath>Список.Наименование</DataPath>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="65"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="77"/>
 				</LabelField>
-				<LabelField name="ОписаниеЗадания" id="28">
-					<DataPath>Список.ОписаниеЗадания</DataPath>
-					<ContextMenu name="ОписаниеЗаданияКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ОписаниеЗаданияExtendedTooltip" id="66"/>
+				<LabelField name="Содержание" id="28">
+					<DataPath>Список.Содержание</DataPath>
+					<ContextMenu name="СодержаниеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СодержаниеExtendedTooltip" id="78"/>
 				</LabelField>
 				<LabelField name="Предмет" id="32">
 					<DataPath>Список.Предмет</DataPath>
 					<ContextMenu name="ПредметКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ПредметExtendedTooltip" id="67"/>
+					<ExtendedTooltip name="ПредметExtendedTooltip" id="79"/>
 				</LabelField>
 				<LabelField name="СрокИсполнения" id="42">
 					<DataPath>Список.СрокИсполнения</DataPath>
 					<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="43"/>
-					<ExtendedTooltip name="СрокИсполненияExtendedTooltip" id="68"/>
+					<ExtendedTooltip name="СрокИсполненияExtendedTooltip" id="80"/>
 				</LabelField>
 				<LabelField name="СрокПроверки" id="44">
 					<DataPath>Список.СрокПроверки</DataPath>
@@ -177,7 +242,7 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="СрокПроверкиКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="СрокПроверкиExtendedTooltip" id="69"/>
+					<ExtendedTooltip name="СрокПроверкиExtendedTooltip" id="81"/>
 				</LabelField>
 				<CheckBoxField name="Стартован" id="12">
 					<DataPath>Список.Started</DataPath>
@@ -186,12 +251,12 @@
 					</UserVisible>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СтартованКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="СтартованExtendedTooltip" id="70"/>
+					<ExtendedTooltip name="СтартованExtendedTooltip" id="82"/>
 				</CheckBoxField>
 				<LabelField name="ДатаЗавершения" id="38">
 					<DataPath>Список.ДатаЗавершения</DataPath>
 					<ContextMenu name="ДатаЗавершенияКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ДатаЗавершенияExtendedTooltip" id="71"/>
+					<ExtendedTooltip name="ДатаЗавершенияExtendedTooltip" id="83"/>
 				</LabelField>
 				<LabelField name="ВедущаяЗадача" id="10">
 					<DataPath>Список.HeadTask</DataPath>
@@ -199,12 +264,12 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="ВедущаяЗадачаКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ВедущаяЗадачаExtendedTooltip" id="72"/>
+					<ExtendedTooltip name="ВедущаяЗадачаExtendedTooltip" id="84"/>
 				</LabelField>
 				<LabelField name="НомерИтерации" id="30">
 					<DataPath>Список.НомерИтерации</DataPath>
 					<ContextMenu name="НомерИтерацииКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="НомерИтерацииExtendedTooltip" id="73"/>
+					<ExtendedTooltip name="НомерИтерацииExtendedTooltip" id="85"/>
 				</LabelField>
 				<LabelField name="Автор" id="34">
 					<DataPath>Список.Автор</DataPath>
@@ -212,7 +277,7 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="АвторКонтекстноеМеню" id="35"/>
-					<ExtendedTooltip name="АвторExtendedTooltip" id="74"/>
+					<ExtendedTooltip name="АвторExtendedTooltip" id="86"/>
 				</LabelField>
 				<LabelField name="Исполнитель" id="36">
 					<DataPath>Список.Исполнитель</DataPath>
@@ -220,7 +285,7 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="ИсполнительКонтекстноеМеню" id="37"/>
-					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="75"/>
+					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="87"/>
 				</LabelField>
 				<LabelField name="Проверяющий" id="40">
 					<DataPath>Список.Проверяющий</DataPath>
@@ -228,7 +293,7 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="ПроверяющийКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="ПроверяющийExtendedTooltip" id="76"/>
+					<ExtendedTooltip name="ПроверяющийExtendedTooltip" id="88"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -258,7 +323,7 @@
 	БизнесПроцессЗадание.Наименование,
 	БизнесПроцессЗадание.НаПроверке,
 	БизнесПроцессЗадание.НомерИтерации,
-	БизнесПроцессЗадание.ОписаниеЗадания,
+	БизнесПроцессЗадание.Содержание,
 	БизнесПроцессЗадание.Подтверждено,
 	БизнесПроцессЗадание.Предмет,
 	БизнесПроцессЗадание.Проверяющий,
@@ -271,7 +336,12 @@
 		КОГДА БизнесПроцессЗадание.Важность = ЗНАЧЕНИЕ(Перечисление.ВариантыВажностиЗадачи.Высокая)
 			ТОГДА 2
 		ИНАЧЕ 1
-	КОНЕЦ КАК ВажностьКартинка
+	КОНЕЦ КАК ВажностьКартинка,
+	ВЫБОР
+		КОГДА БизнесПроцессЗадание.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияБизнесПроцессов.Остановлен)
+			ТОГДА Истина
+		ИНАЧЕ Ложь
+	КОНЕЦ КАК Остановлен
 ИЗ
 	БизнесПроцесс.Задание КАК БизнесПроцессЗадание
 	
@@ -280,6 +350,7 @@
 				<ListSettings>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
 							<dcsset:field>Дата</dcsset:field>
 							<dcsset:orderType>Asc</dcsset:orderType>
 						</dcsset:item>
@@ -289,6 +360,7 @@
 							<dcsset:selection/>
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:use>false</dcsset:use>
 									<dcsset:left xsi:type="dcscor:Field">Завершен</dcsset:left>
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
@@ -349,5 +421,48 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПоказыватьОстановленные" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать остановленные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Остановить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Остановить</Action>
+		</Command>
+		<Command name="ПродолжитьБизнесПроцесс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить бизнес процесс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьБизнесПроцесс</Action>
+		</Command>
+	</Commands>
 </Form>

@@ -149,6 +149,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="bd3ec5a9-161d-487e-ab1d-e5e15a6e3a7b">
+				<Properties>
+					<Name>ВыполненоСПредупреждениями</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнено с предупреждениями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

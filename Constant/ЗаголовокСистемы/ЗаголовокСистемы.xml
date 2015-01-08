@@ -37,7 +37,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Текст, учавствующий в формированиии заголовка главного окна программы</v8:content>
+					<v8:content>Фрагмент заголовка главного окна программы</v8:content>
 				</v8:item>
 			</ToolTip>
 			<MarkNegatives>false</MarkNegatives>

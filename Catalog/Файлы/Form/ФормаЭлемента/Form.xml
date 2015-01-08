@@ -423,11 +423,16 @@
 						<Table name="ТаблицаПодписей" id="190">
 							<Representation>List</Representation>
 							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
 							<RowSelectionMode>Row</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ТаблицаПодписей</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+							</CommandSet>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
@@ -550,12 +555,17 @@
 						<Table name="СертификатыШифрования" id="207">
 							<Representation>List</Representation>
 							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
 							<RowSelectionMode>Row</RowSelectionMode>
 							<Header>false</Header>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СертификатыШифрования</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+							</CommandSet>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
@@ -757,7 +767,7 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 			<Columns>
 				<Column name="КомуВыданСертификат" id="1">
@@ -914,6 +924,21 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
+				<Column name="АдресСертификата" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес сертификата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СертификатыШифрования" id="12">
@@ -957,7 +982,31 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="АдресСертификата" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес сертификата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ОписаниеКолонокТаблицыПодписей" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание колонок таблицы подписей</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -1227,13 +1276,13 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Подписан</xr:Ref>
+				<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="10" y="2"/>
 			</Picture>
 			<Action>Подписать</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Зашифровать" id="14">
@@ -1255,7 +1304,7 @@
 			</Picture>
 			<Action>Зашифровать</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Расшифровать" id="15">
@@ -1273,7 +1322,7 @@
 			</ToolTip>
 			<Action>Расшифровать</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="ДобавитьЭЦПИзФайла" id="16">
@@ -1291,7 +1340,7 @@
 			</ToolTip>
 			<Action>ДобавитьЭЦПИзФайла</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="СохранитьВместеСЭЦП" id="18">
@@ -1309,7 +1358,7 @@
 			</ToolTip>
 			<Action>СохранитьВместеСЭЦП</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="ОткрытьСертификат" id="17">
@@ -1327,7 +1376,7 @@
 			</ToolTip>
 			<Action>ОткрытьСертификат</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Проверить" id="19">
@@ -1345,7 +1394,7 @@
 			</ToolTip>
 			<Action>Проверить</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="ПроверитьВсе" id="20">
@@ -1363,7 +1412,7 @@
 			</ToolTip>
 			<Action>ПроверитьВсе</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Сохранить" id="21">
@@ -1381,7 +1430,7 @@
 			</ToolTip>
 			<Action>Сохранить</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="Удалить" id="22">
@@ -1399,7 +1448,7 @@
 			</ToolTip>
 			<Action>Удалить</Action>
 			<FunctionalOptions>
-				<Item>FunctionalOption.ИспользоватьЭлектронноЦифровыеПодписиИШифрование</Item>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеЦифровыеПодписи</Item>
 			</FunctionalOptions>
 		</Command>
 		<Command name="ОткрытьСертификатШифрования" id="1">

@@ -10,8 +10,8 @@
 				</v8:item>
 			</Synonym>
 			<Comment>Задание предназначено для выполнения обмена данными по расписанию</Comment>
-			<MethodName>CommonModule.ОбменДаннымиСервер.ВыполнитьОбменДаннымиПоСценариюОбменаДанными</MethodName>
-			<Description>Выполнение обмена</Description>
+			<MethodName>CommonModule.ОбменДаннымиСервер.ВыполнитьОбменДаннымиПоРегламентномуЗаданию</MethodName>
+			<Description>Выполнение обмена данными</Description>
 			<Key/>
 			<Use>true</Use>
 			<Predefined>false</Predefined>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
-	<setForAttributesByDefault>false</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>Report.СписокПросроченныхЗадач</name>
 		<right>
@@ -11,17 +11,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.Dimension.ОсновнойОбъектАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -37,7 +26,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.СписокИстекающихЗадач</name>
+		<name>Report.СписокЗадачИстекающихНаДату</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -57,50 +46,6 @@
 			<name>Update</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.StandardAttribute.Active</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.StandardAttribute.LineNumber</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.StandardAttribute.Recorder</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.StandardAttribute.Period</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -150,105 +95,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.Dimension.Исполнитель</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.СписокЗависшихЗадач</name>
 		<right>
 			<name>Use</name>
@@ -263,39 +109,6 @@
 		<name>InformationRegister.ИсполнителиЗадач.Command.НастройкаРолевойАдресации</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.Dimension.РольИсполнителя</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ТипыДополнительногоОбъектаАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.Dimension.ДополнительныйОбъектАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -339,127 +152,6 @@
 		</right>
 	</object>
 	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.ValueType</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ИспользуетсяСОбъектамиАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ТипыОсновногоОбъектаАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.Комментарий</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.Задачи</name>
 		<right>
 			<name>Use</name>
@@ -467,28 +159,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ИспользуетсяБезОбъектовАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИсполнителиЗадач.Attribute.ГруппаИсполнителейЗадач</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>

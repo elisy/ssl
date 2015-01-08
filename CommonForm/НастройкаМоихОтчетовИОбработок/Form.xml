@@ -145,19 +145,19 @@
 							<Parameter xsi:nil="true"/>
 							<ExtendedTooltip name="ДобавитьВсеКомандыExtendedTooltip" id="35"/>
 						</Button>
-						<Button name="УдалитьКоманду" id="15">
-							<Type>UsualButton</Type>
-							<SkipOnInput>false</SkipOnInput>
-							<CommandName>Form.Command.УдалитьКоманду</CommandName>
-							<Parameter xsi:nil="true"/>
-							<ExtendedTooltip name="УдалитьКомандуExtendedTooltip" id="36"/>
-						</Button>
 						<Button name="УдалитьВсеКоманды" id="16">
 							<Type>UsualButton</Type>
 							<SkipOnInput>false</SkipOnInput>
 							<CommandName>Form.Command.УдалитьВсеКоманды</CommandName>
 							<Parameter xsi:nil="true"/>
-							<ExtendedTooltip name="УдалитьВсеКомандыExtendedTooltip" id="37"/>
+							<ExtendedTooltip name="УдалитьВсеКомандыExtendedTooltip" id="36"/>
+						</Button>
+						<Button name="УдалитьКоманду" id="15">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.УдалитьКоманду</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УдалитьКомандуExtendedTooltip" id="37"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -418,7 +418,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>&lt;&lt;</v8:content>
+					<v8:content>&gt;&gt;</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -433,7 +433,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>&lt;&lt; &lt;</v8:content>
+					<v8:content>&gt; &gt;&gt;</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -448,7 +448,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>&gt;&gt;</v8:content>
+					<v8:content>&lt;&lt;</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -463,7 +463,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>&gt; &gt;&gt;</v8:content>
+					<v8:content>&lt;&lt; &lt;</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>

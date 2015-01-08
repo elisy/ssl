@@ -278,7 +278,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Parameter>
-		<Parameter name="Варинат">
+		<Parameter name="вариант">
 			<Type>
 				<v8:Type>cfg:CatalogRef.ВариантыОтчетов</v8:Type>
 			</Type>

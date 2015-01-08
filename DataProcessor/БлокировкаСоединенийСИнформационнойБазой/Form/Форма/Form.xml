@@ -55,7 +55,7 @@
 			<ExtendedTooltip name="ГруппаОсновныеExtendedTooltip" id="46"/>
 			<ChildItems>
 				<CheckBoxField name="УстановитьБлокировкуСоединений" id="2">
-					<DataPath>Объект.УстановитьБлокировкуСоединений</DataPath>
+					<DataPath>Объект.БлокировкаУстановкиСоединенийВключена</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 					<CheckBoxType>Auto</CheckBoxType>
@@ -63,7 +63,7 @@
 					<ExtendedTooltip name="УстановитьБлокировкуСоединенийExtendedTooltip" id="47"/>
 				</CheckBoxField>
 				<InputField name="НачалоБлокировки" id="4">
-					<DataPath>Объект.НачалоБлокировки</DataPath>
+					<DataPath>Объект.НачалоДействияБлокировки</DataPath>
 					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
@@ -71,7 +71,7 @@
 					<ExtendedTooltip name="НачалоБлокировкиExtendedTooltip" id="48"/>
 				</InputField>
 				<InputField name="ОкончаниеБлокировки" id="6">
-					<DataPath>Объект.ОкончаниеБлокировки</DataPath>
+					<DataPath>Объект.ОкончаниеДействияБлокировки</DataPath>
 					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>

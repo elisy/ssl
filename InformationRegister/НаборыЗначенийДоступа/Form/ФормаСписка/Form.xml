@@ -172,12 +172,6 @@
 							<v8:content>ВД право Чт</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Когда свойство Чтение установлено, содержит вид доступа ПравоЧтения</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ContextMenu name="ВидДоступаПравоЧтенияКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ВидДоступаПравоЧтенияExtendedTooltip" id="57"/>
 				</LabelField>
@@ -189,12 +183,6 @@
 							<v8:content>ВД право Доб</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Когда свойство Добавление установлено, содержит вид доступа ПравоДобавления</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ContextMenu name="ВидДоступаПравоДобавленияКонтекстноеМеню" id="31"/>
 					<ExtendedTooltip name="ВидДоступаПравоДобавленияExtendedTooltip" id="58"/>
 				</LabelField>
@@ -206,12 +194,6 @@
 							<v8:content>ВД право Изм</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Когда свойство Изменение установлено, содержит вид доступа ПравоИзменения</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ContextMenu name="ВидДоступаПравоИзмененияКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ВидДоступаПравоИзмененияExtendedTooltip" id="59"/>
 				</LabelField>
@@ -223,12 +205,6 @@
 							<v8:content>Тип Объекта</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Одна запись среди всех наборов содержит пустую ссылку типа объекта</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ContextMenu name="ТаблицаОбъектаКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="ТаблицаОбъектаExtendedTooltip" id="60"/>
 				</LabelField>
@@ -240,12 +216,6 @@
 							<v8:content>Тип ЗД</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Когда вид доступа ПравоЧтения или ПравоДобавления или ПравоИзменения, содержит пустую ссылку типа значения доступа</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>15</Width>
 					<ContextMenu name="ТаблицаЗначенияДоступаКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="ТаблицаЗначенияДоступаExtendedTooltip" id="61"/>

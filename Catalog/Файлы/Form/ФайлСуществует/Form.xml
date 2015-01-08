@@ -3,7 +3,7 @@
 	<EnterKeyBehavior>DefaultButton</EnterKeyBehavior>
 	<AutoFillCheck>false</AutoFillCheck>
 	<Customizable>false</Customizable>
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
 		<ExcludedCommand>No</ExcludedCommand>
@@ -15,7 +15,33 @@
 		<ExcludedCommand>RestoreValues</ExcludedCommand>
 		<ExcludedCommand>OK</ExcludedCommand>
 	</CommandSet>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Перезаписать" id="6">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Перезаписать</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ПерезаписатьExtendedTooltip" id="9"/>
+			</Button>
+			<Button name="Пропустить" id="7">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Пропустить</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ПропуститьExtendedTooltip" id="10"/>
+			</Button>
+			<Button name="Прервать" id="8">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Прервать</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ПрерватьExtendedTooltip" id="11"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<LabelField name="ТекстСообщения" id="2">
 			<DataPath>ТекстСообщения</DataPath>
@@ -26,7 +52,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>true</VerticalStretch>
 			<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="3"/>
-			<ExtendedTooltip name="ТекстСообщенияExtendedTooltip" id="9"/>
+			<ExtendedTooltip name="ТекстСообщенияExtendedTooltip" id="12"/>
 		</LabelField>
 		<CheckBoxField name="ПрименитьДляВсех" id="4">
 			<DataPath>ПрименитьДляВсех</DataPath>
@@ -40,36 +66,13 @@
 			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ПрименитьДляВсехКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ПрименитьДляВсехExtendedTooltip" id="10"/>
+			<ExtendedTooltip name="ПрименитьДляВсехExtendedTooltip" id="13"/>
 		</CheckBoxField>
 		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
 			<EnableContentChange>true</EnableContentChange>
 			<HorizontalLocation>Right</HorizontalLocation>
 			<CommandSource>Form</CommandSource>
-			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="11"/>
-			<ChildItems>
-				<Button name="Перезаписать" id="6">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.Перезаписать</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ПерезаписатьExtendedTooltip" id="12"/>
-				</Button>
-				<Button name="Пропустить" id="7">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.Пропустить</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ПропуститьExtendedTooltip" id="13"/>
-				</Button>
-				<Button name="Прервать" id="8">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.Прервать</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ПрерватьExtendedTooltip" id="14"/>
-				</Button>
-			</ChildItems>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="14"/>
 		</CommandBar>
 	</ChildItems>
 	<Attributes>

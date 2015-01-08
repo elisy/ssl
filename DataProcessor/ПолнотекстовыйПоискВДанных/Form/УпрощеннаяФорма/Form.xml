@@ -38,7 +38,7 @@
 					<ContextMenu name="ПолеВводаПоискаКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="ПолеВводаПоискаExtendedTooltip" id="44"/>
 					<Events>
-						<Event name="TextEditEnd">ПолеВводаПоискаОкончаниеВводаТекста</Event>
+						<Event name="OnChange">ПолеВводаПоискаПриИзменении</Event>
 						<Event name="ChoiceProcessing">ПолеВводаПоискаОбработкаВыбора</Event>
 					</Events>
 				</InputField>

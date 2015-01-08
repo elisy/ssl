@@ -17,36 +17,53 @@
 						<v8:content>Установитьрежим версионирования для выделенных объектов</v8:content>
 					</v8:item>
 				</ToolTip>
-				<ExtendedTooltip name="ВариантВерсионированияГруппаExtendedTooltip" id="32"/>
+				<ExtendedTooltip name="ВариантВерсионированияГруппаExtendedTooltip" id="34"/>
 				<ChildItems>
 					<Button name="УстановитьВариантВерсионированияНеВерсионировать" id="27">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Form.Command.УстановитьВариантВерсионированияНеВерсионировать</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="УстановитьВариантВерсионированияНеВерсионироватьExtendedTooltip" id="33"/>
+						<ExtendedTooltip name="УстановитьВариантВерсионированияНеВерсионироватьExtendedTooltip" id="35"/>
 					</Button>
 					<Button name="УстановитьВариантВерсионированияВсегда" id="26">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.УстановитьВариантВерсионированияВсегда</CommandName>
+						<CommandName>Form.Command.УстановитьВариантВерсионированияПриЗаписи</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="УстановитьВариантВерсионированияВсегдаExtendedTooltip" id="34"/>
+						<ExtendedTooltip name="УстановитьВариантВерсионированияВсегдаExtendedTooltip" id="36"/>
 					</Button>
 					<Button name="УстановитьВариантВерсионированияПриПроведении" id="25">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Form.Command.УстановитьВариантВерсионированияПриПроведении</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="УстановитьВариантВерсионированияПриПроведенииExtendedTooltip" id="35"/>
+						<ExtendedTooltip name="УстановитьВариантВерсионированияПриПроведенииExtendedTooltip" id="37"/>
 					</Button>
-					<Button name="УстановитьНастройкиПоУмолчанию" id="23">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.УстановитьНастройкиПоУмолчанию</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="УстановитьНастройкиПоУмолчаниюExtendedTooltip" id="36"/>
-					</Button>
+					<ButtonGroup name="КоманднаяПанельГруппаКнопок" id="33">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Командная панель группа кнопок</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Командная панель группа кнопок</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="КоманднаяПанельГруппаКнопокExtendedTooltip" id="38"/>
+						<ChildItems>
+							<Button name="УстановитьНастройкиПоУмолчанию" id="23">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.УстановитьНастройкиПоУмолчанию</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="УстановитьНастройкиПоУмолчаниюExtendedTooltip" id="39"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
 				</ChildItems>
 			</Popup>
 		</ChildItems>
@@ -87,61 +104,78 @@
 			<ContextMenu name="ДеревоОбъектовМетаданныхКонтекстноеМеню" id="12">
 				<Autofill>false</Autofill>
 				<ChildItems>
-					<Button name="КМ_УстановитьВариантВерсионированияНеВерсионировать" id="28">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.УстановитьВариантВерсионированияНеВерсионировать</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КМ_УстановитьВариантВерсионированияНеВерсионироватьExtendedTooltip" id="37"/>
-					</Button>
-					<Button name="КМ_УстановитьВариантВерсионированияВсегда" id="29">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.УстановитьВариантВерсионированияВсегда</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КМ_УстановитьВариантВерсионированияВсегдаExtendedTooltip" id="38"/>
-					</Button>
 					<Button name="КМ_УстановитьВариантВерсионированияПриПроведении" id="30">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Form.Command.УстановитьВариантВерсионированияПриПроведении</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КМ_УстановитьВариантВерсионированияПриПроведенииExtendedTooltip" id="39"/>
+						<ExtendedTooltip name="КМ_УстановитьВариантВерсионированияПриПроведенииExtendedTooltip" id="40"/>
 					</Button>
-					<Button name="КМ_УстановитьНастройкиПоУмолчанию" id="31">
+					<Button name="КМ_УстановитьВариантВерсионированияВсегда" id="29">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.УстановитьНастройкиПоУмолчанию</CommandName>
+						<CommandName>Form.Command.УстановитьВариантВерсионированияПриЗаписи</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КМ_УстановитьНастройкиПоУмолчаниюExtendedTooltip" id="40"/>
+						<ExtendedTooltip name="КМ_УстановитьВариантВерсионированияВсегдаExtendedTooltip" id="41"/>
 					</Button>
+					<Button name="КМ_УстановитьВариантВерсионированияНеВерсионировать" id="28">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.УстановитьВариантВерсионированияНеВерсионировать</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="КМ_УстановитьВариантВерсионированияНеВерсионироватьExtendedTooltip" id="42"/>
+					</Button>
+					<ButtonGroup name="ДеревоОбъектовМетаданныхКонтекстноеМенюГруппаКнопок" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дерево объектов метаданных контекстное меню группа кнопок</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дерево объектов метаданных контекстное меню группа кнопок</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоОбъектовМетаданныхКонтекстноеМенюГруппаКнопокExtendedTooltip" id="43"/>
+						<ChildItems>
+							<Button name="КМ_УстановитьНастройкиПоУмолчанию" id="31">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Command.УстановитьНастройкиПоУмолчанию</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="КМ_УстановитьНастройкиПоУмолчаниюExtendedTooltip" id="44"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="ДеревоОбъектовМетаданныхКоманднаяПанель" id="13"/>
-			<ExtendedTooltip name="ДеревоОбъектовМетаданныхExtendedTooltip" id="41"/>
-			<SearchStringAddition name="ДеревоОбъектовМетаданныхSearchString" id="42">
+			<ExtendedTooltip name="ДеревоОбъектовМетаданныхExtendedTooltip" id="45"/>
+			<SearchStringAddition name="ДеревоОбъектовМетаданныхSearchString" id="46">
 				<Source>
 					<lf:elementId>11</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="ДеревоОбъектовМетаданныхSearchStringContextMenu" id="43"/>
-				<ExtendedTooltip name="ДеревоОбъектовМетаданныхSearchStringExtendedTooltip" id="44"/>
+				<ContextMenu name="ДеревоОбъектовМетаданныхSearchStringContextMenu" id="47"/>
+				<ExtendedTooltip name="ДеревоОбъектовМетаданныхSearchStringExtendedTooltip" id="48"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ДеревоОбъектовМетаданныхViewStatus" id="45">
+			<ViewStatusAddition name="ДеревоОбъектовМетаданныхViewStatus" id="49">
 				<Source>
 					<lf:elementId>11</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="ДеревоОбъектовМетаданныхViewStatusContextMenu" id="46"/>
-				<ExtendedTooltip name="ДеревоОбъектовМетаданныхViewStatusExtendedTooltip" id="47"/>
+				<ContextMenu name="ДеревоОбъектовМетаданныхViewStatusContextMenu" id="50"/>
+				<ExtendedTooltip name="ДеревоОбъектовМетаданныхViewStatusExtendedTooltip" id="51"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ДеревоОбъектовМетаданныхSearchControl" id="48">
+			<SearchControlAddition name="ДеревоОбъектовМетаданныхSearchControl" id="52">
 				<Source>
 					<lf:elementId>11</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="ДеревоОбъектовМетаданныхSearchControlContextMenu" id="49"/>
-				<ExtendedTooltip name="ДеревоОбъектовМетаданныхSearchControlExtendedTooltip" id="50"/>
+				<ContextMenu name="ДеревоОбъектовМетаданныхSearchControlContextMenu" id="53"/>
+				<ExtendedTooltip name="ДеревоОбъектовМетаданныхSearchControlExtendedTooltip" id="54"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeRowChange">ДеревоОбъектовМетаданныхПередНачаломИзменения</Event>
@@ -161,7 +195,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>InCell</Group>
-					<ExtendedTooltip name="КартинкаНаименованиеExtendedTooltip" id="51"/>
+					<ExtendedTooltip name="КартинкаНаименованиеExtendedTooltip" id="55"/>
 					<ChildItems>
 						<PictureField name="Картинка" id="21">
 							<DataPath>ДеревоОбъектовМетаданных.КодКартинки</DataPath>
@@ -173,7 +207,7 @@
 								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
 							</Border>
 							<ContextMenu name="КартинкаКонтекстноеМеню" id="22"/>
-							<ExtendedTooltip name="КартинкаExtendedTooltip" id="52"/>
+							<ExtendedTooltip name="КартинкаExtendedTooltip" id="56"/>
 						</PictureField>
 						<InputField name="НаименованиеОбъекта" id="14">
 							<DataPath>ДеревоОбъектовМетаданных.СинонимНаименованияОбъекта</DataPath>
@@ -181,7 +215,7 @@
 							<Wrap>false</Wrap>
 							<BorderColor>style:BorderColor</BorderColor>
 							<ContextMenu name="НаименованиеОбъектаКонтекстноеМеню" id="15"/>
-							<ExtendedTooltip name="НаименованиеОбъектаExtendedTooltip" id="53"/>
+							<ExtendedTooltip name="НаименованиеОбъектаExtendedTooltip" id="57"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -195,7 +229,7 @@
 					<ChoiceListButton>true</ChoiceListButton>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="ВариантВерсионированияКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ВариантВерсионированияExtendedTooltip" id="54"/>
+					<ExtendedTooltip name="ВариантВерсионированияExtendedTooltip" id="58"/>
 					<Events>
 						<Event name="StartListChoice">ВариантВерсионированияНачалоВыбораИзСписка</Event>
 						<Event name="ChoiceProcessing">ВариантВерсионированияОбработкаВыбора</Event>
@@ -212,7 +246,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="КлассОбъектаКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="КлассОбъектаExtendedTooltip" id="55"/>
+					<ExtendedTooltip name="КлассОбъектаExtendedTooltip" id="59"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -342,7 +376,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>По умолчанию</v8:content>
+					<v8:content>Установить по умолчанию</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -360,7 +394,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
 				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
 				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
@@ -399,7 +433,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
 				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
 				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
@@ -416,11 +450,11 @@
 			</Use>
 			<Action>УстановитьВариантВерсионированияПриПроведенииВыполнить</Action>
 		</Command>
-		<Command name="УстановитьВариантВерсионированияВсегда" id="3">
+		<Command name="УстановитьВариантВерсионированияПриЗаписи" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Версионировать</v8:content>
+					<v8:content>Версионировать при записи</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -438,7 +472,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
 				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
 				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
@@ -453,7 +487,7 @@
 				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
 				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
 			</Use>
-			<Action>УстановитьРежимВерсионированияВсегдаВыполнить</Action>
+			<Action>УстановитьРежимВерсионированияПриЗаписиВыполнить</Action>
 		</Command>
 		<Command name="УстановитьВариантВерсионированияНеВерсионировать" id="4">
 			<Title>
@@ -477,7 +511,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
 				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
 				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>

@@ -7,33 +7,47 @@
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<CommandBar name="ОсновнаяКоманднаяПанель" id="47">
-			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="59"/>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="65"/>
 			<ChildItems>
 				<ButtonGroup name="КоманднаяПанельСписка" id="45">
 					<CommandSource>Item.Список</CommandSource>
-					<ExtendedTooltip name="КоманднаяПанельСпискаExtendedTooltip" id="60"/>
+					<ExtendedTooltip name="КоманднаяПанельСпискаExtendedTooltip" id="66"/>
 				</ButtonGroup>
+				<Button name="ПринятьКИсполнению" id="61">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПринятьКИсполнению</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ПринятьКИсполнениюExtendedTooltip" id="67"/>
+				</Button>
+				<Button name="ОтменитьПринятиеКИсполнению" id="62">
+					<Type>CommandBarButton</Type>
+					<OnlyInAllActions>false</OnlyInAllActions>
+					<CommandName>Form.Command.ОтменитьПринятиеКИсполнению</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ОтменитьПринятиеКИсполнениюExtendedTooltip" id="68"/>
+				</Button>
 				<ButtonGroup name="КоманднаяПанельФормы" id="46">
 					<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
-					<ExtendedTooltip name="КоманднаяПанельФормыExtendedTooltip" id="61"/>
+					<ExtendedTooltip name="КоманднаяПанельФормыExtendedTooltip" id="69"/>
 				</ButtonGroup>
 				<Button name="ИзменитьФорму" id="48">
 					<Type>CommandBarButton</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ИзменитьФормуExtendedTooltip" id="62"/>
+					<ExtendedTooltip name="ИзменитьФормуExtendedTooltip" id="70"/>
 				</Button>
 				<Button name="Справка" id="53">
 					<Type>CommandBarButton</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.StandardCommand.Help</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="СправкаExtendedTooltip" id="63"/>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="71"/>
 				</Button>
 			</ChildItems>
 		</CommandBar>
@@ -53,7 +67,7 @@
 			</ToolTip>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="64"/>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="72"/>
 			<ChildItems>
 				<LabelField name="СтрокаБизнесПроцесса" id="55">
 					<DataPath>СтрокаБизнесПроцесса</DataPath>
@@ -65,7 +79,7 @@
 					</Title>
 					<TextColor>style:ПоясняющийТекст</TextColor>
 					<ContextMenu name="СтрокаБизнесПроцессаКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="СтрокаБизнесПроцессаExtendedTooltip" id="65"/>
+					<ExtendedTooltip name="СтрокаБизнесПроцессаExtendedTooltip" id="73"/>
 				</LabelField>
 				<LabelField name="СтрокаЗадачи" id="57">
 					<DataPath>СтрокаЗадачи</DataPath>
@@ -77,7 +91,7 @@
 					</Title>
 					<TextColor>style:ПоясняющийТекст</TextColor>
 					<ContextMenu name="СтрокаЗадачиКонтекстноеМеню" id="58"/>
-					<ExtendedTooltip name="СтрокаЗадачиExtendedTooltip" id="66"/>
+					<ExtendedTooltip name="СтрокаЗадачиExtendedTooltip" id="74"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
@@ -98,7 +112,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="67"/>
+			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="75"/>
 			<ChildItems>
 				<InputField name="ПоАвтору" id="18">
 					<DataPath>ПоАвтору</DataPath>
@@ -107,7 +121,7 @@
 					<ClearButton>true</ClearButton>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ContextMenu name="ПоАвторуКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ПоАвторуExtendedTooltip" id="68"/>
+					<ExtendedTooltip name="ПоАвторуExtendedTooltip" id="76"/>
 					<Events>
 						<Event name="OnChange">ПоАвторуПриИзменении</Event>
 					</Events>
@@ -119,7 +133,7 @@
 					<ClearButton>true</ClearButton>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ContextMenu name="ПоИсполнителюКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="ПоИсполнителюExtendedTooltip" id="69"/>
+					<ExtendedTooltip name="ПоИсполнителюExtendedTooltip" id="77"/>
 					<Events>
 						<Event name="OnChange">ПоИсполнителюПриИзменении</Event>
 					</Events>
@@ -142,7 +156,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаСостояниеExtendedTooltip" id="70"/>
+			<ExtendedTooltip name="ГруппаСостояниеExtendedTooltip" id="78"/>
 			<ChildItems>
 				<RadioButtonField name="ПоказыватьЗадачи" id="49">
 					<DataPath>ПоказыватьЗадачи</DataPath>
@@ -189,7 +203,7 @@
 						</xr:Item>
 					</ChoiceList>
 					<ContextMenu name="ПоказыватьЗадачиКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ПоказыватьЗадачиExtendedTooltip" id="71"/>
+					<ExtendedTooltip name="ПоказыватьЗадачиExtendedTooltip" id="79"/>
 					<Events>
 						<Event name="OnChange">ПоказыватьЗадачиПриИзменении</Event>
 					</Events>
@@ -227,32 +241,47 @@
 			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
-			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюПринятьКИсполнению" id="63">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПринятьКИсполнению</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюПринятьКИсполнениюExtendedTooltip" id="80"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюОтменитьПринятиеКИсполнению" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьПринятиеКИсполнению</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюОтменитьПринятиеКИсполнениюExtendedTooltip" id="81"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="72"/>
-			<SearchStringAddition name="СписокSearchString" id="73">
+			<ExtendedTooltip name="СписокExtendedTooltip" id="82"/>
+			<SearchStringAddition name="СписокSearchString" id="83">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchStringContextMenu" id="74"/>
-				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="75"/>
+				<ContextMenu name="СписокSearchStringContextMenu" id="84"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="85"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокViewStatus" id="76">
+			<ViewStatusAddition name="СписокViewStatus" id="86">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокViewStatusContextMenu" id="77"/>
-				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="78"/>
+				<ContextMenu name="СписокViewStatusContextMenu" id="87"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="88"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокSearchControl" id="79">
+			<SearchControlAddition name="СписокSearchControl" id="89">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchControlContextMenu" id="80"/>
-				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="81"/>
+				<ContextMenu name="СписокSearchControlContextMenu" id="90"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="91"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СписокВыбор</Event>
@@ -260,56 +289,76 @@
 				<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
 			</Events>
 			<ChildItems>
+				<PictureField name="Остановлена" id="59">
+					<DataPath>Список.Остановлена</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача остановлена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ЗнакСтопЧБ</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ЗнакСтоп</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ОстановленаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ОстановленаExtendedTooltip" id="92"/>
+				</PictureField>
 				<InputField name="Номер" id="4">
 					<DataPath>Список.Number</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="НомерКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НомерExtendedTooltip" id="82"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="93"/>
 				</InputField>
 				<InputField name="Наименование" id="6">
 					<DataPath>Список.Description</DataPath>
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="83"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="94"/>
 				</InputField>
 				<InputField name="Автор" id="22">
 					<DataPath>Список.Автор</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="АвторКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="АвторExtendedTooltip" id="84"/>
+					<ExtendedTooltip name="АвторExtendedTooltip" id="95"/>
 				</InputField>
 				<InputField name="Исполнитель" id="24">
 					<DataPath>Список.Исполнитель</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ИсполнительКонтекстноеМеню" id="25"/>
-					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="85"/>
+					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="96"/>
 				</InputField>
 				<InputField name="РольИсполнителя" id="34">
 					<DataPath>Список.РольИсполнителя</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="РольИсполнителяКонтекстноеМеню" id="35"/>
-					<ExtendedTooltip name="РольИсполнителяExtendedTooltip" id="86"/>
+					<ExtendedTooltip name="РольИсполнителяExtendedTooltip" id="97"/>
 				</InputField>
 				<InputField name="ОсновнойОбъектАдресации" id="40">
 					<DataPath>Список.ОсновнойОбъектАдресации</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ОсновнойОбъектАдресацииКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="ОсновнойОбъектАдресацииExtendedTooltip" id="87"/>
+					<ExtendedTooltip name="ОсновнойОбъектАдресацииExtendedTooltip" id="98"/>
 				</InputField>
 				<InputField name="ДополнительныйОбъектАдресации" id="38">
 					<DataPath>Список.ДополнительныйОбъектАдресации</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ДополнительныйОбъектАдресацииКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ДополнительныйОбъектАдресацииExtendedTooltip" id="88"/>
+					<ExtendedTooltip name="ДополнительныйОбъектАдресацииExtendedTooltip" id="99"/>
 				</InputField>
 				<CheckBoxField name="Выполнена" id="10">
 					<DataPath>Список.Executed</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВыполненаКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ВыполненаExtendedTooltip" id="89"/>
+					<ExtendedTooltip name="ВыполненаExtendedTooltip" id="100"/>
 				</CheckBoxField>
 				<InputField name="Дата" id="8">
 					<DataPath>Список.Date</DataPath>
@@ -322,19 +371,19 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ДатаExtendedTooltip" id="90"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="101"/>
 				</InputField>
 				<InputField name="СрокИсполнения" id="30">
 					<DataPath>Список.СрокИсполнения</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="СрокИсполненияExtendedTooltip" id="91"/>
+					<ExtendedTooltip name="СрокИсполненияExtendedTooltip" id="102"/>
 				</InputField>
 				<InputField name="ДатаИсполнения" id="32">
 					<DataPath>Список.ДатаИсполнения</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ДатаИсполненияКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ДатаИсполненияExtendedTooltip" id="92"/>
+					<ExtendedTooltip name="ДатаИсполненияExtendedTooltip" id="103"/>
 				</InputField>
 				<LabelField name="Предмет" id="51">
 					<DataPath>Список.ПредметСтрокой</DataPath>
@@ -342,7 +391,7 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="ПредметКонтекстноеМеню" id="52"/>
-					<ExtendedTooltip name="ПредметExtendedTooltip" id="93"/>
+					<ExtendedTooltip name="ПредметExtendedTooltip" id="104"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -375,7 +424,13 @@
 	ЗадачаЗадачаИсполнителя.Исполнитель,
 	ЗадачаЗадачаИсполнителя.РольИсполнителя,
 	ЗадачаЗадачаИсполнителя.ОсновнойОбъектАдресации,
-	ЗадачаЗадачаИсполнителя.ДополнительныйОбъектАдресации
+	ЗадачаЗадачаИсполнителя.ДополнительныйОбъектАдресации,
+	ЗадачаЗадачаИсполнителя.ПринятаКИсполнению,
+	ВЫБОР
+		КОГДА ЗадачаЗадачаИсполнителя.СостояниеБизнесПроцесса = ЗНАЧЕНИЕ(Перечисление.СостоянияБизнесПроцессов.Остановлен)
+			ТОГДА Истина
+		ИНАЧЕ Ложь
+	КОНЕЦ КАК Остановлена
 ИЗ
 	Задача.ЗадачаИсполнителя КАК ЗадачаЗадачаИсполнителя
 ГДЕ
@@ -401,6 +456,30 @@
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>СрокИсполнения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ПринятаКИсполнению</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Font</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="style:НеПринятыеКИсполнениюЗадачи" kind="StyleItem"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
 				</ListSettings>
 			</Settings>
 		</Attribute>
@@ -414,9 +493,6 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
-			<Save>
-				<Field>ПоАвтору</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ПоИсполнителю" id="3">
 			<Title>
@@ -428,9 +504,6 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
-			<Save>
-				<Field>ПоИсполнителю</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ПоказыватьЗадачи" id="4">
 			<Title>
@@ -447,9 +520,6 @@
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
-			<Save>
-				<Field>ПоказыватьЗадачи</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="СтрокаБизнесПроцесса" id="5">
 			<Title>
@@ -482,6 +552,38 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПринятьКИсполнению" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять к исполнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять к исполнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПринятьКИсполнению</Action>
+		</Command>
+		<Command name="ОтменитьПринятиеКИсполнению" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить принятие к исполнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить принятие к исполнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьПринятиеКИсполнению</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="ЗаголовокФормы">
 			<Type>

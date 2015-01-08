@@ -10,8 +10,8 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.БизнесПроцессыИЗадачиСервер.ПроконтролироватьЗадачи</MethodName>
-			<Description/>
+			<MethodName>CommonModule.БизнесПроцессыИЗадачиВызовСервера.ПроконтролироватьЗадачи</MethodName>
+			<Description>Мониторинг задач</Description>
 			<Key/>
 			<Use>false</Use>
 			<Predefined>true</Predefined>

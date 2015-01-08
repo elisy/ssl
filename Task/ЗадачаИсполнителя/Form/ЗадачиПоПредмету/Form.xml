@@ -10,13 +10,31 @@
 	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet/>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<CommandBar name="КоманднаяПанельСписка" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель списка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="КоманднаяПанельСпискаExtendedTooltip" id="51"/>
+		</CommandBar>
 		<Table name="Список" id="1">
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
@@ -46,30 +64,30 @@
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="25"/>
-			<SearchStringAddition name="СписокSearchString" id="26">
+			<ExtendedTooltip name="СписокExtendedTooltip" id="52"/>
+			<SearchStringAddition name="СписокSearchString" id="53">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchStringContextMenu" id="27"/>
-				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="28"/>
+				<ContextMenu name="СписокSearchStringContextMenu" id="54"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="55"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокViewStatus" id="29">
+			<ViewStatusAddition name="СписокViewStatus" id="56">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокViewStatusContextMenu" id="30"/>
-				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="31"/>
+				<ContextMenu name="СписокViewStatusContextMenu" id="57"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="58"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокSearchControl" id="32">
+			<SearchControlAddition name="СписокSearchControl" id="59">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchControlContextMenu" id="33"/>
-				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="34"/>
+				<ContextMenu name="СписокSearchControlContextMenu" id="60"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="61"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СписокВыбор</Event>
@@ -86,7 +104,7 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НомерКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НомерExtendedTooltip" id="35"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="62"/>
 				</InputField>
 				<InputField name="Наименование" id="6">
 					<DataPath>Список.Description</DataPath>
@@ -98,13 +116,13 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="36"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="63"/>
 				</InputField>
 				<InputField name="Исполнитель" id="18">
 					<DataPath>Список.Исполнитель</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ИсполнительКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="37"/>
+					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="64"/>
 				</InputField>
 				<LabelField name="СрокИсполнения" id="23">
 					<DataPath>Список.СрокИсполнения</DataPath>
@@ -115,7 +133,7 @@
 						</v8:item>
 					</Format>
 					<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="СрокИсполненияExtendedTooltip" id="38"/>
+					<ExtendedTooltip name="СрокИсполненияExtendedTooltip" id="65"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -124,11 +142,234 @@
 			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ПоказыватьВыполненныеКонтекстноеМеню" id="22"/>
-			<ExtendedTooltip name="ПоказыватьВыполненныеExtendedTooltip" id="39"/>
+			<ExtendedTooltip name="ПоказыватьВыполненныеExtendedTooltip" id="66"/>
 			<Events>
 				<Event name="OnChange">ПоказыватьВыполненныеПриИзменении</Event>
 			</Events>
 		</CheckBoxField>
+		<Table name="ДеревоЗадач" id="25">
+			<Representation>Tree</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоЗадач</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоЗадачКонтекстноеМеню" id="26">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДеревоЗадачКонтекстноеМенюИзменить" id="43">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоЗадачКонтекстноеМенюИзменитьExtendedTooltip" id="67"/>
+					</Button>
+					<Button name="ДеревоЗадачКонтекстноеМенюОбновить" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоЗадачКонтекстноеМенюОбновитьExtendedTooltip" id="68"/>
+					</Button>
+					<Button name="ДеревоЗадачКонтекстноеМенюКопироватьВБуферОбмена" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоЗадач.StandardCommand.CopyToClipboard</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоЗадачКонтекстноеМенюКопироватьВБуферОбменаExtendedTooltip" id="69"/>
+					</Button>
+					<Button name="ДеревоЗадачКонтекстноеМенюВывестиСписок" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоЗадач.StandardCommand.OutputList</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоЗадачКонтекстноеМенюВывестиСписокExtendedTooltip" id="70"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ДеревоЗадачКоманднаяПанель" id="27">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДеревоЗадачИзменить" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Изменить</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоЗадачИзменитьExtendedTooltip" id="71"/>
+					</Button>
+					<Button name="ДеревоЗадачОбновить" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ДеревоЗадачОбновитьExtendedTooltip" id="72"/>
+					</Button>
+					<Button name="Справка" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СправкаExtendedTooltip" id="73"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоЗадачExtendedTooltip" id="74"/>
+			<SearchStringAddition name="ДеревоЗадачSearchString" id="75">
+				<Source>
+					<lf:elementId>25</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоЗадачSearchStringContextMenu" id="76"/>
+				<ExtendedTooltip name="ДеревоЗадачSearchStringExtendedTooltip" id="77"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоЗадачViewStatus" id="78">
+				<Source>
+					<lf:elementId>25</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоЗадачViewStatusContextMenu" id="79"/>
+				<ExtendedTooltip name="ДеревоЗадачViewStatusExtendedTooltip" id="80"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоЗадачSearchControl" id="81">
+				<Source>
+					<lf:elementId>25</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ДеревоЗадачSearchControlContextMenu" id="82"/>
+				<ExtendedTooltip name="ДеревоЗадачSearchControlExtendedTooltip" id="83"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДеревоЗадачВыбор</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ДеревоЗадачВажность" id="28">
+					<DataPath>ДеревоЗадач.Важность</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Важность</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ВосклицательныйЗнакСерый</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.КоллекцияВариантыВажностиЗадачи</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ДеревоЗадачВажностьКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДеревоЗадачВажностьExtendedTooltip" id="84"/>
+				</PictureField>
+				<CheckBoxField name="Выполнена" id="30">
+					<DataPath>ДеревоЗадач.Выполнена</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполненные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполненаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ВыполненаExtendedTooltip" id="85"/>
+				</CheckBoxField>
+				<PictureField name="ДеревоЗадачОстановлен" id="32">
+					<DataPath>ДеревоЗадач.Остановлен</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остановленные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ЗнакСтопЧБ</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ЗнакСтоп</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ДеревоЗадачОстановленКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДеревоЗадачОстановленExtendedTooltip" id="86"/>
+				</PictureField>
+				<ColumnGroup name="ТипИНаименование" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип и наименование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип и наименование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ТипИНаименованиеExtendedTooltip" id="87"/>
+					<ChildItems>
+						<PictureField name="ДеревоЗадачТип" id="35">
+							<DataPath>ДеревоЗадач.Тип</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.КоллекцияЗадачиИБизнесПроцессы</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ДеревоЗадачТипКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДеревоЗадачТипExtendedTooltip" id="88"/>
+						</PictureField>
+						<InputField name="ДеревоЗадачНаименование" id="37">
+							<DataPath>ДеревоЗадач.Наименование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задача</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование задачи или бизнес-процесса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>40</Width>
+							<ContextMenu name="ДеревоЗадачНаименованиеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ДеревоЗадачНаименованиеExtendedTooltip" id="89"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ДеревоЗадачИсполнитель" id="39">
+					<DataPath>ДеревоЗадач.Исполнитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<ContextMenu name="ДеревоЗадачИсполнительКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ДеревоЗадачИсполнительExtendedTooltip" id="90"/>
+				</InputField>
+				<InputField name="СрокИсполнения1" id="41">
+					<DataPath>ДеревоЗадач.СрокИсполнения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>8</Width>
+					<ContextMenu name="СрокИсполнения1КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СрокИсполнения1ExtendedTooltip" id="91"/>
+				</InputField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -162,7 +403,8 @@
 ИЗ
 	Задача.ЗадачаИсполнителя КАК Задачи
 	
-ГДЕ Задачи.Предмет = &amp;ПараметрОтбора</QueryText>
+ГДЕ Задачи.Предмет = &amp;ПараметрОтбора 
+	И Задачи.СостояниеБизнесПроцесса = ЗНАЧЕНИЕ(Перечисление.СостоянияБизнесПроцессов.Активен)</QueryText>
 				<MainTable>Task.ЗадачаИсполнителя</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -203,7 +445,226 @@
 				<Field>ПоказыватьВыполненные</Field>
 			</Save>
 		</Attribute>
+		<Attribute name="ДеревоЗадач" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.ЗадачаИсполнителя</v8:Type>
+						<v8:TypeSet>cfg:BusinessProcessRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РолиИсполнителей</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Важность" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Важность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Остановлен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остановлен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Тип" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СрокИсполнения" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок исполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выполнена" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Просрочена" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просрочена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗадач</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоЗадач.Просрочена</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>TextColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ПросроченнаяЗадача</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗадач</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоЗадач.Выполнена</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>TextColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЗавершенныйБизнесПроцесс</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
+	<Commands>
+		<Command name="Изменить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Изменить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="ЗначениеОтбора">
 			<Type>

@@ -19,7 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыКлиентПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыВызовСервераПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтроковыеФункцииКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборОбъектовМетаданных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Информация32</xr:Item>
@@ -51,15 +51,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПрава</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ПоясняющийТекст</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ПредлагатьУстановкуРасширенияРаботыСФайлами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВопросОбУстановкеРасширенияРаботыСФайлами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеНастройкамиФорм</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Информация</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияПиктограммЭлементов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповоеИзменениеОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ПоясняющийОшибкуТекст</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВидыОпераций</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">f6c219a6-6c6a-41df-a299-d7183288a6ca</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммыЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентированныеДанныеКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Подсистема</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НеудачнаяУстановкаМонопольногоДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

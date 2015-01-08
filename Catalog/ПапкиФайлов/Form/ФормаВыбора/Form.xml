@@ -34,7 +34,11 @@
 			<HorizontalLines>false</HorizontalLines>
 			<VerticalLines>false</VerticalLines>
 			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>Список.ИндексКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.Папки</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
 			<SearchStringLocation>None</SearchStringLocation>
 			<ViewStatusLocation>None</ViewStatusLocation>
 			<SearchControlLocation>None</SearchControlLocation>
@@ -97,8 +101,26 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПапкиФайлов.Ссылка,
+	СправочникПапкиФайлов.ПометкаУдаления,
+	СправочникПапкиФайлов.Предопределенный,
+	СправочникПапкиФайлов.Родитель,
+	СправочникПапкиФайлов.Код,
+	СправочникПапкиФайлов.Наименование,
+	СправочникПапкиФайлов.Описание,
+	СправочникПапкиФайлов.Ответственный,
+	СправочникПапкиФайлов.ДатаСоздания,
+	СправочникПапкиФайлов.ДополнительныеРеквизиты,
+	Выбор 
+		Когда ПометкаУдаления = Истина Тогда 1 
+        Иначе 0
+        Конец как ИндексКартинки
+ИЗ
+	Справочник.ПапкиФайлов КАК СправочникПапкиФайлов
+</QueryText>
 				<MainTable>Catalog.ПапкиФайлов</MainTable>
 				<ListSettings/>
 			</Settings>

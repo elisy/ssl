@@ -1,7 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Width>100</Width>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздать" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Create</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСоздатьExtendedTooltip" id="20"/>
+			</Button>
+			<Button name="ФормаСоздатьГруппу" id="15">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CreateFolder</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСоздатьГруппуExtendedTooltip" id="21"/>
+			</Button>
+			<Button name="ФормаСкопировать" id="13">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Copy</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСкопироватьExtendedTooltip" id="22"/>
+			</Button>
+			<ButtonGroup name="КоманднаяПанельФормы" id="14">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель формы</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель формы</v8:content>
+					</v8:item>
+				</ToolTip>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="КоманднаяПанельФормыExtendedTooltip" id="23"/>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -31,36 +70,80 @@
 			<ShowRoot>true</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
-			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюСоздать" id="17">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСоздатьExtendedTooltip" id="24"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюСоздатьГруппу" id="18">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.CreateFolder</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСоздатьГруппуExtendedTooltip" id="25"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюСкопировать" id="19">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСкопироватьExtendedTooltip" id="26"/>
+					</Button>
+					<ButtonGroup name="КонтекстноеМенюСписка" id="16">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контекстное меню списка</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контекстное меню списка</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Item.Список</CommandSource>
+						<ExtendedTooltip name="КонтекстноеМенюСпискаExtendedTooltip" id="27"/>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="10"/>
-			<SearchStringAddition name="СписокSearchString" id="11">
+			<ExtendedTooltip name="СписокExtendedTooltip" id="28"/>
+			<SearchStringAddition name="СписокSearchString" id="29">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchStringContextMenu" id="12"/>
-				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="13"/>
+				<ContextMenu name="СписокSearchStringContextMenu" id="30"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="31"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокViewStatus" id="14">
+			<ViewStatusAddition name="СписокViewStatus" id="32">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокViewStatusContextMenu" id="15"/>
-				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="16"/>
+				<ContextMenu name="СписокViewStatusContextMenu" id="33"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="34"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокSearchControl" id="17">
+			<SearchControlAddition name="СписокSearchControl" id="35">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchControlContextMenu" id="18"/>
-				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="19"/>
+				<ContextMenu name="СписокSearchControlContextMenu" id="36"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="37"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="ValueChoice">СписокВыборЗначения</Event>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+				<Event name="Drag">СписокПеретаскивание</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="Наименование" id="4">
-					<DataPath>Список.Description</DataPath>
+					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
@@ -70,27 +153,29 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="20"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="38"/>
 				</InputField>
 				<InputField name="Профиль" id="6">
 					<DataPath>Список.Профиль</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ПрофильКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ПрофильExtendedTooltip" id="21"/>
+					<ExtendedTooltip name="ПрофильExtendedTooltip" id="39"/>
 				</InputField>
-				<LabelField name="Комментарий" id="8">
-					<DataPath>Список.Комментарий</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="КомментарийКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="22"/>
+				<LabelField name="Администратор" id="10">
+					<DataPath>Список.Администратор</DataPath>
+					<ContextMenu name="АдминистраторКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="АдминистраторExtendedTooltip" id="40"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
+		<LabelField name="Описание" id="8">
+			<DataPath>Items.Список.CurrentData.Описание</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<Height>2</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="41"/>
+		</LabelField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -98,9 +183,45 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Пользователь</Field>
+				<Field>Список.Ref</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ГруппыДоступа.Ссылка,
+	ГруппыДоступа.ПометкаУдаления,
+	ГруппыДоступа.Предопределенный,
+	ГруппыДоступа.Родитель,
+	ГруппыДоступа.ЭтоГруппа,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(ГруппыДоступа.Пользователь) = ТИП(Справочник.Пользователи)
+			ТОГДА ГруппыДоступа.Наименование + ": " + ВЫРАЗИТЬ(ГруппыДоступа.Пользователь КАК Справочник.Пользователи).Наименование
+		КОГДА ТИПЗНАЧЕНИЯ(ГруппыДоступа.Пользователь) = ТИП(Справочник.ВнешниеПользователи)
+			ТОГДА ГруппыДоступа.Наименование + ": " + &amp;ОшибкаОбъектНеНайден
+		ИНАЧЕ ГруппыДоступа.Наименование
+	КОНЕЦ КАК Наименование,
+	ГруппыДоступа.Профиль,
+	ГруппыДоступа.ТипПользователей,
+	ГруппыДоступа.Пользователь,
+	ГруппыДоступа.Описание,
+	ГруппыДоступа.Администратор
+ИЗ
+	Справочник.ГруппыДоступа КАК ГруппыДоступа
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;РежимВыбора
+					И &amp;РежимВыбораТолькоГрупп
+				ТОГДА ГруппыДоступа.ЭтоГруппа
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;Профиль = ЗНАЧЕНИЕ(Справочник.ПрофилиГруппДоступа.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ГруппыДоступа.Профиль = &amp;Профиль
+		КОНЕЦ</QueryText>
 				<MainTable>Catalog.ГруппыДоступа</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -110,9 +231,50 @@
 							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ГруппыДоступа.Администраторы</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="РодительПерсональныхГруппДоступа" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родитель персональных групп доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГруппыДоступа</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УпрощенныйИнтерфейсНастройкиПравДоступа" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упрощенный интерфейс настройки прав доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Parameters>
+		<Parameter name="Профиль">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПрофилиГруппДоступа</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
 </Form>

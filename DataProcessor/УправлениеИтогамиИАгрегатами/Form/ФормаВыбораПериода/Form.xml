@@ -10,7 +10,7 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<SkipOnInput>false</SkipOnInput>
-				<CommandName>Form.StandardCommand.OK</CommandName>
+				<CommandName>Form.Command.ОК</CommandName>
 				<Parameter xsi:nil="true"/>
 				<ExtendedTooltip name="OKExtendedTooltip" id="12"/>
 			</Button>
@@ -95,6 +95,23 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="РегБухгалтерии">
 			<Type>

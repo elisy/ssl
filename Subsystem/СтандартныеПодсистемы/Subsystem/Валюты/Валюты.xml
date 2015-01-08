@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
@@ -18,7 +18,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКурсамиВалютСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗагрузкаКурсовВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КурсыВалютРБК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаКурсовВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КурсыВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКурсамиВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКурсамиВалютКлиентСервер</xr:Item>

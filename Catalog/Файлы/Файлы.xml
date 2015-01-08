@@ -40,7 +40,7 @@
 			<UseStandardCommands>false</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>9</CodeLength>
+			<CodeLength>11</CodeLength>
 			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
@@ -231,7 +231,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -261,7 +266,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -337,7 +347,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор - пользователь, добавивший файл</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -369,14 +384,19 @@
 							<v8:content>Владелец</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Владелец файла</Comment>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ПапкиФайлов</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец файла</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -418,7 +438,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата добавления файла в базу</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -450,14 +475,19 @@
 							<v8:content>Зашифрован</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Зашифрован</Comment>
+					<Comment>Файл зашифрован</Comment>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл зашифрован</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -501,7 +531,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс иконки, соответствующей расширению файла, для показа в списке</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -544,7 +579,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание файла</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>true</MultiLine>
@@ -569,21 +609,26 @@
 			</Attribute>
 			<Attribute uuid="79c2e2bd-f923-42ec-8bdc-3e517e08ee7c">
 				<Properties>
-					<Name>Подписан</Name>
+					<Name>ПодписанЭЦП</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подписан</v8:content>
+							<v8:content>Подписан ЭЦП</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Файл подписан ЭЦП</Comment>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл подписан ЭЦП</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -626,7 +671,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное наименование (длиной до 256 символов)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -709,7 +759,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст, извлеченный из файла - для полнотекстового поиска</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -748,7 +803,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активная версия</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -787,7 +847,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор - пользователь, создавший версию</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -829,7 +894,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания версии</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -861,7 +931,7 @@
 							<v8:content>Текущая версия код</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Текущая версия код</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -872,7 +942,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код текущей версии</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -904,7 +979,7 @@
 							<v8:content>Текущая версия номер версии</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Номер версии</Comment>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -919,7 +994,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер версии</v8:content>
+							<v8:content>Номер текущей версии</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -964,7 +1039,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный путь к файлу на диске (в случае если ТипХраненияФайла - на диске)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -1008,7 +1088,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер файла версии</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -1051,7 +1136,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширение файла версии</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -1090,7 +1180,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на том (в случае если ТипХраненияФайла - на диске)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -1129,7 +1224,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хранить версии - если Ложь, у файла всегда одна версия - активная</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -1172,7 +1272,12 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные реквизиты объекта</v8:content>
+						</v8:item>
+					</ToolTip>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
 						<xr:StandardAttribute name="LineNumber">
@@ -1264,7 +1369,7 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Значение доп. реквизита</v8:content>
+									<v8:content>Значение дополнительного реквизита</v8:content>
 								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
@@ -1279,6 +1384,51 @@
 							<ChoiceParameters/>
 							<QuickChoice>DontUse</QuickChoice>
 							<CreateOnInput>Use</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="bf94feb9-edf7-4df8-b5f5-805613663a0a">
+						<Properties>
+							<Name>ТекстоваяСтрока</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текстовая строка</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Полный текст строкового дополнительного реквизита</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
 							<ChoiceForm/>
 							<LinkByType/>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
@@ -1308,7 +1458,12 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хранение сертификатов шифрования</v8:content>
+						</v8:item>
+					</ToolTip>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
 						<xr:StandardAttribute name="LineNumber">
@@ -1360,7 +1515,12 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отпечаток сертификата (служебное поле)</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -1400,7 +1560,53 @@
 							<PasswordMode>false</PasswordMode>
 							<Format/>
 							<EditFormat/>
-							<ToolTip/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кому выдан сертификат (имя, отдел и др. информация)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="1591ee7e-870c-4bf7-9450-be84f1b2506f">
+						<Properties>
+							<Name>Сертификат</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сертификат</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Двоичные данные сертификата</Comment>
+							<Type>
+								<v8:Type>v8:ValueStorage</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Двоичные данные сертификата (служебное поле)</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>
@@ -1422,13 +1628,11 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ВводПароляСОписаниями</Form>
-			<Form>ВРабочемКаталогеБолееНовыйФайл</Form>
-			<Form>ВыборСертификатаЭЦПДляШифрования</Form>
+			<Form>ВопросПриИмпортеФайлов</Form>
 			<Form>ВыборСохраненияШифрованногоФайла</Form>
 			<Form>ВыборУстройстваСканирования</Form>
 			<Form>НастройкаСканирования</Form>
-			<Form>РазмерФайлаВРабочемКаталогеОтличается</Form>
+			<Form>НастройкаСканированияНаСеанс</Form>
 			<Form>РедактируемыеФайлы</Form>
 			<Form>РежимСозданияФайлаДляСохранитьКак</Form>
 			<Form>РезультатСканирования</Form>
@@ -1438,26 +1642,18 @@
 			<Form>ФормаВозвратаФайла</Form>
 			<Form>ФормаВопроса</Form>
 			<Form>ФормаВопросаЗакончитьРедактирование</Form>
-			<Form>ФормаВопросаИмпорта</Form>
-			<Form>ФормаВопросаОбУстановкеРасширенияРаботыСФайлами</Form>
 			<Form>ФормаВыбора</Form>
-			<Form>ФормаВыбораПодписей</Form>
-			<Form>ФормаВыбораПутиКАрхивуФайловТомов</Form>
 			<Form>ФормаВыбораРежимаОткрытия</Form>
 			<Form>ФормаГруповаяОперацияНаПапке</Form>
-			<Form>ФормаДобавленияПодписиИзФайла</Form>
 			<Form>ФормаИмпортаПапки</Form>
 			<Form>ФормаИмпортаФайлов</Form>
 			<Form>ФормаНапоминанияПередПоместитьФайл</Form>
-			<Form>ФормаНапоминанияПриРедактировании</Form>
 			<Form>ФормаНового</Form>
 			<Form>ФормаОтчета</Form>
-			<Form>ФормаОтчетаОСохранении</Form>
 			<Form>ФормаПеретаскивания</Form>
 			<Form>ФормаПодбора</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаСпискаПрисоединенныхФайлов</Form>
-			<Form>ФормаШифрования</Form>
 			<Form>ФормаЭкспортаПапки</Form>
 			<Form>ФормаЭлемента</Form>
 			<Form>ХранилищеФайлов</Form>

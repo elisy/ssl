@@ -165,6 +165,7 @@
 				<ExcludedCommand>SortListAsc</ExcludedCommand>
 				<ExcludedCommand>MoveUp</ExcludedCommand>
 				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
 				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>EndEdit</ExcludedCommand>
 				<ExcludedCommand>Add</ExcludedCommand>
@@ -178,34 +179,6 @@
 			<ContextMenu name="СписокСостоянияУзловКонтекстноеМеню" id="2">
 				<Autofill>false</Autofill>
 				<ChildItems>
-					<Button name="КонтекстноеМенюСписокСостоянияУзловСоздатьОбменСИнформационнойБазой" id="67">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>0</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловСоздатьОбменСИнформационнойБазойExtendedTooltip" id="118"/>
-					</Button>
-					<Button name="КонтекстноеМенюСписокСостоянияУзловИзменитьУзелИнформационнойБазы" id="54">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.ИзменитьУзелИнформационнойБазы</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловИзменитьУзелИнформационнойБазыExtendedTooltip" id="119"/>
-					</Button>
-					<Button name="КонтекстноеМенюСписокСостоянияУзловКопироватьВБуферОбмена" id="55">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Item.СписокСостоянияУзлов.StandardCommand.CopyToClipboard</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловКопироватьВБуферОбменаExtendedTooltip" id="120"/>
-					</Button>
-					<Button name="КонтекстноеМенюСписокСостоянияУзловВыделитьВсе" id="56">
-						<Type>CommandBarButton</Type>
-						<SkipOnInput>false</SkipOnInput>
-						<CommandName>1:51c99108-107c-43e1-8918-e48835bf2495</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловВыделитьВсеExtendedTooltip" id="121"/>
-					</Button>
 					<ButtonGroup name="ГруппаКнопокВыполненияОбменаДанными" id="101">
 						<Title>
 							<v8:item>
@@ -219,39 +192,39 @@
 								<v8:content>Группа кнопок выполнения обмена данными</v8:content>
 							</v8:item>
 						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокВыполненияОбменаДаннымиExtendedTooltip" id="122"/>
+						<ExtendedTooltip name="ГруппаКнопокВыполненияОбменаДаннымиExtendedTooltip" id="118"/>
 						<ChildItems>
 							<Button name="ВыполнитьОбменДанными1" id="96">
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.ВыполнитьОбменДанными</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ВыполнитьОбменДанными1ExtendedTooltip" id="123"/>
+								<ExtendedTooltip name="ВыполнитьОбменДанными1ExtendedTooltip" id="119"/>
 							</Button>
 							<Button name="ВыполнитьОбменДаннымиИнтерактивно1" id="97">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВыполнитьОбменДаннымиИнтерактивно</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ВыполнитьОбменДаннымиИнтерактивно1ExtendedTooltip" id="124"/>
+								<ExtendedTooltip name="ВыполнитьОбменДаннымиИнтерактивно1ExtendedTooltip" id="120"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
 					<ButtonGroup name="СобытияЖурналаРегистрации" id="86">
-						<ExtendedTooltip name="СобытияЖурналаРегистрацииExtendedTooltip" id="125"/>
+						<ExtendedTooltip name="СобытияЖурналаРегистрацииExtendedTooltip" id="121"/>
 						<ChildItems>
 							<Button name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="85">
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхExtendedTooltip" id="126"/>
+								<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхExtendedTooltip" id="122"/>
 							</Button>
 							<Button name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="84">
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхExtendedTooltip" id="127"/>
+								<ExtendedTooltip name="КонтекстноеМенюСписокСостоянияУзловПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхExtendedTooltip" id="123"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
@@ -268,43 +241,43 @@
 								<v8:content>Группа кнопок настройки расписания</v8:content>
 							</v8:item>
 						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокНастройкиРасписанияExtendedTooltip" id="128"/>
+						<ExtendedTooltip name="ГруппаКнопокНастройкиРасписанияExtendedTooltip" id="124"/>
 						<ChildItems>
 							<Button name="НастроитьРасписаниеВыполненияОбмена1" id="105">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.НастроитьРасписаниеВыполненияОбмена</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="НастроитьРасписаниеВыполненияОбмена1ExtendedTooltip" id="129"/>
+								<ExtendedTooltip name="НастроитьРасписаниеВыполненияОбмена1ExtendedTooltip" id="125"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="СписокСостоянияУзловКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="СписокСостоянияУзловExtendedTooltip" id="130"/>
-			<SearchStringAddition name="СписокСостоянияУзловSearchString" id="131">
+			<ExtendedTooltip name="СписокСостоянияУзловExtendedTooltip" id="126"/>
+			<SearchStringAddition name="СписокСостоянияУзловSearchString" id="127">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокСостоянияУзловSearchStringContextMenu" id="132"/>
-				<ExtendedTooltip name="СписокСостоянияУзловSearchStringExtendedTooltip" id="133"/>
+				<ContextMenu name="СписокСостоянияУзловSearchStringContextMenu" id="128"/>
+				<ExtendedTooltip name="СписокСостоянияУзловSearchStringExtendedTooltip" id="129"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокСостоянияУзловViewStatus" id="134">
+			<ViewStatusAddition name="СписокСостоянияУзловViewStatus" id="130">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокСостоянияУзловViewStatusContextMenu" id="135"/>
-				<ExtendedTooltip name="СписокСостоянияУзловViewStatusExtendedTooltip" id="136"/>
+				<ContextMenu name="СписокСостоянияУзловViewStatusContextMenu" id="131"/>
+				<ExtendedTooltip name="СписокСостоянияУзловViewStatusExtendedTooltip" id="132"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокСостоянияУзловSearchControl" id="137">
+			<SearchControlAddition name="СписокСостоянияУзловSearchControl" id="133">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокСостоянияУзловSearchControlContextMenu" id="138"/>
-				<ExtendedTooltip name="СписокСостоянияУзловSearchControlExtendedTooltip" id="139"/>
+				<ContextMenu name="СписокСостоянияУзловSearchControlContextMenu" id="134"/>
+				<ExtendedTooltip name="СписокСостоянияУзловSearchControlExtendedTooltip" id="135"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СписокСостоянияУзловВыбор</Event>
@@ -314,13 +287,13 @@
 					<DataPath>СписокСостоянияУзлов.ИмяПланаОбмена</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СписокСостоянияУзловИмяПланаОбменаКонтекстноеМеню" id="90"/>
-					<ExtendedTooltip name="СписокСостоянияУзловИмяПланаОбменаExtendedTooltip" id="140"/>
+					<ExtendedTooltip name="СписокСостоянияУзловИмяПланаОбменаExtendedTooltip" id="136"/>
 				</InputField>
 				<InputField name="СписокСостоянияУзловУзелИнформационнойБазы" id="10">
 					<DataPath>СписокСостоянияУзлов.УзелИнформационнойБазы</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СписокСостоянияУзловУзелИнформационнойБазыКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="СписокСостоянияУзловУзелИнформационнойБазыExtendedTooltip" id="141"/>
+					<ExtendedTooltip name="СписокСостоянияУзловУзелИнформационнойБазыExtendedTooltip" id="137"/>
 				</InputField>
 				<ColumnGroup name="ГруппаСостоянияЗагрузки" id="40">
 					<Title>
@@ -336,7 +309,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>InCell</Group>
-					<ExtendedTooltip name="ГруппаСостоянияЗагрузкиExtendedTooltip" id="142"/>
+					<ExtendedTooltip name="ГруппаСостоянияЗагрузкиExtendedTooltip" id="138"/>
 					<ChildItems>
 						<PictureField name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанных" id="8">
 							<DataPath>СписокСостоянияУзлов.РезультатПоследнейЗагрузкиДанных</DataPath>
@@ -347,13 +320,13 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ValuesPicture>
 							<ContextMenu name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанныхКонтекстноеМеню" id="9"/>
-							<ExtendedTooltip name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанныхExtendedTooltip" id="143"/>
+							<ExtendedTooltip name="СписокСостоянияУзловРезультатПоследнейЗагрузкиДанныхExtendedTooltip" id="139"/>
 						</PictureField>
 						<InputField name="СписокСостоянияУзловДатаПоследнейЗагрузки" id="38">
 							<DataPath>СписокСостоянияУзлов.ДатаПоследнейЗагрузки</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="СписокСостоянияУзловДатаПоследнейЗагрузкиКонтекстноеМеню" id="39"/>
-							<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейЗагрузкиExtendedTooltip" id="144"/>
+							<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейЗагрузкиExtendedTooltip" id="140"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -361,7 +334,7 @@
 					<DataPath>СписокСостоянияУзлов.ДатаПоследнейУспешнойЗагрузки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СписокСостоянияУзловДатаПоследнейУспешнойЗагрузкиКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейУспешнойЗагрузкиExtendedTooltip" id="145"/>
+					<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейУспешнойЗагрузкиExtendedTooltip" id="141"/>
 				</InputField>
 				<ColumnGroup name="ГруппаСостоянияВыгрузки" id="41">
 					<Title>
@@ -377,7 +350,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>InCell</Group>
-					<ExtendedTooltip name="ГруппаСостоянияВыгрузкиExtendedTooltip" id="146"/>
+					<ExtendedTooltip name="ГруппаСостоянияВыгрузкиExtendedTooltip" id="142"/>
 					<ChildItems>
 						<PictureField name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанных" id="6">
 							<DataPath>СписокСостоянияУзлов.РезультатПоследнейВыгрузкиДанных</DataPath>
@@ -388,13 +361,13 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ValuesPicture>
 							<ContextMenu name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанныхКонтекстноеМеню" id="7"/>
-							<ExtendedTooltip name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанныхExtendedTooltip" id="147"/>
+							<ExtendedTooltip name="СписокСостоянияУзловРезультатПоследнейВыгрузкиДанныхExtendedTooltip" id="143"/>
 						</PictureField>
 						<InputField name="СписокСостоянияУзловДатаПоследнейВыгрузки" id="36">
 							<DataPath>СписокСостоянияУзлов.ДатаПоследнейВыгрузки</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="СписокСостоянияУзловДатаПоследнейВыгрузкиКонтекстноеМеню" id="37"/>
-							<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейВыгрузкиExtendedTooltip" id="148"/>
+							<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейВыгрузкиExtendedTooltip" id="144"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -402,7 +375,7 @@
 					<DataPath>СписокСостоянияУзлов.ДатаПоследнейУспешнойВыгрузки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СписокСостоянияУзловДатаПоследнейУспешнойВыгрузкиКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейУспешнойВыгрузкиExtendedTooltip" id="149"/>
+					<ExtendedTooltip name="СписокСостоянияУзловДатаПоследнейУспешнойВыгрузкиExtendedTooltip" id="145"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -594,7 +567,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
@@ -650,6 +623,7 @@
 				<xr:Value name="Role.ВыполнениеОбменовДанными">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВзаимодействий">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
@@ -657,7 +631,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
@@ -673,8 +647,9 @@
 				<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
 				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
 				<xr:Value name="Role.ИспользованиеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
 				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
-				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
 				<xr:Value name="Role.ПроверкаДоступныхОбновленийКонфигурации">false</xr:Value>
 				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
 				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
@@ -685,6 +660,7 @@
 				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
 				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
 				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ЧтениеФизическихЛиц">false</xr:Value>
 			</Use>
 			<Action>ОткрытьСписокУзловПланаОбмена</Action>
 		</Command>
@@ -732,8 +708,8 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>StdPicture.SyncContents</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:Ref>CommonPicture.ВыполнитьОбменДаннымиИнтерактивно</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ВыполнитьОбменДаннымиИнтерактивно</Action>
 			<Representation>TextPicture</Representation>

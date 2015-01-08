@@ -15,22 +15,6 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<CommandBar name="Группа1" id="51">
-			<ExtendedTooltip name="Группа1ExtendedTooltip" id="52"/>
-			<ChildItems>
-				<Button name="Найти" id="4">
-					<Type>CommandBarButton</Type>
-					<Representation>PictureAndText</Representation>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.Найти</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="НайтиExtendedTooltip" id="53"/>
-				</Button>
-			</ChildItems>
-		</CommandBar>
 		<UsualGroup name="ГруппаПоиска" id="42">
 			<ToolTip>
 				<v8:item>
@@ -41,7 +25,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПоискаExtendedTooltip" id="54"/>
+			<ExtendedTooltip name="ГруппаПоискаExtendedTooltip" id="51"/>
 			<ChildItems>
 				<InputField name="СтрокаПоиска" id="3">
 					<DataPath>СтрокаПоиска</DataPath>
@@ -58,12 +42,23 @@
 					<ChoiceListButton>true</ChoiceListButton>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="СтрокаПоискаExtendedTooltip" id="55"/>
+					<ExtendedTooltip name="СтрокаПоискаExtendedTooltip" id="52"/>
 					<Events>
 						<Event name="OnChange">СтрокаПоискаПриИзменении</Event>
 						<Event name="ChoiceProcessing">СтрокаПоискаОбработкаВыбора</Event>
 					</Events>
 				</InputField>
+				<Button name="Найти" id="4">
+					<Type>Hyperlink</Type>
+					<Representation>Picture</Representation>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.Найти</CommandName>
+					<Parameter xsi:nil="true"/>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="НайтиExtendedTooltip" id="53"/>
+				</Button>
 				<Button name="Справка" id="44">
 					<Type>Hyperlink</Type>
 					<Representation>Picture</Representation>
@@ -73,7 +68,7 @@
 					<TextColor>style:ButtonTextColor</TextColor>
 					<BackColor>style:ButtonBackColor</BackColor>
 					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="СправкаExtendedTooltip" id="56"/>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="54"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -81,14 +76,14 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИнформацияОНайденномExtendedTooltip" id="57"/>
+			<ExtendedTooltip name="ГруппаИнформацияОНайденномExtendedTooltip" id="55"/>
 			<ChildItems>
 				<LabelField name="ПоказаныРезультаты_С_По" id="16">
 					<DataPath>ПоказаныРезультатыСПо</DataPath>
 					<TitleLocation>None</TitleLocation>
 					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 					<ContextMenu name="ПоказаныРезультаты_С_ПоКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПоказаныРезультаты_С_ПоExtendedTooltip" id="58"/>
+					<ExtendedTooltip name="ПоказаныРезультаты_С_ПоExtendedTooltip" id="56"/>
 				</LabelField>
 				<Button name="Назад" id="8">
 					<Type>Hyperlink</Type>
@@ -99,7 +94,7 @@
 					<TextColor>#1C55AE</TextColor>
 					<BackColor>style:ButtonBackColor</BackColor>
 					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="НазадExtendedTooltip" id="59"/>
+					<ExtendedTooltip name="НазадExtendedTooltip" id="57"/>
 				</Button>
 				<Button name="Далее" id="9">
 					<Type>Hyperlink</Type>
@@ -111,7 +106,7 @@
 					<TextColor>#1C55AE</TextColor>
 					<BackColor>style:ButtonBackColor</BackColor>
 					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="ДалееExtendedTooltip" id="60"/>
+					<ExtendedTooltip name="ДалееExtendedTooltip" id="58"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -119,7 +114,7 @@
 			<DataPath>HTMLТекст</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<ContextMenu name="HTMLТекстКонтекстноеМеню" id="40"/>
-			<ExtendedTooltip name="HTMLТекстExtendedTooltip" id="61"/>
+			<ExtendedTooltip name="HTMLТекстExtendedTooltip" id="59"/>
 			<Events>
 				<Event name="OnClick">HTMLТекстПриНажатии</Event>
 			</Events>
@@ -140,20 +135,20 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОбновлениеИндексаExtendedTooltip" id="62"/>
+			<ExtendedTooltip name="ГруппаОбновлениеИндексаExtendedTooltip" id="60"/>
 			<ChildItems>
 				<Button name="ОбновитьИндекс" id="48">
 					<Type>UsualButton</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.Command.ОбновитьИндекс</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ОбновитьИндексExtendedTooltip" id="63"/>
+					<ExtendedTooltip name="ОбновитьИндексExtendedTooltip" id="61"/>
 				</Button>
 				<LabelField name="СостояниеИндекса" id="49">
 					<DataPath>СостояниеИндекса</DataPath>
 					<TitleLocation>None</TitleLocation>
 					<ContextMenu name="СостояниеИндексаКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="СостояниеИндексаExtendedTooltip" id="64"/>
+					<ExtendedTooltip name="СостояниеИндексаExtendedTooltip" id="62"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>

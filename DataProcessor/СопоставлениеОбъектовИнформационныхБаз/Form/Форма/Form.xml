@@ -22,14 +22,14 @@
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ЗаписатьИЗакрытьExtendedTooltip" id="283"/>
+				<ExtendedTooltip name="ЗаписатьИЗакрытьExtendedTooltip" id="287"/>
 			</Button>
 			<Button name="ЗаписатьОбновить" id="270">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.ЗаписатьОбновить</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ЗаписатьОбновитьExtendedTooltip" id="284"/>
+				<ExtendedTooltip name="ЗаписатьОбновитьExtendedTooltip" id="288"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -55,7 +55,7 @@
 			</ToolTip>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="СтраницаСопоставленияExtendedTooltip" id="285"/>
+			<ExtendedTooltip name="СтраницаСопоставленияExtendedTooltip" id="289"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаЗаголовкаТаблицы" id="210">
 					<Title>
@@ -73,7 +73,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаЗаголовкаТаблицыExtendedTooltip" id="286"/>
+					<ExtendedTooltip name="ГруппаЗаголовкаТаблицыExtendedTooltip" id="290"/>
 					<ChildItems>
 						<InputField name="ОтборПоСтатусуСопоставления" id="30">
 							<DataPath>ОтборПоСтатусуСопоставления</DataPath>
@@ -82,7 +82,7 @@
 							<TextEdit>false</TextEdit>
 							<ChoiceListButton>true</ChoiceListButton>
 							<ContextMenu name="ОтборПоСтатусуСопоставленияКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="ОтборПоСтатусуСопоставленияExtendedTooltip" id="287"/>
+							<ExtendedTooltip name="ОтборПоСтатусуСопоставленияExtendedTooltip" id="291"/>
 							<Events>
 								<Event name="OnChange">ОтборПоСтатусуСопоставленияПриИзменении</Event>
 							</Events>
@@ -103,21 +103,21 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ИнформацияДайджестаСопоставленияExtendedTooltip" id="288"/>
+							<ExtendedTooltip name="ИнформацияДайджестаСопоставленияExtendedTooltip" id="292"/>
 							<ChildItems>
 								<InputField name="ПроцентСопоставленияОбъектов" id="275">
 									<DataPath>ПроцентСопоставленияОбъектов</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Width>4</Width>
 									<ContextMenu name="ПроцентСопоставленияОбъектовКонтекстноеМеню" id="276"/>
-									<ExtendedTooltip name="ПроцентСопоставленияОбъектовExtendedTooltip" id="289"/>
+									<ExtendedTooltip name="ПроцентСопоставленияОбъектовExtendedTooltip" id="293"/>
 								</InputField>
 								<InputField name="КоличествоОбъектовНесопоставленных" id="277">
 									<DataPath>КоличествоОбъектовНесопоставленных</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Width>6</Width>
 									<ContextMenu name="КоличествоОбъектовНесопоставленныхКонтекстноеМеню" id="278"/>
-									<ExtendedTooltip name="КоличествоОбъектовНесопоставленныхExtendedTooltip" id="290"/>
+									<ExtendedTooltip name="КоличествоОбъектовНесопоставленныхExtendedTooltip" id="294"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -139,7 +139,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="КнопкиТаблицыExtendedTooltip" id="291"/>
+					<ExtendedTooltip name="КнопкиТаблицыExtendedTooltip" id="295"/>
 					<ChildItems>
 						<CommandBar name="КоманднаяПанель" id="267">
 							<Title>
@@ -148,49 +148,49 @@
 									<v8:content>Командная панель</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="КоманднаяПанельExtendedTooltip" id="292"/>
+							<ExtendedTooltip name="КоманднаяПанельExtendedTooltip" id="296"/>
 							<ChildItems>
 								<Button name="ДобавитьСопоставление" id="163">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.ДобавитьСопоставление</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="ДобавитьСопоставлениеExtendedTooltip" id="293"/>
+									<ExtendedTooltip name="ДобавитьСопоставлениеExtendedTooltip" id="297"/>
 								</Button>
 								<Button name="ОтменитьСопоставление" id="33">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.ОтменитьСопоставление</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="ОтменитьСопоставлениеExtendedTooltip" id="294"/>
+									<ExtendedTooltip name="ОтменитьСопоставлениеExtendedTooltip" id="298"/>
 								</Button>
 								<Button name="ИзменитьПоляТаблицы" id="281">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.ИзменитьПоляТаблицы</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="ИзменитьПоляТаблицыExtendedTooltip" id="295"/>
+									<ExtendedTooltip name="ИзменитьПоляТаблицыExtendedTooltip" id="299"/>
 								</Button>
 								<Button name="Обновить" id="39">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.Обновить</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="ОбновитьExtendedTooltip" id="296"/>
+									<ExtendedTooltip name="ОбновитьExtendedTooltip" id="300"/>
 								</Button>
 								<Button name="Сортировка" id="167">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.Сортировка</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="СортировкаExtendedTooltip" id="297"/>
+									<ExtendedTooltip name="СортировкаExtendedTooltip" id="301"/>
 								</Button>
 								<Button name="ВыполнитьАвтоматическоеСопоставление" id="71">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.ВыполнитьАвтоматическоеСопоставление</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="ВыполнитьАвтоматическоеСопоставлениеExtendedTooltip" id="298"/>
+									<ExtendedTooltip name="ВыполнитьАвтоматическоеСопоставлениеExtendedTooltip" id="302"/>
 								</Button>
 								<Popup name="ПодменюНастройки" id="268">
 									<Title>
@@ -205,14 +205,14 @@
 											<v8:content>Подменю настройки</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ПодменюНастройкиExtendedTooltip" id="299"/>
+									<ExtendedTooltip name="ПодменюНастройкиExtendedTooltip" id="303"/>
 									<ChildItems>
 										<Button name="ИзменитьСписокПолейТаблицы" id="266">
 											<Type>CommandBarButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<CommandName>Form.Command.НастройкаСпискаПолейТаблицы</CommandName>
 											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ИзменитьСписокПолейТаблицыExtendedTooltip" id="300"/>
+											<ExtendedTooltip name="ИзменитьСписокПолейТаблицыExtendedTooltip" id="304"/>
 										</Button>
 									</ChildItems>
 								</Popup>
@@ -221,7 +221,7 @@
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.ВыполнитьЗагрузкуДанных</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="ВыполнитьЗагрузкуДанныхExtendedTooltip" id="301"/>
+									<ExtendedTooltip name="ВыполнитьЗагрузкуДанныхExtendedTooltip" id="305"/>
 								</Button>
 							</ChildItems>
 						</CommandBar>
@@ -272,42 +272,42 @@
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.ДобавитьСопоставление</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="КонтекстноеМенюТаблицаСопоставленияДобавитьСопоставлениеExtendedTooltip" id="302"/>
+								<ExtendedTooltip name="КонтекстноеМенюТаблицаСопоставленияДобавитьСопоставлениеExtendedTooltip" id="306"/>
 							</Button>
 							<Button name="КонтекстноеМенюТаблицаСопоставленияОтменитьСопоставление" id="280">
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.ОтменитьСопоставление</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="КонтекстноеМенюТаблицаСопоставленияОтменитьСопоставлениеExtendedTooltip" id="303"/>
+								<ExtendedTooltip name="КонтекстноеМенюТаблицаСопоставленияОтменитьСопоставлениеExtendedTooltip" id="307"/>
 							</Button>
 						</ChildItems>
 					</ContextMenu>
 					<AutoCommandBar name="ТаблицаСопоставленияКоманднаяПанель" id="24"/>
-					<ExtendedTooltip name="ТаблицаСопоставленияExtendedTooltip" id="304"/>
-					<SearchStringAddition name="ТаблицаСопоставленияSearchString" id="305">
+					<ExtendedTooltip name="ТаблицаСопоставленияExtendedTooltip" id="308"/>
+					<SearchStringAddition name="ТаблицаСопоставленияSearchString" id="309">
 						<Source>
 							<lf:elementId>22</lf:elementId>
 							<lf:additionId>0</lf:additionId>
 						</Source>
-						<ContextMenu name="ТаблицаСопоставленияSearchStringContextMenu" id="306"/>
-						<ExtendedTooltip name="ТаблицаСопоставленияSearchStringExtendedTooltip" id="307"/>
+						<ContextMenu name="ТаблицаСопоставленияSearchStringContextMenu" id="310"/>
+						<ExtendedTooltip name="ТаблицаСопоставленияSearchStringExtendedTooltip" id="311"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="ТаблицаСопоставленияViewStatus" id="308">
+					<ViewStatusAddition name="ТаблицаСопоставленияViewStatus" id="312">
 						<Source>
 							<lf:elementId>22</lf:elementId>
 							<lf:additionId>1</lf:additionId>
 						</Source>
-						<ContextMenu name="ТаблицаСопоставленияViewStatusContextMenu" id="309"/>
-						<ExtendedTooltip name="ТаблицаСопоставленияViewStatusExtendedTooltip" id="310"/>
+						<ContextMenu name="ТаблицаСопоставленияViewStatusContextMenu" id="313"/>
+						<ExtendedTooltip name="ТаблицаСопоставленияViewStatusExtendedTooltip" id="314"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="ТаблицаСопоставленияSearchControl" id="311">
+					<SearchControlAddition name="ТаблицаСопоставленияSearchControl" id="315">
 						<Source>
 							<lf:elementId>22</lf:elementId>
 							<lf:additionId>2</lf:additionId>
 						</Source>
-						<ContextMenu name="ТаблицаСопоставленияSearchControlContextMenu" id="312"/>
-						<ExtendedTooltip name="ТаблицаСопоставленияSearchControlExtendedTooltip" id="313"/>
+						<ContextMenu name="ТаблицаСопоставленияSearchControlContextMenu" id="316"/>
+						<ExtendedTooltip name="ТаблицаСопоставленияSearchControlExtendedTooltip" id="317"/>
 					</SearchControlAddition>
 					<Events>
 						<Event name="Selection">рТаблицаСопоставленияВыбор</Event>
@@ -326,37 +326,54 @@
 									<v8:content>Поля источника</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ПоляПриемникаExtendedTooltip" id="314"/>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ПоляПриемникаExtendedTooltip" id="318"/>
 							<ChildItems>
+								<PictureField name="ТаблицаСопоставленияПриемникИндексКартинки" id="285">
+									<DataPath>ТаблицаСопоставления.ПриемникИндексКартинки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<SkipOnInput>true</SkipOnInput>
+									<TitleLocation>None</TitleLocation>
+									<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ТаблицаСопоставленияПриемникИндексКартинкиКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияПриемникИндексКартинкиExtendedTooltip" id="319"/>
+								</PictureField>
 								<InputField name="ТаблицаСопоставленияПриемникПоле1" id="48">
 									<DataPath>ТаблицаСопоставления.ПриемникПоле1</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияПриемникПоле1КонтекстноеМеню" id="49"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле1ExtendedTooltip" id="315"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле1ExtendedTooltip" id="320"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияПриемникПоле2" id="50">
 									<DataPath>ТаблицаСопоставления.ПриемникПоле2</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияПриемникПоле2КонтекстноеМеню" id="51"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле2ExtendedTooltip" id="316"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле2ExtendedTooltip" id="321"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияПриемникПоле3" id="52">
 									<DataPath>ТаблицаСопоставления.ПриемникПоле3</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияПриемникПоле3КонтекстноеМеню" id="53"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле3ExtendedTooltip" id="317"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле3ExtendedTooltip" id="322"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияПриемникПоле4" id="54">
 									<DataPath>ТаблицаСопоставления.ПриемникПоле4</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияПриемникПоле4КонтекстноеМеню" id="55"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле4ExtendedTooltip" id="318"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле4ExtendedTooltip" id="323"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияПриемникПоле5" id="56">
 									<DataPath>ТаблицаСопоставления.ПриемникПоле5</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияПриемникПоле5КонтекстноеМеню" id="57"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле5ExtendedTooltip" id="319"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияПриемникПоле5ExtendedTooltip" id="324"/>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
@@ -373,37 +390,51 @@
 									<v8:content>Поля источника</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ПоляИсточникаExtendedTooltip" id="320"/>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ПоляИсточникаExtendedTooltip" id="325"/>
 							<ChildItems>
+								<PictureField name="ТаблицаСопоставленияИсточникИндексКартинки" id="283">
+									<DataPath>ТаблицаСопоставления.ИсточникИндексКартинки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ТаблицаСопоставленияИсточникИндексКартинкиКонтекстноеМеню" id="284"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияИсточникИндексКартинкиExtendedTooltip" id="326"/>
+								</PictureField>
 								<InputField name="ТаблицаСопоставленияИсточникПоле1" id="58">
 									<DataPath>ТаблицаСопоставления.ИсточникПоле1</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияИсточникПоле1КонтекстноеМеню" id="59"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле1ExtendedTooltip" id="321"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле1ExtendedTooltip" id="327"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияИсточникПоле2" id="60">
 									<DataPath>ТаблицаСопоставления.ИсточникПоле2</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияИсточникПоле2КонтекстноеМеню" id="61"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле2ExtendedTooltip" id="322"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле2ExtendedTooltip" id="328"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияИсточникПоле3" id="62">
 									<DataPath>ТаблицаСопоставления.ИсточникПоле3</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияИсточникПоле3КонтекстноеМеню" id="63"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле3ExtendedTooltip" id="323"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле3ExtendedTooltip" id="329"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияИсточникПоле4" id="64">
 									<DataPath>ТаблицаСопоставления.ИсточникПоле4</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияИсточникПоле4КонтекстноеМеню" id="65"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле4ExtendedTooltip" id="324"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле4ExtendedTooltip" id="330"/>
 								</InputField>
 								<InputField name="ТаблицаСопоставленияИсточникПоле5" id="66">
 									<DataPath>ТаблицаСопоставления.ИсточникПоле5</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСопоставленияИсточникПоле5КонтекстноеМеню" id="67"/>
-									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле5ExtendedTooltip" id="325"/>
+									<ExtendedTooltip name="ТаблицаСопоставленияИсточникПоле5ExtendedTooltip" id="331"/>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
@@ -756,6 +787,54 @@
 							<v8:Digits>14</v8:Digits>
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПриемникИндексКартинки" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникИндексКартинки" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FunctionalOption uuid="3576ba1d-5b3a-4605-9092-0421767721ac">
+		<Properties>
+			<Name>ИспользоватьВзаимодействия</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать взаимодействия</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.ИспользоватьВзаимодействия</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>Document.Встреча</xr:Object>
+				<xr:Object>Document.ЗапланированноеВзаимодействие</xr:Object>
+				<xr:Object>Document.ТелефонныйЗвонок</xr:Object>
+				<xr:Object>Document.ЭлектронноеПисьмоВходящее</xr:Object>
+				<xr:Object>Document.ЭлектронноеПисьмоИсходящее</xr:Object>
+				<xr:Object>DocumentJournal.Взаимодействия</xr:Object>
+				<xr:Object>DocumentJournal.Взаимодействия.Command.ЗапланироватьВстречу</xr:Object>
+				<xr:Object>DocumentJournal.Взаимодействия.Command.ЗапланироватьВзаимодействие</xr:Object>
+				<xr:Object>DocumentJournal.Взаимодействия.Command.НаписатьЭлектронноеПисьмо</xr:Object>
+				<xr:Object>DocumentJournal.Взаимодействия.Command.Позвонить</xr:Object>
+				<xr:Object>InformationRegister.ИдентификаторыПолученныхЭлектронныхПисем</xr:Object>
+				<xr:Object>DocumentJournal.Взаимодействия.Command.Взаимодействия</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

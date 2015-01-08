@@ -249,6 +249,17 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЭлементыПодсистемСКоманднымИнтерфейсом" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элементы подсистем с командным интерфейсом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Выбрать" id="1">
@@ -300,6 +311,11 @@
 			</Type>
 		</Parameter>
 		<Parameter name="ФильтрПоОбъектамМетаданных">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="РодительскиеПодсистемы">
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>

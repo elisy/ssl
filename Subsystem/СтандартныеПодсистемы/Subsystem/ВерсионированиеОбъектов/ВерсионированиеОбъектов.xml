@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
@@ -19,7 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВерсионированиеОбъектовСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВерсионированиеОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыВерсионированияОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоВерсиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоИзменениямВерсийОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВерсииОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкаВерсионированияОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИсторияИзменений</xr:Item>

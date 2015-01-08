@@ -9,46 +9,22 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаУзелИнформационнойБазы" id="44">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа узел информационной базы</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа узел информационной базы</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Horizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаУзелИнформационнойБазыExtendedTooltip" id="48"/>
-			<ChildItems>
-				<InputField name="Узел" id="3">
-					<DataPath>Запись.Узел</DataPath>
-					<ContextMenu name="УзелКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="УзелExtendedTooltip" id="49"/>
-					<Events>
-						<Event name="OnChange">УзелПриИзменении</Event>
-					</Events>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
 		<InputField name="ВидТранспортаСообщенийОбменаПоУмолчанию" id="1">
 			<DataPath>Запись.ВидТранспортаСообщенийОбменаПоУмолчанию</DataPath>
 			<ChoiceButton>false</ChoiceButton>
 			<ListChoiceMode>true</ListChoiceMode>
 			<ChoiceListButton>true</ChoiceListButton>
 			<ContextMenu name="ВидТранспортаСообщенийОбменаПоУмолчаниюКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ВидТранспортаСообщенийОбменаПоУмолчаниюExtendedTooltip" id="50"/>
+			<ExtendedTooltip name="ВидТранспортаСообщенийОбменаПоУмолчаниюExtendedTooltip" id="48"/>
 		</InputField>
 		<Pages name="СтраницыВидовТранспорта" id="47">
 			<Title>
@@ -63,7 +39,7 @@
 					<v8:content>Страницы видов транспорта</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="СтраницыВидовТранспортаExtendedTooltip" id="51"/>
+			<ExtendedTooltip name="СтраницыВидовТранспортаExtendedTooltip" id="49"/>
 			<ChildItems>
 				<Page name="НастройкиТранспортаFILE" id="5">
 					<Title>
@@ -78,15 +54,14 @@
 							<v8:content>Настройки транспорта FILE</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НастройкиТранспортаFILEExtendedTooltip" id="52"/>
+					<ExtendedTooltip name="НастройкиТранспортаFILEExtendedTooltip" id="50"/>
 					<ChildItems>
 						<InputField name="FILEКаталогОбменаИнформацией" id="8">
 							<DataPath>Запись.FILEКаталогОбменаИнформацией</DataPath>
 							<ChoiceButton>true</ChoiceButton>
 							<OpenButton>true</OpenButton>
-							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="FILEКаталогОбменаИнформациейКонтекстноеМеню" id="9"/>
-							<ExtendedTooltip name="FILEКаталогОбменаИнформациейExtendedTooltip" id="53"/>
+							<ExtendedTooltip name="FILEКаталогОбменаИнформациейExtendedTooltip" id="51"/>
 							<Events>
 								<Event name="StartChoice">FILEКаталогОбменаИнформациейНачалоВыбора</Event>
 								<Event name="Opening">FILEКаталогОбменаИнформациейОткрытие</Event>
@@ -97,14 +72,14 @@
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="FILEСжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="FILEСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="54"/>
+							<ExtendedTooltip name="FILEСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="52"/>
 						</CheckBoxField>
 						<Button name="ПроверитьПодключениеFILE" id="42">
 							<Type>UsualButton</Type>
 							<SkipOnInput>false</SkipOnInput>
 							<CommandName>Form.Command.ПроверитьПодключениеFILE</CommandName>
 							<Parameter xsi:nil="true"/>
-							<ExtendedTooltip name="ПроверитьПодключениеFILEExtendedTooltip" id="55"/>
+							<ExtendedTooltip name="ПроверитьПодключениеFILEExtendedTooltip" id="53"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -121,7 +96,7 @@
 							<v8:content>Настройки транспорта FILE</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НастройкиТранспортаFTPExtendedTooltip" id="56"/>
+					<ExtendedTooltip name="НастройкиТранспортаFTPExtendedTooltip" id="54"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаСерверПорт" id="37">
 							<Title>
@@ -139,13 +114,12 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСерверПортExtendedTooltip" id="57"/>
+							<ExtendedTooltip name="ГруппаСерверПортExtendedTooltip" id="55"/>
 							<ChildItems>
 								<InputField name="FTPСоединениеПуть" id="14">
 									<DataPath>Запись.FTPСоединениеПуть</DataPath>
-									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="FTPСоединениеПутьКонтекстноеМеню" id="15"/>
-									<ExtendedTooltip name="FTPСоединениеПутьExtendedTooltip" id="58"/>
+									<ExtendedTooltip name="FTPСоединениеПутьExtendedTooltip" id="56"/>
 								</InputField>
 								<InputField name="FTPСоединениеПорт" id="16">
 									<DataPath>Запись.FTPСоединениеПорт</DataPath>
@@ -155,9 +129,8 @@
 											<v8:content>ЧГ=0</v8:content>
 										</v8:item>
 									</EditFormat>
-									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="FTPСоединениеПортКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="FTPСоединениеПортExtendedTooltip" id="59"/>
+									<ExtendedTooltip name="FTPСоединениеПортExtendedTooltip" id="57"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -177,19 +150,18 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПользовательПарольExtendedTooltip" id="60"/>
+							<ExtendedTooltip name="ГруппаПользовательПарольExtendedTooltip" id="58"/>
 							<ChildItems>
 								<InputField name="FTPСоединениеПользователь" id="18">
 									<DataPath>Запись.FTPСоединениеПользователь</DataPath>
-									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="FTPСоединениеПользовательКонтекстноеМеню" id="19"/>
-									<ExtendedTooltip name="FTPСоединениеПользовательExtendedTooltip" id="61"/>
+									<ExtendedTooltip name="FTPСоединениеПользовательExtendedTooltip" id="59"/>
 								</InputField>
 								<InputField name="FTPСоединениеПароль" id="22">
 									<DataPath>Запись.FTPСоединениеПароль</DataPath>
 									<PasswordMode>true</PasswordMode>
 									<ContextMenu name="FTPСоединениеПарольКонтекстноеМеню" id="23"/>
-									<ExtendedTooltip name="FTPСоединениеПарольExtendedTooltip" id="62"/>
+									<ExtendedTooltip name="FTPСоединениеПарольExtendedTooltip" id="60"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -197,28 +169,28 @@
 							<DataPath>Запись.FTPСоединениеМаксимальныйДопустимыйРазмерСообщения</DataPath>
 							<ChoiceButton>true</ChoiceButton>
 							<ContextMenu name="FTPСоединениеМаксимальныйДопустимыйРазмерСообщенияКонтекстноеМеню" id="40"/>
-							<ExtendedTooltip name="FTPСоединениеМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="63"/>
+							<ExtendedTooltip name="FTPСоединениеМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="61"/>
 						</InputField>
 						<CheckBoxField name="FTPСоединениеПассивноеСоединение" id="20">
 							<DataPath>Запись.FTPСоединениеПассивноеСоединение</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="FTPСоединениеПассивноеСоединениеКонтекстноеМеню" id="21"/>
-							<ExtendedTooltip name="FTPСоединениеПассивноеСоединениеExtendedTooltip" id="64"/>
+							<ExtendedTooltip name="FTPСоединениеПассивноеСоединениеExtendedTooltip" id="62"/>
 						</CheckBoxField>
 						<CheckBoxField name="FTPСжиматьФайлИсходящегоСообщения" id="12">
 							<DataPath>Запись.FTPСжиматьФайлИсходящегоСообщения</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="FTPСжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="13"/>
-							<ExtendedTooltip name="FTPСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="65"/>
+							<ExtendedTooltip name="FTPСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="63"/>
 						</CheckBoxField>
 						<Button name="ПроверитьПодключениеFTP" id="41">
 							<Type>UsualButton</Type>
 							<SkipOnInput>false</SkipOnInput>
 							<CommandName>Form.Command.ПроверитьПодключениеFTP</CommandName>
 							<Parameter xsi:nil="true"/>
-							<ExtendedTooltip name="ПроверитьПодключениеFTPExtendedTooltip" id="66"/>
+							<ExtendedTooltip name="ПроверитьПодключениеFTPExtendedTooltip" id="64"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -235,33 +207,32 @@
 							<v8:content>Настройки транспорта FILE</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НастройкиТранспортаEMAILExtendedTooltip" id="67"/>
+					<ExtendedTooltip name="НастройкиТранспортаEMAILExtendedTooltip" id="65"/>
 					<ChildItems>
 						<InputField name="EMAILУчетнаяЗапись" id="30">
 							<DataPath>Запись.EMAILУчетнаяЗапись</DataPath>
-							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="EMAILУчетнаяЗаписьКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="EMAILУчетнаяЗаписьExtendedTooltip" id="68"/>
+							<ExtendedTooltip name="EMAILУчетнаяЗаписьExtendedTooltip" id="66"/>
 						</InputField>
 						<InputField name="EMAILМаксимальныйДопустимыйРазмерСообщения" id="26">
 							<DataPath>Запись.EMAILМаксимальныйДопустимыйРазмерСообщения</DataPath>
 							<ChoiceButton>true</ChoiceButton>
 							<ContextMenu name="EMAILМаксимальныйДопустимыйРазмерСообщенияКонтекстноеМеню" id="27"/>
-							<ExtendedTooltip name="EMAILМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="69"/>
+							<ExtendedTooltip name="EMAILМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="67"/>
 						</InputField>
 						<CheckBoxField name="EMAILСжиматьФайлИсходящегоСообщения" id="28">
 							<DataPath>Запись.EMAILСжиматьФайлИсходящегоСообщения</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="EMAILСжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="29"/>
-							<ExtendedTooltip name="EMAILСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="70"/>
+							<ExtendedTooltip name="EMAILСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="68"/>
 						</CheckBoxField>
 						<Button name="ПроверитьПодключениеEMAIL" id="43">
 							<Type>UsualButton</Type>
 							<SkipOnInput>false</SkipOnInput>
 							<CommandName>Form.Command.ПроверитьПодключениеEMAIL</CommandName>
 							<Parameter xsi:nil="true"/>
-							<ExtendedTooltip name="ПроверитьПодключениеEMAILExtendedTooltip" id="71"/>
+							<ExtendedTooltip name="ПроверитьПодключениеEMAILExtendedTooltip" id="69"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -282,7 +253,7 @@
 			</ToolTip>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ОбщиеНастройкиExtendedTooltip" id="72"/>
+			<ExtendedTooltip name="ОбщиеНастройкиExtendedTooltip" id="70"/>
 			<ChildItems>
 				<InputField name="ПарольАрхиваСообщенияОбмена" id="34">
 					<DataPath>Запись.ПарольАрхиваСообщенияОбмена</DataPath>
@@ -290,14 +261,14 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<PasswordMode>true</PasswordMode>
 					<ContextMenu name="ПарольАрхиваСообщенияОбменаКонтекстноеМеню" id="35"/>
-					<ExtendedTooltip name="ПарольАрхиваСообщенияОбменаExtendedTooltip" id="73"/>
+					<ExtendedTooltip name="ПарольАрхиваСообщенияОбменаExtendedTooltip" id="71"/>
 				</InputField>
 				<InputField name="ИмяФайлаПротоколаОбмена" id="32">
 					<DataPath>Запись.ИмяФайлаПротоколаОбмена</DataPath>
 					<ChoiceButton>true</ChoiceButton>
 					<OpenButton>true</OpenButton>
 					<ContextMenu name="ИмяФайлаПротоколаОбменаКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ИмяФайлаПротоколаОбменаExtendedTooltip" id="74"/>
+					<ExtendedTooltip name="ИмяФайлаПротоколаОбменаExtendedTooltip" id="72"/>
 					<Events>
 						<Event name="StartChoice">ИмяФайлаПротоколаОбменаНачалоВыбора</Event>
 						<Event name="Opening">ИмяФайлаПротоколаОбменаОткрытие</Event>
@@ -308,7 +279,7 @@
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВыполнятьОбменВРежимеОтладкиКонтекстноеМеню" id="46"/>
-					<ExtendedTooltip name="ВыполнятьОбменВРежимеОтладкиExtendedTooltip" id="75"/>
+					<ExtendedTooltip name="ВыполнятьОбменВРежимеОтладкиExtendedTooltip" id="73"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>

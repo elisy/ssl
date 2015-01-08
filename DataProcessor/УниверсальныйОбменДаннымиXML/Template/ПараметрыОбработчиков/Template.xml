@@ -47,6 +47,23 @@
 			<c>
 				<i>1</i>
 				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
@@ -59,7 +76,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>4</index>
+		<index>5</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -76,23 +93,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>5</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>6</index>
 		<row>
 			<c>
@@ -102,7 +102,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -119,7 +119,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -136,7 +136,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -153,7 +153,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>Правило</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -170,7 +170,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -187,6 +187,23 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Объект</v8:content>
 						</v8:item>
 					</tl>
@@ -195,7 +212,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>13</index>
+		<index>14</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -212,23 +229,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>14</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>15</index>
 		<row>
 			<c>
@@ -238,7 +238,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -255,7 +255,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>Источник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -272,7 +272,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -289,7 +289,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -306,7 +306,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -323,7 +323,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВыгруженныеОбъекты</v8:content>
+							<v8:content>ПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -340,7 +340,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>ВыгруженныеОбъекты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -357,7 +357,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>КлючВыгружаемыхДанных</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -374,7 +374,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ЗапоминатьВыгруженные</v8:content>
+							<v8:content>КлючВыгружаемыхДанных</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -391,7 +391,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещатьОбъектПриЗагрузке</v8:content>
+							<v8:content>ЗапоминатьВыгруженные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -408,7 +408,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВсеОбъектыВыгружены</v8:content>
+							<v8:content>НеЗамещатьОбъектПриЗагрузке</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -425,7 +425,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТолькоПолучитьУзелСсылки</v8:content>
+							<v8:content>ВсеОбъектыВыгружены</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -442,7 +442,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
+							<v8:content>ТолькоПолучитьУзелСсылки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -459,7 +459,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимЗаписи</v8:content>
+							<v8:content>Приемник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -476,7 +476,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимПроведения</v8:content>
+							<v8:content>РежимЗаписи</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -493,7 +493,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НеСоздаватьЕслиНеНайден</v8:content>
+							<v8:content>РежимПроведения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -506,13 +506,30 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеСоздаватьЕслиНеНайден</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>32</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>33</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -529,23 +546,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>33</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>34</index>
 		<row>
 			<c>
@@ -555,7 +555,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -572,7 +572,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -589,7 +589,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -606,7 +606,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -623,6 +623,23 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>39</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>УзелСсылки</v8:content>
 						</v8:item>
 					</tl>
@@ -631,7 +648,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>40</index>
+		<index>41</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -648,7 +665,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>41</index>
+		<index>42</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -665,7 +682,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>43</index>
+		<index>44</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -682,7 +699,24 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>44</index>
+		<index>45</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>46</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -699,7 +733,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>46</index>
+		<index>48</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -716,7 +750,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>49</index>
+		<index>51</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -733,7 +767,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>50</index>
+		<index>52</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -750,7 +784,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>51</index>
+		<index>53</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -760,40 +794,6 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>52</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Нпп</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>53</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -810,7 +810,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПравила</v8:content>
+							<v8:content>Нпп</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -827,7 +827,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
+							<v8:content>Источник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -844,7 +844,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ГенерироватьНовыйНомерИлиКодЕслиНеУказан</v8:content>
+							<v8:content>ИмяПравила</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -861,7 +861,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТипОбъектаСтрокой</v8:content>
+							<v8:content>Правило</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -878,7 +878,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТипОбъекта</v8:content>
+							<v8:content>ГенерироватьНовыйНомерИлиКодЕслиНеУказан</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -895,7 +895,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещатьОбъект</v8:content>
+							<v8:content>ТипОбъектаСтрокой</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -912,7 +912,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимЗаписи</v8:content>
+							<v8:content>ТипОбъекта</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -929,7 +929,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимПроведения</v8:content>
+							<v8:content>НеЗамещатьОбъект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>62</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РежимЗаписи</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -938,6 +955,23 @@
 	</rowsItem>
 	<rowsItem>
 		<index>63</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РежимПроведения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>65</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -954,7 +988,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>64</index>
+		<index>66</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -971,7 +1005,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>65</index>
+		<index>67</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -988,40 +1022,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>66</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>67</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>68</index>
 		<row>
 			<c>
@@ -1031,7 +1031,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПараметрыОбъекта</v8:content>
+							<v8:content>Ссылка</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1048,7 +1048,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектМодифицирован</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1065,7 +1065,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяТипаОбъекта</v8:content>
+							<v8:content>ПараметрыОбъекта</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1082,7 +1082,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектНайден</v8:content>
+							<v8:content>ОбъектМодифицирован</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>72</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяТипаОбъекта</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1091,6 +1108,23 @@
 	</rowsItem>
 	<rowsItem>
 		<index>73</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектНайден</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>75</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1107,7 +1141,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>76</index>
+		<index>78</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1124,33 +1158,16 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>77</index>
+		<index>79</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>78</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПричинаОтказа</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1163,11 +1180,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>4</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конвертация_ПередОтправкойИнформацииОбУдалении</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1184,7 +1201,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка</v8:content>
+							<v8:content>ПричинаОтказа</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1192,16 +1209,16 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>82</index>
+		<index>83</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>4</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>Конвертация_ПередОтправкойИнформацииОбУдалении</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1214,11 +1231,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конвертация_ПриПолученииИнформацииОбУдалении</v8:content>
+							<v8:content>Ссылка</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1235,7 +1252,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1243,16 +1260,16 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>86</index>
+		<index>87</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>Конвертация_ПриПолученииИнформацииОбУдалении</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1265,11 +1282,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>4</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конвертация_ПередПолучениемИзмененныхОбъектов</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1286,6 +1303,40 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>91</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конвертация_ПередПолучениемИзмененныхОбъектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>92</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Параметры</v8:content>
 						</v8:item>
 					</tl>
@@ -1294,7 +1345,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>90</index>
+		<index>93</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1311,7 +1362,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>91</index>
+		<index>94</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1328,7 +1379,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>93</index>
+		<index>96</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1345,7 +1396,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>94</index>
+		<index>97</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1362,7 +1413,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>95</index>
+		<index>98</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1379,7 +1430,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>97</index>
+		<index>100</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1396,57 +1447,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>98</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>99</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>100</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>101</index>
 		<row>
 			<c>
@@ -1456,7 +1456,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1473,74 +1473,6 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВыборкаДанных</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>104</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПВД_ПередВыгрузкой</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>105</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>106</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>107</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
@@ -1549,7 +1481,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>108</index>
+		<index>103</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1566,24 +1498,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>109</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>110</index>
+		<index>104</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1600,7 +1515,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>111</index>
+		<index>105</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1609,7 +1524,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
+							<v8:content>ВыборкаДанных</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1617,7 +1532,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>113</index>
+		<index>107</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1626,7 +1541,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПВД_ПослеВыгрузки</v8:content>
+							<v8:content>ПВД_ПередВыгрузкой</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1634,7 +1549,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>114</index>
+		<index>108</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1651,7 +1566,92 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>115</index>
+		<index>109</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>110</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>111</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>112</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>113</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>114</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1673,11 +1673,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>ПВД_ПослеВыгрузки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1694,7 +1694,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1711,7 +1711,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1728,7 +1728,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСсылки</v8:content>
+							<v8:content>ИмяПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>120</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1741,11 +1758,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПВД_ПослеОбработки</v8:content>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1762,24 +1779,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>123</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
+							<v8:content>УзелСсылки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1792,11 +1792,28 @@
 			<c>
 				<i>1</i>
 				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПВД_ПослеОбработки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>125</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1809,11 +1826,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПОД_ПередОбработкой</v8:content>
+							<v8:content>Правило</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1830,24 +1847,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>128</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1860,11 +1860,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ПОД_ПередОбработкой</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1881,7 +1881,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВыборкаДанных</v8:content>
+							<v8:content>Правило</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>131</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1894,11 +1911,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПОД_ПередУдалением</v8:content>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1915,24 +1932,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>134</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
+							<v8:content>ВыборкаДанных</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1945,11 +1945,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>ПОД_ПередУдалением</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1966,7 +1966,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>УдалитьНепосредственно</v8:content>
+							<v8:content>Правило</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1983,7 +1983,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>138</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1996,11 +2013,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПОД_ПослеОбработки</v8:content>
+							<v8:content>УдалитьНепосредственно</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2017,7 +2034,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2034,7 +2051,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПередВыгрузкой</v8:content>
+							<v8:content>ПОД_ПослеОбработки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2051,24 +2068,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>144</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
+							<v8:content>Правило</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2081,11 +2081,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>ПКО_ПередВыгрузкой</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2102,7 +2102,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2119,7 +2119,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>Источник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2136,7 +2136,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2153,7 +2153,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВыгруженныеОбъекты</v8:content>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2170,7 +2170,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2187,7 +2187,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>КлючВыгружаемыхДанных</v8:content>
+							<v8:content>ПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2204,7 +2204,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ЗапоминатьВыгруженные</v8:content>
+							<v8:content>ВыгруженныеОбъекты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2221,7 +2221,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещатьОбъектПриЗагрузке</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2238,7 +2238,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВсеОбъектыВыгружены</v8:content>
+							<v8:content>КлючВыгружаемыхДанных</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2255,7 +2255,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТолькоПолучитьУзелСсылки</v8:content>
+							<v8:content>ЗапоминатьВыгруженные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2272,7 +2272,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
+							<v8:content>НеЗамещатьОбъектПриЗагрузке</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2289,7 +2289,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимЗаписи</v8:content>
+							<v8:content>ВсеОбъектыВыгружены</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2306,7 +2306,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимПроведения</v8:content>
+							<v8:content>ТолькоПолучитьУзелСсылки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2323,210 +2323,6 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НеСоздаватьЕслиНеНайден</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>161</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПриВыгрузке</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>162</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>163</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>164</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>165</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>166</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>167</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>168</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВыгруженныеОбъекты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>169</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КлючВыгружаемыхДанных</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>170</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>171</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СтандартнаяОбработка</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>172</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>Приемник</v8:content>
 						</v8:item>
 					</tl>
@@ -2535,596 +2331,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>173</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСсылки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>175</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПослеВыгрузки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>176</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>177</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>178</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>179</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>180</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>181</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>182</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВыгруженныеОбъекты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>183</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КлючВыгружаемыхДанных</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>184</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>185</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>186</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСсылки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>187</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>188</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПослеВыгрузкиВФайл</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>189</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>190</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>191</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>192</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>193</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>194</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>195</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВыгруженныеОбъекты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>196</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>197</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСсылки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>199</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПередЗагрузкой</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>200</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>201</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>2</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>202</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Нпп</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>203</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>204</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПравила</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>205</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>206</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ГенерироватьНовыйНомерИлиКодЕслиНеУказан</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>207</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ТипОбъектаСтрокой</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>208</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ТипОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>209</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещатьОбъект</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>210</index>
+		<index>160</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3141,7 +2348,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>211</index>
+		<index>161</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3158,7 +2365,24 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>213</index>
+		<index>162</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеСоздаватьЕслиНеНайден</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>164</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3167,7 +2391,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПриЗагрузке</v8:content>
+							<v8:content>ПКО_ПриВыгрузке</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3175,7 +2399,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>214</index>
+		<index>165</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3192,381 +2416,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>215</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектНайден</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>216</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>217</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещатьОбъект</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>218</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектМодифицирован</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>220</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПослеЗагрузки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>221</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>222</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>223</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>224</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>225</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПараметрыОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>226</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектМодифицирован</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>227</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>2</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяТипаОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>228</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектНайден</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>230</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО_ПоследовательностьПолейПоиска</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>231</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>НомерВариантаПоиска</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>232</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СвойстваПоиска</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>233</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПрекратитьПоиск</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>234</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СсылкаНаОбъект</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>235</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УстанавливатьУОбъектаВсеСвойстваПоиска</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>236</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СтрокаИменСвойствПоиска</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>238</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКГС_ПередОбработкойВыгрузки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>239</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>240</index>
+		<index>166</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3583,24 +2433,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>241</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>242</index>
+		<index>167</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3617,7 +2450,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>243</index>
+		<index>168</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3634,7 +2467,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>244</index>
+		<index>169</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3643,7 +2476,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3651,891 +2484,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>245</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КоллекцияОбъектов</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>246</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещать</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>247</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>248</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>НеОчищать</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>250</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКГС_ПередВыгрузкой</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>251</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>252</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>253</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>254</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>255</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>256</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>257</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектКоллекции</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>258</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>259</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииОбъектов</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>261</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКГС_ПриВыгрузке</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>262</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>263</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>264</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>265</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>266</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>267</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектКоллекции</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>268</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииОбъектов</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>269</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелОбъектаКоллекции</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>270</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>271</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СтандартнаяОбработка</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>273</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКГС_ПослеВыгрузки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>274</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>275</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>276</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>277</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>278</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>279</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>280</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектКоллекции</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>281</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииОбъектов</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>282</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>283</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелОбъектаКоллекции</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>285</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКГС_ПослеОбработкиВыгрузки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>286</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>287</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>288</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>289</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>290</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>291</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>292</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>293</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииОбъектов</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>295</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКС_ПередВыгрузкой</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>296</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>297</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>298</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>299</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>300</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>301</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКС</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>302</index>
+		<index>170</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -4552,7 +2501,1463 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>303</index>
+		<index>171</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВыгруженныеОбъекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>172</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КлючВыгружаемыхДанных</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>173</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>174</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СтандартнаяОбработка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>175</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>176</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелСсылки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>178</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО_ПослеВыгрузки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>179</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>180</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>181</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>182</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>183</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>184</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>185</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВыгруженныеОбъекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>186</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КлючВыгружаемыхДанных</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>187</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>188</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>189</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелСсылки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>190</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>191</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО_ПослеВыгрузкиВФайл</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>192</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>193</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>194</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>195</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>196</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>197</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>198</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВыгруженныеОбъекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>199</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>200</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелСсылки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>202</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО_ПередЗагрузкой</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>203</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>204</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>205</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нпп</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>206</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>207</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПравила</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>208</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>209</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГенерироватьНовыйНомерИлиКодЕслиНеУказан</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>210</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТипОбъектаСтрокой</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>211</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТипОбъекта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>212</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеЗамещатьОбъект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>213</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РежимЗаписи</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>214</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РежимПроведения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>216</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО_ПриЗагрузке</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>217</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>218</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектНайден</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>219</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>220</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеЗамещатьОбъект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>221</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектМодифицирован</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>223</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО_ПослеЗагрузки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>224</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>225</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>226</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>227</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>228</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПараметрыОбъекта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>229</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектМодифицирован</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>230</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяТипаОбъекта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>231</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектНайден</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>233</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО_ПоследовательностьПолейПоиска</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>234</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НомерВариантаПоиска</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>235</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СвойстваПоиска</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>236</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПрекратитьПоиск</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>237</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СсылкаНаОбъект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>238</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УстанавливатьУОбъектаВсеСвойстваПоиска</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>239</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СтрокаИменСвойствПоиска</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>241</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС_ПередОбработкойВыгрузки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>242</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>243</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>244</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>245</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>246</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>247</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>248</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>249</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>250</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КоллекцияОбъектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>251</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеЗамещать</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>252</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>253</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеОчищать</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>255</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС_ПередВыгрузкой</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>256</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>257</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>258</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>259</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>260</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>261</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>262</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>263</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>264</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -4562,6 +3967,618 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>ОбъектКоллекции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>265</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>266</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииОбъектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>268</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС_ПриВыгрузке</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>269</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>270</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>271</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>272</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>273</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>274</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>275</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>276</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектКоллекции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>277</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииОбъектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>278</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелОбъектаКоллекции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>279</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>280</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СтандартнаяОбработка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>282</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС_ПослеВыгрузки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>283</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>284</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>285</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>286</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>287</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>288</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>289</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>290</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>291</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектКоллекции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>292</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииОбъектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>293</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>294</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелОбъектаКоллекции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>296</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС_ПослеОбработкиВыгрузки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>297</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>298</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>299</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>300</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>301</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>302</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>303</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКГС</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4595,7 +4612,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Значение</v8:content>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4612,24 +4629,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТипПриемника</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>307</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>УзелКоллекцииОбъектов</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4642,11 +4642,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКОВидСубконто</v8:content>
+							<v8:content>ПКС_ПередВыгрузкой</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4663,7 +4663,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пусто</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4680,7 +4680,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Выражение</v8:content>
+							<v8:content>Источник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4697,7 +4697,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
+							<v8:content>Приемник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4714,7 +4714,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НеЗамещать</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>313</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4727,11 +4744,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКС_ПриВыгрузке</v8:content>
+							<v8:content>ПКС</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4748,7 +4765,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
+							<v8:content>ПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4765,7 +4782,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
+							<v8:content>ОбъектКоллекции</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4782,7 +4799,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4799,7 +4816,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
+							<v8:content>Значение</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4816,7 +4833,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
+							<v8:content>ТипПриемника</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4833,7 +4850,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКС</v8:content>
+							<v8:content>ИмяПКО</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4850,7 +4867,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКО</v8:content>
+							<v8:content>ИмяПКОВидСубконто</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4867,7 +4884,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОбъектКоллекции</v8:content>
+							<v8:content>Пусто</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4884,7 +4901,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отказ</v8:content>
+							<v8:content>Выражение</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4901,7 +4918,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Значение</v8:content>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4918,24 +4935,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>КлючИЗначение</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>326</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВидСубконто</v8:content>
+							<v8:content>НеЗамещать</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4948,11 +4948,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Субконто</v8:content>
+							<v8:content>ПКС_ПриВыгрузке</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4969,7 +4969,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пусто</v8:content>
+							<v8:content>ФайлОбмена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4986,7 +4986,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКО</v8:content>
+							<v8:content>Источник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5003,7 +5003,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПКОСвойств</v8:content>
+							<v8:content>Приемник</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5020,7 +5020,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСвойства</v8:content>
+							<v8:content>ВходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5037,7 +5037,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>УзелКоллекцииСвойств</v8:content>
+							<v8:content>ИсходящиеДанные</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5054,125 +5054,6 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКОВидСубконто</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>335</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>3</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКС_ПослеВыгрузки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>336</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ФайлОбмена</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>337</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Источник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>338</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приемник</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>339</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>340</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИсходящиеДанные</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>341</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>ПКС</v8:content>
 						</v8:item>
 					</tl>
@@ -5181,7 +5062,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>342</index>
+		<index>334</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5198,7 +5079,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>343</index>
+		<index>335</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5215,7 +5096,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>344</index>
+		<index>336</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5232,7 +5113,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>345</index>
+		<index>337</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5249,7 +5130,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>346</index>
+		<index>338</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5266,7 +5147,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>347</index>
+		<index>339</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5283,7 +5164,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>348</index>
+		<index>340</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5300,7 +5181,24 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>349</index>
+		<index>341</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пусто</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>342</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5317,24 +5215,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>350</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПКОВидСубконто</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>351</index>
+		<index>343</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5351,7 +5232,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>352</index>
+		<index>344</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5368,24 +5249,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>353</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСсылки</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>354</index>
+		<index>345</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5402,6 +5266,142 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
+		<index>346</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПКОВидСубконто</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>348</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКС_ПослеВыгрузки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>349</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлОбмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>350</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>351</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>352</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>353</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящиеДанные</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>354</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
 		<index>355</index>
 		<row>
 			<c>
@@ -5411,7 +5411,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>УзелСубконто</v8:content>
+							<v8:content>ПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>356</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбъектКоллекции</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5424,11 +5441,11 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Обработка_Конструктор</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5445,7 +5462,24 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Владелец</v8:content>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>359</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КлючИЗначение</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5454,6 +5488,193 @@
 	</rowsItem>
 	<rowsItem>
 		<index>360</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВидСубконто</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>361</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Субконто</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>362</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПКО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>363</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПКОВидСубконто</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>364</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКОСвойств</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>365</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелСвойства</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>366</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелСсылки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>367</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелКоллекцииСвойств</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>368</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УзелСубконто</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>370</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка_Конструктор</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>371</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>373</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -5471,14 +5692,14 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>5</defaultFormatIndex>
-	<height>362</height>
-	<vgRows>362</vgRows>
+	<height>375</height>
+	<vgRows>375</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Алгоритм_ПоУмолчанию</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>361</beginRow>
-			<endRow>361</endRow>
+			<beginRow>374</beginRow>
+			<endRow>374</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5488,7 +5709,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>2</beginRow>
-			<endRow>2</endRow>
+			<endRow>3</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5497,8 +5718,8 @@
 		<name>Конвертация_ПередВыгрузкойОбъекта</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>5</beginRow>
-			<endRow>11</endRow>
+			<beginRow>6</beginRow>
+			<endRow>12</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5507,8 +5728,8 @@
 		<name>Конвертация_ПередЗагрузкойДанных</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>44</beginRow>
-			<endRow>44</endRow>
+			<beginRow>45</beginRow>
+			<endRow>46</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5517,8 +5738,8 @@
 		<name>Конвертация_ПередЗагрузкойОбъекта</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>50</beginRow>
-			<endRow>61</endRow>
+			<beginRow>52</beginRow>
+			<endRow>63</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5527,8 +5748,8 @@
 		<name>Конвертация_ПередКонвертациейОбъекта</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>14</beginRow>
-			<endRow>30</endRow>
+			<beginRow>15</beginRow>
+			<endRow>31</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5537,8 +5758,8 @@
 		<name>Конвертация_ПередОтправкойИнформацииОбУдалении</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>81</beginRow>
-			<endRow>82</endRow>
+			<beginRow>84</beginRow>
+			<endRow>85</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5547,8 +5768,8 @@
 		<name>Конвертация_ПередПолучениемИзмененныхОбъектов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>89</beginRow>
-			<endRow>91</endRow>
+			<beginRow>92</beginRow>
+			<endRow>94</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5557,8 +5778,8 @@
 		<name>Конвертация_ПослеВыгрузкиДанных</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>41</beginRow>
-			<endRow>41</endRow>
+			<beginRow>42</beginRow>
+			<endRow>42</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5567,8 +5788,8 @@
 		<name>Конвертация_ПослеВыгрузкиОбъекта</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>33</beginRow>
-			<endRow>38</endRow>
+			<beginRow>34</beginRow>
+			<endRow>39</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5577,8 +5798,8 @@
 		<name>Конвертация_ПослеЗагрузкиДанных</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>47</beginRow>
-			<endRow>47</endRow>
+			<beginRow>49</beginRow>
+			<endRow>49</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5587,8 +5808,8 @@
 		<name>Конвертация_ПослеЗагрузкиОбъекта</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>64</beginRow>
-			<endRow>71</endRow>
+			<beginRow>66</beginRow>
+			<endRow>73</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5597,8 +5818,8 @@
 		<name>Конвертация_ПослеЗагрузкиПараметров</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>77</beginRow>
-			<endRow>78</endRow>
+			<beginRow>79</beginRow>
+			<endRow>81</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5607,8 +5828,8 @@
 		<name>Конвертация_ПослеЗагрузкиПравилОбмена</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>74</beginRow>
-			<endRow>74</endRow>
+			<beginRow>76</beginRow>
+			<endRow>76</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5617,8 +5838,8 @@
 		<name>Конвертация_ПослеПолученияИнформацииОбУзлахОбмена</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>94</beginRow>
-			<endRow>95</endRow>
+			<beginRow>97</beginRow>
+			<endRow>98</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5627,8 +5848,8 @@
 		<name>Конвертация_ПриПолученииИнформацииОбУдалении</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>85</beginRow>
-			<endRow>86</endRow>
+			<beginRow>88</beginRow>
+			<endRow>89</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5637,8 +5858,8 @@
 		<name>Обработка_Конструктор</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>358</beginRow>
-			<endRow>358</endRow>
+			<beginRow>371</beginRow>
+			<endRow>371</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5647,8 +5868,8 @@
 		<name>ПВД_ПередВыгрузкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>105</beginRow>
-			<endRow>111</endRow>
+			<beginRow>108</beginRow>
+			<endRow>114</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5657,8 +5878,8 @@
 		<name>ПВД_ПередОбработкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>98</beginRow>
-			<endRow>102</endRow>
+			<beginRow>101</beginRow>
+			<endRow>105</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5667,8 +5888,8 @@
 		<name>ПВД_ПослеВыгрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>114</beginRow>
-			<endRow>119</endRow>
+			<beginRow>117</beginRow>
+			<endRow>122</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5677,8 +5898,8 @@
 		<name>ПВД_ПослеОбработки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>122</beginRow>
-			<endRow>124</endRow>
+			<beginRow>125</beginRow>
+			<endRow>127</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5687,8 +5908,8 @@
 		<name>ПКГС_ПередВыгрузкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>251</beginRow>
-			<endRow>259</endRow>
+			<beginRow>256</beginRow>
+			<endRow>266</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5697,8 +5918,8 @@
 		<name>ПКГС_ПередОбработкойВыгрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>239</beginRow>
-			<endRow>248</endRow>
+			<beginRow>242</beginRow>
+			<endRow>253</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5707,8 +5928,8 @@
 		<name>ПКГС_ПослеВыгрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>274</beginRow>
-			<endRow>283</endRow>
+			<beginRow>283</beginRow>
+			<endRow>294</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5717,8 +5938,8 @@
 		<name>ПКГС_ПослеОбработкиВыгрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>286</beginRow>
-			<endRow>293</endRow>
+			<beginRow>297</beginRow>
+			<endRow>306</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5727,8 +5948,8 @@
 		<name>ПКГС_ПриВыгрузке</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>262</beginRow>
-			<endRow>271</endRow>
+			<beginRow>269</beginRow>
+			<endRow>280</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5737,8 +5958,8 @@
 		<name>ПКО_ПередВыгрузкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>143</beginRow>
-			<endRow>159</endRow>
+			<beginRow>146</beginRow>
+			<endRow>162</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5747,8 +5968,8 @@
 		<name>ПКО_ПередЗагрузкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>200</beginRow>
-			<endRow>211</endRow>
+			<beginRow>203</beginRow>
+			<endRow>214</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5757,8 +5978,8 @@
 		<name>ПКО_ПослеВыгрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>176</beginRow>
-			<endRow>186</endRow>
+			<beginRow>179</beginRow>
+			<endRow>189</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5767,8 +5988,8 @@
 		<name>ПКО_ПослеВыгрузкиВФайл</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>189</beginRow>
-			<endRow>197</endRow>
+			<beginRow>192</beginRow>
+			<endRow>200</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5777,8 +5998,8 @@
 		<name>ПКО_ПоследовательностьПолейПоиска</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>231</beginRow>
-			<endRow>236</endRow>
+			<beginRow>234</beginRow>
+			<endRow>239</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5787,8 +6008,8 @@
 		<name>ПКО_ПослеЗагрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>221</beginRow>
-			<endRow>228</endRow>
+			<beginRow>224</beginRow>
+			<endRow>231</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5797,8 +6018,8 @@
 		<name>ПКО_ПриВыгрузке</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>162</beginRow>
-			<endRow>173</endRow>
+			<beginRow>165</beginRow>
+			<endRow>176</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5807,8 +6028,8 @@
 		<name>ПКО_ПриЗагрузке</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>214</beginRow>
-			<endRow>218</endRow>
+			<beginRow>217</beginRow>
+			<endRow>221</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5817,8 +6038,8 @@
 		<name>ПКС_ПередВыгрузкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>296</beginRow>
-			<endRow>312</endRow>
+			<beginRow>309</beginRow>
+			<endRow>325</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5827,8 +6048,8 @@
 		<name>ПКС_ПослеВыгрузки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>336</beginRow>
-			<endRow>355</endRow>
+			<beginRow>349</beginRow>
+			<endRow>368</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5837,8 +6058,8 @@
 		<name>ПКС_ПриВыгрузке</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>315</beginRow>
-			<endRow>333</endRow>
+			<beginRow>328</beginRow>
+			<endRow>346</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5847,8 +6068,8 @@
 		<name>ПОД_ПередОбработкой</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>127</beginRow>
-			<endRow>130</endRow>
+			<beginRow>130</beginRow>
+			<endRow>133</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5857,8 +6078,8 @@
 		<name>ПОД_ПередУдалением</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>133</beginRow>
-			<endRow>137</endRow>
+			<beginRow>136</beginRow>
+			<endRow>140</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5867,8 +6088,8 @@
 		<name>ПОД_ПослеОбработки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>140</beginRow>
-			<endRow>140</endRow>
+			<beginRow>143</beginRow>
+			<endRow>143</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>

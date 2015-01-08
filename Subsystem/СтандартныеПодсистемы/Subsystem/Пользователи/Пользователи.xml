@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
@@ -22,7 +22,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПользователиПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПользователиВыполнитьСинхронизацию</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ПользовательВыбранный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставГруппПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммыПользователя06</xr:Item>
@@ -42,16 +41,16 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыВнешнихПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеПользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВнешнихПользователей</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВнешнийПользовательОбъектаАвторизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбновитьПредставлениеВнешнегоПользователя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеВнешнихПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеВнешнихПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИзменениеТекущегоВнешнегоПользователя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийВнешнийПользователь</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВнешниеПользователиСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПользователиСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВнешниеПользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИзменениеТекущегоПользователя</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПользователиКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьГруппыПользователей</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

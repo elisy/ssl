@@ -2,7 +2,7 @@
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>false</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
 		<right>

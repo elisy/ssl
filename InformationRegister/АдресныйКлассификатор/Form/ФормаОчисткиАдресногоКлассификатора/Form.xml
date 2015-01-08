@@ -259,7 +259,7 @@
 				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
-				<xr:Value name="Role.ДобавлениеИзменениеПользователейИГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
 				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
 				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>

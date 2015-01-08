@@ -13,14 +13,14 @@
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.ОК</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ОкExtendedTooltip" id="21"/>
+				<ExtendedTooltip name="ОкExtendedTooltip" id="19"/>
 			</Button>
 			<Button name="Отмена" id="13">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ОтменаExtendedTooltip" id="22"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="20"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -34,7 +34,7 @@
 			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ИспользоватьПроксиКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ИспользоватьПроксиExtendedTooltip" id="23"/>
+			<ExtendedTooltip name="ИспользоватьПроксиExtendedTooltip" id="21"/>
 			<Events>
 				<Event name="OnChange">ИспользоватьПроксиПриИзменении</Event>
 			</Events>
@@ -52,26 +52,26 @@
 					<v8:content>Параметры прокси</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="ПараметрыПроксиExtendedTooltip" id="24"/>
+			<ExtendedTooltip name="ПараметрыПроксиExtendedTooltip" id="22"/>
 			<ChildItems>
 				<InputField name="ПроксиСервер" id="9">
 					<DataPath>Сервер</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ПроксиСерверКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="ПроксиСерверExtendedTooltip" id="25"/>
+					<ExtendedTooltip name="ПроксиСерверExtendedTooltip" id="23"/>
 				</InputField>
 				<InputField name="Пользователь" id="5">
 					<DataPath>Пользователь</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ПользовательКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="ПользовательExtendedTooltip" id="26"/>
+					<ExtendedTooltip name="ПользовательExtendedTooltip" id="24"/>
 				</InputField>
 				<InputField name="Пароль" id="3">
 					<DataPath>Пароль</DataPath>
 					<Wrap>false</Wrap>
 					<PasswordMode>true</PasswordMode>
 					<ContextMenu name="ПарольКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="ПарольExtendedTooltip" id="27"/>
+					<ExtendedTooltip name="ПарольExtendedTooltip" id="25"/>
 				</InputField>
 				<InputField name="Порт" id="1">
 					<DataPath>Порт</DataPath>
@@ -79,28 +79,17 @@
 					<MinValue xsi:type="xs:decimal">0</MinValue>
 					<MaxValue xsi:type="xs:decimal">65535</MaxValue>
 					<ContextMenu name="ПортКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="ПортExtendedTooltip" id="28"/>
+					<ExtendedTooltip name="ПортExtendedTooltip" id="26"/>
 				</InputField>
 				<CheckBoxField name="НеИспользоватьПроксиДляЛокальныхАдресов" id="11">
 					<DataPath>НеИспользоватьПроксиДляЛокальныхАдресов</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="НеИспользоватьПроксиДляЛокальныхАдресовКонтекстноеМеню" id="12"/>
-					<ExtendedTooltip name="НеИспользоватьПроксиДляЛокальныхАдресовExtendedTooltip" id="29"/>
+					<ExtendedTooltip name="НеИспользоватьПроксиДляЛокальныхАдресовExtendedTooltip" id="27"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="ПоняснениеКнопкаОК" id="19">
-			<TextColor>style:ПоясняющийТекст</TextColor>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Нажмите ОК что бы сохранить настройки прокси-сервера</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="ПоняснениеКнопкаОККонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="ПоняснениеКнопкаОКExtendedTooltip" id="30"/>
-		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Пользователь" id="1">

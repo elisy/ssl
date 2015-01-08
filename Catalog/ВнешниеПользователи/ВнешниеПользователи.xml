@@ -231,7 +231,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление объекта информационной базы, которому соответствует внешний пользователь</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -261,7 +266,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это реквизит, который использовался в старой версии подсистемы для хранения имени пользователя для авторизации (используется для установки имен пользователям информационной базы при конвертации данных)</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -306,7 +316,7 @@
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
 			<AuxiliaryFolderChoiceForm/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<BasedOn/>
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
@@ -345,7 +355,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это реквизит, который использовался в старой версии подсистемы для хранения паролей (используется для установки паролей пользователям информационной базы при конвертации данных)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -388,7 +403,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект информационной базы, которому соответствует внешний пользователь</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -427,7 +447,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор пользователя информационной базы, через который установлена связь элемента справочника с пользователем информационной базы</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -496,6 +521,26 @@
 			</Attribute>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
+			<Command uuid="38d92d75-c8b8-42d6-9e0a-6dc0811a8652">
+				<Properties>
+					<Name>ВнешнийДоступ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внешний доступ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Внешний пользователь объекта авторизации</Comment>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

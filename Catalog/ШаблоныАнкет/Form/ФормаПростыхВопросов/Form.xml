@@ -23,7 +23,6 @@
 			<ContextMenu name="ЭлементарныйВопросКонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="ЭлементарныйВопросExtendedTooltip" id="15"/>
 			<Events>
-				<Event name="OnChange">ЭлементарныйВопросПриИзменении</Event>
 				<Event name="StartChoice">ЭлементарныйВопросНачалоВыбора</Event>
 				<Event name="ChoiceProcessing">ЭлементарныйВопросОбработкаВыбора</Event>
 			</Events>
@@ -31,6 +30,7 @@
 		<InputField name="Формулировка" id="1">
 			<DataPath>Формулировка</DataPath>
 			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ChoiceListButton>true</ChoiceListButton>
 			<ContextMenu name="ФормулировкаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ФормулировкаExtendedTooltip" id="16"/>
 		</InputField>
@@ -55,7 +55,7 @@
 			<ChildItems>
 				<CheckBoxField name="Обязательный" id="6">
 					<DataPath>Обязательный</DataPath>
-					<TitleLocation>Left</TitleLocation>
+					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ОбязательныйКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="ОбязательныйExtendedTooltip" id="18"/>

@@ -14,14 +14,14 @@
 				<DefaultItem>true</DefaultItem>
 				<CommandName>Form.Command.ОК</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ОКExtendedTooltip" id="20"/>
+				<ExtendedTooltip name="ОКExtendedTooltip" id="31"/>
 			</Button>
 			<Button name="Отмена" id="11">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ОтменаExtendedTooltip" id="21"/>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="32"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -45,97 +45,8 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПользователиExtendedTooltip" id="22"/>
+			<ExtendedTooltip name="ГруппаПользователиExtendedTooltip" id="33"/>
 			<ChildItems>
-				<Table name="ПользователиКороткогоСписка" id="13">
-					<Representation>List</Representation>
-					<TitleLocation>Top</TitleLocation>
-					<SkipOnInput>false</SkipOnInput>
-					<Header>false</Header>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>ПользователиКороткогоСписка</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Команда есть в быстром доступе у пользователей</v8:content>
-						</v8:item>
-					</Title>
-					<CommandSet>
-						<ExcludedCommand>Copy</ExcludedCommand>
-						<ExcludedCommand>SortListAsc</ExcludedCommand>
-						<ExcludedCommand>MoveUp</ExcludedCommand>
-						<ExcludedCommand>SortListDesc</ExcludedCommand>
-						<ExcludedCommand>Delete</ExcludedCommand>
-						<ExcludedCommand>EndEdit</ExcludedCommand>
-						<ExcludedCommand>Add</ExcludedCommand>
-						<ExcludedCommand>Change</ExcludedCommand>
-						<ExcludedCommand>MoveDown</ExcludedCommand>
-					</CommandSet>
-					<SearchStringLocation>None</SearchStringLocation>
-					<ViewStatusLocation>None</ViewStatusLocation>
-					<SearchControlLocation>None</SearchControlLocation>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ПользователиКороткогоСпискаКонтекстноеМеню" id="14"/>
-					<AutoCommandBar name="ПользователиКороткогоСпискаКоманднаяПанель" id="15">
-						<Autofill>false</Autofill>
-						<ChildItems>
-							<Button name="ПользователиКороткогоСпискаНайти" id="18">
-								<Type>CommandBarButton</Type>
-								<SkipOnInput>false</SkipOnInput>
-								<CommandName>Form.Item.ПользователиКороткогоСписка.StandardCommand.Find</CommandName>
-								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ПользователиКороткогоСпискаНайтиExtendedTooltip" id="23"/>
-							</Button>
-							<Button name="ПользователиКороткогоСпискаОтменитьПоиск" id="19">
-								<Type>CommandBarButton</Type>
-								<SkipOnInput>false</SkipOnInput>
-								<CommandName>Form.Item.ПользователиКороткогоСписка.StandardCommand.CancelSearch</CommandName>
-								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ПользователиКороткогоСпискаОтменитьПоискExtendedTooltip" id="24"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ПользователиКороткогоСпискаExtendedTooltip" id="25"/>
-					<SearchStringAddition name="ПользователиКороткогоСпискаSearchString" id="26">
-						<Source>
-							<lf:elementId>13</lf:elementId>
-							<lf:additionId>0</lf:additionId>
-						</Source>
-						<ContextMenu name="ПользователиКороткогоСпискаSearchStringContextMenu" id="27"/>
-						<ExtendedTooltip name="ПользователиКороткогоСпискаSearchStringExtendedTooltip" id="28"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ПользователиКороткогоСпискаViewStatus" id="29">
-						<Source>
-							<lf:elementId>13</lf:elementId>
-							<lf:additionId>1</lf:additionId>
-						</Source>
-						<ContextMenu name="ПользователиКороткогоСпискаViewStatusContextMenu" id="30"/>
-						<ExtendedTooltip name="ПользователиКороткогоСпискаViewStatusExtendedTooltip" id="31"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ПользователиКороткогоСпискаSearchControl" id="32">
-						<Source>
-							<lf:elementId>13</lf:elementId>
-							<lf:additionId>2</lf:additionId>
-						</Source>
-						<ContextMenu name="ПользователиКороткогоСпискаSearchControlContextMenu" id="33"/>
-						<ExtendedTooltip name="ПользователиКороткогоСпискаSearchControlExtendedTooltip" id="34"/>
-					</SearchControlAddition>
-					<Events>
-						<Event name="DragCheck">ПользователиКороткогоСпискаПроверкаПеретаскивания</Event>
-						<Event name="Drag">ПользователиКороткогоСпискаПеретаскивание</Event>
-					</Events>
-					<ChildItems>
-						<InputField name="ПользователиКороткогоСпискаПользователь" id="16">
-							<DataPath>ПользователиКороткогоСписка.Пользователь</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПользователиКороткогоСпискаПользовательКонтекстноеМеню" id="17"/>
-							<ExtendedTooltip name="ПользователиКороткогоСпискаПользовательExtendedTooltip" id="35"/>
-						</InputField>
-					</ChildItems>
-				</Table>
 				<Table name="ВсеПользователи" id="1">
 					<Representation>List</Representation>
 					<TitleLocation>Top</TitleLocation>
@@ -175,41 +86,41 @@
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Item.ВсеПользователи.StandardCommand.Find</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ПользователиНайтиExtendedTooltip" id="36"/>
+								<ExtendedTooltip name="ПользователиНайтиExtendedTooltip" id="34"/>
 							</Button>
 							<Button name="ПользователиОтменитьПоиск" id="9">
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Item.ВсеПользователи.StandardCommand.CancelSearch</CommandName>
 								<Parameter xsi:nil="true"/>
-								<ExtendedTooltip name="ПользователиОтменитьПоискExtendedTooltip" id="37"/>
+								<ExtendedTooltip name="ПользователиОтменитьПоискExtendedTooltip" id="35"/>
 							</Button>
 						</ChildItems>
 					</AutoCommandBar>
-					<ExtendedTooltip name="ВсеПользователиExtendedTooltip" id="38"/>
-					<SearchStringAddition name="ВсеПользователиSearchString" id="39">
+					<ExtendedTooltip name="ВсеПользователиExtendedTooltip" id="36"/>
+					<SearchStringAddition name="ВсеПользователиSearchString" id="37">
 						<Source>
 							<lf:elementId>1</lf:elementId>
 							<lf:additionId>0</lf:additionId>
 						</Source>
-						<ContextMenu name="ВсеПользователиSearchStringContextMenu" id="40"/>
-						<ExtendedTooltip name="ВсеПользователиSearchStringExtendedTooltip" id="41"/>
+						<ContextMenu name="ВсеПользователиSearchStringContextMenu" id="38"/>
+						<ExtendedTooltip name="ВсеПользователиSearchStringExtendedTooltip" id="39"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="ВсеПользователиViewStatus" id="42">
+					<ViewStatusAddition name="ВсеПользователиViewStatus" id="40">
 						<Source>
 							<lf:elementId>1</lf:elementId>
 							<lf:additionId>1</lf:additionId>
 						</Source>
-						<ContextMenu name="ВсеПользователиViewStatusContextMenu" id="43"/>
-						<ExtendedTooltip name="ВсеПользователиViewStatusExtendedTooltip" id="44"/>
+						<ContextMenu name="ВсеПользователиViewStatusContextMenu" id="41"/>
+						<ExtendedTooltip name="ВсеПользователиViewStatusExtendedTooltip" id="42"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="ВсеПользователиSearchControl" id="45">
+					<SearchControlAddition name="ВсеПользователиSearchControl" id="43">
 						<Source>
 							<lf:elementId>1</lf:elementId>
 							<lf:additionId>2</lf:additionId>
 						</Source>
-						<ContextMenu name="ВсеПользователиSearchControlContextMenu" id="46"/>
-						<ExtendedTooltip name="ВсеПользователиSearchControlExtendedTooltip" id="47"/>
+						<ContextMenu name="ВсеПользователиSearchControlContextMenu" id="44"/>
+						<ExtendedTooltip name="ВсеПользователиSearchControlExtendedTooltip" id="45"/>
 					</SearchControlAddition>
 					<Events>
 						<Event name="DragCheck">ВсеПользователиПроверкаПеретаскивания</Event>
@@ -221,7 +132,137 @@
 							<ReadOnly>true</ReadOnly>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ПользователиСсылкаКонтекстноеМеню" id="5"/>
-							<ExtendedTooltip name="ПользователиСсылкаExtendedTooltip" id="48"/>
+							<ExtendedTooltip name="ПользователиСсылкаExtendedTooltip" id="46"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="КомандыУправленияСписком" id="20">
+					<EnableContentChange>true</EnableContentChange>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды управления списком</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="КомандыУправленияСпискомExtendedTooltip" id="47"/>
+					<ChildItems>
+						<LabelDecoration name="ПустаяДекорация" id="25">
+							<ContextMenu name="ПустаяДекорацияКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПустаяДекорацияExtendedTooltip" id="48"/>
+						</LabelDecoration>
+						<Button name="УстановитьКомандуДляВыделенныхПользователей" id="28">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УстановитьКомандуДляВыделенныхПользователей</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УстановитьКомандуДляВыделенныхПользователейExtendedTooltip" id="49"/>
+						</Button>
+						<Button name="УстановитьДоступДляВсехПользователей" id="27">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УстановитьДоступДляВсехПользователей</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УстановитьДоступДляВсехПользователейExtendedTooltip" id="50"/>
+						</Button>
+						<Button name="УбратьДоступККомандеУВсехПользователей" id="29">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УбратьДоступККомандеУВсехПользователей</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УбратьДоступККомандеУВсехПользователейExtendedTooltip" id="51"/>
+						</Button>
+						<Button name="УбратьДоступККомандеУВыделенныхПользователей" id="30">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УбратьДоступККомандеУВыделенныхПользователей</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="УбратьДоступККомандеУВыделенныхПользователейExtendedTooltip" id="52"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ПользователиКороткогоСписка" id="13">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ПользователиКороткогоСписка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда есть в быстром доступе у пользователей</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПользователиКороткогоСпискаКонтекстноеМеню" id="14"/>
+					<AutoCommandBar name="ПользователиКороткогоСпискаКоманднаяПанель" id="15">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ПользователиКороткогоСпискаНайти" id="18">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.ПользователиКороткогоСписка.StandardCommand.Find</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ПользователиКороткогоСпискаНайтиExtendedTooltip" id="53"/>
+							</Button>
+							<Button name="ПользователиКороткогоСпискаОтменитьПоиск" id="19">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>Form.Item.ПользователиКороткогоСписка.StandardCommand.CancelSearch</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ПользователиКороткогоСпискаОтменитьПоискExtendedTooltip" id="54"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПользователиКороткогоСпискаExtendedTooltip" id="55"/>
+					<SearchStringAddition name="ПользователиКороткогоСпискаSearchString" id="56">
+						<Source>
+							<lf:elementId>13</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ПользователиКороткогоСпискаSearchStringContextMenu" id="57"/>
+						<ExtendedTooltip name="ПользователиКороткогоСпискаSearchStringExtendedTooltip" id="58"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПользователиКороткогоСпискаViewStatus" id="59">
+						<Source>
+							<lf:elementId>13</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ПользователиКороткогоСпискаViewStatusContextMenu" id="60"/>
+						<ExtendedTooltip name="ПользователиКороткогоСпискаViewStatusExtendedTooltip" id="61"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПользователиКороткогоСпискаSearchControl" id="62">
+						<Source>
+							<lf:elementId>13</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ПользователиКороткогоСпискаSearchControlContextMenu" id="63"/>
+						<ExtendedTooltip name="ПользователиКороткогоСпискаSearchControlExtendedTooltip" id="64"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="DragCheck">ПользователиКороткогоСпискаПроверкаПеретаскивания</Event>
+						<Event name="Drag">ПользователиКороткогоСпискаПеретаскивание</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ПользователиКороткогоСпискаПользователь" id="16">
+							<DataPath>ПользователиКороткогоСписка.Пользователь</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПользователиКороткогоСпискаПользовательКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПользователиКороткогоСпискаПользовательExtendedTooltip" id="65"/>
 						</InputField>
 					</ChildItems>
 				</Table>
@@ -293,6 +334,66 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОК</Action>
+		</Command>
+		<Command name="УстановитьДоступДляВсехПользователей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&gt; &gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить доступ для всех пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьДоступДляВсехПользователей</Action>
+		</Command>
+		<Command name="УстановитьКомандуДляВыделенныхПользователей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить команду для выделенных пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьКомандуДляВыделенныхПользователей</Action>
+		</Command>
+		<Command name="УбратьДоступККомандеУВсехПользователей" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt; &lt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать доступ к команде у всех пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьДоступККомандеУВсехПользователей</Action>
+		</Command>
+		<Command name="УбратьДоступККомандеУВыделенныхПользователей" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать доступ к команде у выделенных пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьДоступККомандеУВыделенныхПользователей</Action>
 		</Command>
 	</Commands>
 	<Parameters>

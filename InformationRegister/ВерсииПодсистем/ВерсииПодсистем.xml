@@ -172,7 +172,7 @@
 							<v8:content>Версия</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Версия конфигурации</Comment>
+					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -183,7 +183,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия этой конфигурации или родительской конфигурации на поддержке (служебный реквизит)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -214,7 +219,7 @@
 							<v8:content>Имя подсистемы</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Имя этой конфигурации или родительской конфигурации на поддержке</Comment>
+					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -225,7 +230,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя этой конфигурации или родительской конфигурации на поддержке (служебный реквизит)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

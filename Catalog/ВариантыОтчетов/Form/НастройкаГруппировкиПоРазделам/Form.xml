@@ -119,6 +119,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="DragCheck">ДеревоКомандныйИнтерфейсПроверкаПеретаскивания</Event>
+				<Event name="OnActivateRow">ДеревоПодсистемПриАктивизацииСтроки</Event>
 				<Event name="Drag">ДеревоКомандныйИнтерфейсПеретаскивание</Event>
 			</Events>
 			<ChildItems>

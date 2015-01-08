@@ -186,7 +186,7 @@
 					<xr:ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Свойство</v8:content>
+							<v8:content>Дополнительный реквизит или сведение, к которому относится данное значение</v8:content>
 						</v8:item>
 					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -218,7 +218,12 @@
 					<xr:FillFromFillingValue>true</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа, к которой относится значение свойства</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -334,7 +339,12 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение свойства объекта</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
@@ -364,7 +374,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Относительный вес значения (значимость)</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

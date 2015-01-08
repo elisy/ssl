@@ -1,8 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаОК" id="14">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаОК</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="КомандаОКExtendedTooltip" id="21"/>
+			</Button>
+			<Button name="КомандаОтмена" id="15">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаОтмена</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="22"/>
+			</Button>
+			<Button name="ФормаСправка" id="20">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -13,7 +45,7 @@
 			<TitleLocation>None</TitleLocation>
 			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 			<ContextMenu name="ПредставлениеСВидомКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ПредставлениеСВидомExtendedTooltip" id="20"/>
+			<ExtendedTooltip name="ПредставлениеСВидомExtendedTooltip" id="24"/>
 		</LabelField>
 		<InputField name="КодСтраны" id="1">
 			<DataPath>КодСтраны</DataPath>
@@ -27,7 +59,7 @@
 			<Mask>#####</Mask>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="КодСтраныКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="КодСтраныExtendedTooltip" id="21"/>
+			<ExtendedTooltip name="КодСтраныExtendedTooltip" id="25"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 			</Events>
@@ -45,7 +77,7 @@
 			<Mask>#######</Mask>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="КодГородаКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="КодГородаExtendedTooltip" id="22"/>
+			<ExtendedTooltip name="КодГородаExtendedTooltip" id="26"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 			</Events>
@@ -63,7 +95,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="НомерТелефонаExtendedTooltip" id="23"/>
+			<ExtendedTooltip name="НомерТелефонаExtendedTooltip" id="27"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 			</Events>
@@ -81,7 +113,7 @@
 			<Mask>#####</Mask>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="ДобавочныйКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ДобавочныйExtendedTooltip" id="24"/>
+			<ExtendedTooltip name="ДобавочныйExtendedTooltip" id="28"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 			</Events>
@@ -90,38 +122,11 @@
 			<DataPath>Комментарий</DataPath>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
-			<ExtendedTooltip name="КомментарийExtendedTooltip" id="25"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="29"/>
 			<Events>
 				<Event name="OnChange">ПолеПриИзменении</Event>
 			</Events>
 		</InputField>
-		<CommandBar name="Группа" id="13">
-			<HorizontalLocation>Right</HorizontalLocation>
-			<ExtendedTooltip name="ГруппаExtendedTooltip" id="26"/>
-			<ChildItems>
-				<Button name="КомандаОК" id="14">
-					<Type>CommandBarButton</Type>
-					<DefaultButton>true</DefaultButton>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.КомандаОК</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="КомандаОКExtendedTooltip" id="27"/>
-				</Button>
-				<Button name="КомандаОтмена" id="15">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.КомандаОтмена</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="28"/>
-				</Button>
-			</ChildItems>
-		</CommandBar>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="КодСтраны" id="1">

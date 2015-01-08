@@ -172,7 +172,7 @@
 							<v8:content>Номер</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Номер сканирования</Comment>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -184,7 +184,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сканирования</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -215,14 +220,19 @@
 							<v8:content>Владелец</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Владелец номера</Comment>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ПапкиФайлов</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец номера</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

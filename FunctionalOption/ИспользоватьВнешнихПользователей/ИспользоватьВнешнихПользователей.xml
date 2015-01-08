@@ -15,8 +15,6 @@
 			<Content>
 				<xr:Object>Catalog.ВнешниеПользователи</xr:Object>
 				<xr:Object>Catalog.ГруппыВнешнихПользователей</xr:Object>
-				<xr:Object>CommonCommand.ВнешнийПользовательОбъектаАвторизации</xr:Object>
-				<xr:Object>CommonCommand.ПраваВнешнегоПользователяПоЗначениямДоступа</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

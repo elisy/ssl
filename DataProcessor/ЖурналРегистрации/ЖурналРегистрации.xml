@@ -23,7 +23,7 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm>DataProcessor.ЖурналРегистрации.Form.ЖурналРегистрации</DefaultForm>
 			<AuxiliaryForm/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<ExtendedPresentation/>
 			<Explanation/>
 		</Properties>

@@ -14,7 +14,7 @@
 	<ChildItems>
 		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
 			<CommandSource>Form</CommandSource>
-			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="30"/>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="31"/>
 		</CommandBar>
 		<InputField name="Код" id="2">
 			<DataPath>Объект.Code</DataPath>
@@ -25,7 +25,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="КодКонтекстноеМеню" id="3"/>
-			<ExtendedTooltip name="КодExtendedTooltip" id="31"/>
+			<ExtendedTooltip name="КодExtendedTooltip" id="32"/>
 		</InputField>
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
@@ -33,7 +33,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="32"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="33"/>
 		</InputField>
 		<InputField name="Родитель" id="6">
 			<DataPath>Объект.Parent</DataPath>
@@ -47,7 +47,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="РодительКонтекстноеМеню" id="7"/>
-			<ExtendedTooltip name="РодительExtendedTooltip" id="33"/>
+			<ExtendedTooltip name="РодительExtendedTooltip" id="34"/>
 			<Events>
 				<Event name="OnChange">РодительПриИзменении</Event>
 			</Events>
@@ -56,14 +56,14 @@
 			<DataPath>ПолныйПуть</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<ContextMenu name="ПолныйПутьКонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="ПолныйПутьExtendedTooltip" id="34"/>
+			<ExtendedTooltip name="ПолныйПутьExtendedTooltip" id="35"/>
 		</InputField>
 		<InputField name="Описание" id="8">
 			<DataPath>Объект.Описание</DataPath>
 			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="9"/>
-			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="35"/>
+			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="36"/>
 		</InputField>
 		<InputField name="Ответственный" id="10">
 			<DataPath>Объект.Ответственный</DataPath>
@@ -71,7 +71,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="36"/>
+			<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="37"/>
 		</InputField>
 		<InputField name="ДатаСоздания" id="12">
 			<DataPath>Объект.ДатаСоздания</DataPath>
@@ -80,7 +80,7 @@
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
 			<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="13"/>
-			<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="37"/>
+			<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="38"/>
 		</InputField>
 		<InputField name="РабочийКаталог" id="26">
 			<DataPath>РабочийКаталог</DataPath>
@@ -88,12 +88,18 @@
 			<ClearButton>true</ClearButton>
 			<TextEdit>false</TextEdit>
 			<ContextMenu name="РабочийКаталогКонтекстноеМеню" id="27"/>
-			<ExtendedTooltip name="РабочийКаталогExtendedTooltip" id="38"/>
+			<ExtendedTooltip name="РабочийКаталогExtendedTooltip" id="39"/>
 			<Events>
 				<Event name="StartChoice">РабочийКаталогВладельцаНачалоВыбора</Event>
 				<Event name="Clearing">РабочийКаталогВладельцаОчистка</Event>
 			</Events>
 		</InputField>
+		<Button name="ОткрытьСписокПапокИФайлов" id="30">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьСписокПапокИФайлов</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="ОткрытьСписокПапокИФайловExtendedTooltip" id="40"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -134,6 +140,23 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОткрытьСписокПапокИФайлов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список папок и файлов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список папок и файлов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокПапокИФайлов</Action>
+		</Command>
+	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>

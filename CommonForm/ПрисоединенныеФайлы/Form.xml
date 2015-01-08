@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Присоединенные файлы</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаДобавитьФайлы" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьФайлы</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаДобавитьФайлыExtendedTooltip" id="86"/>
+			</Button>
+			<ButtonGroup name="ГруппаКомандВажное" id="16">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд важное</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд важное</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКомандВажноеExtendedTooltip" id="87"/>
+				<ChildItems>
+					<Button name="ФормаОткрытьФайлДляПросмотра" id="3">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьФайлДляПросмотра</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаОткрытьФайлДляПросмотраExtendedTooltip" id="88"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ГруппаКомандСовместныйДоступ" id="33">
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд важное</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКомандСовместныйДоступExtendedTooltip" id="89"/>
+				<ChildItems>
+					<Button name="ФормаРедактировать" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Редактировать</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаРедактироватьExtendedTooltip" id="90"/>
+					</Button>
+					<Button name="ФормаЗакончитьРедактирование" id="43">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗакончитьРедактирование</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаЗакончитьРедактированиеExtendedTooltip" id="91"/>
+					</Button>
+					<Button name="ФормаОсвободить" id="49">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.Освободить</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаОсвободитьExtendedTooltip" id="92"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Popup name="ГруппаКомандЭЦП" id="72">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЭЦП и шифрование</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд ЭЦП</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКомандЭЦПExtendedTooltip" id="93"/>
+				<ChildItems>
+					<Button name="ФормаЭЦППодписать" id="75">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЭЦППодписать</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаЭЦППодписатьExtendedTooltip" id="94"/>
+					</Button>
+					<Button name="ФормаСохранитьВместеСЭЦП" id="73">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СохранитьВместеСЭЦП</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаСохранитьВместеСЭЦПExtendedTooltip" id="95"/>
+					</Button>
+					<Button name="ФормаДобавитьЭЦПИзФайла" id="74">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьЭЦПИзФайла</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаДобавитьЭЦПИзФайлаExtendedTooltip" id="96"/>
+					</Button>
+					<ButtonGroup name="ГруппаКнопокШифрования" id="78">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кнопок шифрования</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кнопок шифрования</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаКнопокШифрованияExtendedTooltip" id="97"/>
+						<ChildItems>
+							<Button name="ФормаЗашифровать" id="76">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Зашифровать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ФормаЗашифроватьExtendedTooltip" id="98"/>
+							</Button>
+							<Button name="ФормаРасшифровать" id="77">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Расшифровать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="ФормаРасшифроватьExtendedTooltip" id="99"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<ButtonGroup name="ГруппаКомандСтандартные" id="18">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд важное</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд важное</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКомандСтандартныеExtendedTooltip" id="100"/>
+				<ChildItems>
+					<Button name="ФормаСтандартнаяКомандаСкопировать" id="19">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СтандартнаяКомандаСкопировать</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаСтандартнаяКомандаСкопироватьExtendedTooltip" id="101"/>
+					</Button>
+					<Button name="ФормаСтандартнаяКомандаПометкаУдаления" id="21">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.СтандартнаяКомандаПометкаУдаления</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаСтандартнаяКомандаПометкаУдаленияExtendedTooltip" id="102"/>
+					</Button>
+					<Button name="ФормаСохранитьКак" id="4">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СохранитьКак</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаСохранитьКакExtendedTooltip" id="103"/>
+					</Button>
+					<Button name="ФормаОбновитьИзФайлаНаДиске" id="51">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.ОбновитьИзФайлаНаДиске</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаОбновитьИзФайлаНаДискеExtendedTooltip" id="104"/>
+					</Button>
+					<Button name="ФормаСтандартаняКомандаСвойстваОбъекта" id="20">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СтандартаняКомандаСвойстваОбъекта</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаСтандартаняКомандаСвойстваОбъектаExtendedTooltip" id="105"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="ФормаОткрытьКаталогФайла" id="2">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.ОткрытьКаталогФайла</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаОткрытьКаталогФайлаExtendedTooltip" id="106"/>
+			</Button>
+			<ButtonGroup name="ГруппаКомандОтСписка" id="12">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд от списка</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа команд от списка</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКомандОтСпискаExtendedTooltip" id="107"/>
+				<ChildItems>
+					<Button name="ФормаНайти" id="10">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаНайтиExtendedTooltip" id="108"/>
+					</Button>
+					<Button name="ФормаОтменитьПоиск" id="11">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаОтменитьПоискExtendedTooltip" id="109"/>
+					</Button>
+					<Button name="ФормаНастройкаСписка" id="13">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаНастройкаСпискаExtendedTooltip" id="110"/>
+					</Button>
+					<Button name="ФормаВывестиСписок" id="14">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаВывестиСписокExtendedTooltip" id="111"/>
+					</Button>
+					<Button name="ФормаОбновить" id="15">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаОбновитьExtendedTooltip" id="112"/>
+					</Button>
+					<Button name="ФормаИзменитьФорму" id="53">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаИзменитьФормуExtendedTooltip" id="113"/>
+					</Button>
+					<Button name="ФормаСправка" id="9">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="114"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="6">
+			<CommandBarLocation>None</CommandBarLocation>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ПиктограммыФайлов</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="7">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюДобавитьФайлы" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьФайлы</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюДобавитьФайлыExtendedTooltip" id="115"/>
+					</Button>
+					<ButtonGroup name="СписокКонтекстоноеМенюГруппаКомандВажное" id="55">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд важное</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд важное</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстоноеМенюГруппаКомандВажноеExtendedTooltip" id="116"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюОткрытьФайлДляПросмотра" id="56">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьФайлДляПросмотра</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюОткрытьФайлДляПросмотраExtendedTooltip" id="117"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="СписокКонтекстоноеМенюГруппаКомандСовместныйДоступ" id="57">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд совместный доступ</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд совместный доступ</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстоноеМенюГруппаКомандСовместныйДоступExtendedTooltip" id="118"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюРедактировать" id="58">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Редактировать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюРедактироватьExtendedTooltip" id="119"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюЗакончитьРедактирование" id="59">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗакончитьРедактирование</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюЗакончитьРедактированиеExtendedTooltip" id="120"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюОсвободить" id="60">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Освободить</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюОсвободитьExtendedTooltip" id="121"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="СписокКонтекстоноеМенюГруппаКомандСтандартные" id="61">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд стандартные</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд стандартные</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстоноеМенюГруппаКомандСтандартныеExtendedTooltip" id="122"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюСтандартнаяКомандаСкопировать" id="63">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СтандартнаяКомандаСкопировать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСтандартнаяКомандаСкопироватьExtendedTooltip" id="123"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюСтандартнаяКомандаПометкаУдаления" id="64">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СтандартнаяКомандаПометкаУдаления</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСтандартнаяКомандаПометкаУдаленияExtendedTooltip" id="124"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюСохранитьКак" id="65">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СохранитьКак</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСохранитьКакExtendedTooltip" id="125"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюОбновитьИзФайлаНаДиске" id="66">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОбновитьИзФайлаНаДиске</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюОбновитьИзФайлаНаДискеExtendedTooltip" id="126"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюСтандартаняКомандаСвойстваОбъекта" id="67">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СтандартаняКомандаСвойстваОбъекта</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСтандартаняКомандаСвойстваОбъектаExtendedTooltip" id="127"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Button name="СписокКонтекстноеМенюОткрытьКаталогФайла" id="68">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьКаталогФайла</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюОткрытьКаталогФайлаExtendedTooltip" id="128"/>
+					</Button>
+					<ButtonGroup name="СписокКонтекстоноеМенюГруппаКомандОтСписка" id="69">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд от списка</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд от списка</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстоноеМенюГруппаКомандОтСпискаExtendedTooltip" id="129"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюНайти" id="70">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюНайтиExtendedTooltip" id="130"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюОтменитьПоиск" id="71">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюОтменитьПоискExtendedTooltip" id="131"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="СписокКонтекстоноеМенюГруппаКомандЭЦП" id="79">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЭЦП и шифрование</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстоное меню группа команд ЭЦП</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстоноеМенюГруппаКомандЭЦПExtendedTooltip" id="132"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюЭЦППодписать" id="80">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЭЦППодписать</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюЭЦППодписатьExtendedTooltip" id="133"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюДобавитьЭЦПИзФайла" id="81">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьЭЦПИзФайла</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюДобавитьЭЦПИзФайлаExtendedTooltip" id="134"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюСохранитьВместеСЭЦП" id="82">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СохранитьВместеСЭЦП</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСохранитьВместеСЭЦПExtendedTooltip" id="135"/>
+							</Button>
+							<ButtonGroup name="СписокКонтекстоноеМенюГруппаКомандШифрования" id="83">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстоное меню группа команд шифрования</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстоное меню группа команд шифрования</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="СписокКонтекстоноеМенюГруппаКомандШифрованияExtendedTooltip" id="136"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюЗашифровать" id="84">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Зашифровать</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокКонтекстноеМенюЗашифроватьExtendedTooltip" id="137"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюРасшифровать" id="85">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Расшифровать</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="СписокКонтекстноеМенюРасшифроватьExtendedTooltip" id="138"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="8"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="139"/>
+			<SearchStringAddition name="СписокSearchString" id="140">
+				<Source>
+					<lf:elementId>6</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="141"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="142"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="143">
+				<Source>
+					<lf:elementId>6</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="144"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="145"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="146">
+				<Source>
+					<lf:elementId>6</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="147"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="148"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+				<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
+			</Events>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВладелецФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владелец файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДоступныФункцииИзмененияФайлов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступны функции изменения файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИменаЭлементовКнопокФормы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имена элементов кнопок формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТипСправочникаСФайлами" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип справочника с файлами</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьФайлы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьФайлы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьФайлДляПросмотра" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл для просмотра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОткрыть</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьФайлДляПросмотра</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СохранитьКак" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить как...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить файл на диск или другое устройство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаСохранитьКак</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьКак</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОткрытьКаталогФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Папка</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКаталогФайла</Action>
+		</Command>
+		<Command name="ЭЦППодписать" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодписанЭЦП</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЭЦППодписать</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭЦПВПрисоединенныхФайлах</Item>
+			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СтандартнаяКомандаСкопировать" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый элемент копированием текущего</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F9</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.CloneListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтандартнаяКомандаСкопировать</Action>
+		</Command>
+		<Command name="СтандартаняКомандаСвойстваОбъекта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F2</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Properties</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтандартаняКомандаСвойстваОбъекта</Action>
+		</Command>
+		<Command name="СтандартнаяКомандаПометкаУдаления" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление / Снять пометку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить текущий элемент на удаление / Снять пометку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтандартнаяКомандаПометкаУдаления</Action>
+		</Command>
+		<Command name="Редактировать" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Занять файл и открыть для редактирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F4</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаРедактировать</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Редактировать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗакончитьРедактирование" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закончить редактирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и освободить файл в информационной базе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаЗакончитьРедактирование</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗакончитьРедактирование</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Освободить" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить занятый файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОсвободить</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Освободить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОбновитьИзФайлаНаДиске" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из файла на диске...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из файла на диске</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьИзФайлаНаДиске</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="СохранитьВместеСЭЦП" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить вместе с ЭЦП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить вместе СЭЦП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВместеСЭЦП</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭЦПВПрисоединенныхФайлах</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="ДобавитьЭЦПИзФайла" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ЭЦП из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ЭЦПИз файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЭЦПИзФайла</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭЦПВПрисоединенныхФайлах</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="Зашифровать" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зашифровать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зашифровать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Зашифрован</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Зашифровать</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭЦПВПрисоединенныхФайлах</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="Расшифровать" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расшифровать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расшифровать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Расшифровать</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭЦПВПрисоединенныхФайлах</Item>
+			</FunctionalOptions>
+		</Command>
+	</Commands>
+</Form>

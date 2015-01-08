@@ -1,37 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
-	<setForAttributesByDefault>false</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Страна</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.Attribute.Комментарий</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.ЗначенияПолей</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>Catalog.Пользователи</name>
 		<right>
@@ -62,63 +33,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.АдресЭП</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.TabularSection.Состав</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефонаБезКодов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.СоставГруппПользователей</name>
 		<right>
 			<name>Read</name>
@@ -130,28 +44,6 @@
 	</object>
 	<object>
 		<name>Catalog.ВнешниеПользователи</name>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.Attribute.ИдентификаторПользователяИБ</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Регион</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>Catalog.ГруппыПользователей</name>
@@ -168,125 +60,6 @@
 		</right>
 		<right>
 			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Вид</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Представление</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефона</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Тип</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыПользователей.TabularSection.Состав.Attribute.Пользователь</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.ДоменноеИмяСервера</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Город</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>

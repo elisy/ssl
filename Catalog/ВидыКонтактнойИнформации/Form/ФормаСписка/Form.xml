@@ -127,6 +127,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
+				<Field>Список.Ref</Field>
 				<Field>Список.РеквизитДопУпорядочивания</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
@@ -181,7 +182,7 @@
 				<xr:Ref>StdPicture.MoveUp</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ПереместитьЭлементВверхВыполнить</Action>
+			<Action>ПереместитьЭлементВверх</Action>
 		</Command>
 		<Command name="ПереместитьЭлементВниз" id="3">
 			<Title>
@@ -200,7 +201,7 @@
 				<xr:Ref>StdPicture.MoveDown</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ПереместитьЭлементВнизВыполнить</Action>
+			<Action>ПереместитьЭлементВниз</Action>
 		</Command>
 	</Commands>
 </Form>

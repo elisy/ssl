@@ -154,25 +154,26 @@
 									<Button name="ТаблицаРегламентныеЗаданияВыполнитьСейчас" id="152">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>Form.Command.ОбработатьРегламентноеЗаданиеВручную</CommandName>
+										<CommandName>Form.Command.ВыполнитьРегламентноеЗаданиеВручную</CommandName>
 										<Parameter xsi:nil="true"/>
 										<ExtendedTooltip name="ТаблицаРегламентныеЗаданияВыполнитьСейчасExtendedTooltip" id="188"/>
 									</Button>
-									<Button name="ТаблицаРегламентныеЗаданияНастройкаОбработки" id="136">
+									<Button name="ТаблицаРегламентныеЗаданияНастройкаВыполнения" id="136">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<Representation>Picture</Representation>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>Form.Command.НастройкаОбработкиРегламентныхЗаданий</CommandName>
+										<CommandName>Form.Command.НастройкаВыполненияРегламентныхЗаданий</CommandName>
 										<Parameter xsi:nil="true"/>
-										<ExtendedTooltip name="ТаблицаРегламентныеЗаданияНастройкаОбработкиExtendedTooltip" id="189"/>
+										<ExtendedTooltip name="ТаблицаРегламентныеЗаданияНастройкаВыполненияExtendedTooltip" id="189"/>
 									</Button>
-									<Button name="ТаблицаРегламентныеЗаданияОткрытьОтдельныйСеансОбработки" id="155">
+									<Button name="ТаблицаРегламентныеЗаданияОткрытьОтдельныйСеансВыполнения" id="155">
 										<Type>CommandBarButton</Type>
-										<Representation>Picture</Representation>
+										<Visible>false</Visible>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>Form.Command.ОткрытьОтдельныйСеансОбработкиРегламентныхЗаданий</CommandName>
+										<CommandName>Form.Command.ЗапуститьОтдельныйСеанс</CommandName>
 										<Parameter xsi:nil="true"/>
-										<ExtendedTooltip name="ТаблицаРегламентныеЗаданияОткрытьОтдельныйСеансОбработкиExtendedTooltip" id="190"/>
+										<ExtendedTooltip name="ТаблицаРегламентныеЗаданияОткрытьОтдельныйСеансВыполненияExtendedTooltip" id="190"/>
 									</Button>
 									<Button name="ТаблицаРегламентныеЗаданияСправка" id="153">
 										<Type>CommandBarButton</Type>
@@ -676,47 +677,39 @@
 										</Title>
 										<ExtendedTooltip name="ТаблицаФоновыеЗаданияОтменитьExtendedTooltip" id="228"/>
 									</Button>
-									<Button name="ТаблицаФоновыеЗаданияОчиститьИсторию" id="156">
-										<Type>CommandBarButton</Type>
-										<SkipOnInput>false</SkipOnInput>
-										<OnlyInAllActions>false</OnlyInAllActions>
-										<CommandName>Form.Command.ОчиститьИсториюФоновыхЗаданий</CommandName>
-										<Parameter xsi:nil="true"/>
-										<ExtendedTooltip name="ТаблицаФоновыеЗаданияОчиститьИсториюExtendedTooltip" id="229"/>
-									</Button>
 									<Button name="ТаблицаФоновыеЗаданияСправка" id="154">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
 										<CommandName>Form.StandardCommand.Help</CommandName>
 										<Parameter xsi:nil="true"/>
-										<ExtendedTooltip name="ТаблицаФоновыеЗаданияСправкаExtendedTooltip" id="230"/>
+										<ExtendedTooltip name="ТаблицаФоновыеЗаданияСправкаExtendedTooltip" id="229"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ТаблицаФоновыеЗаданияExtendedTooltip" id="231"/>
-							<SearchStringAddition name="ТаблицаФоновыеЗаданияSearchString" id="232">
+							<ExtendedTooltip name="ТаблицаФоновыеЗаданияExtendedTooltip" id="230"/>
+							<SearchStringAddition name="ТаблицаФоновыеЗаданияSearchString" id="231">
 								<Source>
 									<lf:elementId>65</lf:elementId>
 									<lf:additionId>0</lf:additionId>
 								</Source>
-								<ContextMenu name="ТаблицаФоновыеЗаданияSearchStringContextMenu" id="233"/>
-								<ExtendedTooltip name="ТаблицаФоновыеЗаданияSearchStringExtendedTooltip" id="234"/>
+								<ContextMenu name="ТаблицаФоновыеЗаданияSearchStringContextMenu" id="232"/>
+								<ExtendedTooltip name="ТаблицаФоновыеЗаданияSearchStringExtendedTooltip" id="233"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ТаблицаФоновыеЗаданияViewStatus" id="235">
+							<ViewStatusAddition name="ТаблицаФоновыеЗаданияViewStatus" id="234">
 								<Source>
 									<lf:elementId>65</lf:elementId>
 									<lf:additionId>1</lf:additionId>
 								</Source>
-								<ContextMenu name="ТаблицаФоновыеЗаданияViewStatusContextMenu" id="236"/>
-								<ExtendedTooltip name="ТаблицаФоновыеЗаданияViewStatusExtendedTooltip" id="237"/>
+								<ContextMenu name="ТаблицаФоновыеЗаданияViewStatusContextMenu" id="235"/>
+								<ExtendedTooltip name="ТаблицаФоновыеЗаданияViewStatusExtendedTooltip" id="236"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ТаблицаФоновыеЗаданияSearchControl" id="238">
+							<SearchControlAddition name="ТаблицаФоновыеЗаданияSearchControl" id="237">
 								<Source>
 									<lf:elementId>65</lf:elementId>
 									<lf:additionId>2</lf:additionId>
 								</Source>
-								<ContextMenu name="ТаблицаФоновыеЗаданияSearchControlContextMenu" id="239"/>
-								<ExtendedTooltip name="ТаблицаФоновыеЗаданияSearchControlExtendedTooltip" id="240"/>
+								<ContextMenu name="ТаблицаФоновыеЗаданияSearchControlContextMenu" id="238"/>
+								<ExtendedTooltip name="ТаблицаФоновыеЗаданияSearchControlExtendedTooltip" id="239"/>
 							</SearchControlAddition>
 							<Events>
 								<Event name="Selection">ТаблицаФоновыеЗаданияВыбор</Event>
@@ -726,19 +719,19 @@
 									<DataPath>ТаблицаФоновыеЗадания.Наименование</DataPath>
 									<Wrap>false</Wrap>
 									<ContextMenu name="НаименованиеФоновогоЗаданияКонтекстноеМеню" id="140"/>
-									<ExtendedTooltip name="НаименованиеФоновогоЗаданияExtendedTooltip" id="241"/>
+									<ExtendedTooltip name="НаименованиеФоновогоЗаданияExtendedTooltip" id="240"/>
 								</InputField>
 								<InputField name="Состояние" id="76">
 									<DataPath>ТаблицаФоновыеЗадания.Состояние</DataPath>
 									<Wrap>false</Wrap>
 									<ContextMenu name="СостояниеКонтекстноеМеню" id="77"/>
-									<ExtendedTooltip name="СостояниеExtendedTooltip" id="242"/>
+									<ExtendedTooltip name="СостояниеExtendedTooltip" id="241"/>
 								</InputField>
 								<InputField name="Начало" id="78">
 									<DataPath>ТаблицаФоновыеЗадания.Начало</DataPath>
 									<Wrap>false</Wrap>
 									<ContextMenu name="НачалоКонтекстноеМеню" id="79"/>
-									<ExtendedTooltip name="НачалоExtendedTooltip" id="243"/>
+									<ExtendedTooltip name="НачалоExtendedTooltip" id="242"/>
 								</InputField>
 								<InputField name="Конец" id="80">
 									<DataPath>ТаблицаФоновыеЗадания.Конец</DataPath>
@@ -750,7 +743,7 @@
 									</Title>
 									<Wrap>false</Wrap>
 									<ContextMenu name="КонецКонтекстноеМеню" id="81"/>
-									<ExtendedTooltip name="КонецExtendedTooltip" id="244"/>
+									<ExtendedTooltip name="КонецExtendedTooltip" id="243"/>
 								</InputField>
 								<InputField name="НаименованиеРегламентногоЗадания" id="90">
 									<DataPath>ТаблицаФоновыеЗадания.НаименованиеРегламентногоЗадания</DataPath>
@@ -762,14 +755,14 @@
 									</Title>
 									<Wrap>false</Wrap>
 									<ContextMenu name="НаименованиеРегламентногоЗаданияКонтекстноеМеню" id="91"/>
-									<ExtendedTooltip name="НаименованиеРегламентногоЗаданияExtendedTooltip" id="245"/>
+									<ExtendedTooltip name="НаименованиеРегламентногоЗаданияExtendedTooltip" id="244"/>
 								</InputField>
 							</ChildItems>
 						</Table>
 						<UsualGroup name="Количество" id="120">
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="КоличествоExtendedTooltip" id="246"/>
+							<ExtendedTooltip name="КоличествоExtendedTooltip" id="245"/>
 							<ChildItems>
 								<InputField name="КоличествоФоновыхЗаданийВТаблице" id="130">
 									<DataPath>КоличествоФоновыхЗаданийВТаблице</DataPath>
@@ -783,7 +776,7 @@
 									<TitleLocation>Top</TitleLocation>
 									<Wrap>false</Wrap>
 									<ContextMenu name="КоличествоФоновыхЗаданийВТаблицеКонтекстноеМеню" id="131"/>
-									<ExtendedTooltip name="КоличествоФоновыхЗаданийВТаблицеExtendedTooltip" id="247"/>
+									<ExtendedTooltip name="КоличествоФоновыхЗаданийВТаблицеExtendedTooltip" id="246"/>
 								</InputField>
 								<InputField name="КоличествоФоновыхЗаданийВсего" id="132">
 									<DataPath>КоличествоФоновыхЗаданийВсего</DataPath>
@@ -797,7 +790,7 @@
 									<TitleLocation>Top</TitleLocation>
 									<Wrap>false</Wrap>
 									<ContextMenu name="КоличествоФоновыхЗаданийВсегоКонтекстноеМеню" id="133"/>
-									<ExtendedTooltip name="КоличествоФоновыхЗаданийВсегоExtendedTooltip" id="248"/>
+									<ExtendedTooltip name="КоличествоФоновыхЗаданийВсегоExtendedTooltip" id="247"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -1103,11 +1096,10 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 				</Column>
 				<Column name="Расположение" id="8">
@@ -1125,11 +1117,11 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="ИнформацияОбОшибке" id="9">
+				<Column name="СообщенияПользователюИОписаниеИнформацииОбОшибке" id="9">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Информация об ошибке</v8:content>
+							<v8:content>Сообщения пользователю и описание информации об ошибке</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1350,17 +1342,6 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ИдентификаторыЗаданийПриРучнойОбработке" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Идентификаторы заданий при ручной обработке</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-		</Attribute>
 		<Attribute name="ТекстНеопределено" id="20">
 			<Title>
 				<v8:item>
@@ -1424,6 +1405,49 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ИнформационнаяБазаФайловая" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная база файловая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторыФоновыхЗаданийПриРучномВыполнении" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификаторы фоновых заданий при ручном выполнении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Конец</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаФоновыеЗадания.Конец</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;&gt;</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ИзменитьРегламентноеЗадание" id="2">
@@ -1520,43 +1544,49 @@
 			</Picture>
 			<Action>ОткрытьРасписаниеРегламентногоЗаданияВыполнить</Action>
 		</Command>
-		<Command name="НастройкаОбработкиРегламентныхЗаданий" id="14">
+		<Command name="НастройкаВыполненияРегламентныхЗаданий" id="14">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка обработки регламентных заданий</v8:content>
-				</v8:item>
-			</Title>
-			<Picture>
-				<xr:Ref>CommonPicture.НастройкаОбработкиРегламентныхЗаданий</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-				<xr:TransparentPixel x="2" y="14"/>
-			</Picture>
-			<Action>НастройкаОбработкиРегламентныхЗаданийВыполнить</Action>
-			<Representation>TextPicture</Representation>
-		</Command>
-		<Command name="ОткрытьОтдельныйСеансОбработкиРегламентныхЗаданий" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть отдельный сеанс обработки регламентных заданий</v8:content>
+					<v8:content>Настройка выполнения регламентных заданий</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть отдельный сеанс обработки регламентных заданий</v8:content>
+					<v8:content>Настройка выполнения регламентных заданий</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.ОтдельныйСеансОбработкиРегламентныхЗаданий</xr:Ref>
+				<xr:Ref>CommonPicture.НастройкаВыполненияРегламентныхЗаданий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="2" y="14"/>
+			</Picture>
+			<Action>НастройкаВыполненияРегламентныхЗаданий</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗапуститьОтдельныйСеанс" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить отдельный сеанс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить отдельный клиентский сеанс для выполнения регламентных заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗапуститьОтдельныйСеансДляВыполненияРегламентныхЗаданий</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="14" y="5"/>
 			</Picture>
-			<Action>ОткрытьОтдельныйСеансОбработкиРегламентныхЗаданийВыполнить</Action>
+			<Action>ЗапуститьОтдельныйСеанс</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
-		<Command name="ОбработатьРегламентноеЗаданиеВручную" id="10">
+		<Command name="ВыполнитьРегламентноеЗаданиеВручную" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1570,27 +1600,12 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.ОбработатьРегламентноеЗаданиеВручную</xr:Ref>
+				<xr:Ref>CommonPicture.ВыполнитьРегламентноеЗаданиеВручную</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="14" y="2"/>
 			</Picture>
-			<Action>ОбработатьРегламентноеЗаданиеВручнуюВыполнить</Action>
+			<Action>ВыполнитьРегламентноеЗаданиеВручную</Action>
 			<Representation>TextPicture</Representation>
-		</Command>
-		<Command name="ОчиститьИсториюФоновыхЗаданий" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Очистить историю фоновых заданий</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Очистить историю фоновых заданий</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОчиститьИсториюФоновыхЗаданий</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

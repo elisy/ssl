@@ -543,6 +543,7 @@ function disconnectAndBlockUsersHTA()
 	    {
 	        if (result != -1)
 	        {
+	            ComConnection = null;
 	            connection = null;
 	            CollectGarbage();   // освобождает соединения с COM-объектом
 	        }

@@ -40,7 +40,7 @@
 			<UseStandardCommands>false</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>9</CodeLength>
+			<CodeLength>11</CodeLength>
 			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
@@ -236,7 +236,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -261,7 +266,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -340,7 +350,7 @@
 							<v8:content>Описание</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Описание папки</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -351,7 +361,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание папки</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>true</MultiLine>
@@ -383,14 +398,19 @@
 							<v8:content>Ответственный</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Ответственный за папку</Comment>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный за папку</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -422,7 +442,7 @@
 							<v8:content>Дата создания</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Дата создания папки</Comment>
 					<Type>
 						<v8:Type>xs:dateTime</v8:Type>
 						<v8:DateQualifiers>
@@ -432,7 +452,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания папки</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -475,7 +500,12 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные реквизиты объекта</v8:content>
+						</v8:item>
+					</ToolTip>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
 						<xr:StandardAttribute name="LineNumber">
@@ -567,7 +597,7 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Значение доп. реквизита</v8:content>
+									<v8:content>Значение дополнительного реквизита</v8:content>
 								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
@@ -582,6 +612,51 @@
 							<ChoiceParameters/>
 							<QuickChoice>DontUse</QuickChoice>
 							<CreateOnInput>Use</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c349968a-3f87-425b-8efb-d847934dee4b">
+						<Properties>
+							<Name>ТекстоваяСтрока</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текстовая строка</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Полный текст строкового дополнительного реквизита</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
 							<ChoiceForm/>
 							<LinkByType/>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>

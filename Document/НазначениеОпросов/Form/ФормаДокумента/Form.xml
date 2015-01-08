@@ -132,22 +132,22 @@
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ГруппаПраваяКолонкаРеквзитыШапки" id="32">
+				<UsualGroup name="ГруппаПраваяКолонкаРеквизитыШапки" id="32">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа правая колонка реквзиты шапки</v8:content>
+							<v8:content>Группа правая колонка реквизиты шапки</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа правая колонка реквзиты шапки</v8:content>
+							<v8:content>Группа правая колонка реквизиты шапки</v8:content>
 						</v8:item>
 					</ToolTip>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПраваяКолонкаРеквзитыШапкиExtendedTooltip" id="56"/>
+					<ExtendedTooltip name="ГруппаПраваяКолонкаРеквизитыШапкиExtendedTooltip" id="56"/>
 					<ChildItems>
 						<CheckBoxField name="НеПоказыватьВАрхивеАнкет" id="38">
 							<DataPath>Объект.НеПоказыватьВАрхивеАнкет</DataPath>

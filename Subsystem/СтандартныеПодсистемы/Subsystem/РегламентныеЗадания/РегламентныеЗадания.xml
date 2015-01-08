@@ -10,19 +10,18 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкаОбработкиРегламентныхЗаданий</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбработатьРегламентноеЗаданиеВручную</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтдельныйСеансОбработкиРегламентныхЗаданий</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОшибкаОбработкиРегламентныхЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкаВыполненияРегламентныхЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыполнитьРегламентноеЗаданиеВручную</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗапуститьОтдельныйСеансДляВыполненияРегламентныхЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОшибкаВыполненияРегламентныхЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентныеЗаданияГлобальный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентныеЗаданияКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентныеЗаданияСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.СостояниеОбработкиРегламентныхЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегламентныеИФоновыеЗадания</xr:Item>
 			</Content>
 		</Properties>

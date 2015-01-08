@@ -30,12 +30,12 @@
 					<BorderColor>style:BorderColor</BorderColor>
 					<ExtendedTooltip name="УдалитьИзЛокальногоКэшаФайловExtendedTooltip" id="27"/>
 				</Button>
-				<Button name="ЗакончитьРедактирвоание" id="25">
+				<Button name="ЗакончитьРедактирование" id="25">
 					<Type>CommandBarButton</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.Command.ЗакончитьРедактирование</CommandName>
 					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ЗакончитьРедактирвоаниеExtendedTooltip" id="28"/>
+					<ExtendedTooltip name="ЗакончитьРедактированиеExtendedTooltip" id="28"/>
 				</Button>
 				<Button name="Освободить" id="13">
 					<Type>CommandBarButton</Type>
@@ -78,12 +78,12 @@
 						<Parameter xsi:nil="true"/>
 						<ExtendedTooltip name="КонтекстноеМенюСписокФайловУдалитьИзЛокальногоКэшаФайловExtendedTooltip" id="31"/>
 					</Button>
-					<Button name="КонтекстноеМенюСписокФайловЗакончитьРедактирвоание" id="24">
+					<Button name="КонтекстноеМенюСписокФайловЗакончитьРедактирование" id="24">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Form.Command.ЗакончитьРедактирование</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="КонтекстноеМенюСписокФайловЗакончитьРедактирвоаниеExtendedTooltip" id="32"/>
+						<ExtendedTooltip name="КонтекстноеМенюСписокФайловЗакончитьРедактированиеExtendedTooltip" id="32"/>
 					</Button>
 					<Button name="КонтекстноеМенюСписокФайловОсвободить" id="22">
 						<Type>CommandBarButton</Type>

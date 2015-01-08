@@ -25,28 +25,28 @@
 						<v8:content>Выбрать группу</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ВыбратьГруппуВнешнихПользователейExtendedTooltip" id="73"/>
+				<ExtendedTooltip name="ВыбратьГруппуВнешнихПользователейExtendedTooltip" id="74"/>
 			</Button>
 			<Button name="ВыбратьВнешнегоПользователя" id="68">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Item.ВнешниеПользователиСписок.StandardCommand.Choose</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ВыбратьВнешнегоПользователяExtendedTooltip" id="74"/>
+				<ExtendedTooltip name="ВыбратьВнешнегоПользователяExtendedTooltip" id="75"/>
 			</Button>
 			<Button name="СоздатьВнешнегоПользователя" id="54">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Item.ВнешниеПользователиСписок.StandardCommand.Create</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="СоздатьВнешнегоПользователяExtendedTooltip" id="75"/>
+				<ExtendedTooltip name="СоздатьВнешнегоПользователяExtendedTooltip" id="76"/>
 			</Button>
 			<Button name="СоздатьГруппуВнешнихПользователей" id="55">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.СоздатьГруппуВнешнихПользователей</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="СоздатьГруппуВнешнихПользователейExtendedTooltip" id="76"/>
+				<ExtendedTooltip name="СоздатьГруппуВнешнихПользователейExtendedTooltip" id="77"/>
 			</Button>
 			<ButtonGroup name="КоманднаяПанельВнешниеПользователи" id="53">
 				<Title>
@@ -62,17 +62,23 @@
 					</v8:item>
 				</ToolTip>
 				<CommandSource>Form</CommandSource>
-				<ExtendedTooltip name="КоманднаяПанельВнешниеПользователиExtendedTooltip" id="77"/>
+				<ExtendedTooltip name="КоманднаяПанельВнешниеПользователиExtendedTooltip" id="78"/>
 				<ChildItems>
 					<Button name="ПользователиИБ" id="6">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Catalog.Пользователи.Command.ПользователиИБ</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="ПользователиИБExtendedTooltip" id="78"/>
+						<ExtendedTooltip name="ПользователиИБExtendedTooltip" id="79"/>
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
+			<Button name="ФормаСправка" id="73">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="80"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -99,7 +105,7 @@
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаExtendedTooltip" id="79"/>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="81"/>
 			<ChildItems>
 				<Table name="ГруппыВнешнихПользователей" id="25">
 					<Representation>Tree</Representation>
@@ -141,30 +147,30 @@
 					<UpdateOnDataChange>Auto</UpdateOnDataChange>
 					<ContextMenu name="ГруппыВнешнихПользователейКонтекстноеМеню" id="26"/>
 					<AutoCommandBar name="ГруппыВнешнихПользователейКоманднаяПанель" id="27"/>
-					<ExtendedTooltip name="ГруппыВнешнихПользователейExtendedTooltip" id="80"/>
-					<SearchStringAddition name="ГруппыВнешнихПользователейSearchString" id="81">
+					<ExtendedTooltip name="ГруппыВнешнихПользователейExtendedTooltip" id="82"/>
+					<SearchStringAddition name="ГруппыВнешнихПользователейSearchString" id="83">
 						<Source>
 							<lf:elementId>25</lf:elementId>
 							<lf:additionId>0</lf:additionId>
 						</Source>
-						<ContextMenu name="ГруппыВнешнихПользователейSearchStringContextMenu" id="82"/>
-						<ExtendedTooltip name="ГруппыВнешнихПользователейSearchStringExtendedTooltip" id="83"/>
+						<ContextMenu name="ГруппыВнешнихПользователейSearchStringContextMenu" id="84"/>
+						<ExtendedTooltip name="ГруппыВнешнихПользователейSearchStringExtendedTooltip" id="85"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="ГруппыВнешнихПользователейViewStatus" id="84">
+					<ViewStatusAddition name="ГруппыВнешнихПользователейViewStatus" id="86">
 						<Source>
 							<lf:elementId>25</lf:elementId>
 							<lf:additionId>1</lf:additionId>
 						</Source>
-						<ContextMenu name="ГруппыВнешнихПользователейViewStatusContextMenu" id="85"/>
-						<ExtendedTooltip name="ГруппыВнешнихПользователейViewStatusExtendedTooltip" id="86"/>
+						<ContextMenu name="ГруппыВнешнихПользователейViewStatusContextMenu" id="87"/>
+						<ExtendedTooltip name="ГруппыВнешнихПользователейViewStatusExtendedTooltip" id="88"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="ГруппыВнешнихПользователейSearchControl" id="87">
+					<SearchControlAddition name="ГруппыВнешнихПользователейSearchControl" id="89">
 						<Source>
 							<lf:elementId>25</lf:elementId>
 							<lf:additionId>2</lf:additionId>
 						</Source>
-						<ContextMenu name="ГруппыВнешнихПользователейSearchControlContextMenu" id="88"/>
-						<ExtendedTooltip name="ГруппыВнешнихПользователейSearchControlExtendedTooltip" id="89"/>
+						<ContextMenu name="ГруппыВнешнихПользователейSearchControlContextMenu" id="90"/>
+						<ExtendedTooltip name="ГруппыВнешнихПользователейSearchControlExtendedTooltip" id="91"/>
 					</SearchControlAddition>
 					<Events>
 						<Event name="ValueChoice">ГруппыВнешнихПользователейВыборЗначения</Event>
@@ -175,7 +181,7 @@
 						<LabelField name="НаименованиеГруппы" id="30">
 							<DataPath>ГруппыВнешнихПользователей.Description</DataPath>
 							<ContextMenu name="НаименованиеГруппыКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="НаименованиеГруппыExtendedTooltip" id="90"/>
+							<ExtendedTooltip name="НаименованиеГруппыExtendedTooltip" id="92"/>
 						</LabelField>
 					</ChildItems>
 				</Table>
@@ -183,6 +189,7 @@
 					<Representation>List</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
 					<SkipOnInput>false</SkipOnInput>
+					<SelectionMode>SingleRow</SelectionMode>
 					<Header>false</Header>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<DataPath>ВнешниеПользователиСписок</DataPath>
@@ -214,30 +221,30 @@
 					<UpdateOnDataChange>Auto</UpdateOnDataChange>
 					<ContextMenu name="ВнешниеПользователиСписокКонтекстноеМеню" id="49"/>
 					<AutoCommandBar name="ВнешниеПользователиСписокКоманднаяПанель" id="50"/>
-					<ExtendedTooltip name="ВнешниеПользователиСписокExtendedTooltip" id="91"/>
-					<SearchStringAddition name="ВнешниеПользователиСписокSearchString" id="92">
+					<ExtendedTooltip name="ВнешниеПользователиСписокExtendedTooltip" id="93"/>
+					<SearchStringAddition name="ВнешниеПользователиСписокSearchString" id="94">
 						<Source>
 							<lf:elementId>48</lf:elementId>
 							<lf:additionId>0</lf:additionId>
 						</Source>
-						<ContextMenu name="ВнешниеПользователиСписокSearchStringContextMenu" id="93"/>
-						<ExtendedTooltip name="ВнешниеПользователиСписокSearchStringExtendedTooltip" id="94"/>
+						<ContextMenu name="ВнешниеПользователиСписокSearchStringContextMenu" id="95"/>
+						<ExtendedTooltip name="ВнешниеПользователиСписокSearchStringExtendedTooltip" id="96"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="ВнешниеПользователиСписокViewStatus" id="95">
+					<ViewStatusAddition name="ВнешниеПользователиСписокViewStatus" id="97">
 						<Source>
 							<lf:elementId>48</lf:elementId>
 							<lf:additionId>1</lf:additionId>
 						</Source>
-						<ContextMenu name="ВнешниеПользователиСписокViewStatusContextMenu" id="96"/>
-						<ExtendedTooltip name="ВнешниеПользователиСписокViewStatusExtendedTooltip" id="97"/>
+						<ContextMenu name="ВнешниеПользователиСписокViewStatusContextMenu" id="98"/>
+						<ExtendedTooltip name="ВнешниеПользователиСписокViewStatusExtendedTooltip" id="99"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="ВнешниеПользователиСписокSearchControl" id="98">
+					<SearchControlAddition name="ВнешниеПользователиСписокSearchControl" id="100">
 						<Source>
 							<lf:elementId>48</lf:elementId>
 							<lf:additionId>2</lf:additionId>
 						</Source>
-						<ContextMenu name="ВнешниеПользователиСписокSearchControlContextMenu" id="99"/>
-						<ExtendedTooltip name="ВнешниеПользователиСписокSearchControlExtendedTooltip" id="100"/>
+						<ContextMenu name="ВнешниеПользователиСписокSearchControlContextMenu" id="101"/>
+						<ExtendedTooltip name="ВнешниеПользователиСписокSearchControlExtendedTooltip" id="102"/>
 					</SearchControlAddition>
 					<Events>
 						<Event name="ValueChoice">ВнешниеПользователиСписокВыборЗначения</Event>
@@ -253,7 +260,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="52"/>
-							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="101"/>
+							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="103"/>
 						</LabelField>
 					</ChildItems>
 				</Table>
@@ -273,7 +280,7 @@
 				</v8:item>
 			</ToolTip>
 			<PagesRepresentation>None</PagesRepresentation>
-			<ExtendedTooltip name="ГруппаПоказыватьВнешнихПользователейДочернихГруппExtendedTooltip" id="102"/>
+			<ExtendedTooltip name="ГруппаПоказыватьВнешнихПользователейДочернихГруппExtendedTooltip" id="104"/>
 			<ChildItems>
 				<Page name="ГруппаНельзяУстановитьСвойство" id="60">
 					<Title>
@@ -282,13 +289,13 @@
 							<v8:content>Группа нельзя установить свойство</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ГруппаНельзяУстановитьСвойствоExtendedTooltip" id="103"/>
+					<ExtendedTooltip name="ГруппаНельзяУстановитьСвойствоExtendedTooltip" id="105"/>
 					<ChildItems>
 						<LabelField name="ОписаниеОтображаемыхВнешнихПользователей" id="71">
 							<DataPath>ОписаниеОтображаемыхВнешнихПользователей</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="ОписаниеОтображаемыхВнешнихПользователейКонтекстноеМеню" id="72"/>
-							<ExtendedTooltip name="ОписаниеОтображаемыхВнешнихПользователейExtendedTooltip" id="104"/>
+							<ExtendedTooltip name="ОписаниеОтображаемыхВнешнихПользователейExtendedTooltip" id="106"/>
 						</LabelField>
 					</ChildItems>
 				</Page>
@@ -299,14 +306,14 @@
 							<v8:content>Группа установить свойство</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ГруппаУстановитьСвойствоExtendedTooltip" id="105"/>
+					<ExtendedTooltip name="ГруппаУстановитьСвойствоExtendedTooltip" id="107"/>
 					<ChildItems>
 						<CheckBoxField name="ВыбиратьИерархически" id="56">
 							<DataPath>ВыбиратьИерархически</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВыбиратьИерархическиКонтекстноеМеню" id="57"/>
-							<ExtendedTooltip name="ВыбиратьИерархическиExtendedTooltip" id="106"/>
+							<ExtendedTooltip name="ВыбиратьИерархическиExtendedTooltip" id="108"/>
 							<Events>
 								<Event name="OnChange">ВыбиратьИерархическиПриИзменении</Event>
 							</Events>
@@ -400,6 +407,9 @@
 				<Field>ГруппыВнешнихПользователей.ТипОбъектовАвторизации</Field>
 				<Field>ГруппыВнешнихПользователей.ВсеОбъектыАвторизации</Field>
 			</UseAlways>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьГруппыПользователей</Item>
+			</FunctionalOptions>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
@@ -504,6 +514,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьГруппы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать группы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

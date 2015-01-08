@@ -7,9 +7,41 @@
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаВыбрать" id="15">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаВыбрать</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="КомандаВыбратьExtendedTooltip" id="18"/>
+			</Button>
+			<Button name="КомандаЗакрыть" id="16">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.КомандаЗакрыть</CommandName>
+				<Parameter xsi:nil="true"/>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="КомандаЗакрытьExtendedTooltip" id="19"/>
+			</Button>
+			<Button name="Справка" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -21,7 +53,7 @@
 			<TextColor>style:FieldSelectionBackColor</TextColor>
 			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 			<ContextMenu name="НадписьОРегионеИРайонеКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="НадписьОРегионеИРайонеExtendedTooltip" id="15"/>
+			<ExtendedTooltip name="НадписьОРегионеИРайонеExtendedTooltip" id="21"/>
 		</LabelField>
 		<Table name="НайденныеЗаписиПоИндексу" id="1">
 			<Representation>List</Representation>
@@ -40,30 +72,30 @@
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="НайденныеЗаписиПоИндексуКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="НайденныеЗаписиПоИндексуКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="НайденныеЗаписиПоИндексуExtendedTooltip" id="16"/>
-			<SearchStringAddition name="НайденныеЗаписиПоИндексуSearchString" id="17">
+			<ExtendedTooltip name="НайденныеЗаписиПоИндексуExtendedTooltip" id="22"/>
+			<SearchStringAddition name="НайденныеЗаписиПоИндексуSearchString" id="23">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="НайденныеЗаписиПоИндексуSearchStringContextMenu" id="18"/>
-				<ExtendedTooltip name="НайденныеЗаписиПоИндексуSearchStringExtendedTooltip" id="19"/>
+				<ContextMenu name="НайденныеЗаписиПоИндексуSearchStringContextMenu" id="24"/>
+				<ExtendedTooltip name="НайденныеЗаписиПоИндексуSearchStringExtendedTooltip" id="25"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="НайденныеЗаписиПоИндексуViewStatus" id="20">
+			<ViewStatusAddition name="НайденныеЗаписиПоИндексуViewStatus" id="26">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="НайденныеЗаписиПоИндексуViewStatusContextMenu" id="21"/>
-				<ExtendedTooltip name="НайденныеЗаписиПоИндексуViewStatusExtendedTooltip" id="22"/>
+				<ContextMenu name="НайденныеЗаписиПоИндексуViewStatusContextMenu" id="27"/>
+				<ExtendedTooltip name="НайденныеЗаписиПоИндексуViewStatusExtendedTooltip" id="28"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="НайденныеЗаписиПоИндексуSearchControl" id="23">
+			<SearchControlAddition name="НайденныеЗаписиПоИндексуSearchControl" id="29">
 				<Source>
 					<lf:elementId>1</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="НайденныеЗаписиПоИндексуSearchControlContextMenu" id="24"/>
-				<ExtendedTooltip name="НайденныеЗаписиПоИндексуSearchControlExtendedTooltip" id="25"/>
+				<ContextMenu name="НайденныеЗаписиПоИндексуSearchControlContextMenu" id="30"/>
+				<ExtendedTooltip name="НайденныеЗаписиПоИндексуSearchControlExtendedTooltip" id="31"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">НайденныеЗаписиПоИндексуВыбор</Event>
@@ -74,7 +106,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="УлицаКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="УлицаExtendedTooltip" id="26"/>
+					<ExtendedTooltip name="УлицаExtendedTooltip" id="32"/>
 				</InputField>
 				<InputField name="Описание" id="6">
 					<DataPath>НайденныеЗаписиПоИндексу.Описание</DataPath>
@@ -87,37 +119,10 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="ОписаниеКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="27"/>
+					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="33"/>
 				</InputField>
 			</ChildItems>
 		</Table>
-		<CommandBar name="Группа" id="8">
-			<HorizontalLocation>Right</HorizontalLocation>
-			<ExtendedTooltip name="ГруппаExtendedTooltip" id="28"/>
-			<ChildItems>
-				<Button name="КомандаВыбрать" id="9">
-					<Type>CommandBarButton</Type>
-					<DefaultButton>true</DefaultButton>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.КомандаВыбрать</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="КомандаВыбратьExtendedTooltip" id="29"/>
-				</Button>
-				<Button name="КомандаЗакрыть" id="10">
-					<Type>CommandBarButton</Type>
-					<SkipOnInput>false</SkipOnInput>
-					<CommandName>Form.Command.КомандаЗакрыть</CommandName>
-					<Parameter xsi:nil="true"/>
-					<TextColor>style:ButtonTextColor</TextColor>
-					<BackColor>style:ButtonBackColor</BackColor>
-					<BorderColor>style:BorderColor</BorderColor>
-					<ExtendedTooltip name="КомандаЗакрытьExtendedTooltip" id="30"/>
-				</Button>
-			</ChildItems>
-		</CommandBar>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НайденныеЗаписиПоИндексу" id="1">

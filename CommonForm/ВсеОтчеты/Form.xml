@@ -24,14 +24,14 @@
 			<Button name="ФормаНайти" id="55">
 				<Type>CommandBarButton</Type>
 				<Enabled>false</Enabled>
-				<CommandName>Form.Item.ОтображениеВаринтовСписок.StandardCommand.Find</CommandName>
+				<CommandName>Form.Item.ОтображениеВариантовСписок.StandardCommand.Find</CommandName>
 				<Parameter xsi:nil="true"/>
 				<ExtendedTooltip name="ФормаНайтиExtendedTooltip" id="65"/>
 			</Button>
 			<Button name="ФормаОтменитьПоиск" id="56">
 				<Type>CommandBarButton</Type>
 				<Enabled>false</Enabled>
-				<CommandName>Form.Item.ОтображениеВаринтовСписок.StandardCommand.CancelSearch</CommandName>
+				<CommandName>Form.Item.ОтображениеВариантовСписок.StandardCommand.CancelSearch</CommandName>
 				<Parameter xsi:nil="true"/>
 				<ExtendedTooltip name="ФормаОтменитьПоискExtendedTooltip" id="66"/>
 			</Button>
@@ -74,21 +74,21 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<Pages name="ГруппаСтранициПредставаления" id="27">
+		<Pages name="ГруппаСтраницыПредставления" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страници представаления</v8:content>
+					<v8:content>Группа страницы представления</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страници представаления</v8:content>
+					<v8:content>Группа страницы представления</v8:content>
 				</v8:item>
 			</ToolTip>
 			<PagesRepresentation>None</PagesRepresentation>
-			<ExtendedTooltip name="ГруппаСтранициПредставаленияExtendedTooltip" id="71"/>
+			<ExtendedTooltip name="ГруппаСтраницыПредставленияExtendedTooltip" id="71"/>
 			<ChildItems>
 				<Page name="ГруппаДерево" id="28">
 					<Title>
@@ -105,7 +105,7 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаДеревоExtendedTooltip" id="72"/>
 					<ChildItems>
-						<Table name="ОтображениеВаринтов" id="3">
+						<Table name="ОтображениеВариантов" id="3">
 							<Representation>Tree</Representation>
 							<CommandBarLocation>Top</CommandBarLocation>
 							<Height>20</Height>
@@ -115,7 +115,7 @@
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
-							<ContextMenu name="ОтображениеВаринтовКонтекстноеМеню" id="4">
+							<ContextMenu name="ОтображениеВариантовКонтекстноеМеню" id="4">
 								<Autofill>false</Autofill>
 								<ChildItems>
 									<Button name="ФормаОткрыть" id="15">
@@ -132,40 +132,40 @@
 									</Button>
 								</ChildItems>
 							</ContextMenu>
-							<AutoCommandBar name="ОтображениеВаринтовКоманднаяПанель" id="5">
+							<AutoCommandBar name="ОтображениеВариантовКоманднаяПанель" id="5">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ОтображениеВаринтовExtendedTooltip" id="75"/>
-							<SearchStringAddition name="ОтображениеВаринтовSearchString" id="76">
+							<ExtendedTooltip name="ОтображениеВариантовExtendedTooltip" id="75"/>
+							<SearchStringAddition name="ОтображениеВариантовSearchString" id="76">
 								<Source>
 									<lf:elementId>3</lf:elementId>
 									<lf:additionId>0</lf:additionId>
 								</Source>
-								<ContextMenu name="ОтображениеВаринтовSearchStringContextMenu" id="77"/>
-								<ExtendedTooltip name="ОтображениеВаринтовSearchStringExtendedTooltip" id="78"/>
+								<ContextMenu name="ОтображениеВариантовSearchStringContextMenu" id="77"/>
+								<ExtendedTooltip name="ОтображениеВариантовSearchStringExtendedTooltip" id="78"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ОтображениеВаринтовViewStatus" id="79">
+							<ViewStatusAddition name="ОтображениеВариантовViewStatus" id="79">
 								<Source>
 									<lf:elementId>3</lf:elementId>
 									<lf:additionId>1</lf:additionId>
 								</Source>
-								<ContextMenu name="ОтображениеВаринтовViewStatusContextMenu" id="80"/>
-								<ExtendedTooltip name="ОтображениеВаринтовViewStatusExtendedTooltip" id="81"/>
+								<ContextMenu name="ОтображениеВариантовViewStatusContextMenu" id="80"/>
+								<ExtendedTooltip name="ОтображениеВариантовViewStatusExtendedTooltip" id="81"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ОтображениеВаринтовSearchControl" id="82">
+							<SearchControlAddition name="ОтображениеВариантовSearchControl" id="82">
 								<Source>
 									<lf:elementId>3</lf:elementId>
 									<lf:additionId>2</lf:additionId>
 								</Source>
-								<ContextMenu name="ОтображениеВаринтовSearchControlContextMenu" id="83"/>
-								<ExtendedTooltip name="ОтображениеВаринтовSearchControlExtendedTooltip" id="84"/>
+								<ContextMenu name="ОтображениеВариантовSearchControlContextMenu" id="83"/>
+								<ExtendedTooltip name="ОтображениеВариантовSearchControlExtendedTooltip" id="84"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="Selection">ОтображениеВаринтовВыбор</Event>
-								<Event name="OnActivateRow">ОтображениеВаринтовПриАктивизацииСтроки</Event>
+								<Event name="Selection">ОтображениеВариантовВыбор</Event>
+								<Event name="OnActivateRow">ОтображениеВариантовПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
-								<ColumnGroup name="ОтображениеВаринтовГруппаОтчет" id="59">
+								<ColumnGroup name="ОтображениеВариантовГруппаОтчет" id="59">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -175,21 +175,21 @@
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Отображение варинтов группа отчет</v8:content>
+											<v8:content>Отображение вариантов группа отчет</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>InCell</Group>
-									<ExtendedTooltip name="ОтображениеВаринтовГруппаОтчетExtendedTooltip" id="85"/>
+									<ExtendedTooltip name="ОтображениеВариантовГруппаОтчетExtendedTooltip" id="85"/>
 									<ChildItems>
-										<PictureField name="ОтображениеВаринтовКартинка" id="57">
+										<PictureField name="ОтображениеВариантовКартинка" id="57">
 											<DataPath>ДеревоНастройкиВидимостиВариантов.Картинка</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<EditMode>EnterOnInput</EditMode>
 											<Zoomable>true</Zoomable>
-											<ContextMenu name="ОтображениеВаринтовКартинкаКонтекстноеМеню" id="58"/>
-											<ExtendedTooltip name="ОтображениеВаринтовКартинкаExtendedTooltip" id="86"/>
+											<ContextMenu name="ОтображениеВариантовКартинкаКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="ОтображениеВариантовКартинкаExtendedTooltip" id="86"/>
 										</PictureField>
-										<InputField name="ОтображениеВаринтовНазвание" id="8">
+										<InputField name="ОтображениеВариантовНазвание" id="8">
 											<DataPath>ДеревоНастройкиВидимостиВариантов.Название</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<Title>
@@ -200,18 +200,18 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<Width>10</Width>
-											<ContextMenu name="ОтображениеВаринтовНазваниеКонтекстноеМеню" id="9"/>
-											<ExtendedTooltip name="ОтображениеВаринтовНазваниеExtendedTooltip" id="87"/>
+											<ContextMenu name="ОтображениеВариантовНазваниеКонтекстноеМеню" id="9"/>
+											<ExtendedTooltip name="ОтображениеВариантовНазваниеExtendedTooltip" id="87"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
-								<InputField name="ОтображениеВаринтовАвтор" id="12">
+								<InputField name="ОтображениеВариантовАвтор" id="12">
 									<DataPath>ДеревоНастройкиВидимостиВариантов.Автор</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<Width>10</Width>
-									<ContextMenu name="ОтображениеВаринтовАвторКонтекстноеМеню" id="13"/>
-									<ExtendedTooltip name="ОтображениеВаринтовАвторExtendedTooltip" id="88"/>
+									<ContextMenu name="ОтображениеВариантовАвторКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ОтображениеВариантовАвторExtendedTooltip" id="88"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -251,16 +251,16 @@
 									<ContextMenu name="КартинкаИнфоКонтекстноеМеню" id="23"/>
 									<ExtendedTooltip name="КартинкаИнфоExtendedTooltip" id="90"/>
 								</PictureDecoration>
-								<LabelField name="ОтображениеВаринтовОписание" id="10">
-									<DataPath>Items.ОтображениеВаринтов.CurrentData.Описание</DataPath>
+								<LabelField name="ОтображениеВариантовОписание" id="10">
+									<DataPath>Items.ОтображениеВариантов.CurrentData.Описание</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<Height>2</Height>
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>true</VerticalStretch>
-									<ContextMenu name="ОтображениеВаринтовОписаниеКонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="ОтображениеВаринтовОписаниеExtendedTooltip" id="91"/>
+									<ContextMenu name="ОтображениеВариантовОписаниеКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ОтображениеВариантовОписаниеExtendedTooltip" id="91"/>
 								</LabelField>
 							</ChildItems>
 						</UsualGroup>
@@ -281,7 +281,7 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаСписокExtendedTooltip" id="92"/>
 					<ChildItems>
-						<Table name="ОтображениеВаринтовСписок" id="30">
+						<Table name="ОтображениеВариантовСписок" id="30">
 							<Representation>List</Representation>
 							<CommandBarLocation>Top</CommandBarLocation>
 							<Height>20</Height>
@@ -294,7 +294,7 @@
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ОтображениеВаринтовСписокКонтекстноеМеню" id="31">
+							<ContextMenu name="ОтображениеВариантовСписокКонтекстноеМеню" id="31">
 								<Autofill>false</Autofill>
 								<ChildItems>
 									<Button name="ФормаОткрытьСписок" id="37">
@@ -311,64 +311,64 @@
 									</Button>
 								</ChildItems>
 							</ContextMenu>
-							<AutoCommandBar name="ОтображениеВаринтовСписокКоманднаяПанель" id="32">
+							<AutoCommandBar name="ОтображениеВариантовСписокКоманднаяПанель" id="32">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ОтображениеВаринтовСписокExtendedTooltip" id="95"/>
-							<SearchStringAddition name="ОтображениеВаринтовСписокSearchString" id="96">
+							<ExtendedTooltip name="ОтображениеВариантовСписокExtendedTooltip" id="95"/>
+							<SearchStringAddition name="ОтображениеВариантовСписокSearchString" id="96">
 								<Source>
 									<lf:elementId>30</lf:elementId>
 									<lf:additionId>0</lf:additionId>
 								</Source>
-								<ContextMenu name="ОтображениеВаринтовСписокSearchStringContextMenu" id="97"/>
-								<ExtendedTooltip name="ОтображениеВаринтовСписокSearchStringExtendedTooltip" id="98"/>
+								<ContextMenu name="ОтображениеВариантовСписокSearchStringContextMenu" id="97"/>
+								<ExtendedTooltip name="ОтображениеВариантовСписокSearchStringExtendedTooltip" id="98"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ОтображениеВаринтовСписокViewStatus" id="99">
+							<ViewStatusAddition name="ОтображениеВариантовСписокViewStatus" id="99">
 								<Source>
 									<lf:elementId>30</lf:elementId>
 									<lf:additionId>1</lf:additionId>
 								</Source>
-								<ContextMenu name="ОтображениеВаринтовСписокViewStatusContextMenu" id="100"/>
-								<ExtendedTooltip name="ОтображениеВаринтовСписокViewStatusExtendedTooltip" id="101"/>
+								<ContextMenu name="ОтображениеВариантовСписокViewStatusContextMenu" id="100"/>
+								<ExtendedTooltip name="ОтображениеВариантовСписокViewStatusExtendedTooltip" id="101"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ОтображениеВаринтовСписокSearchControl" id="102">
+							<SearchControlAddition name="ОтображениеВариантовСписокSearchControl" id="102">
 								<Source>
 									<lf:elementId>30</lf:elementId>
 									<lf:additionId>2</lf:additionId>
 								</Source>
-								<ContextMenu name="ОтображениеВаринтовСписокSearchControlContextMenu" id="103"/>
-								<ExtendedTooltip name="ОтображениеВаринтовСписокSearchControlExtendedTooltip" id="104"/>
+								<ContextMenu name="ОтображениеВариантовСписокSearchControlContextMenu" id="103"/>
+								<ExtendedTooltip name="ОтображениеВариантовСписокSearchControlExtendedTooltip" id="104"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="Selection">ОтображениеВаринтовВыбор</Event>
-								<Event name="OnActivateRow">ОтображениеВаринтовСписокПриАктивизацииСтроки</Event>
+								<Event name="Selection">ОтображениеВариантовВыбор</Event>
+								<Event name="OnActivateRow">ОтображениеВариантовСписокПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
-								<ColumnGroup name="ОтображениеВаринтовСписокГруппаЯчейка" id="62">
+								<ColumnGroup name="ОтображениеВариантовСписокГруппаЯчейка" id="62">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Отображение варинтов список группа ячейка</v8:content>
+											<v8:content>Отображение вариантов список группа ячейка</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Отображение варинтов список группа ячейка</v8:content>
+											<v8:content>Отображение вариантов список группа ячейка</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>InCell</Group>
-									<ExtendedTooltip name="ОтображениеВаринтовСписокГруппаЯчейкаExtendedTooltip" id="105"/>
+									<ExtendedTooltip name="ОтображениеВариантовСписокГруппаЯчейкаExtendedTooltip" id="105"/>
 									<ChildItems>
-										<PictureField name="ОтображениеВаринтовСписокКартинка" id="60">
+										<PictureField name="ОтображениеВариантовСписокКартинка" id="60">
 											<DataPath>СписокНастройкиВидимостиВариантов.Картинка</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ShowInHeader>false</ShowInHeader>
-											<ContextMenu name="ОтображениеВаринтовСписокКартинкаКонтекстноеМеню" id="61"/>
-											<ExtendedTooltip name="ОтображениеВаринтовСписокКартинкаExtendedTooltip" id="106"/>
+											<ContextMenu name="ОтображениеВариантовСписокКартинкаКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="ОтображениеВариантовСписокКартинкаExtendedTooltip" id="106"/>
 										</PictureField>
-										<InputField name="ОтображениеВаринтовСписокНазвание" id="51">
+										<InputField name="ОтображениеВариантовСписокНазвание" id="51">
 											<DataPath>СписокНастройкиВидимостиВариантов.Название</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<Title>
@@ -379,18 +379,18 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<Width>10</Width>
-											<ContextMenu name="ОтображениеВаринтовСписокНазваниеКонтекстноеМеню" id="52"/>
-											<ExtendedTooltip name="ОтображениеВаринтовСписокНазваниеExtendedTooltip" id="107"/>
+											<ContextMenu name="ОтображениеВариантовСписокНазваниеКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ОтображениеВариантовСписокНазваниеExtendedTooltip" id="107"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
-								<InputField name="ОтображениеВаринтовСписокАвтор" id="53">
+								<InputField name="ОтображениеВариантовСписокАвтор" id="53">
 									<DataPath>СписокНастройкиВидимостиВариантов.Автор</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<Width>10</Width>
-									<ContextMenu name="ОтображениеВаринтовСписокАвторКонтекстноеМеню" id="54"/>
-									<ExtendedTooltip name="ОтображениеВаринтовСписокАвторExtendedTooltip" id="108"/>
+									<ContextMenu name="ОтображениеВариантовСписокАвторКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ОтображениеВариантовСписокАвторExtendedTooltip" id="108"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -430,16 +430,16 @@
 									<ContextMenu name="КартинкаИнфоДляСпискаКонтекстноеМеню" id="47"/>
 									<ExtendedTooltip name="КартинкаИнфоДляСпискаExtendedTooltip" id="110"/>
 								</PictureDecoration>
-								<LabelField name="ОтображениеВаринтовОписаниеДляСписка" id="48">
-									<DataPath>Items.ОтображениеВаринтовСписок.CurrentData.Описание</DataPath>
+								<LabelField name="ОтображениеВариантовОписаниеДляСписка" id="48">
+									<DataPath>Items.ОтображениеВариантовСписок.CurrentData.Описание</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<Height>2</Height>
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>true</VerticalStretch>
-									<ContextMenu name="ОтображениеВаринтовОписаниеДляСпискаКонтекстноеМеню" id="49"/>
-									<ExtendedTooltip name="ОтображениеВаринтовОписаниеДляСпискаExtendedTooltip" id="111"/>
+									<ContextMenu name="ОтображениеВариантовОписаниеДляСпискаКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ОтображениеВариантовОписаниеДляСпискаExtendedTooltip" id="111"/>
 								</LabelField>
 							</ChildItems>
 						</UsualGroup>
@@ -591,6 +591,17 @@
 						<v8:Type>v8ui:Picture</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ВнешняяКоманда" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внешняя команда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СписокНастройкиВидимостиВариантов" id="4">
@@ -713,6 +724,17 @@
 						<v8:Type>v8ui:Picture</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ВнешняяКоманда" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внешняя команда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Закрепить" id="5">
@@ -737,12 +759,64 @@
 				<v8:Type>v8ui:Picture</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЗначениеПараметровКоманд" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение параметров команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ключ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексПозицииЭлемента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс позиции элемента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="МассивПараметровКомманд" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Массив параметров комманд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
-				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
-						<dcsset:field>ОтображениеВаринтов</dcsset:field>
+						<dcsset:field>ОтображениеВариантов</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
@@ -771,7 +845,7 @@
 			<dcsset:item>
 				<dcsset:selection>
 					<dcsset:item>
-						<dcsset:field>ОтображениеВаринтов</dcsset:field>
+						<dcsset:field>ОтображениеВариантов</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
@@ -782,6 +856,11 @@
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
 						<dcsset:left xsi:type="dcscor:Field">ДеревоНастройкиВидимостиВариантов.Автор</dcsset:left>
 						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастройкиВидимостиВариантов.ВнешняяКоманда</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance>
@@ -795,7 +874,7 @@
 				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
-						<dcsset:field>ОтображениеВаринтовСписок</dcsset:field>
+						<dcsset:field>ОтображениеВариантовСписок</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>

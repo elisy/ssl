@@ -206,7 +206,12 @@
 					<xr:FillFromFillingValue>true</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа, в которую входит текущий календарь</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>
@@ -216,11 +221,16 @@
 					<xr:PasswordMode>false</xr:PasswordMode>
 					<xr:MarkNegatives>false</xr:MarkNegatives>
 					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
+					<xr:Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа календарей</v8:content>
+						</v8:item>
+					</xr:Synonym>
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
+					<xr:FillValue xsi:type="xr:DesignTimeRef">Catalog.Календари.EmptyRef</xr:FillValue>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
@@ -231,7 +241,12 @@
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
+					<xr:ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название календаря</v8:content>
+						</v8:item>
+					</xr:ToolTip>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
 					<xr:Format/>
 					<xr:ChoiceForm/>

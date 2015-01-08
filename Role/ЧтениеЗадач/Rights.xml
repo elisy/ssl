@@ -1,31 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
-	<setForAttributesByDefault>false</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.РезультатВыполнения</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>Task.ЗадачаИсполнителя.Command.Выполнено</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -39,25 +18,11 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.ДатаНачала</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.СписокИстекающихЗадач</name>
+		<name>Report.СписокЗадачИстекающихНаДату</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.ГруппаИсполнителейЗадач</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -90,62 +55,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.Executed</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.RoutePoint</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.BusinessProcess</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.Date</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.StandardAttribute.Number</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ИсполнителиЗадач</name>
 		<right>
 			<name>Read</name>
@@ -168,69 +77,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.СрокИсполнения</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Task.ЗадачаИсполнителя.Command.ВсеЗадачи</name>
 		<right>
 			<name>View</name>
@@ -238,28 +84,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonCommand.ЗадачиПоПредмету</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ТипыДополнительногоОбъектаАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.Предмет</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -281,83 +106,6 @@
 		</right>
 	</object>
 	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.ValueType</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.Важность</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ИспользуетсяСОбъектамиАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Task.ЗадачаИсполнителя.Command.МоиЗадачи</name>
 		<right>
 			<name>View</name>
@@ -365,28 +113,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.ПредметСтрокой</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ТипыОсновногоОбъектаАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Task.ЗадачаИсполнителя.Command.Перенаправить</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -408,34 +135,6 @@
 	</object>
 	<object>
 		<name>Catalog.ВерсииФайлов</name>
-	</object>
-	<object>
-		<name>Catalog.РолиИсполнителей.Attribute.ИспользуетсяБезОбъектовАдресации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.Описание</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.ДатаИсполнения</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ЗадачаИсполнителя.Attribute.Автор</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
 	</object>
 	<restrictionTemplate>
 		<name>ПоЗначениям</name>

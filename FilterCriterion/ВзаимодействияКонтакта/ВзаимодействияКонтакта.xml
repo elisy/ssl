@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FilterCriterion uuid="1d723c7b-d4b0-47ee-af3f-81574cb058c0">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.ВзаимодействияКонтакта" category="Manager">
+				<xr:TypeId>97bffee0-84d7-4675-ad56-7870489ddb77</xr:TypeId>
+				<xr:ValueId>6a2dea77-b940-401e-a194-e9c1b757af8b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.ВзаимодействияКонтакта" category="List">
+				<xr:TypeId>4a385693-0d14-49e0-baf4-76f24e16e386</xr:TypeId>
+				<xr:ValueId>349ec7bb-11e8-48e7-9047-ed3f5add2ba5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВзаимодействияКонтакта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаимодействия контакта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Встреча.TabularSection.Участники.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗапланированноеВзаимодействие.TabularSection.Участники.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТелефонныйЗвонок.Attribute.АбонентКонтакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоВходящее.TabularSection.ПолучателиПисьма.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоВходящее.TabularSection.ПолучателиКопий.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоВходящее.TabularSection.ПолучателиОтвета.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиПисьма.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиКопий.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиОтвета.Attribute.Контакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиСкрытыхКопий.Attribute.Контакт</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

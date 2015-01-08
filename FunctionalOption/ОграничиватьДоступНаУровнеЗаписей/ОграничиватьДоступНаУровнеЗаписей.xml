@@ -13,9 +13,6 @@
 			<Location>Constant.ОграничиватьДоступНаУровнеЗаписей</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
-				<xr:Object>CommonCommand.ПраваВнешнегоПользователяПоЗначениямДоступа</xr:Object>
-				<xr:Object>CommonCommand.ПраваПоЗначениюДоступа</xr:Object>
-				<xr:Object>CommonCommand.ПраваПользователяПоЗначениямДоступа</xr:Object>
 				<xr:Object>Catalog.ПрофилиГруппДоступа.TabularSection.ВидыДоступа</xr:Object>
 				<xr:Object>Catalog.ПрофилиГруппДоступа.TabularSection.ВидыДоступа.Attribute.ВидДоступа</xr:Object>
 				<xr:Object>Catalog.ПрофилиГруппДоступа.TabularSection.ВидыДоступа.Attribute.Предустановленный</xr:Object>
@@ -29,7 +26,6 @@
 				<xr:Object>Catalog.ГруппыДоступа.TabularSection.ЗначенияДоступа</xr:Object>
 				<xr:Object>Catalog.ГруппыДоступа.TabularSection.ЗначенияДоступа.Attribute.ВидДоступа</xr:Object>
 				<xr:Object>Catalog.ГруппыДоступа.TabularSection.ЗначенияДоступа.Attribute.ЗначениеДоступа</xr:Object>
-				<xr:Object>Catalog.ГруппыДоступа.TabularSection.ЗначенияДоступа.Attribute.ДоступРазрешен</xr:Object>
 				<xr:Object>ChartOfCharacteristicTypes.ВидыДоступа</xr:Object>
 			</Content>
 		</Properties>

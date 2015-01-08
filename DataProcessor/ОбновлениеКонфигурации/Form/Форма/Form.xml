@@ -63,12 +63,6 @@
 					<v8:content>Страницы помощника</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Страницы помощника</v8:content>
-				</v8:item>
-			</ToolTip>
 			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыПомощникаExtendedTooltip" id="615"/>
 			<ChildItems>
@@ -79,12 +73,6 @@
 							<v8:content>Добро пожаловать</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Добро пожаловать</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ДоброПожаловатьExtendedTooltip" id="616"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаДоброПожаловать" id="3">
@@ -400,12 +388,6 @@
 							<ExtendedTooltip name="Отступ3ExtendedTooltip" id="646"/>
 						</LabelDecoration>
 						<UsualGroup name="ГруппаПроверкиНаличияОбновления" id="487">
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа проверки наличия обновления</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ГруппаПроверкиНаличияОбновленияExtendedTooltip" id="647"/>
@@ -459,12 +441,6 @@
 							<v8:content>Подключение к интернет</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подключение к интернет</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ПодключениеКИнтернетExtendedTooltip" id="651"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаПодключениеКИнтернет" id="23">
@@ -539,18 +515,6 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ПанельЖурналРегистрации3" id="569">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа2</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа2</v8:content>
-								</v8:item>
-							</ToolTip>
 							<VerticalStretch>false</VerticalStretch>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
@@ -561,12 +525,6 @@
 									<Width>6</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Картинка4</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Информация32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -576,12 +534,6 @@
 									<ExtendedTooltip name="Картинка10ExtendedTooltip" id="659"/>
 								</PictureDecoration>
 								<UsualGroup name="ВертикальнаяГруппаНадписиЖР2" id="572">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Вертикальная группа надписи ЖР</v8:content>
-										</v8:item>
-									</Title>
 									<VerticalStretch>false</VerticalStretch>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -645,12 +597,6 @@
 							<v8:content>Подключение к сайту</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подключение к сайту</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ПодключениеКСайтуExtendedTooltip" id="665"/>
 					<ChildItems>
 						<LabelDecoration name="Декорация9" id="42">
@@ -686,12 +632,6 @@
 									<v8:content>Доступ на пользовательский сайт</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа доступ на пользовательский сайт</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>StrongSeparation</Representation>
 							<ExtendedTooltip name="ГруппаДоступНаПользовательскийСайтExtendedTooltip" id="668"/>
@@ -778,12 +718,6 @@
 									<v8:content>Панель ошибка подключения</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель ошибка подключения</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -808,12 +742,6 @@
 											<v8:content>Группа доступа на сайт</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа доступа на сайт</v8:content>
-										</v8:item>
-									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
 									<ExtendedTooltip name="ГруппаДоступаНаСайтExtendedTooltip" id="678"/>
 									<ChildItems>
@@ -824,12 +752,6 @@
 													<v8:content>ПРОФ</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>ПРОФ</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="ПРОФExtendedTooltip" id="679"/>
 											<ChildItems>
 												<LabelDecoration name="Декорация11" id="54">
@@ -896,12 +818,6 @@
 													<v8:content>Базовая</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Базовая</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="БазоваяExtendedTooltip" id="685"/>
 											<ChildItems>
 												<LabelDecoration name="Декорация15" id="71">
@@ -960,18 +876,6 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ПанельЖурналРегистрации" id="544">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа2</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа2</v8:content>
-								</v8:item>
-							</ToolTip>
 							<VerticalStretch>false</VerticalStretch>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
@@ -982,12 +886,6 @@
 									<Width>6</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Картинка4</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Информация32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -997,12 +895,6 @@
 									<ExtendedTooltip name="Картинка8ExtendedTooltip" id="691"/>
 								</PictureDecoration>
 								<UsualGroup name="ВертикальнаяГруппаНадписиЖР" id="549">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Вертикальная группа надписи ЖР</v8:content>
-										</v8:item>
-									</Title>
 									<VerticalStretch>false</VerticalStretch>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -1069,12 +961,6 @@
 							<v8:content>Местоположение диска ИТС</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Местоположение диска ИТС</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="МестоположениеДискаИТСExtendedTooltip" id="697"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаМестоположениеДискаИТС" id="469">
@@ -1136,12 +1022,6 @@
 							</Events>
 						</RadioButtonField>
 						<UsualGroup name="Отступ5" id="468">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Отступ5</v8:content>
-								</v8:item>
-							</Title>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Отступ5ExtendedTooltip" id="700"/>
@@ -1153,12 +1033,6 @@
 											<v8:content>Страницы наличия диска ИТС</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страницы наличия диска ИТС</v8:content>
-										</v8:item>
-									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
 									<ExtendedTooltip name="СтраницыНаличияДискаИТСExtendedTooltip" id="701"/>
 									<ChildItems>
@@ -1169,12 +1043,6 @@
 													<v8:content>Указание каталога</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Указание каталога</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="УказаниеКаталогаExtendedTooltip" id="702"/>
 											<ChildItems>
 												<InputField name="ДискИТС" id="466">
@@ -1195,18 +1063,6 @@
 											</ChildItems>
 										</Page>
 										<Page name="ИнфНадписьИТС" id="486">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Инф надпись ИТС</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Инф надпись ИТС</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="ИнфНадписьИТСExtendedTooltip" id="704"/>
 											<ChildItems>
 												<LabelDecoration name="Декорация21" id="482">
@@ -1254,12 +1110,6 @@
 							<v8:content>Файл обновления</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Файл обновления</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ФайлОбновленияExtendedTooltip" id="708"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаФайлОбновления" id="284">
@@ -1322,12 +1172,6 @@
 									<v8:content>Отступ</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Отступ</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ОтступExtendedTooltip" id="711"/>
@@ -1351,12 +1195,6 @@
 									<v8:content>Панель обновление из основной конфигурации</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель обновление из основной конфигурации</v8:content>
-								</v8:item>
-							</ToolTip>
 							<VerticalStretch>false</VerticalStretch>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
@@ -1367,12 +1205,6 @@
 									<Width>5</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Картинка5</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Информация32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1398,12 +1230,6 @@
 													<v8:content>Есть изменения</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Есть изменения</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="ЕстьИзмененияExtendedTooltip" id="716"/>
 											<ChildItems>
 												<LabelDecoration name="НадписьКонфигурацияИзменена" id="291">
@@ -1429,12 +1255,6 @@
 													<v8:content>Нет изменений</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Нет изменений</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="НетИзмененийExtendedTooltip" id="718"/>
 											<ChildItems>
 												<LabelDecoration name="НадписьНетИзменений" id="480">
@@ -1482,12 +1302,6 @@
 							<v8:content>Доступное обновление</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Доступное обновление</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ДоступноеОбновлениеExtendedTooltip" id="722"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаДоступноеОбновление" id="116">
@@ -1511,12 +1325,6 @@
 									<v8:content>Информация о доступном обновлении</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Информация о доступном обновлении</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Width>80</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Representation>StrongSeparation</Representation>
@@ -1529,12 +1337,6 @@
 											<v8:content>Группа номер версии</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа номер версии</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -1544,12 +1346,6 @@
 											<Width>6</Width>
 											<Height>2</Height>
 											<SkipOnInput>false</SkipOnInput>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Декорация картинка2</v8:content>
-												</v8:item>
-											</Title>
 											<Picture>
 												<xr:Ref>CommonPicture.Информация32</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1677,12 +1473,6 @@
 									<v8:content>Панель порядок обновления</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель порядок обновления</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -1692,12 +1482,6 @@
 									<Width>6</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Декорация картинка21</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1748,12 +1532,6 @@
 							<ExtendedTooltip name="Отступ10ExtendedTooltip" id="742"/>
 						</LabelDecoration>
 						<UsualGroup name="ГруппаПроверкиНаличияОбновления1" id="529">
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа проверки наличия обновления</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ГруппаПроверкиНаличияОбновления1ExtendedTooltip" id="743"/>
@@ -1798,18 +1576,6 @@
 							<ExtendedTooltip name="ПанельПереходаНаСледующийШагExtendedTooltip" id="746"/>
 							<ChildItems>
 								<Page name="Интернет1" id="367">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Интернет1</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Интернет1</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="Интернет1ExtendedTooltip" id="747"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация23" id="113">
@@ -1826,18 +1592,6 @@
 									</ChildItems>
 								</Page>
 								<Page name="ИТС1" id="368">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ИТС1</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ИТС1</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ИТС1ExtendedTooltip" id="749"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация63" id="369">
@@ -1864,12 +1618,6 @@
 							<v8:content>Обновления не обнаружено</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Обновления не обнаружено</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ОбновленияНеОбнаруженоExtendedTooltip" id="751"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокОбновления" id="118">
@@ -1893,12 +1641,6 @@
 									<v8:content>Результат поиска обновления</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель информация об обновлении</v8:content>
-								</v8:item>
-							</ToolTip>
 							<VerticalStretch>false</VerticalStretch>
 							<Representation>StrongSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -1922,23 +1664,11 @@
 													<v8:content>Обновление не требуется</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Обновление не требуется</v8:content>
-												</v8:item>
-											</ToolTip>
 											<VerticalStretch>false</VerticalStretch>
 											<Group>Horizontal</Group>
 											<ExtendedTooltip name="ОбновлениеНеТребуетсяExtendedTooltip" id="755"/>
 											<ChildItems>
 												<UsualGroup name="ГоризонтальнаяГруппа12" id="586">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Горизонтальная группа12</v8:content>
-														</v8:item>
-													</Title>
 													<VerticalStretch>false</VerticalStretch>
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
@@ -1950,12 +1680,6 @@
 															<Height>2</Height>
 															<VerticalStretch>false</VerticalStretch>
 															<SkipOnInput>false</SkipOnInput>
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Картинка26</v8:content>
-																</v8:item>
-															</Title>
 															<Picture>
 																<xr:Ref>CommonPicture.Информация32</xr:Ref>
 																<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1992,12 +1716,6 @@
 											<ExtendedTooltip name="ОбновлениеНеОбнаруженоExtendedTooltip" id="759"/>
 											<ChildItems>
 												<UsualGroup name="ГоризонтальнаяГруппа16" id="587">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Горизонтальная группа16</v8:content>
-														</v8:item>
-													</Title>
 													<VerticalStretch>false</VerticalStretch>
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
@@ -2008,12 +1726,6 @@
 															<Width>6</Width>
 															<Height>2</Height>
 															<SkipOnInput>false</SkipOnInput>
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Картинка24</v8:content>
-																</v8:item>
-															</Title>
 															<Picture>
 																<xr:Ref>CommonPicture.Информация32</xr:Ref>
 																<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -2089,22 +1801,10 @@
 													<v8:content>Включена возможность изменений</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Включена возможность изменений</v8:content>
-												</v8:item>
-											</ToolTip>
 											<VerticalStretch>false</VerticalStretch>
 											<ExtendedTooltip name="ВключенаВозможностьИзмененийExtendedTooltip" id="766"/>
 											<ChildItems>
 												<UsualGroup name="ГоризонтальнаяГруппа3" id="594">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Горизонтальная группа3</v8:content>
-														</v8:item>
-													</Title>
 													<VerticalStretch>false</VerticalStretch>
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
@@ -2115,12 +1815,6 @@
 															<Width>6</Width>
 															<Height>2</Height>
 															<SkipOnInput>false</SkipOnInput>
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Картинка14</v8:content>
-																</v8:item>
-															</Title>
 															<Picture>
 																<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
 																<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -2149,24 +1843,18 @@
 										</Page>
 									</ChildItems>
 								</Pages>
-								<UsualGroup name="ГруппаТекушаяВерсия" id="136">
+								<UsualGroup name="ГруппаТекущаяВерсия" id="136">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа текушая версия</v8:content>
+											<v8:content>Группа текущая версия</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа текушая версия</v8:content>
-										</v8:item>
-									</ToolTip>
 									<VerticalStretch>false</VerticalStretch>
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаТекушаяВерсияExtendedTooltip" id="770"/>
+									<ExtendedTooltip name="ГруппаТекущаяВерсияExtendedTooltip" id="770"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация30" id="134">
 											<SkipOnInput>false</SkipOnInput>
@@ -2192,7 +1880,6 @@
 										</LabelDecoration>
 										<LabelDecoration name="НадписьВерсияДляОбновления" id="507">
 											<SkipOnInput>false</SkipOnInput>
-											<TextColor>style:ToolTipTextColor</TextColor>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -2277,12 +1964,6 @@
 							<v8:content>Длительная операция</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Длительная операция</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ДлительнаяОперацияExtendedTooltip" id="780"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаДлительнаяОперация" id="144">
@@ -2318,12 +1999,6 @@
 											<v8:content>Интернет</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Интернет</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ИнтернетExtendedTooltip" id="783"/>
 									<ChildItems>
 										<UsualGroup name="Группа18" id="146">
@@ -2337,12 +2012,6 @@
 													<Width>4</Width>
 													<Height>2</Height>
 													<SkipOnInput>false</SkipOnInput>
-													<Title formatted="false">
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Декорация картинка33</v8:content>
-														</v8:item>
-													</Title>
 													<Picture>
 														<xr:Ref>CommonPicture.Информация32</xr:Ref>
 														<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -2376,12 +2045,6 @@
 											<v8:content>ИТС</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ИТС</v8:content>
-										</v8:item>
-									</ToolTip>
 									<VerticalStretch>false</VerticalStretch>
 									<Group>Horizontal</Group>
 									<ExtendedTooltip name="ИТСExtendedTooltip" id="787"/>
@@ -2390,12 +2053,6 @@
 											<Width>4</Width>
 											<Height>2</Height>
 											<SkipOnInput>false</SkipOnInput>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Декорация картинка35</v8:content>
-												</v8:item>
-											</Title>
 											<Picture>
 												<xr:Ref>CommonPicture.Информация32</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -2429,12 +2086,6 @@
 									<v8:content>Группа прогресс</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа прогресс</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПрогрессExtendedTooltip" id="790"/>
@@ -2461,12 +2112,6 @@
 							<v8:content>Выбор режима обновления файл</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выбор режима обновления файл</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ВыборРежимаОбновленияФайлExtendedTooltip" id="792"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаВыборРежимаОбнФайл" id="161">
@@ -2522,12 +2167,6 @@
 											<v8:content>Все готово порядок обновления</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Все готово порядок обновления</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Group>Horizontal</Group>
 									<ExtendedTooltip name="ВсеГотовоПорядокОбновленияExtendedTooltip" id="797"/>
 									<ChildItems>
@@ -2586,12 +2225,6 @@
 									<v8:content>Группа соединений</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа соединений</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -2601,12 +2234,6 @@
 									<Width>5</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Картинка1</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -2634,12 +2261,6 @@
 													<v8:content>Активные пользователи</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Активные пользователи</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="АктивныеПользователиExtendedTooltip" id="805"/>
 											<ChildItems>
 												<LabelDecoration name="Надпись43" id="183">
@@ -2678,12 +2299,6 @@
 													<v8:content>Активные соединения</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Активные соединения</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="АктивныеСоединенияExtendedTooltip" id="808"/>
 											<ChildItems>
 												<LabelDecoration name="Надпись42" id="190">
@@ -2722,12 +2337,6 @@
 													<v8:content>Соединение конфигуратора</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Соединение конфигуратора</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ExtendedTooltip name="СоединениеКонфигуратораExtendedTooltip" id="811"/>
 											<ChildItems>
 												<LabelDecoration name="Надпись45" id="195">
@@ -2836,12 +2445,6 @@
 											<v8:content>Далее</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Далее</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ДалееExtendedTooltip" id="820"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация41" id="207">
@@ -2864,12 +2467,6 @@
 											<v8:content>Готово</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Готово</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ГотовоExtendedTooltip" id="822"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация56" id="336">
@@ -2886,18 +2483,6 @@
 									</ChildItems>
 								</Page>
 								<Page name="АктивныеСоединения2" id="338">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Активные соединения2</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Активные соединения2</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="АктивныеСоединения2ExtendedTooltip" id="824"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация57" id="339">
@@ -2914,18 +2499,6 @@
 									</ChildItems>
 								</Page>
 								<Page name="СоединениеКонфигуратора2" id="341">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Соединение конфигуратора2</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Соединение конфигуратора2</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="СоединениеКонфигуратора2ExtendedTooltip" id="826"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация58" id="342">
@@ -2952,12 +2525,6 @@
 							<v8:content>Выбор режима обновления сервер</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выбор режима обновления сервер</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ВыборРежимаОбновленияСерверExtendedTooltip" id="828"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаВыборРежимаОбнСервер" id="210">
@@ -2985,18 +2552,6 @@
 							<ExtendedTooltip name="ПанельВсеГотовоСерверExtendedTooltip" id="830"/>
 							<ChildItems>
 								<Page name="ВсеГотово1" id="345">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Все готово1</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Все готово1</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ВсеГотово1ExtendedTooltip" id="831"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация43" id="212">
@@ -3013,18 +2568,6 @@
 									</ChildItems>
 								</Page>
 								<Page name="ВсеГотовоПорядокОбновления1" id="346">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Все готово порядок обновления1</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Все готово порядок обновления1</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Group>Horizontal</Group>
 									<ExtendedTooltip name="ВсеГотовоПорядокОбновления1ExtendedTooltip" id="833"/>
 									<ChildItems>
@@ -3175,12 +2718,6 @@
 													<v8:content>Панель почта</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Панель почта</v8:content>
-												</v8:item>
-											</ToolTip>
 											<VerticalStretch>false</VerticalStretch>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
@@ -3222,12 +2759,6 @@
 											<v8:content>Страница перезагрузки сейчас</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница перезагрузки сейчас</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="СтраницаПерезагрузкиСейчас1ExtendedTooltip" id="847"/>
 									<ChildItems>
 										<LabelDecoration name="Надпись47" id="218">
@@ -3245,18 +2776,6 @@
 											<ExtendedTooltip name="Надпись47ExtendedTooltip" id="848"/>
 										</LabelDecoration>
 										<UsualGroup name="ГруппаСоединений1" id="220">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа соединений1</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа соединений1</v8:content>
-												</v8:item>
-											</ToolTip>
 											<VerticalStretch>false</VerticalStretch>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
@@ -3267,12 +2786,6 @@
 													<Width>5</Width>
 													<Height>2</Height>
 													<SkipOnInput>false</SkipOnInput>
-													<Title formatted="false">
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Картинка1</v8:content>
-														</v8:item>
-													</Title>
 													<Picture>
 														<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
 														<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -3282,12 +2795,6 @@
 													<ExtendedTooltip name="Картинка2ExtendedTooltip" id="850"/>
 												</PictureDecoration>
 												<Pages name="ПанельАктивныеПользователи1" id="223">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Панель активные пользователи1</v8:content>
-														</v8:item>
-													</Title>
 													<PagesRepresentation>None</PagesRepresentation>
 													<ExtendedTooltip name="ПанельАктивныеПользователи1ExtendedTooltip" id="851"/>
 													<ChildItems>
@@ -3298,12 +2805,6 @@
 																	<v8:content>Активные пользователи</v8:content>
 																</v8:item>
 															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Активные пользователи</v8:content>
-																</v8:item>
-															</ToolTip>
 															<ExtendedTooltip name="АктивныеПользователи1ExtendedTooltip" id="852"/>
 															<ChildItems>
 																<LabelDecoration name="Надпись48" id="225">
@@ -3343,12 +2844,6 @@
 																	<v8:content>Активные соединения</v8:content>
 																</v8:item>
 															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Активные соединения</v8:content>
-																</v8:item>
-															</ToolTip>
 															<ExtendedTooltip name="АктивныеСоединения1ExtendedTooltip" id="855"/>
 															<ChildItems>
 																<LabelDecoration name="Надпись49" id="230">
@@ -3452,12 +2947,6 @@
 											<v8:content>Сейчас</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Сейчас</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="СейчасExtendedTooltip" id="863"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация44" id="254">
@@ -3480,12 +2969,6 @@
 											<v8:content>Отложить</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Отложить</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ОтложитьExtendedTooltip" id="865"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация60" id="355">
@@ -3508,12 +2991,6 @@
 											<v8:content>Отмена</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Отмена</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ОтменаExtendedTooltip" id="867"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация61" id="358">
@@ -3540,12 +3017,6 @@
 							<v8:content>Успешное обновление</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Успешное обновление</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="УспешноеОбновлениеExtendedTooltip" id="869"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаУспешноеОбновление" id="257">
@@ -3596,12 +3067,6 @@
 									<v8:content>Панель порядок обновления при завершении</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель порядок обновления при завершении</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -3611,12 +3076,6 @@
 									<Width>6</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Картинка3</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -3686,12 +3145,6 @@
 							<v8:content>Неуспешное обновление</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Неуспешное обновление</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="НеуспешноеОбновлениеExtendedTooltip" id="880"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаНеудачноеОбновление" id="272">
@@ -3764,12 +3217,6 @@
 							<v8:content>Параметры авторизации</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Параметры авторизации</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ПараметрыАвторизацииExtendedTooltip" id="886"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаПараметрыАвторизации" id="299">
@@ -3817,12 +3264,6 @@
 											<Width>6</Width>
 											<Height>2</Height>
 											<SkipOnInput>false</SkipOnInput>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Картинка6</v8:content>
-												</v8:item>
-											</Title>
 											<Picture>
 												<xr:Ref>CommonPicture.Информация32</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -3858,12 +3299,6 @@
 									<ExtendedTooltip name="ОбнаруженаОшибкаПодключенияExtendedTooltip" id="892"/>
 									<ChildItems>
 										<UsualGroup name="ГоризонтальнаяГруппа10" id="568">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Горизонтальная группа10</v8:content>
-												</v8:item>
-											</Title>
 											<VerticalStretch>false</VerticalStretch>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
@@ -3900,18 +3335,6 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ПанельЖурналРегистрации2" id="560">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Горизонтальная группа2</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Горизонтальная группа2</v8:content>
-												</v8:item>
-											</ToolTip>
 											<VerticalStretch>false</VerticalStretch>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
@@ -3922,12 +3345,6 @@
 													<Width>6</Width>
 													<Height>2</Height>
 													<SkipOnInput>false</SkipOnInput>
-													<Title formatted="false">
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Картинка4</v8:content>
-														</v8:item>
-													</Title>
 													<Picture>
 														<xr:Ref>CommonPicture.Информация32</xr:Ref>
 														<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -3937,12 +3354,6 @@
 													<ExtendedTooltip name="Картинка9ExtendedTooltip" id="897"/>
 												</PictureDecoration>
 												<UsualGroup name="ВертикальнаяГруппаНадписиЖР1" id="563">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Вертикальная группа надписи ЖР</v8:content>
-														</v8:item>
-													</Title>
 													<VerticalStretch>false</VerticalStretch>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -4026,12 +3437,6 @@
 									<v8:content>Авторизация администратора информационной базы</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель авторизация ИБ</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Representation>StrongSeparation</Representation>
 							<ExtendedTooltip name="ПанельАвторизацияИБExtendedTooltip" id="904"/>
 							<ChildItems>
@@ -4095,12 +3500,6 @@
 													<v8:content>Панель предупреждение о windows авторизации</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Панель предупреждение о windows авторизации</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ПанельПредупреждениеОWindowsАвторизацииExtendedTooltip" id="910"/>
@@ -4131,12 +3530,6 @@
 									<v8:content>Панель авторизация кластера серверов</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель авторизация кластера серверов</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -4149,12 +3542,6 @@
 											<v8:content>Панель администратор кластера серверов</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Панель администратор кластера серверов</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ПанельАдминистраторКластераСерверовExtendedTooltip" id="913"/>
@@ -4182,12 +3569,6 @@
 													<v8:content>Имя и пароль администратора кластера серверов</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Панель доступ к кластеру</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Representation>StrongSeparation</Representation>
 											<ExtendedTooltip name="ПанельДоступККластеруExtendedTooltip" id="915"/>
 											<ChildItems>
@@ -4227,7 +3608,6 @@
 											<v8:content>Панель порты сервера</v8:content>
 										</v8:item>
 									</Title>
-									<Shortcut>Ctrl+S</Shortcut>
 									<VerticalStretch>false</VerticalStretch>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -4307,12 +3687,6 @@
 							<v8:content>Дополнительные настройки</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дополнительные настройки</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ДополнительныеНастройкиExtendedTooltip" id="925"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьШапкаДополнительныеНастройки" id="408">
@@ -4330,12 +3704,6 @@
 							<ExtendedTooltip name="НадписьШапкаДополнительныеНастройкиExtendedTooltip" id="926"/>
 						</LabelDecoration>
 						<UsualGroup name="ГоризонтальнаяГруппаОшибкаПодключения" id="581">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа10</v8:content>
-								</v8:item>
-							</Title>
 							<VerticalStretch>false</VerticalStretch>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
@@ -4386,12 +3754,6 @@
 											<v8:content>При ошибке версии компоненты "comcntr", рекомендуется выполнить ее перерегистрацию (потребуется перезапуск сеанса).</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Возможно необходимо обновить версию компоненты "comcntr". При этом потребуется перезапустить сеанс 1С. Для этого нажмите здесь</v8:content>
-										</v8:item>
-									</ToolTip>
 									<TitleHeight>2</TitleHeight>
 									<ContextMenu name="НадписьОбновитьВерсиюКомпоненты1КонтекстноеМеню" id="412"/>
 									<ExtendedTooltip name="НадписьОбновитьВерсиюКомпоненты1ExtendedTooltip" id="931"/>
@@ -4418,12 +3780,6 @@
 									<v8:content>Авторизация администратора информационной базы</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Панель авторизация ИБ</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Representation>StrongSeparation</Representation>
 							<ExtendedTooltip name="ПанельАвторизацияИБ1ExtendedTooltip" id="933"/>
 							<ChildItems>
@@ -4487,12 +3843,6 @@
 													<v8:content>Панель предупреждение о windows авторизации</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Панель предупреждение о windows авторизации</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ПанельПредупреждениеОWindowsАвторизации1ExtendedTooltip" id="939"/>
@@ -4517,18 +3867,6 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ПанельЖурналРегистрации4" id="573">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа2</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Горизонтальная группа2</v8:content>
-								</v8:item>
-							</ToolTip>
 							<VerticalStretch>false</VerticalStretch>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
@@ -4539,12 +3877,6 @@
 									<Width>6</Width>
 									<Height>2</Height>
 									<SkipOnInput>false</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Картинка4</v8:content>
-										</v8:item>
-									</Title>
 									<Picture>
 										<xr:Ref>CommonPicture.Информация32</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -4554,12 +3886,6 @@
 									<ExtendedTooltip name="Картинка11ExtendedTooltip" id="942"/>
 								</PictureDecoration>
 								<UsualGroup name="ВертикальнаяГруппаНадписиЖР3" id="576">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Вертикальная группа надписи ЖР</v8:content>
-										</v8:item>
-									</Title>
 									<VerticalStretch>false</VerticalStretch>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>

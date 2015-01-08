@@ -3,7 +3,7 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Мастер табличного вопроса</v8:content>
+			<v8:content>Помощник создания табличного вопроса</v8:content>
 		</v8:item>
 	</Title>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
@@ -850,20 +850,20 @@
 						</UsualGroup>
 					</ChildItems>
 				</Page>
-				<Page name="СтраницаРезультирущаяТаблица" id="70">
+				<Page name="СтраницаРезультирующаяТаблица" id="70">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страница результирущая таблица</v8:content>
+							<v8:content>Страница результирующая таблица</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страница результирущая таблица</v8:content>
+							<v8:content>Страница результирующая таблица</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаРезультирущаяТаблицаExtendedTooltip" id="238"/>
+					<ExtendedTooltip name="СтраницаРезультирующаяТаблицаExtendedTooltip" id="238"/>
 					<ChildItems>
 						<Table name="РезультирующаяТаблица" id="76">
 							<Representation>List</Representation>
@@ -965,7 +965,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вперед&gt;&gt;</v8:content>
+							<v8:content>Далее&gt;&gt;</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="КнопкаВпередExtendedTooltip" id="254"/>

@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment>Задание служит для запуска дополнительных глобальных обработок по регламентному заданию</Comment>
 			<MethodName>CommonModule.ДополнительныеОтчетыИОбработки.ВыполнитьОбработкуПоРегламентномуЗаданию</MethodName>
-			<Description>Запуск обработок</Description>
+			<Description>Запуск дополнительных обработок</Description>
 			<Key/>
 			<Use>true</Use>
 			<Predefined>false</Predefined>

@@ -91,11 +91,11 @@
 		<ChildObjects>
 			<EnumValue uuid="bc708da8-7fc6-4da1-8129-9ef6a86667af">
 				<Properties>
-					<Name>Версионировать</Name>
+					<Name>ВерсионироватьПриЗаписи</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Версионировать</v8:content>
+							<v8:content>Версионировать при записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

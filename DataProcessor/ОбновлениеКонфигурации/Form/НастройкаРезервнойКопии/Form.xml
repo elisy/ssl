@@ -14,7 +14,6 @@
 		<ExcludedCommand>No</ExcludedCommand>
 		<ExcludedCommand>CustomizeForm</ExcludedCommand>
 		<ExcludedCommand>SaveValues</ExcludedCommand>
-		<ExcludedCommand>Help</ExcludedCommand>
 		<ExcludedCommand>Abort</ExcludedCommand>
 		<ExcludedCommand>Retry</ExcludedCommand>
 		<ExcludedCommand>Yes</ExcludedCommand>
@@ -38,7 +37,7 @@
 						<v8:content>ОК</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="КнопкаОКExtendedTooltip" id="38"/>
+				<ExtendedTooltip name="КнопкаОКExtendedTooltip" id="39"/>
 			</Button>
 			<Button name="КнопкаЗакрыть" id="21">
 				<Type>CommandBarButton</Type>
@@ -52,12 +51,17 @@
 						<v8:content>Отмена</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="КнопкаЗакрытьExtendedTooltip" id="39"/>
+				<ExtendedTooltip name="КнопкаЗакрытьExtendedTooltip" id="40"/>
+			</Button>
+			<Button name="ФормаСправка" id="38">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="41"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -77,7 +81,7 @@
 								<v8:content>&amp;Не создавать резервную копию ИБ</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:decimal">2</Value>
+						<Value xsi:type="xs:decimal">0</Value>
 					</xr:Value>
 				</xr:Item>
 				<xr:Item>
@@ -90,7 +94,7 @@
 								<v8:content>&amp;Создавать временную резервную копию ИБ</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:decimal">0</Value>
+						<Value xsi:type="xs:decimal">1</Value>
 					</xr:Value>
 				</xr:Item>
 				<xr:Item>
@@ -103,12 +107,12 @@
 								<v8:content>Со&amp;здавать резервную копию ИБ и сохранять в указанном каталоге</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:decimal">1</Value>
+						<Value xsi:type="xs:decimal">2</Value>
 					</xr:Value>
 				</xr:Item>
 			</ChoiceList>
 			<ContextMenu name="СоздаватьРезервнуюКопиюКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="СоздаватьРезервнуюКопиюExtendedTooltip" id="40"/>
+			<ExtendedTooltip name="СоздаватьРезервнуюКопиюExtendedTooltip" id="42"/>
 			<Events>
 				<Event name="OnChange">СоздаватьРезервнуюКопиюПриИзменении</Event>
 			</Events>
@@ -128,7 +132,7 @@
 			</ToolTip>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ОтступExtendedTooltip" id="41"/>
+			<ExtendedTooltip name="ОтступExtendedTooltip" id="43"/>
 			<ChildItems>
 				<InputField name="ПолеКаталогРезервнойКопии" id="3">
 					<DataPath>Объект.ИмяКаталогаРезервнойКопииИБ</DataPath>
@@ -138,9 +142,10 @@
 							<v8:content>Каталог</v8:content>
 						</v8:item>
 					</Title>
+					<Width>20</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<ContextMenu name="ПолеКаталогРезервнойКопииКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="ПолеКаталогРезервнойКопииExtendedTooltip" id="42"/>
+					<ExtendedTooltip name="ПолеКаталогРезервнойКопииExtendedTooltip" id="44"/>
 					<Events>
 						<Event name="StartChoice">ПолеКаталогРезервнойКопииНачалоВыбора</Event>
 					</Events>
@@ -154,15 +159,9 @@
 					<v8:content>Панель информация</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Панель информация</v8:content>
-				</v8:item>
-			</ToolTip>
 			<VerticalStretch>true</VerticalStretch>
 			<PagesRepresentation>None</PagesRepresentation>
-			<ExtendedTooltip name="ПанельИнформацияExtendedTooltip" id="43"/>
+			<ExtendedTooltip name="ПанельИнформацияExtendedTooltip" id="45"/>
 			<ChildItems>
 				<Page name="АвтоматическийОткат" id="7">
 					<Title>
@@ -177,9 +176,8 @@
 							<v8:content>Автоматический откат</v8:content>
 						</v8:item>
 					</ToolTip>
-					<VerticalStretch>true</VerticalStretch>
 					<Group>Horizontal</Group>
-					<ExtendedTooltip name="АвтоматическийОткатExtendedTooltip" id="44"/>
+					<ExtendedTooltip name="АвтоматическийОткатExtendedTooltip" id="46"/>
 					<ChildItems>
 						<PictureDecoration name="ДекорацияКартинка3" id="34">
 							<Width>5</Width>
@@ -197,7 +195,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="ДекорацияКартинка3КонтекстноеМеню" id="35"/>
-							<ExtendedTooltip name="ДекорацияКартинка3ExtendedTooltip" id="45"/>
+							<ExtendedTooltip name="ДекорацияКартинка3ExtendedTooltip" id="47"/>
 						</PictureDecoration>
 						<LabelDecoration name="НадписьВосстанавливать1" id="36">
 							<VerticalStretch>true</VerticalStretch>
@@ -205,12 +203,13 @@
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Система автоматически выполнит откат при возникновении нештатной ситуации в процессе обновления конфигурации.</v8:content>
+									<v8:content>Система автоматически выполнит откат
+при возникновении нештатной ситуации в процессе обновления конфигурации.</v8:content>
 								</v8:item>
 							</Title>
 							<VerticalAlign>Center</VerticalAlign>
 							<ContextMenu name="НадписьВосстанавливать1КонтекстноеМеню" id="37"/>
-							<ExtendedTooltip name="НадписьВосстанавливать1ExtendedTooltip" id="46"/>
+							<ExtendedTooltip name="НадписьВосстанавливать1ExtendedTooltip" id="48"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -221,20 +220,20 @@
 							<v8:content>Ручной откат</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="РучнойОткатExtendedTooltip" id="47"/>
+					<ExtendedTooltip name="РучнойОткатExtendedTooltip" id="49"/>
 					<ChildItems>
 						<UsualGroup name="ВертикальнаяГруппа1" id="24">
 							<VerticalStretch>true</VerticalStretch>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ВертикальнаяГруппа1ExtendedTooltip" id="48"/>
+							<ExtendedTooltip name="ВертикальнаяГруппа1ExtendedTooltip" id="50"/>
 							<ChildItems>
 								<CheckBoxField name="ВосстанавливатьИнформационнуюБазу" id="22">
 									<DataPath>Объект.ВосстанавливатьИнформационнуюБазу</DataPath>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ВосстанавливатьИнформационнуюБазуКонтекстноеМеню" id="23"/>
-									<ExtendedTooltip name="ВосстанавливатьИнформационнуюБазуExtendedTooltip" id="49"/>
+									<ExtendedTooltip name="ВосстанавливатьИнформационнуюБазуExtendedTooltip" id="51"/>
 									<Events>
 										<Event name="OnChange">ВосстанавливатьИнформационнуюБазуПриИзменении</Event>
 									</Events>
@@ -246,16 +245,9 @@
 											<v8:content>Страницы надписи ручного отката</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страницы надписи ручного отката</v8:content>
-										</v8:item>
-									</ToolTip>
-									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>true</VerticalStretch>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыНадписиРучногоОткатаExtendedTooltip" id="50"/>
+									<ExtendedTooltip name="СтраницыНадписиРучногоОткатаExtendedTooltip" id="52"/>
 									<ChildItems>
 										<Page name="Восстанавливать" id="26">
 											<Title>
@@ -265,7 +257,7 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="ВосстанавливатьExtendedTooltip" id="51"/>
+											<ExtendedTooltip name="ВосстанавливатьExtendedTooltip" id="53"/>
 											<ChildItems>
 												<PictureDecoration name="ДекорацияКартинка" id="9">
 													<Width>5</Width>
@@ -282,7 +274,7 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="ДекорацияКартинкаКонтекстноеМеню" id="10"/>
-													<ExtendedTooltip name="ДекорацияКартинкаExtendedTooltip" id="52"/>
+													<ExtendedTooltip name="ДекорацияКартинкаExtendedTooltip" id="54"/>
 												</PictureDecoration>
 												<LabelDecoration name="НадписьВосстанавливать" id="11">
 													<VerticalStretch>true</VerticalStretch>
@@ -290,12 +282,13 @@
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Система автоматически выполнит откат при возникновении нештатной ситуации в процессе обновления конфигурации.</v8:content>
+															<v8:content>Система автоматически выполнит откат
+при возникновении нештатной ситуации в процессе обновления конфигурации.</v8:content>
 														</v8:item>
 													</Title>
 													<VerticalAlign>Center</VerticalAlign>
 													<ContextMenu name="НадписьВосстанавливатьКонтекстноеМеню" id="12"/>
-													<ExtendedTooltip name="НадписьВосстанавливатьExtendedTooltip" id="53"/>
+													<ExtendedTooltip name="НадписьВосстанавливатьExtendedTooltip" id="55"/>
 												</LabelDecoration>
 											</ChildItems>
 										</Page>
@@ -307,7 +300,7 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="НеВосстанавливатьExtendedTooltip" id="54"/>
+											<ExtendedTooltip name="НеВосстанавливатьExtendedTooltip" id="56"/>
 											<ChildItems>
 												<PictureDecoration name="ДекорацияКартинка2" id="30">
 													<Width>5</Width>
@@ -324,7 +317,7 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="ДекорацияКартинка2КонтекстноеМеню" id="31"/>
-													<ExtendedTooltip name="ДекорацияКартинка2ExtendedTooltip" id="55"/>
+													<ExtendedTooltip name="ДекорацияКартинка2ExtendedTooltip" id="57"/>
 												</PictureDecoration>
 												<LabelDecoration name="НадписьНеВосстанавливать" id="28">
 													<VerticalStretch>true</VerticalStretch>
@@ -332,11 +325,13 @@
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>В указанном каталоге будет создана резервная копия, но при возникновении нештатной ситуации откат из нее производиться не будет.</v8:content>
+															<v8:content>В указанном каталоге будет создана резервная копия, 
+но при возникновении нештатной ситуации откат из нее производиться не будет.</v8:content>
 														</v8:item>
 													</Title>
+													<VerticalAlign>Center</VerticalAlign>
 													<ContextMenu name="НадписьНеВосстанавливатьКонтекстноеМеню" id="29"/>
-													<ExtendedTooltip name="НадписьНеВосстанавливатьExtendedTooltip" id="56"/>
+													<ExtendedTooltip name="НадписьНеВосстанавливатьExtendedTooltip" id="58"/>
 												</LabelDecoration>
 											</ChildItems>
 										</Page>
@@ -359,14 +354,14 @@
 							<v8:content>Без отката</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="БезОткатаExtendedTooltip" id="57"/>
+					<ExtendedTooltip name="БезОткатаExtendedTooltip" id="59"/>
 					<ChildItems>
 						<UsualGroup name="Группа2" id="14">
 							<VerticalStretch>false</VerticalStretch>
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа2ExtendedTooltip" id="58"/>
+							<ExtendedTooltip name="Группа2ExtendedTooltip" id="60"/>
 							<ChildItems>
 								<PictureDecoration name="ДекорацияКартинка1" id="15">
 									<Width>4</Width>
@@ -383,7 +378,7 @@
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="ДекорацияКартинка1КонтекстноеМеню" id="16"/>
-									<ExtendedTooltip name="ДекорацияКартинка1ExtendedTooltip" id="59"/>
+									<ExtendedTooltip name="ДекорацияКартинка1ExtendedTooltip" id="61"/>
 								</PictureDecoration>
 								<LabelDecoration name="Надпись1" id="17">
 									<VerticalStretch>true</VerticalStretch>
@@ -397,7 +392,7 @@
 									<VerticalAlign>Center</VerticalAlign>
 									<TitleHeight>2</TitleHeight>
 									<ContextMenu name="Надпись1КонтекстноеМеню" id="18"/>
-									<ExtendedTooltip name="Надпись1ExtendedTooltip" id="60"/>
+									<ExtendedTooltip name="Надпись1ExtendedTooltip" id="62"/>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>

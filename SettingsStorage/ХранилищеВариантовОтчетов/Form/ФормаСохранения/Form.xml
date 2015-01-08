@@ -27,6 +27,7 @@
 			</Button>
 			<Button name="ФормаГотово" id="39">
 				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Готово</CommandName>
 				<Parameter xsi:nil="true"/>
 				<Title>
@@ -1066,7 +1067,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Далее</v8:content>
+					<v8:content>Далее &gt;&gt;</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1081,7 +1082,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Назад</v8:content>
+					<v8:content>&lt;&lt; Назад</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>

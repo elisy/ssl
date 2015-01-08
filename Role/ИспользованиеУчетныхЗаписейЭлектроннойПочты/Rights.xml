@@ -2,13 +2,9 @@
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
-	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.Пароль</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -17,20 +13,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.СпособSMTPАутентификации</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ПарольSMTP</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -39,10 +27,6 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ИспользоватьДляОтправки</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -50,20 +34,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.SMTPАутентификация</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ОставлятьКопииСообщенийНаСервере</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -79,20 +55,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ОтветственныйЗаОбработкуПисем</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ПортSMTP</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -109,13 +77,17 @@
 "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","")</condition>
 			</restrictionByCondition>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -124,20 +96,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.Ref</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -146,20 +110,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.IsFolder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -168,20 +124,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.Parent</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -190,20 +138,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.StandardAttribute.Code</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.POP3Сервер</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
+		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.СерверВходящейПочтыPOP3</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -212,20 +152,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ПользовательSMTP</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ИспользоватьДляПолучения</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -234,20 +166,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ВремяОжидания</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.АдресЭлектроннойПочты</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -256,20 +180,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ВПредставлениеВключатьИмяПользователя</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ПортPOP3</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -278,20 +194,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ПериодХраненияСообщенийНаСервере</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.ИмяПользователя</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -314,20 +222,12 @@
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.Пользователь</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.SMTPСервер</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
+		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.СерверИсходящейПочтыSMTP</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -335,10 +235,6 @@
 	</object>
 	<object>
 		<name>Catalog.УчетныеЗаписиЭлектроннойПочты.Attribute.СпособPOP3Аутентификации</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

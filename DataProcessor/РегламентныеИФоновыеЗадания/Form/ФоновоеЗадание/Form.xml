@@ -360,5 +360,8 @@
 			</Type>
 			<KeyParameter>true</KeyParameter>
 		</Parameter>
+		<Parameter name="СвойстваФоновогоЗадания">
+			<Type/>
+		</Parameter>
 	</Parameters>
 </Form>
