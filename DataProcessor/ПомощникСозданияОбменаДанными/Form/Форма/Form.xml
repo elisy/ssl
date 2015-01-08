@@ -222,7 +222,6 @@
 											<ChildItems>
 												<InputField name="ИмяФайлаНастроекОбменаДаннымиДляЗагрузки" id="415">
 													<DataPath>Объект.ИмяФайлаНастроекОбменаДаннымиДляЗагрузки</DataPath>
-													<ReadOnly>true</ReadOnly>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -231,18 +230,15 @@
 														</v8:item>
 													</Title>
 													<TitleLocation>None</TitleLocation>
+													<ChoiceButton>true</ChoiceButton>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="ИмяФайлаНастроекОбменаДаннымиДляЗагрузкиКонтекстноеМеню" id="416"/>
 													<ExtendedTooltip name="ИмяФайлаНастроекОбменаДаннымиДляЗагрузкиExtendedTooltip" id="768"/>
+													<Events>
+														<Event name="OnChange">ИмяФайлаНастроекОбменаДаннымиДляЗагрузкиПриИзменении</Event>
+														<Event name="StartChoice">ИмяФайлаНастроекОбменаДаннымиДляЗагрузкиНачалоВыбора</Event>
+													</Events>
 												</InputField>
-												<Button name="ВыбратьФайлНастроекОбменаДанными" id="360">
-													<Type>UsualButton</Type>
-													<SkipOnInput>false</SkipOnInput>
-													<CommandName>Form.Command.ВыбратьФайлНастроекОбменаДанными</CommandName>
-													<Parameter xsi:nil="true"/>
-													<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
-													<ExtendedTooltip name="ВыбратьФайлНастроекОбменаДаннымиExtendedTooltip" id="769"/>
-												</Button>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -260,7 +256,7 @@
 											<v8:content>Страница выбора файла с настройками обмена пустая</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаВыбораФайлаСНастройкамиОбменаПустаяExtendedTooltip" id="770"/>
+									<ExtendedTooltip name="СтраницаВыбораФайлаСНастройкамиОбменаПустаяExtendedTooltip" id="769"/>
 									<ChildItems>
 										<PictureDecoration name="ПустаяКартинка" id="670">
 											<Picture>
@@ -268,7 +264,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="ПустаяКартинкаКонтекстноеМеню" id="671"/>
-											<ExtendedTooltip name="ПустаяКартинкаExtendedTooltip" id="771"/>
+											<ExtendedTooltip name="ПустаяКартинкаExtendedTooltip" id="770"/>
 										</PictureDecoration>
 									</ChildItems>
 								</Page>
@@ -290,7 +286,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="КомпозицияКартинокПервойСтраницыПомощникаExtendedTooltip" id="772"/>
+							<ExtendedTooltip name="КомпозицияКартинокПервойСтраницыПомощникаExtendedTooltip" id="771"/>
 							<ChildItems>
 								<Pages name="СтраницыПервойИнформационнойБазы" id="734">
 									<Title>
@@ -306,7 +302,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыПервойИнформационнойБазыExtendedTooltip" id="773"/>
+									<ExtendedTooltip name="СтраницыПервойИнформационнойБазыExtendedTooltip" id="772"/>
 									<ChildItems>
 										<Page name="СтраницаПервойИнформационнойБазыАктивная" id="736">
 											<Title>
@@ -321,7 +317,7 @@
 													<v8:content>Страница первой информационной базы активная</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницаПервойИнформационнойБазыАктивнаяExtendedTooltip" id="774"/>
+											<ExtendedTooltip name="СтраницаПервойИнформационнойБазыАктивнаяExtendedTooltip" id="773"/>
 											<ChildItems>
 												<PictureDecoration name="КартинкаПервойИнформационнойБазы" id="745">
 													<Width>24</Width>
@@ -337,7 +333,7 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="КартинкаПервойИнформационнойБазыКонтекстноеМеню" id="746"/>
-													<ExtendedTooltip name="КартинкаПервойИнформационнойБазыExtendedTooltip" id="775"/>
+													<ExtendedTooltip name="КартинкаПервойИнформационнойБазыExtendedTooltip" id="774"/>
 												</PictureDecoration>
 											</ChildItems>
 										</Page>
@@ -354,7 +350,7 @@
 													<v8:content>Страница первой информационной базы активная</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницаПервойИнформационнойБазыНеактивнаяExtendedTooltip" id="776"/>
+											<ExtendedTooltip name="СтраницаПервойИнформационнойБазыНеактивнаяExtendedTooltip" id="775"/>
 											<ChildItems>
 												<PictureDecoration name="КартинкаПервойИнформационнойБазы1" id="747">
 													<Width>24</Width>
@@ -371,7 +367,7 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="КартинкаПервойИнформационнойБазы1КонтекстноеМеню" id="748"/>
-													<ExtendedTooltip name="КартинкаПервойИнформационнойБазы1ExtendedTooltip" id="777"/>
+													<ExtendedTooltip name="КартинкаПервойИнформационнойБазы1ExtendedTooltip" id="776"/>
 													<Events>
 														<Event name="Click">КартинкаПервойИнформационнойБазы1Нажатие</Event>
 													</Events>
@@ -395,12 +391,12 @@
 									</ToolTip>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="КартинкиФайловНастроекИСообщенияОбменаExtendedTooltip" id="778"/>
+									<ExtendedTooltip name="КартинкиФайловНастроекИСообщенияОбменаExtendedTooltip" id="777"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация2" id="753">
 											<Height>3</Height>
 											<ContextMenu name="Декорация2КонтекстноеМеню" id="754"/>
-											<ExtendedTooltip name="Декорация2ExtendedTooltip" id="779"/>
+											<ExtendedTooltip name="Декорация2ExtendedTooltip" id="778"/>
 										</LabelDecoration>
 										<PictureDecoration name="КартинкаФайлаНастроек" id="741">
 											<Width>23</Width>
@@ -422,7 +418,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="КартинкаФайлаНастроекКонтекстноеМеню" id="742"/>
-											<ExtendedTooltip name="КартинкаФайлаНастроекExtendedTooltip" id="780"/>
+											<ExtendedTooltip name="КартинкаФайлаНастроекExtendedTooltip" id="779"/>
 										</PictureDecoration>
 										<PictureDecoration name="КартинкаФайлаСообщенияОбмена" id="743">
 											<Width>23</Width>
@@ -444,7 +440,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="КартинкаФайлаСообщенияОбменаКонтекстноеМеню" id="744"/>
-											<ExtendedTooltip name="КартинкаФайлаСообщенияОбменаExtendedTooltip" id="781"/>
+											<ExtendedTooltip name="КартинкаФайлаСообщенияОбменаExtendedTooltip" id="780"/>
 										</PictureDecoration>
 									</ChildItems>
 								</UsualGroup>
@@ -462,7 +458,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыВторойИнформационнойБазыExtendedTooltip" id="782"/>
+									<ExtendedTooltip name="СтраницыВторойИнформационнойБазыExtendedTooltip" id="781"/>
 									<ChildItems>
 										<Page name="СтраницаВторойИнформационнойБазыАктивная" id="738">
 											<Title>
@@ -477,7 +473,7 @@
 													<v8:content>Страница первой информационной базы активная</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницаВторойИнформационнойБазыАктивнаяExtendedTooltip" id="783"/>
+											<ExtendedTooltip name="СтраницаВторойИнформационнойБазыАктивнаяExtendedTooltip" id="782"/>
 											<ChildItems>
 												<PictureDecoration name="КартинкаВторойИнформационнойБазы" id="749">
 													<Width>24</Width>
@@ -493,7 +489,7 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="КартинкаВторойИнформационнойБазыКонтекстноеМеню" id="750"/>
-													<ExtendedTooltip name="КартинкаВторойИнформационнойБазыExtendedTooltip" id="784"/>
+													<ExtendedTooltip name="КартинкаВторойИнформационнойБазыExtendedTooltip" id="783"/>
 												</PictureDecoration>
 											</ChildItems>
 										</Page>
@@ -510,7 +506,7 @@
 													<v8:content>Страница первой информационной базы активная</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницаВторойИнформационнойБазыНеактивнаяExtendedTooltip" id="785"/>
+											<ExtendedTooltip name="СтраницаВторойИнформационнойБазыНеактивнаяExtendedTooltip" id="784"/>
 											<ChildItems>
 												<PictureDecoration name="КартинкаВторойИнформационнойБазы1" id="751">
 													<Width>24</Width>
@@ -527,7 +523,7 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="КартинкаВторойИнформационнойБазы1КонтекстноеМеню" id="752"/>
-													<ExtendedTooltip name="КартинкаВторойИнформационнойБазы1ExtendedTooltip" id="786"/>
+													<ExtendedTooltip name="КартинкаВторойИнформационнойБазы1ExtendedTooltip" id="785"/>
 													<Events>
 														<Event name="Click">КартинкаВторойИнформационнойБазы1Нажатие</Event>
 													</Events>
@@ -541,7 +537,7 @@
 						<LabelDecoration name="Декорация1" id="662">
 							<VerticalStretch>true</VerticalStretch>
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="663"/>
-							<ExtendedTooltip name="Декорация1ExtendedTooltip" id="787"/>
+							<ExtendedTooltip name="Декорация1ExtendedTooltip" id="786"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьДалееВариантРаботыМастера" id="123">
 							<SkipOnInput>false</SkipOnInput>
@@ -552,7 +548,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьДалееВариантРаботыМастераКонтекстноеМеню" id="124"/>
-							<ExtendedTooltip name="НадписьДалееВариантРаботыМастераExtendedTooltip" id="788"/>
+							<ExtendedTooltip name="НадписьДалееВариантРаботыМастераExtendedTooltip" id="787"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -569,7 +565,7 @@
 							<v8:content>Страница мастера задание параметров транспорта FILE</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМастераЗаданиеПараметровТранспортаFILEExtendedTooltip" id="789"/>
+					<ExtendedTooltip name="СтраницаМастераЗаданиеПараметровТранспортаFILEExtendedTooltip" id="788"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокСтраницыМастера7" id="695">
 							<Height>2</Height>
@@ -585,14 +581,14 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ЗаголовокСтраницыМастера7КонтекстноеМеню" id="696"/>
-							<ExtendedTooltip name="ЗаголовокСтраницыМастера7ExtendedTooltip" id="790"/>
+							<ExtendedTooltip name="ЗаголовокСтраницыМастера7ExtendedTooltip" id="789"/>
 						</LabelDecoration>
 						<CheckBoxField name="ИспользоватьПараметрыТранспортаFILE" id="717">
 							<DataPath>Объект.ИспользоватьПараметрыТранспортаFILE</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьПараметрыТранспортаFILEКонтекстноеМеню" id="718"/>
-							<ExtendedTooltip name="ИспользоватьПараметрыТранспортаFILEExtendedTooltip" id="791"/>
+							<ExtendedTooltip name="ИспользоватьПараметрыТранспортаFILEExtendedTooltip" id="790"/>
 							<Events>
 								<Event name="OnChange">ИспользоватьПараметрыТранспортаFILEПриИзменении</Event>
 							</Events>
@@ -612,7 +608,7 @@
 							</ToolTip>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НастройкиТранспортаFILEExtendedTooltip" id="792"/>
+							<ExtendedTooltip name="НастройкиТранспортаFILEExtendedTooltip" id="791"/>
 							<ChildItems>
 								<LabelDecoration name="ПояснениеВыбораКаталогаОбменаИнформациейНаСервере" id="755">
 									<TextColor>style:ПоясняющийТекст</TextColor>
@@ -623,7 +619,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="ПояснениеВыбораКаталогаОбменаИнформациейНаСервереКонтекстноеМеню" id="756"/>
-									<ExtendedTooltip name="ПояснениеВыбораКаталогаОбменаИнформациейНаСервереExtendedTooltip" id="793"/>
+									<ExtendedTooltip name="ПояснениеВыбораКаталогаОбменаИнформациейНаСервереExtendedTooltip" id="792"/>
 								</LabelDecoration>
 								<InputField name="FILEКаталогОбменаИнформацией" id="621">
 									<DataPath>Объект.FILEКаталогОбменаИнформацией</DataPath>
@@ -631,7 +627,7 @@
 									<OpenButton>true</OpenButton>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="FILEКаталогОбменаИнформациейКонтекстноеМеню" id="622"/>
-									<ExtendedTooltip name="FILEКаталогОбменаИнформациейExtendedTooltip" id="794"/>
+									<ExtendedTooltip name="FILEКаталогОбменаИнформациейExtendedTooltip" id="793"/>
 									<Events>
 										<Event name="StartChoice">FILEКаталогОбменаИнформациейНачалоВыбора</Event>
 										<Event name="Opening">FILEКаталогОбменаИнформациейОткрытие</Event>
@@ -642,7 +638,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="FILEСжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="624"/>
-									<ExtendedTooltip name="FILEСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="795"/>
+									<ExtendedTooltip name="FILEСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="794"/>
 								</CheckBoxField>
 								<InputField name="ПарольАрхиваСообщенияОбмена" id="639">
 									<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
@@ -650,19 +646,19 @@
 									<HorizontalStretch>false</HorizontalStretch>
 									<PasswordMode>true</PasswordMode>
 									<ContextMenu name="ПарольАрхиваСообщенияОбменаКонтекстноеМеню" id="640"/>
-									<ExtendedTooltip name="ПарольАрхиваСообщенияОбменаExtendedTooltip" id="796"/>
+									<ExtendedTooltip name="ПарольАрхиваСообщенияОбменаExtendedTooltip" id="795"/>
 								</InputField>
 								<UsualGroup name="ОтступКнопкиПроверкиПодключенияFILE" id="664">
 									<Representation>NormalSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ОтступКнопкиПроверкиПодключенияFILEExtendedTooltip" id="797"/>
+									<ExtendedTooltip name="ОтступКнопкиПроверкиПодключенияFILEExtendedTooltip" id="796"/>
 									<ChildItems>
 										<Button name="ПроверитьПодключениеFILE" id="654">
 											<Type>UsualButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<CommandName>Form.Command.ПроверитьПодключениеFILE</CommandName>
 											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ПроверитьПодключениеFILEExtendedTooltip" id="798"/>
+											<ExtendedTooltip name="ПроверитьПодключениеFILEExtendedTooltip" id="797"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -672,7 +668,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="Декорация4КонтекстноеМеню" id="698"/>
-							<ExtendedTooltip name="Декорация4ExtendedTooltip" id="799"/>
+							<ExtendedTooltip name="Декорация4ExtendedTooltip" id="798"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьДалееFILE" id="699">
 							<SkipOnInput>false</SkipOnInput>
@@ -683,7 +679,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьДалееFILEКонтекстноеМеню" id="700"/>
-							<ExtendedTooltip name="НадписьДалееFILEExtendedTooltip" id="800"/>
+							<ExtendedTooltip name="НадписьДалееFILEExtendedTooltip" id="799"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -700,7 +696,7 @@
 							<v8:content>Страница мастера задание параметров транспорта FTP</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМастераЗаданиеПараметровТранспортаFTPExtendedTooltip" id="801"/>
+					<ExtendedTooltip name="СтраницаМастераЗаданиеПараметровТранспортаFTPExtendedTooltip" id="800"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокСтраницыМастера9" id="709">
 							<Height>2</Height>
@@ -716,14 +712,14 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ЗаголовокСтраницыМастера9КонтекстноеМеню" id="710"/>
-							<ExtendedTooltip name="ЗаголовокСтраницыМастера9ExtendedTooltip" id="802"/>
+							<ExtendedTooltip name="ЗаголовокСтраницыМастера9ExtendedTooltip" id="801"/>
 						</LabelDecoration>
 						<CheckBoxField name="ИспользоватьПараметрыТранспортаFTP" id="719">
 							<DataPath>Объект.ИспользоватьПараметрыТранспортаFTP</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьПараметрыТранспортаFTPКонтекстноеМеню" id="720"/>
-							<ExtendedTooltip name="ИспользоватьПараметрыТранспортаFTPExtendedTooltip" id="803"/>
+							<ExtendedTooltip name="ИспользоватьПараметрыТранспортаFTPExtendedTooltip" id="802"/>
 							<Events>
 								<Event name="OnChange">ИспользоватьПараметрыТранспортаFTPПриИзменении</Event>
 							</Events>
@@ -743,7 +739,7 @@
 							</ToolTip>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НастройкиТранспортаFTPExtendedTooltip" id="804"/>
+							<ExtendedTooltip name="НастройкиТранспортаFTPExtendedTooltip" id="803"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаСерверПорт" id="650">
 									<Title>
@@ -761,13 +757,13 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаСерверПортExtendedTooltip" id="805"/>
+									<ExtendedTooltip name="ГруппаСерверПортExtendedTooltip" id="804"/>
 									<ChildItems>
 										<InputField name="FTPСоединениеПуть" id="637">
 											<DataPath>Объект.FTPСоединениеПуть</DataPath>
 											<AutoMarkIncomplete>true</AutoMarkIncomplete>
 											<ContextMenu name="FTPСоединениеПутьКонтекстноеМеню" id="638"/>
-											<ExtendedTooltip name="FTPСоединениеПутьExtendedTooltip" id="806"/>
+											<ExtendedTooltip name="FTPСоединениеПутьExtendedTooltip" id="805"/>
 										</InputField>
 										<InputField name="FTPСоединениеПорт" id="635">
 											<DataPath>Объект.FTPСоединениеПорт</DataPath>
@@ -779,7 +775,7 @@
 											</EditFormat>
 											<AutoMarkIncomplete>true</AutoMarkIncomplete>
 											<ContextMenu name="FTPСоединениеПортКонтекстноеМеню" id="636"/>
-											<ExtendedTooltip name="FTPСоединениеПортExtendedTooltip" id="807"/>
+											<ExtendedTooltip name="FTPСоединениеПортExtendedTooltip" id="806"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -799,19 +795,19 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПользовательПарольExtendedTooltip" id="808"/>
+									<ExtendedTooltip name="ГруппаПользовательПарольExtendedTooltip" id="807"/>
 									<ChildItems>
 										<InputField name="FTPСоединениеПользователь" id="633">
 											<DataPath>Объект.FTPСоединениеПользователь</DataPath>
 											<ContextMenu name="FTPСоединениеПользовательКонтекстноеМеню" id="634"/>
-											<ExtendedTooltip name="FTPСоединениеПользовательExtendedTooltip" id="809"/>
+											<ExtendedTooltip name="FTPСоединениеПользовательExtendedTooltip" id="808"/>
 										</InputField>
 										<InputField name="FTPСоединениеПароль" id="629">
 											<DataPath>Объект.FTPСоединениеПароль</DataPath>
 											<Width>20</Width>
 											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="FTPСоединениеПарольКонтекстноеМеню" id="630"/>
-											<ExtendedTooltip name="FTPСоединениеПарольExtendedTooltip" id="810"/>
+											<ExtendedTooltip name="FTPСоединениеПарольExtendedTooltip" id="809"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -819,21 +815,21 @@
 									<DataPath>Объект.FTPСоединениеМаксимальныйДопустимыйРазмерСообщения</DataPath>
 									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="FTPСоединениеМаксимальныйДопустимыйРазмерСообщенияКонтекстноеМеню" id="628"/>
-									<ExtendedTooltip name="FTPСоединениеМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="811"/>
+									<ExtendedTooltip name="FTPСоединениеМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="810"/>
 								</InputField>
 								<CheckBoxField name="FTPСоединениеПассивноеСоединение" id="631">
 									<DataPath>Объект.FTPСоединениеПассивноеСоединение</DataPath>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="FTPСоединениеПассивноеСоединениеКонтекстноеМеню" id="632"/>
-									<ExtendedTooltip name="FTPСоединениеПассивноеСоединениеExtendedTooltip" id="812"/>
+									<ExtendedTooltip name="FTPСоединениеПассивноеСоединениеExtendedTooltip" id="811"/>
 								</CheckBoxField>
 								<CheckBoxField name="FTPСжиматьФайлИсходящегоСообщения" id="625">
 									<DataPath>Объект.FTPСжиматьФайлИсходящегоСообщения</DataPath>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="FTPСжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="626"/>
-									<ExtendedTooltip name="FTPСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="813"/>
+									<ExtendedTooltip name="FTPСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="812"/>
 								</CheckBoxField>
 								<UsualGroup name="ГруппаЗаданияПароляСообщенияОбменаFTP" id="661">
 									<Title>
@@ -850,7 +846,7 @@
 									</ToolTip>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаЗаданияПароляСообщенияОбменаFTPExtendedTooltip" id="814"/>
+									<ExtendedTooltip name="ГруппаЗаданияПароляСообщенияОбменаFTPExtendedTooltip" id="813"/>
 									<ChildItems>
 										<InputField name="ПарольАрхиваСообщенияОбмена1" id="657">
 											<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
@@ -858,7 +854,7 @@
 											<HorizontalStretch>false</HorizontalStretch>
 											<PasswordMode>true</PasswordMode>
 											<ContextMenu name="ПарольАрхиваСообщенияОбмена1КонтекстноеМеню" id="658"/>
-											<ExtendedTooltip name="ПарольАрхиваСообщенияОбмена1ExtendedTooltip" id="815"/>
+											<ExtendedTooltip name="ПарольАрхиваСообщенияОбмена1ExtendedTooltip" id="814"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -871,14 +867,14 @@
 									</ToolTip>
 									<Representation>NormalSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ОтступКнопкиПроверкиПодключенияFTPExtendedTooltip" id="816"/>
+									<ExtendedTooltip name="ОтступКнопкиПроверкиПодключенияFTPExtendedTooltip" id="815"/>
 									<ChildItems>
 										<Button name="ПроверитьПодключениеFTP" id="655">
 											<Type>UsualButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<CommandName>Form.Command.ПроверитьПодключениеFTP</CommandName>
 											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ПроверитьПодключениеFTPExtendedTooltip" id="817"/>
+											<ExtendedTooltip name="ПроверитьПодключениеFTPExtendedTooltip" id="816"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -888,7 +884,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="Декорация8КонтекстноеМеню" id="712"/>
-							<ExtendedTooltip name="Декорация8ExtendedTooltip" id="818"/>
+							<ExtendedTooltip name="Декорация8ExtendedTooltip" id="817"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьДалееFTP" id="713">
 							<SkipOnInput>false</SkipOnInput>
@@ -899,7 +895,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьДалееFTPКонтекстноеМеню" id="714"/>
-							<ExtendedTooltip name="НадписьДалееFTPExtendedTooltip" id="819"/>
+							<ExtendedTooltip name="НадписьДалееFTPExtendedTooltip" id="818"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -916,7 +912,7 @@
 							<v8:content>Страница мастера задание параметров транспорта EMAIL</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМастераЗаданиеПараметровТранспортаEMAILExtendedTooltip" id="820"/>
+					<ExtendedTooltip name="СтраницаМастераЗаданиеПараметровТранспортаEMAILExtendedTooltip" id="819"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокСтраницыМастера8" id="702">
 							<Height>2</Height>
@@ -932,14 +928,14 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ЗаголовокСтраницыМастера8КонтекстноеМеню" id="703"/>
-							<ExtendedTooltip name="ЗаголовокСтраницыМастера8ExtendedTooltip" id="821"/>
+							<ExtendedTooltip name="ЗаголовокСтраницыМастера8ExtendedTooltip" id="820"/>
 						</LabelDecoration>
 						<CheckBoxField name="ИспользоватьПараметрыТранспортаEMAIL" id="721">
 							<DataPath>Объект.ИспользоватьПараметрыТранспортаEMAIL</DataPath>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьПараметрыТранспортаEMAILКонтекстноеМеню" id="722"/>
-							<ExtendedTooltip name="ИспользоватьПараметрыТранспортаEMAILExtendedTooltip" id="822"/>
+							<ExtendedTooltip name="ИспользоватьПараметрыТранспортаEMAILExtendedTooltip" id="821"/>
 							<Events>
 								<Event name="OnChange">ИспользоватьПараметрыТранспортаEMAILПриИзменении</Event>
 							</Events>
@@ -959,26 +955,26 @@
 							</ToolTip>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НастройкиТранспортаEMAILExtendedTooltip" id="823"/>
+							<ExtendedTooltip name="НастройкиТранспортаEMAILExtendedTooltip" id="822"/>
 							<ChildItems>
 								<InputField name="EMAILУчетнаяЗапись" id="652">
 									<DataPath>Объект.EMAILУчетнаяЗапись</DataPath>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="EMAILУчетнаяЗаписьКонтекстноеМеню" id="653"/>
-									<ExtendedTooltip name="EMAILУчетнаяЗаписьExtendedTooltip" id="824"/>
+									<ExtendedTooltip name="EMAILУчетнаяЗаписьExtendedTooltip" id="823"/>
 								</InputField>
 								<InputField name="EMAILМаксимальныйДопустимыйРазмерСообщения" id="643">
 									<DataPath>Объект.EMAILМаксимальныйДопустимыйРазмерСообщения</DataPath>
 									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="EMAILМаксимальныйДопустимыйРазмерСообщенияКонтекстноеМеню" id="644"/>
-									<ExtendedTooltip name="EMAILМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="825"/>
+									<ExtendedTooltip name="EMAILМаксимальныйДопустимыйРазмерСообщенияExtendedTooltip" id="824"/>
 								</InputField>
 								<CheckBoxField name="EMAILСжиматьФайлИсходящегоСообщения" id="645">
 									<DataPath>Объект.EMAILСжиматьФайлИсходящегоСообщения</DataPath>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="EMAILСжиматьФайлИсходящегоСообщенияКонтекстноеМеню" id="646"/>
-									<ExtendedTooltip name="EMAILСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="826"/>
+									<ExtendedTooltip name="EMAILСжиматьФайлИсходящегоСообщенияExtendedTooltip" id="825"/>
 								</CheckBoxField>
 								<InputField name="ПарольАрхиваСообщенияОбмена2" id="659">
 									<DataPath>Объект.ПарольАрхиваСообщенияОбмена</DataPath>
@@ -986,19 +982,19 @@
 									<HorizontalStretch>false</HorizontalStretch>
 									<PasswordMode>true</PasswordMode>
 									<ContextMenu name="ПарольАрхиваСообщенияОбмена2КонтекстноеМеню" id="660"/>
-									<ExtendedTooltip name="ПарольАрхиваСообщенияОбмена2ExtendedTooltip" id="827"/>
+									<ExtendedTooltip name="ПарольАрхиваСообщенияОбмена2ExtendedTooltip" id="826"/>
 								</InputField>
 								<UsualGroup name="ОтступКнопкиПроверкиПодключенияEMAIL" id="666">
 									<Representation>NormalSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ОтступКнопкиПроверкиПодключенияEMAILExtendedTooltip" id="828"/>
+									<ExtendedTooltip name="ОтступКнопкиПроверкиПодключенияEMAILExtendedTooltip" id="827"/>
 									<ChildItems>
 										<Button name="ПроверитьПодключениеEMAIL" id="656">
 											<Type>UsualButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<CommandName>Form.Command.ПроверитьПодключениеEMAIL</CommandName>
 											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ПроверитьПодключениеEMAILExtendedTooltip" id="829"/>
+											<ExtendedTooltip name="ПроверитьПодключениеEMAILExtendedTooltip" id="828"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -1008,7 +1004,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="Декорация7КонтекстноеМеню" id="705"/>
-							<ExtendedTooltip name="Декорация7ExtendedTooltip" id="830"/>
+							<ExtendedTooltip name="Декорация7ExtendedTooltip" id="829"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьДалееEMAIL" id="706">
 							<SkipOnInput>false</SkipOnInput>
@@ -1019,7 +1015,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьДалееEMAILКонтекстноеМеню" id="707"/>
-							<ExtendedTooltip name="НадписьДалееEMAILExtendedTooltip" id="831"/>
+							<ExtendedTooltip name="НадписьДалееEMAILExtendedTooltip" id="830"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -1036,7 +1032,7 @@
 							<v8:content>Страница мастера настройка параметров</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМастераНастройкаПараметровExtendedTooltip" id="832"/>
+					<ExtendedTooltip name="СтраницаМастераНастройкаПараметровExtendedTooltip" id="831"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокСтраницыМастера5" id="174">
 							<Height>2</Height>
@@ -1052,14 +1048,14 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ЗаголовокСтраницыМастера5КонтекстноеМеню" id="175"/>
-							<ExtendedTooltip name="ЗаголовокСтраницыМастера5ExtendedTooltip" id="833"/>
+							<ExtendedTooltip name="ЗаголовокСтраницыМастера5ExtendedTooltip" id="832"/>
 						</LabelDecoration>
 						<InputField name="НаименованиеНастройкиВыполненияОбмена" id="67">
 							<DataPath>Объект.НаименованиеНастройкиВыполненияОбмена</DataPath>
 							<TitleLocation>Top</TitleLocation>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="НаименованиеНастройкиВыполненияОбменаКонтекстноеМеню" id="68"/>
-							<ExtendedTooltip name="НаименованиеНастройкиВыполненияОбменаExtendedTooltip" id="834"/>
+							<ExtendedTooltip name="НаименованиеНастройкиВыполненияОбменаExtendedTooltip" id="833"/>
 						</InputField>
 						<InputField name="ВидТранспортаСообщенийОбмена" id="715">
 							<DataPath>Объект.ВидТранспортаСообщенийОбмена</DataPath>
@@ -1109,7 +1105,7 @@
 							</ChoiceList>
 							<ChoiceListButton>true</ChoiceListButton>
 							<ContextMenu name="ВидТранспортаСообщенийОбменаКонтекстноеМеню" id="716"/>
-							<ExtendedTooltip name="ВидТранспортаСообщенийОбменаExtendedTooltip" id="835"/>
+							<ExtendedTooltip name="ВидТранспортаСообщенийОбменаExtendedTooltip" id="834"/>
 						</InputField>
 						<UsualGroup name="РамкаГруппыПрефиксаИнформационнойБазы" id="116">
 							<ToolTip>
@@ -1121,13 +1117,13 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="РамкаГруппыПрефиксаИнформационнойБазыExtendedTooltip" id="836"/>
+							<ExtendedTooltip name="РамкаГруппыПрефиксаИнформационнойБазыExtendedTooltip" id="835"/>
 							<ChildItems>
 								<InputField name="ПрефиксИнформационнойБазыИсточника" id="117">
 									<DataPath>Объект.ПрефиксИнформационнойБазыИсточника</DataPath>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="ПрефиксИнформационнойБазыИсточникаКонтекстноеМеню" id="118"/>
-									<ExtendedTooltip name="ПрефиксИнформационнойБазыИсточникаExtendedTooltip" id="837"/>
+									<ExtendedTooltip name="ПрефиксИнформационнойБазыИсточникаExtendedTooltip" id="836"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -1147,7 +1143,7 @@
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НастройкиУзлаExtendedTooltip" id="838"/>
+							<ExtendedTooltip name="НастройкиУзлаExtendedTooltip" id="837"/>
 							<ChildItems>
 								<UsualGroup name="РамкаГруппыОграничений" id="111">
 									<Title>
@@ -1165,7 +1161,7 @@
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>false</VerticalStretch>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="РамкаГруппыОграниченийExtendedTooltip" id="839"/>
+									<ExtendedTooltip name="РамкаГруппыОграниченийExtendedTooltip" id="838"/>
 									<ChildItems>
 										<InputField name="ОписаниеОграниченийПередачиДанных" id="387">
 											<DataPath>ОписаниеОграниченийПередачиДанных</DataPath>
@@ -1175,20 +1171,20 @@
 											<HorizontalStretch>true</HorizontalStretch>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="ОписаниеОграниченийПередачиДанныхКонтекстноеМеню" id="388"/>
-											<ExtendedTooltip name="ОписаниеОграниченийПередачиДанныхExtendedTooltip" id="840"/>
+											<ExtendedTooltip name="ОписаниеОграниченийПередачиДанныхExtendedTooltip" id="839"/>
 										</InputField>
 										<UsualGroup name="Группа10" id="389">
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа10ExtendedTooltip" id="841"/>
+											<ExtendedTooltip name="Группа10ExtendedTooltip" id="840"/>
 											<ChildItems>
 												<Button name="НастройкаОграниченийРегистрацииДанных" id="110">
 													<Type>UsualButton</Type>
 													<SkipOnInput>false</SkipOnInput>
 													<CommandName>Form.Command.НастройкаОграниченийРегистрацииДанных</CommandName>
 													<Parameter xsi:nil="true"/>
-													<ExtendedTooltip name="НастройкаОграниченийРегистрацииДанныхExtendedTooltip" id="842"/>
+													<ExtendedTooltip name="НастройкаОграниченийРегистрацииДанныхExtendedTooltip" id="841"/>
 												</Button>
 											</ChildItems>
 										</UsualGroup>
@@ -1204,7 +1200,7 @@
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>false</VerticalStretch>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="РамкаГруппыЗначенийПоУмолчаниюExtendedTooltip" id="843"/>
+									<ExtendedTooltip name="РамкаГруппыЗначенийПоУмолчаниюExtendedTooltip" id="842"/>
 									<ChildItems>
 										<InputField name="ОписаниеЗначенийПоУмолчанию" id="533">
 											<DataPath>ОписаниеЗначенийПоУмолчанию</DataPath>
@@ -1214,20 +1210,20 @@
 											<HorizontalStretch>true</HorizontalStretch>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="ОписаниеЗначенийПоУмолчаниюКонтекстноеМеню" id="534"/>
-											<ExtendedTooltip name="ОписаниеЗначенийПоУмолчаниюExtendedTooltip" id="844"/>
+											<ExtendedTooltip name="ОписаниеЗначенийПоУмолчаниюExtendedTooltip" id="843"/>
 										</InputField>
 										<UsualGroup name="Группа102" id="535">
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа102ExtendedTooltip" id="845"/>
+											<ExtendedTooltip name="Группа102ExtendedTooltip" id="844"/>
 											<ChildItems>
 												<Button name="НастройкаЗначенийПоУмолчанию" id="538">
 													<Type>UsualButton</Type>
 													<SkipOnInput>false</SkipOnInput>
 													<CommandName>Form.Command.НастройкаЗначенийПоУмолчанию</CommandName>
 													<Parameter xsi:nil="true"/>
-													<ExtendedTooltip name="НастройкаЗначенийПоУмолчаниюExtendedTooltip" id="846"/>
+													<ExtendedTooltip name="НастройкаЗначенийПоУмолчаниюExtendedTooltip" id="845"/>
 												</Button>
 											</ChildItems>
 										</UsualGroup>
@@ -1239,7 +1235,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="Декорация5КонтекстноеМеню" id="195"/>
-							<ExtendedTooltip name="Декорация5ExtendedTooltip" id="847"/>
+							<ExtendedTooltip name="Декорация5ExtendedTooltip" id="846"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьДалееПодтверждениеНастроек" id="131">
 							<SkipOnInput>false</SkipOnInput>
@@ -1250,7 +1246,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьДалееПодтверждениеНастроекКонтекстноеМеню" id="132"/>
-							<ExtendedTooltip name="НадписьДалееПодтверждениеНастроекExtendedTooltip" id="848"/>
+							<ExtendedTooltip name="НадписьДалееПодтверждениеНастроекExtendedTooltip" id="847"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -1267,7 +1263,7 @@
 							<v8:content>Страница мастера итог настройки обмена</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМастераИтогНастройкиОбменаExtendedTooltip" id="849"/>
+					<ExtendedTooltip name="СтраницаМастераИтогНастройкиОбменаExtendedTooltip" id="848"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокСтраницыМастераГотово" id="176">
 							<Height>2</Height>
@@ -1283,7 +1279,7 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ЗаголовокСтраницыМастераГотовоКонтекстноеМеню" id="177"/>
-							<ExtendedTooltip name="ЗаголовокСтраницыМастераГотовоExtendedTooltip" id="850"/>
+							<ExtendedTooltip name="ЗаголовокСтраницыМастераГотовоExtendedTooltip" id="849"/>
 						</LabelDecoration>
 						<InputField name="ПредставлениеРезультатаНастройкиОбмена" id="119">
 							<DataPath>ПредставлениеРезультатаНастройкиОбмена</DataPath>
@@ -1301,7 +1297,7 @@
 							<VerticalStretch>false</VerticalStretch>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ПредставлениеРезультатаНастройкиОбменаКонтекстноеМеню" id="120"/>
-							<ExtendedTooltip name="ПредставлениеРезультатаНастройкиОбменаExtendedTooltip" id="851"/>
+							<ExtendedTooltip name="ПредставлениеРезультатаНастройкиОбменаExtendedTooltip" id="850"/>
 						</InputField>
 						<Pages name="СтраницыНадписиИнформацииОбОткрытииПомощникаСопоставления" id="728">
 							<Title>
@@ -1317,7 +1313,7 @@
 								</v8:item>
 							</ToolTip>
 							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="СтраницыНадписиИнформацииОбОткрытииПомощникаСопоставленияExtendedTooltip" id="852"/>
+							<ExtendedTooltip name="СтраницыНадписиИнформацииОбОткрытииПомощникаСопоставленияExtendedTooltip" id="851"/>
 							<ChildItems>
 								<Page name="СтраницаНадписиИнформацииОбОткрытииПомощникаСопоставления" id="725">
 									<Title>
@@ -1333,7 +1329,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
-									<ExtendedTooltip name="СтраницаНадписиИнформацииОбОткрытииПомощникаСопоставленияExtendedTooltip" id="853"/>
+									<ExtendedTooltip name="СтраницаНадписиИнформацииОбОткрытииПомощникаСопоставленияExtendedTooltip" id="852"/>
 									<ChildItems>
 										<PictureDecoration name="ДекорацияИнформация" id="726">
 											<Width>2</Width>
@@ -1349,7 +1345,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="ДекорацияИнформацияКонтекстноеМеню" id="727"/>
-											<ExtendedTooltip name="ДекорацияИнформацияExtendedTooltip" id="854"/>
+											<ExtendedTooltip name="ДекорацияИнформацияExtendedTooltip" id="853"/>
 										</PictureDecoration>
 										<LabelDecoration name="НадписьИнформацияОбОткрытииПомощникаСопоставления" id="723">
 											<TextColor>style:ПоясняющийТекст</TextColor>
@@ -1360,7 +1356,7 @@
 												</v8:item>
 											</Title>
 											<ContextMenu name="НадписьИнформацияОбОткрытииПомощникаСопоставленияКонтекстноеМеню" id="724"/>
-											<ExtendedTooltip name="НадписьИнформацияОбОткрытииПомощникаСопоставленияExtendedTooltip" id="855"/>
+											<ExtendedTooltip name="НадписьИнформацияОбОткрытииПомощникаСопоставленияExtendedTooltip" id="854"/>
 										</LabelDecoration>
 									</ChildItems>
 								</Page>
@@ -1377,7 +1373,7 @@
 											<v8:content>Страница надписи информации об открытии помощника сопоставления пустая</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаНадписиИнформацииОбОткрытииПомощникаСопоставленияПустаяExtendedTooltip" id="856"/>
+									<ExtendedTooltip name="СтраницаНадписиИнформацииОбОткрытииПомощникаСопоставленияПустаяExtendedTooltip" id="855"/>
 									<ChildItems>
 										<PictureDecoration name="ПустаяКартинка1" id="730">
 											<Width>2</Width>
@@ -1387,7 +1383,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="ПустаяКартинка1КонтекстноеМеню" id="731"/>
-											<ExtendedTooltip name="ПустаяКартинка1ExtendedTooltip" id="857"/>
+											<ExtendedTooltip name="ПустаяКартинка1ExtendedTooltip" id="856"/>
 										</PictureDecoration>
 									</ChildItems>
 								</Page>
@@ -1397,7 +1393,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="Декорация10КонтекстноеМеню" id="197"/>
-							<ExtendedTooltip name="Декорация10ExtendedTooltip" id="858"/>
+							<ExtendedTooltip name="Декорация10ExtendedTooltip" id="857"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьДалееДляСозданиеНастройки" id="133">
 							<SkipOnInput>false</SkipOnInput>
@@ -1408,7 +1404,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьДалееДляСозданиеНастройкиКонтекстноеМеню" id="134"/>
-							<ExtendedTooltip name="НадписьДалееДляСозданиеНастройкиExtendedTooltip" id="859"/>
+							<ExtendedTooltip name="НадписьДалееДляСозданиеНастройкиExtendedTooltip" id="858"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -1425,7 +1421,7 @@
 							<v8:content>Страница 14</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМастераОкончаниеСВыгрузкойНастройкиExtendedTooltip" id="860"/>
+					<ExtendedTooltip name="СтраницаМастераОкончаниеСВыгрузкойНастройкиExtendedTooltip" id="859"/>
 					<ChildItems>
 						<LabelDecoration name="ЗаголовокСтраницыМастераЗакрыть" id="331">
 							<Height>2</Height>
@@ -1441,7 +1437,7 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ЗаголовокСтраницыМастераЗакрытьКонтекстноеМеню" id="332"/>
-							<ExtendedTooltip name="ЗаголовокСтраницыМастераЗакрытьExtendedTooltip" id="861"/>
+							<ExtendedTooltip name="ЗаголовокСтраницыМастераЗакрытьExtendedTooltip" id="860"/>
 						</LabelDecoration>
 						<UsualGroup name="ГруппаФайлаНастроекОбмена1" id="338">
 							<Title>
@@ -1459,12 +1455,12 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаФайлаНастроекОбмена1ExtendedTooltip" id="862"/>
+							<ExtendedTooltip name="ГруппаФайлаНастроекОбмена1ExtendedTooltip" id="861"/>
 							<ChildItems>
 								<UsualGroup name="Группа91" id="339">
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа91ExtendedTooltip" id="863"/>
+									<ExtendedTooltip name="Группа91ExtendedTooltip" id="862"/>
 									<ChildItems>
 										<PictureDecoration name="Декорация111" id="340">
 											<Width>5</Width>
@@ -1475,14 +1471,14 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="Декорация111КонтекстноеМеню" id="341"/>
-											<ExtendedTooltip name="Декорация111ExtendedTooltip" id="864"/>
+											<ExtendedTooltip name="Декорация111ExtendedTooltip" id="863"/>
 										</PictureDecoration>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа101" id="342">
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа101ExtendedTooltip" id="865"/>
+									<ExtendedTooltip name="Группа101ExtendedTooltip" id="864"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация141" id="412">
 											<SkipOnInput>false</SkipOnInput>
@@ -1495,13 +1491,13 @@
 											<VerticalAlign>Bottom</VerticalAlign>
 											<TitleHeight>2</TitleHeight>
 											<ContextMenu name="Декорация141КонтекстноеМеню" id="413"/>
-											<ExtendedTooltip name="Декорация141ExtendedTooltip" id="866"/>
+											<ExtendedTooltip name="Декорация141ExtendedTooltip" id="865"/>
 										</LabelDecoration>
 										<UsualGroup name="Группа11" id="414">
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа11ExtendedTooltip" id="867"/>
+											<ExtendedTooltip name="Группа11ExtendedTooltip" id="866"/>
 											<ChildItems>
 												<InputField name="ИмяФайлаНастроекОбменаДанными" id="378">
 													<DataPath>Объект.ИмяФайлаНастроекОбменаДанными</DataPath>
@@ -1509,7 +1505,7 @@
 													<TitleLocation>None</TitleLocation>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="ИмяФайлаНастроекОбменаДаннымиКонтекстноеМеню" id="379"/>
-													<ExtendedTooltip name="ИмяФайлаНастроекОбменаДаннымиExtendedTooltip" id="868"/>
+													<ExtendedTooltip name="ИмяФайлаНастроекОбменаДаннымиExtendedTooltip" id="867"/>
 												</InputField>
 												<Button name="СохранитьФайлНастроекОбменаДанными" id="363">
 													<Type>UsualButton</Type>
@@ -1517,7 +1513,7 @@
 													<CommandName>Form.Command.СохранитьФайлНастроекОбменаДанными</CommandName>
 													<Parameter xsi:nil="true"/>
 													<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
-													<ExtendedTooltip name="СохранитьФайлНастроекОбменаДаннымиExtendedTooltip" id="869"/>
+													<ExtendedTooltip name="СохранитьФайлНастроекОбменаДаннымиExtendedTooltip" id="868"/>
 												</Button>
 											</ChildItems>
 										</UsualGroup>
@@ -1533,7 +1529,7 @@
 								</v8:item>
 							</ToolTip>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаДляСтраницФинальногоДействияExtendedTooltip" id="870"/>
+							<ExtendedTooltip name="ГруппаДляСтраницФинальногоДействияExtendedTooltip" id="869"/>
 							<ChildItems>
 								<Pages name="СтраницыОтображенияФинальногоДействия" id="587">
 									<Title>
@@ -1549,7 +1545,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыОтображенияФинальногоДействияExtendedTooltip" id="871"/>
+									<ExtendedTooltip name="СтраницыОтображенияФинальногоДействияExtendedTooltip" id="870"/>
 									<ChildItems>
 										<Page name="СтраницаВыполнитьВыгрузкуДанныхДляСопоставления" id="588">
 											<Title>
@@ -1566,7 +1562,7 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="СтраницаВыполнитьВыгрузкуДанныхДляСопоставленияExtendedTooltip" id="872"/>
+											<ExtendedTooltip name="СтраницаВыполнитьВыгрузкуДанныхДляСопоставленияExtendedTooltip" id="871"/>
 											<ChildItems>
 												<PictureDecoration name="Декорация181" id="444">
 													<Width>6</Width>
@@ -1577,11 +1573,11 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="Декорация181КонтекстноеМеню" id="445"/>
-													<ExtendedTooltip name="Декорация181ExtendedTooltip" id="873"/>
+													<ExtendedTooltip name="Декорация181ExtendedTooltip" id="872"/>
 												</PictureDecoration>
 												<UsualGroup name="Группа261" id="446">
 													<Representation>None</Representation>
-													<ExtendedTooltip name="Группа261ExtendedTooltip" id="874"/>
+													<ExtendedTooltip name="Группа261ExtendedTooltip" id="873"/>
 													<ChildItems>
 														<CheckBoxField name="ВыполнитьОбменДаннымиСейчас21" id="449">
 															<DataPath>ВыполнитьОбменДаннымиСейчас</DataPath>
@@ -1590,7 +1586,7 @@
 															<VerticalAlign>Center</VerticalAlign>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ВыполнитьОбменДаннымиСейчас21КонтекстноеМеню" id="450"/>
-															<ExtendedTooltip name="ВыполнитьОбменДаннымиСейчас21ExtendedTooltip" id="875"/>
+															<ExtendedTooltip name="ВыполнитьОбменДаннымиСейчас21ExtendedTooltip" id="874"/>
 														</CheckBoxField>
 														<LabelDecoration name="ПоясняющаяНадписьКФлагуСопоставления" id="596">
 															<SkipOnInput>false</SkipOnInput>
@@ -1606,7 +1602,7 @@
 															</Title>
 															<TitleHeight>2</TitleHeight>
 															<ContextMenu name="ПоясняющаяНадписьКФлагуСопоставленияКонтекстноеМеню" id="597"/>
-															<ExtendedTooltip name="ПоясняющаяНадписьКФлагуСопоставленияExtendedTooltip" id="876"/>
+															<ExtendedTooltip name="ПоясняющаяНадписьКФлагуСопоставленияExtendedTooltip" id="875"/>
 														</LabelDecoration>
 													</ChildItems>
 												</UsualGroup>
@@ -1626,7 +1622,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="СтраницаВыполнитьСозданиеНачальногоОбразаПодчиненногоУзлаExtendedTooltip" id="877"/>
+											<ExtendedTooltip name="СтраницаВыполнитьСозданиеНачальногоОбразаПодчиненногоУзлаExtendedTooltip" id="876"/>
 											<ChildItems>
 												<PictureDecoration name="Декорация182" id="590">
 													<Width>6</Width>
@@ -1637,18 +1633,18 @@
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="Декорация182КонтекстноеМеню" id="591"/>
-													<ExtendedTooltip name="Декорация182ExtendedTooltip" id="878"/>
+													<ExtendedTooltip name="Декорация182ExtendedTooltip" id="877"/>
 												</PictureDecoration>
 												<UsualGroup name="Группа1" id="595">
 													<Representation>None</Representation>
-													<ExtendedTooltip name="Группа1ExtendedTooltip" id="879"/>
+													<ExtendedTooltip name="Группа1ExtendedTooltip" id="878"/>
 													<ChildItems>
 														<CheckBoxField name="ВыполнитьСозданиеНачальногоОбразаСейчас" id="593">
 															<DataPath>ВыполнитьСозданиеНачальногоОбразаСейчас</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ВыполнитьСозданиеНачальногоОбразаСейчасКонтекстноеМеню" id="594"/>
-															<ExtendedTooltip name="ВыполнитьСозданиеНачальногоОбразаСейчасExtendedTooltip" id="880"/>
+															<ExtendedTooltip name="ВыполнитьСозданиеНачальногоОбразаСейчасExtendedTooltip" id="879"/>
 														</CheckBoxField>
 														<LabelDecoration name="ПоясняющаяНадписьКФлагуСозданияНачальногоОбраза" id="598">
 															<SkipOnInput>false</SkipOnInput>
@@ -1661,7 +1657,7 @@
 															</Title>
 															<TitleHeight>2</TitleHeight>
 															<ContextMenu name="ПоясняющаяНадписьКФлагуСозданияНачальногоОбразаКонтекстноеМеню" id="599"/>
-															<ExtendedTooltip name="ПоясняющаяНадписьКФлагуСозданияНачальногоОбразаExtendedTooltip" id="881"/>
+															<ExtendedTooltip name="ПоясняющаяНадписьКФлагуСозданияНачальногоОбразаExtendedTooltip" id="880"/>
 														</LabelDecoration>
 													</ChildItems>
 												</UsualGroup>
@@ -1675,7 +1671,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<SkipOnInput>false</SkipOnInput>
 							<ContextMenu name="Декорация103КонтекстноеМеню" id="348"/>
-							<ExtendedTooltip name="Декорация103ExtendedTooltip" id="882"/>
+							<ExtendedTooltip name="Декорация103ExtendedTooltip" id="881"/>
 						</LabelDecoration>
 						<LabelDecoration name="НадписьГотово" id="349">
 							<SkipOnInput>false</SkipOnInput>
@@ -1686,7 +1682,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьГотовоКонтекстноеМеню" id="350"/>
-							<ExtendedTooltip name="НадписьГотовоExtendedTooltip" id="883"/>
+							<ExtendedTooltip name="НадписьГотовоExtendedTooltip" id="882"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -1706,7 +1702,7 @@
 				</v8:item>
 			</ToolTip>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппировкаКнопокExtendedTooltip" id="884"/>
+			<ExtendedTooltip name="ГруппировкаКнопокExtendedTooltip" id="883"/>
 			<ChildItems>
 				<Pages name="КнопкиМастера" id="9">
 					<Title>
@@ -1722,7 +1718,7 @@
 						</v8:item>
 					</ToolTip>
 					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="КнопкиМастераExtendedTooltip" id="885"/>
+					<ExtendedTooltip name="КнопкиМастераExtendedTooltip" id="884"/>
 					<ChildItems>
 						<Page name="КнопкиНачала" id="12">
 							<Title>
@@ -1738,20 +1734,20 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
-							<ExtendedTooltip name="КнопкиНачалаExtendedTooltip" id="886"/>
+							<ExtendedTooltip name="КнопкиНачалаExtendedTooltip" id="885"/>
 							<ChildItems>
 								<Button name="КомандаСправка" id="233">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаСправка</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаСправкаExtendedTooltip" id="887"/>
+									<ExtendedTooltip name="КомандаСправкаExtendedTooltip" id="886"/>
 								</Button>
 								<LabelDecoration name="Декорация3" id="38">
 									<HorizontalStretch>true</HorizontalStretch>
 									<SkipOnInput>false</SkipOnInput>
 									<ContextMenu name="Декорация3КонтекстноеМеню" id="39"/>
-									<ExtendedTooltip name="Декорация3ExtendedTooltip" id="888"/>
+									<ExtendedTooltip name="Декорация3ExtendedTooltip" id="887"/>
 								</LabelDecoration>
 								<Button name="КомандаНазад2" id="232">
 									<Type>UsualButton</Type>
@@ -1764,7 +1760,7 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаНазад2.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаНазад2ExtendedTooltip" id="889"/>
+									<ExtendedTooltip name="КомандаНазад2ExtendedTooltip" id="888"/>
 								</Button>
 								<Button name="КомандаДалее" id="13">
 									<Type>UsualButton</Type>
@@ -1777,14 +1773,14 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаДалее.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаДалееExtendedTooltip" id="890"/>
+									<ExtendedTooltip name="КомандаДалееExtendedTooltip" id="889"/>
 								</Button>
 								<Button name="КомандаОтмена" id="14">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="891"/>
+									<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="890"/>
 								</Button>
 							</ChildItems>
 						</Page>
@@ -1802,20 +1798,20 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
-							<ExtendedTooltip name="КнопкиПродолженияExtendedTooltip" id="892"/>
+							<ExtendedTooltip name="КнопкиПродолженияExtendedTooltip" id="891"/>
 							<ChildItems>
 								<Button name="КомандаСправка1" id="234">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаСправка</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаСправка1ExtendedTooltip" id="893"/>
+									<ExtendedTooltip name="КомандаСправка1ExtendedTooltip" id="892"/>
 								</Button>
 								<LabelDecoration name="Декорация31" id="40">
 									<HorizontalStretch>true</HorizontalStretch>
 									<SkipOnInput>false</SkipOnInput>
 									<ContextMenu name="Декорация31КонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="Декорация31ExtendedTooltip" id="894"/>
+									<ExtendedTooltip name="Декорация31ExtendedTooltip" id="893"/>
 								</LabelDecoration>
 								<Button name="КомандаНазад" id="18">
 									<Type>UsualButton</Type>
@@ -1827,7 +1823,7 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаНазад.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаНазадExtendedTooltip" id="895"/>
+									<ExtendedTooltip name="КомандаНазадExtendedTooltip" id="894"/>
 								</Button>
 								<Button name="КомандаДалее1" id="17">
 									<Type>UsualButton</Type>
@@ -1839,14 +1835,14 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаДалее1.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаДалее1ExtendedTooltip" id="896"/>
+									<ExtendedTooltip name="КомандаДалее1ExtendedTooltip" id="895"/>
 								</Button>
 								<Button name="КомандаОтмена1" id="15">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаОтмена1ExtendedTooltip" id="897"/>
+									<ExtendedTooltip name="КомандаОтмена1ExtendedTooltip" id="896"/>
 								</Button>
 							</ChildItems>
 						</Page>
@@ -1864,20 +1860,20 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
-							<ExtendedTooltip name="КнопкиВозвратаExtendedTooltip" id="898"/>
+							<ExtendedTooltip name="КнопкиВозвратаExtendedTooltip" id="897"/>
 							<ChildItems>
 								<Button name="КомандаСправка11" id="526">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаСправка</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаСправка11ExtendedTooltip" id="899"/>
+									<ExtendedTooltip name="КомандаСправка11ExtendedTooltip" id="898"/>
 								</Button>
 								<LabelDecoration name="Декорация312" id="527">
 									<HorizontalStretch>true</HorizontalStretch>
 									<SkipOnInput>false</SkipOnInput>
 									<ContextMenu name="Декорация312КонтекстноеМеню" id="528"/>
-									<ExtendedTooltip name="Декорация312ExtendedTooltip" id="900"/>
+									<ExtendedTooltip name="Декорация312ExtendedTooltip" id="899"/>
 								</LabelDecoration>
 								<Button name="КомандаНазад1" id="529">
 									<Type>UsualButton</Type>
@@ -1889,7 +1885,7 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаНазад1.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаНазад1ExtendedTooltip" id="901"/>
+									<ExtendedTooltip name="КомандаНазад1ExtendedTooltip" id="900"/>
 								</Button>
 								<Button name="КомандаДалее11" id="530">
 									<Type>UsualButton</Type>
@@ -1902,14 +1898,14 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаДалее11.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаДалее11ExtendedTooltip" id="902"/>
+									<ExtendedTooltip name="КомандаДалее11ExtendedTooltip" id="901"/>
 								</Button>
 								<Button name="КомандаОтмена11" id="531">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаОтмена11ExtendedTooltip" id="903"/>
+									<ExtendedTooltip name="КомандаОтмена11ExtendedTooltip" id="902"/>
 								</Button>
 							</ChildItems>
 						</Page>
@@ -1927,27 +1923,27 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
-							<ExtendedTooltip name="КнопкиОкончанияExtendedTooltip" id="904"/>
+							<ExtendedTooltip name="КнопкиОкончанияExtendedTooltip" id="903"/>
 							<ChildItems>
 								<Button name="КомандаСправка2" id="235">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаСправка</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаСправка2ExtendedTooltip" id="905"/>
+									<ExtendedTooltip name="КомандаСправка2ExtendedTooltip" id="904"/>
 								</Button>
 								<LabelDecoration name="Декорация311" id="42">
 									<HorizontalStretch>true</HorizontalStretch>
 									<SkipOnInput>false</SkipOnInput>
 									<ContextMenu name="Декорация311КонтекстноеМеню" id="43"/>
-									<ExtendedTooltip name="Декорация311ExtendedTooltip" id="906"/>
+									<ExtendedTooltip name="Декорация311ExtendedTooltip" id="905"/>
 								</LabelDecoration>
 								<Button name="КомандаГотово" id="20">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаГотово</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаГотовоExtendedTooltip" id="907"/>
+									<ExtendedTooltip name="КомандаГотовоExtendedTooltip" id="906"/>
 								</Button>
 								<Button name="КомандаОтмена2" id="16">
 									<Type>UsualButton</Type>
@@ -1955,7 +1951,7 @@
 									<Enabled>false</Enabled>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаОтмена2ExtendedTooltip" id="908"/>
+									<ExtendedTooltip name="КомандаОтмена2ExtendedTooltip" id="907"/>
 								</Button>
 							</ChildItems>
 						</Page>
@@ -1973,20 +1969,20 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
-							<ExtendedTooltip name="КнопкиОкончанияВоВторойБазеExtendedTooltip" id="909"/>
+							<ExtendedTooltip name="КнопкиОкончанияВоВторойБазеExtendedTooltip" id="908"/>
 							<ChildItems>
 								<Button name="КомандаСправка3" id="683">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаСправка</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаСправка3ExtendedTooltip" id="910"/>
+									<ExtendedTooltip name="КомандаСправка3ExtendedTooltip" id="909"/>
 								</Button>
 								<LabelDecoration name="Декорация313" id="684">
 									<HorizontalStretch>true</HorizontalStretch>
 									<SkipOnInput>false</SkipOnInput>
 									<ContextMenu name="Декорация313КонтекстноеМеню" id="685"/>
-									<ExtendedTooltip name="Декорация313ExtendedTooltip" id="911"/>
+									<ExtendedTooltip name="Декорация313ExtendedTooltip" id="910"/>
 								</LabelDecoration>
 								<Button name="КомандаНазад3" id="688">
 									<Type>UsualButton</Type>
@@ -1998,21 +1994,21 @@
 										<xr:Abs>DataProcessor.ПомощникСозданияОбменаДанными.Form.Форма.Form.Item.КомандаНазад3.Picture.png</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="КомандаНазад3ExtendedTooltip" id="912"/>
+									<ExtendedTooltip name="КомандаНазад3ExtendedTooltip" id="911"/>
 								</Button>
 								<Button name="КомандаГотово1" id="686">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаГотово</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаГотово1ExtendedTooltip" id="913"/>
+									<ExtendedTooltip name="КомандаГотово1ExtendedTooltip" id="912"/>
 								</Button>
 								<Button name="КомандаОтмена3" id="687">
 									<Type>UsualButton</Type>
 									<SkipOnInput>false</SkipOnInput>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
 									<Parameter xsi:nil="true"/>
-									<ExtendedTooltip name="КомандаОтмена3ExtendedTooltip" id="914"/>
+									<ExtendedTooltip name="КомандаОтмена3ExtendedTooltip" id="913"/>
 								</Button>
 							</ChildItems>
 						</Page>
@@ -2328,26 +2324,6 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаСправка</Action>
-			<Representation>TextPicture</Representation>
-		</Command>
-		<Command name="ВыбратьФайлНастроекОбменаДанными" id="12">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбрать файл настроек обмена данными</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.OpenFile</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>ВыбратьФайлНастроекОбменаДанными</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="СохранитьФайлНастроекОбменаДанными" id="13">

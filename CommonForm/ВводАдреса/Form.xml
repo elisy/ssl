@@ -103,7 +103,6 @@
 		<InputField name="Индекс" id="15">
 			<DataPath>Индекс</DataPath>
 			<DefaultItem>true</DefaultItem>
-			<Width>6</Width>
 			<HorizontalStretch>false</HorizontalStretch>
 			<Wrap>false</Wrap>
 			<BorderColor>style:BorderColor</BorderColor>
@@ -116,6 +115,7 @@
 		<InputField name="Регион" id="17">
 			<DataPath>Регион</DataPath>
 			<TitleLocation>Left</TitleLocation>
+			<Width>25</Width>
 			<Wrap>false</Wrap>
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
@@ -130,6 +130,7 @@
 		</InputField>
 		<InputField name="Район" id="19">
 			<DataPath>Район</DataPath>
+			<Width>25</Width>
 			<Wrap>false</Wrap>
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
@@ -144,6 +145,7 @@
 		</InputField>
 		<InputField name="Город" id="21">
 			<DataPath>Город</DataPath>
+			<Width>25</Width>
 			<Wrap>false</Wrap>
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
@@ -158,6 +160,7 @@
 		</InputField>
 		<InputField name="НаселенныйПункт" id="23">
 			<DataPath>НаселенныйПункт</DataPath>
+			<Width>25</Width>
 			<Wrap>false</Wrap>
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
@@ -172,6 +175,7 @@
 		</InputField>
 		<InputField name="Улица" id="25">
 			<DataPath>Улица</DataPath>
+			<Width>25</Width>
 			<Wrap>false</Wrap>
 			<ChoiceButton>true</ChoiceButton>
 			<BorderColor>style:BorderColor</BorderColor>
@@ -399,7 +403,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>50</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -415,7 +419,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>50</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -431,7 +435,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>50</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -447,7 +451,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>50</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -463,7 +467,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>10</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -495,7 +499,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>10</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -527,7 +531,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>10</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -650,7 +654,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>100</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -665,7 +669,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>3</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>

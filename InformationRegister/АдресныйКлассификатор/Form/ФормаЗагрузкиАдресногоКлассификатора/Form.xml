@@ -17,6 +17,7 @@
 			</Button>
 			<Button name="Далее" id="18">
 				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.КомандаДалее</CommandName>
 				<Parameter xsi:nil="true"/>
@@ -448,7 +449,6 @@
 						</LabelDecoration>
 						<Button name="Загрузить" id="57">
 							<Type>UsualButton</Type>
-							<DefaultButton>true</DefaultButton>
 							<SkipOnInput>false</SkipOnInput>
 							<CommandName>Form.Command.Загрузить</CommandName>
 							<Parameter xsi:nil="true"/>

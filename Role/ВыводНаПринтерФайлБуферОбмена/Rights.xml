@@ -5977,21 +5977,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
-		<right>
-			<name>AllFunctionsMode</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>SaveUserData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Output</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ЗагрузкаКурсовВалют.TabularSection.СписокВалют.Attribute.ДатаКурса</name>
 		<right>
 			<name>View</name>
@@ -7232,6 +7217,21 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
+		<right>
+			<name>AllFunctionsMode</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SaveUserData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -12043,17 +12043,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.ОбновлениеКонфигурации.Attribute.ПортКластераСерверов</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ПравилаДляОбменаДанными.Attribute.ВерсияФормата</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

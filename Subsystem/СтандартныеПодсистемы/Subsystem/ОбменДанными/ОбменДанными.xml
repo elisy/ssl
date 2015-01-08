@@ -83,6 +83,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкиПодчиненногоУзлаРИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкаПодчиненногоУзлаРИБЗавершена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

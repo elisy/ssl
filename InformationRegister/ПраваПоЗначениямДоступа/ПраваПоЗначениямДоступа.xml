@@ -604,11 +604,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>10</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>cfg:CatalogRef.ПапкиФайлов</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -804,7 +800,9 @@
 					</Synonym>
 					<Comment/>
 					<Group>FormCommandBarImportant</Group>
-					<CommandParameterType/>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ПапкиФайлов</v8:Type>
+					</CommandParameterType>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>

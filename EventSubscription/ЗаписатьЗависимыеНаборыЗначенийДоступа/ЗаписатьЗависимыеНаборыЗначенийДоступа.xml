@@ -12,6 +12,7 @@
 			<Comment/>
 			<Source>
 				<v8:Type>cfg:ChartOfCharacteristicTypesObject.ВидыДоступа</v8:Type>
+				<v8:Type>cfg:CatalogObject.Файлы</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
 			<Handler>CommonModule.УправлениеДоступомСобытия.ЗаписатьЗависимыеНаборыЗначенийДоступа</Handler>

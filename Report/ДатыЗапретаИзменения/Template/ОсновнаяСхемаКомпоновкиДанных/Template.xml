@@ -13,12 +13,12 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Объект</dataPath>
 			<field>Объект</field>
-			<presentationExpression>Выбор Когда Объект = Раздел Тогда "&lt;Для всех объектов&gt;" Иначе Объект Конец</presentationExpression>
+			<presentationExpression>Выбор Когда Объект = Раздел Тогда Выбор Когда Раздел = Значение(ПланВидовХарактеристик.РазделыДатЗапретаИзменения.ПустаяСсылка) Тогда "&lt;Для всех разделов и объектов, кроме указанных&gt;" Иначе "&lt;Для всех объектов, кроме указанных&gt;" Конец Иначе Объект Конец</presentationExpression>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Пользователь</dataPath>
 			<field>Пользователь</field>
-			<presentationExpression>Выбор Когда Пользователь = Неопределено Тогда "&lt;Для всех пользователей&gt;" Иначе Пользователь Конец</presentationExpression>
+			<presentationExpression>Выбор Когда Пользователь = Значение(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей) Тогда "&lt;" + Представление(Значение(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей)) + ", кроме указанных&gt;" Иначе Пользователь Конец</presentationExpression>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Раздел</dataPath>
@@ -28,7 +28,7 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВладелецНастройки</dataPath>
 			<field>ВладелецНастройки</field>
-			<presentationExpression>Выбор Когда ВладелецНастройки = Неопределено Тогда "&lt;Для всех пользователей&gt;" Иначе ВладелецНастройки Конец</presentationExpression>
+			<presentationExpression>Выбор Когда ВладелецНастройки = Значение(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей) Тогда "&lt;" + Представление(Значение(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей)) + ", кроме указанных&gt;" Иначе ВладелецНастройки Конец</presentationExpression>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ДатаЗапретаНастройки</dataPath>
@@ -48,7 +48,7 @@
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
-	ЕСТЬNULL(НастроенныеПользователиСГруппами.Пользователь, НЕОПРЕДЕЛЕНО) КАК Пользователь,
+	НастроенныеПользователиСГруппами.Пользователь КАК Пользователь,
 	ДатыЗапретаИзменения.Пользователь КАК ВладелецНастройки,
 	ДатыЗапретаИзменения.Раздел,
 	ДатыЗапретаИзменения.Объект,
@@ -109,7 +109,7 @@
 			1110,
 			9) КАК КодыПриоритетов
 		ПО (ВЫБОР
-				КОГДА ДатыЗапретаИзменения.Пользователь = НЕОПРЕДЕЛЕНО
+				КОГДА ДатыЗапретаИзменения.Пользователь = ЗНАЧЕНИЕ(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей)
 					ТОГДА 0
 				КОГДА ТИПЗНАЧЕНИЯ(ДатыЗапретаИзменения.Пользователь) = ТИП(Справочник.ГруппыПользователей)
 					ТОГДА 1
@@ -151,12 +151,12 @@
 		ОБЪЕДИНИТЬ
 		
 		ВЫБРАТЬ
-			НЕОПРЕДЕЛЕНО,
-			НЕОПРЕДЕЛЕНО
+			ЗНАЧЕНИЕ(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей),
+			ЗНАЧЕНИЕ(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей)
 		ГДЕ
 			(ЛОЖЬ В (&amp;ЗаданныеПользователи)
 					ИЛИ ИСТИНА В (&amp;ЗаданныеПользователи))) КАК НастроенныеПользователиСГруппами
-		ПО (ДатыЗапретаИзменения.Пользователь В (НЕОПРЕДЕЛЕНО, НастроенныеПользователиСГруппами.ГруппаПользователей))
+		ПО (ДатыЗапретаИзменения.Пользователь В (ЗНАЧЕНИЕ(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей), НастроенныеПользователиСГруппами.ГруппаПользователей))
 			И (ДатыЗапретаИзменения.Объект &lt;&gt; НЕОПРЕДЕЛЕНО)
 			И ((НЕ(ДатыЗапретаИзменения.Объект &lt;&gt; ДатыЗапретаИзменения.Раздел
 					И ДатыЗапретаИзменения.Раздел = ЗНАЧЕНИЕ(ПланВидовХарактеристик.РазделыДатЗапретаИзменения.ПустаяСсылка))))
@@ -246,7 +246,7 @@
 	</dataSet>
 	<calculatedField>
 		<dataPath>ЭтоПрочиеПользователи</dataPath>
-		<expression>Выбор Когда Пользователь = Неопределено Тогда 1 Иначе 0 Конец</expression>
+		<expression>Выбор Когда Пользователь = Значение(Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей) Тогда 1 Иначе 0 Конец</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -412,18 +412,21 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Пользователи</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>480a939f-8197-4f52-9810-c4fa40edff59</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Разделы</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>71ad5ca1-c013-4927-9a37-7fc3fa473d4a</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Объекты</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>ea65ade9-ebe2-4bc5-a93b-0b5155325c51</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
@@ -471,7 +474,7 @@
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеПользователи</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
@@ -528,7 +531,7 @@
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеРазделы</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Раздел</dcsset:field>
@@ -536,7 +539,7 @@
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеОбъекты</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Объект</dcsset:field>
@@ -621,36 +624,21 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Пользователи</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>217515d2-7dfe-4ba9-9daa-1c013370e39b</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователи</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Разделы</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разделы</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Объекты</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>9d9c1e2c-1702-46cf-9754-6f4fb6993446</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
@@ -702,7 +690,7 @@
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеПользователи</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
@@ -759,7 +747,7 @@
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеРазделы</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Раздел</dcsset:field>
@@ -767,7 +755,7 @@
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеОбъекты</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Объект</dcsset:field>
@@ -853,36 +841,21 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Пользователи</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>217515d2-7dfe-4ba9-9daa-1c013370e39b</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователи</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Разделы</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>d9241907-6671-4e9a-8225-b5adffe770b0</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разделы</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Объекты</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
@@ -934,7 +907,7 @@
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеПользователи</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
@@ -991,7 +964,7 @@
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеРазделы</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Раздел</dcsset:field>
@@ -999,7 +972,7 @@
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеОбъекты</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Объект</dcsset:field>
@@ -1072,11 +1045,11 @@
 		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>
-		<dcsset:name>ПоРазделамОбъектам</dcsset:name>
+		<dcsset:name>ПоРазделамОбъектамДляПользователей</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>По разделам и объектам</v8:content>
+				<v8:content>По разделам и объектам для пользователей</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -1085,37 +1058,22 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Пользователи</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>f75f64ca-ab45-45af-95df-7f0602ac0b3c</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователи</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Разделы</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>01902b88-ba82-4086-a503-c093634e862f</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разделы</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Объекты</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>6a426184-7fab-4727-99ec-f38c25b25aa0</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:conditionalAppearance>
@@ -1176,7 +1134,7 @@
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеРазделы</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Раздел</dcsset:field>
@@ -1184,7 +1142,7 @@
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеОбъекты</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Объект</dcsset:field>
@@ -1236,7 +1194,7 @@
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеПользователи</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Пользователь</dcsset:field>
@@ -1309,11 +1267,11 @@
 		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>
-		<dcsset:name>ПоОбъектам</dcsset:name>
+		<dcsset:name>ПоОбъектамДляПользователей</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>По объектам</v8:content>
+				<v8:content>По объектам для пользователей</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -1322,36 +1280,21 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Пользователи</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>f75f64ca-ab45-45af-95df-7f0602ac0b3c</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователи</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Разделы</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разделы</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Объекты</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>6a426184-7fab-4727-99ec-f38c25b25aa0</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:conditionalAppearance>
@@ -1412,7 +1355,7 @@
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеРазделы</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Раздел</dcsset:field>
@@ -1420,7 +1363,7 @@
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеОбъекты</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Объект</dcsset:field>
@@ -1473,7 +1416,7 @@
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеПользователи</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Пользователь</dcsset:field>
@@ -1546,11 +1489,11 @@
 		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>
-		<dcsset:name>ПоРазделам</dcsset:name>
+		<dcsset:name>ПоРазделамДляПользователей</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>По разделам</v8:content>
+				<v8:content>По разделам для пользователей</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -1559,36 +1502,21 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Пользователи</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>f75f64ca-ab45-45af-95df-7f0602ac0b3c</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователи</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Разделы</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>01902b88-ba82-4086-a503-c093634e862f</dcsset:userSettingID>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разделы</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Объекты</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты</v8:content>
-						</v8:item>
-					</dcsset:userSettingPresentation>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:conditionalAppearance>
@@ -1649,7 +1577,7 @@
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеРазделы</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Раздел</dcsset:field>
@@ -1657,7 +1585,7 @@
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>ЭтоПрочиеОбъекты</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
+						<dcsset:orderType>Desc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Объект</dcsset:field>
@@ -1710,7 +1638,7 @@
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>ЭтоПрочиеПользователи</dcsset:field>
-							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Пользователь</dcsset:field>

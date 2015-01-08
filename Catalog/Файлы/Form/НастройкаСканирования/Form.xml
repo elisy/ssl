@@ -342,13 +342,6 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<Button name="ОткрытьНомераОтсканированныхФайлов" id="10">
-			<Type>UsualButton</Type>
-			<SkipOnInput>false</SkipOnInput>
-			<CommandName>Form.Command.ОткрытьНомераОтсканированныхФайлов</CommandName>
-			<Parameter xsi:nil="true"/>
-			<ExtendedTooltip name="ОткрытьНомераОтсканированныхФайловExtendedTooltip" id="79"/>
-		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="ПоказыватьДиалогСканера" id="1">
@@ -637,21 +630,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОК</Action>
-		</Command>
-		<Command name="ОткрытьНомераОтсканированныхФайлов" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть номера отсканированных файлов</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть номера отсканированных файлов</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОткрытьНомераОтсканированныхФайлов</Action>
 		</Command>
 		<Command name="УстановитьКомпонентуСканирования" id="4">
 			<Title>

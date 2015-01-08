@@ -183,6 +183,7 @@
 								<xr:Common>true</xr:Common>
 								<xr:Value name="">true</xr:Value>
 								<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">true</xr:Value>
+								<xr:Value name="Role.РедактированиеРеквизитовОбъектов">true</xr:Value>
 								<xr:Value name="Role.ПолныеПрава">true</xr:Value>
 							</UserVisible>
 							<Title>
@@ -1089,7 +1090,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>4</Command>
+				<Command>4:440d115d-a769-427e-891a-88d65fba2057</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

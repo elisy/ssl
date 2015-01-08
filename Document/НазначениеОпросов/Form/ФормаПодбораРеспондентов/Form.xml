@@ -214,7 +214,7 @@
 											<Type>CommandBarButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<OnlyInAllActions>true</OnlyInAllActions>
-											<CommandName>Form.Item.Респонденты.StandardCommand.List</CommandName>
+											<CommandName>1:0d0249a4-2b2f-4fc0-a66f-b36f9494b3cc</CommandName>
 											<Parameter xsi:nil="true"/>
 											<ExtendedTooltip name="СписокExtendedTooltip" id="57"/>
 										</Button>
@@ -222,7 +222,7 @@
 											<Type>CommandBarButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<OnlyInAllActions>true</OnlyInAllActions>
-											<CommandName>Form.Item.Респонденты.StandardCommand.HierarchicalList</CommandName>
+											<CommandName>1:01833a5a-6553-4c49-b445-095018107bb5</CommandName>
 											<Parameter xsi:nil="true"/>
 											<ExtendedTooltip name="ИерархическийСписокExtendedTooltip" id="58"/>
 										</Button>
@@ -230,7 +230,7 @@
 											<Type>CommandBarButton</Type>
 											<SkipOnInput>false</SkipOnInput>
 											<OnlyInAllActions>true</OnlyInAllActions>
-											<CommandName>Form.Item.Респонденты.StandardCommand.Tree</CommandName>
+											<CommandName>1:05468165-f954-45a5-84f2-6641c51f9f23</CommandName>
 											<Parameter xsi:nil="true"/>
 											<ExtendedTooltip name="ДеревоExtendedTooltip" id="59"/>
 										</Button>
@@ -366,7 +366,7 @@
 			<UseAlways>
 				<Field>Респонденты.Description</Field>
 				<Field>1/4</Field>
-				<Field>Респонденты.IsFolder</Field>
+				<Field>1/6</Field>
 				<Field>Респонденты.Ref</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">

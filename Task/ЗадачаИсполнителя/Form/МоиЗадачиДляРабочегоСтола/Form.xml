@@ -194,17 +194,17 @@
 						<Parameter xsi:nil="true"/>
 						<ExtendedTooltip name="КонтекстноеМенюСписокОбновитьExtendedTooltip" id="94"/>
 					</Button>
-					<Button name="СписокКонтекстноеМенюОтменитьПринятиеКИсполнению" id="78">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ОтменитьПринятиеКИсполнению</CommandName>
-						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="СписокКонтекстноеМенюОтменитьПринятиеКИсполнениюExtendedTooltip" id="95"/>
-					</Button>
 					<Button name="СписокКонтекстноеМенюПринятьКИсполнению" id="76">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ПринятьКИсполнению</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="СписокКонтекстноеМенюПринятьКИсполнениюExtendedTooltip" id="96"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюПринятьКИсполнениюExtendedTooltip" id="95"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюОтменитьПринятиеКИсполнению" id="78">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьПринятиеКИсполнению</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюОтменитьПринятиеКИсполнениюExtendedTooltip" id="96"/>
 					</Button>
 					<Button name="КонтекстноеМенюСписокВывестиСписок" id="74">
 						<Type>CommandBarButton</Type>

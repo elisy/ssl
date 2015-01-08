@@ -285,7 +285,7 @@
 									</Button>
 									<Button name="ТаблицаПодписейКомандаЭЦПСписокОткрытьСертификат" id="44">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ОткрытьСертификат</CommandName>
+										<CommandName>Form.Command.ОткрытьПодпись</CommandName>
 										<Parameter xsi:nil="true"/>
 										<ExtendedTooltip name="ТаблицаПодписейКомандаЭЦПСписокОткрытьСертификатExtendedTooltip" id="84"/>
 									</Button>
@@ -340,6 +340,9 @@
 								<ContextMenu name="ТаблицаПодписейSearchControlContextMenu" id="97"/>
 								<ExtendedTooltip name="ТаблицаПодписейSearchControlExtendedTooltip" id="98"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаПодписейВыбор</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ТаблицаПодписейКомуВыданСертификат" id="35">
 									<DataPath>ТаблицаПодписей.КомуВыданСертификат</DataPath>
@@ -969,7 +972,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Освободить</v8:content>
+					<v8:content>Отменить редактирование</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1077,20 +1080,20 @@
 			<Action>ОбновитьИзФайлаНаДиске</Action>
 			<Representation>Text</Representation>
 		</Command>
-		<Command name="ОткрытьСертификат" id="18">
+		<Command name="ОткрытьПодпись" id="18">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть сертификат</v8:content>
+					<v8:content>Открыть подпись</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть сертификат</v8:content>
+					<v8:content>Открыть подпись</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>КомандаЭЦПСписокОткрытьСертификат</Action>
+			<Action>КомандаЭЦПСписокОткрытьПодпись</Action>
 			<FunctionalOptions>
 				<Item>FunctionalOption.ИспользоватьЭЦПВПрисоединенныхФайлах</Item>
 			</FunctionalOptions>

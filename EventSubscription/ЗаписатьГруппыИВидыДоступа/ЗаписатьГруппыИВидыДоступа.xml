@@ -11,6 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<Source>
+				<v8:Type>cfg:CatalogObject.ПапкиФайлов</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГруппыВнешнихПользователей</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВнешниеПользователи</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГруппыПользователей</v8:Type>

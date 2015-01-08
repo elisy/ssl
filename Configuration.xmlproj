@@ -3002,6 +3002,18 @@
       <Path>CommonForm\ВыборСертификатовШифрования\ВыборСертификатовШифрования.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonForm.ВыборУзловПлановОбмена.Form.Module.txt</Id>
+      <Path>CommonForm\ВыборУзловПлановОбмена\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ВыборУзловПлановОбмена.Form.xml</Id>
+      <Path>CommonForm\ВыборУзловПлановОбмена\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ВыборУзловПлановОбмена.xml</Id>
+      <Path>CommonForm\ВыборУзловПлановОбмена\ВыборУзловПлановОбмена.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonForm.ВыполнениеОбменаДанными.Form.Module.txt</Id>
       <Path>CommonForm\ВыполнениеОбменаДанными\Module.txt</Path>
     </FileInfo>
@@ -3052,6 +3064,18 @@
     <FileInfo>
       <Id>CommonForm.ДополнительныеОтчетыИОбработки.xml</Id>
       <Path>CommonForm\ДополнительныеОтчетыИОбработки\ДополнительныеОтчетыИОбработки.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации.Form.Module.txt</Id>
+      <Path>CommonForm\ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации.Form.xml</Id>
+      <Path>CommonForm\ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonForm.ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации.xml</Id>
+      <Path>CommonForm\ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации\ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonForm.КарточкаФайлаИзБиблиотекиФайлов.Form.Module.txt</Id>
@@ -4032,6 +4056,30 @@
     <FileInfo>
       <Id>CommonModule.ОбщегоНазначенияПереопределяемый.xml</Id>
       <Path>CommonModule\ОбщегоНазначенияПереопределяемый\ОбщегоНазначенияПереопределяемый.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОценкаПроизводительностиКлиентГлобальный.Module.txt</Id>
+      <Path>CommonModule\ОценкаПроизводительностиКлиентГлобальный\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОценкаПроизводительностиКлиентГлобальный.xml</Id>
+      <Path>CommonModule\ОценкаПроизводительностиКлиентГлобальный\ОценкаПроизводительностиКлиентГлобальный.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОценкаПроизводительностиКлиентСервер.Module.txt</Id>
+      <Path>CommonModule\ОценкаПроизводительностиКлиентСервер\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОценкаПроизводительностиКлиентСервер.xml</Id>
+      <Path>CommonModule\ОценкаПроизводительностиКлиентСервер\ОценкаПроизводительностиКлиентСервер.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОценкаПроизводительностиСерверВызовСервера.Module.txt</Id>
+      <Path>CommonModule\ОценкаПроизводительностиСерверВызовСервера\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonModule.ОценкаПроизводительностиСерверВызовСервера.xml</Id>
+      <Path>CommonModule\ОценкаПроизводительностиСерверВызовСервера\ОценкаПроизводительностиСерверВызовСервера.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>CommonModule.ПолнотекстовыйПоискКлиентПереопределяемый.Module.txt</Id>
@@ -5838,6 +5886,18 @@
       <Path>CommonPicture\ПереслатьЭлектронноеПисьмо\ПереслатьЭлектронноеПисьмо.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonPicture.ПиктограммыПланОбменаУзел.Picture.Picture.png</Id>
+      <Path>CommonPicture\ПиктограммыПланОбменаУзел\Picture.png</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.ПиктограммыПланОбменаУзел.Picture.xml</Id>
+      <Path>CommonPicture\ПиктограммыПланОбменаУзел\Picture.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonPicture.ПиктограммыПланОбменаУзел.xml</Id>
+      <Path>CommonPicture\ПиктограммыПланОбменаУзел\ПиктограммыПланОбменаУзел.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonPicture.ПиктограммыПользователя.Picture.Picture.png</Id>
       <Path>CommonPicture\ПиктограммыПользователя\Picture.png</Path>
     </FileInfo>
@@ -6434,6 +6494,14 @@
       <Path>CommonTemplate\КомпонентаTWAIN\КомпонентаTWAIN.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>CommonTemplate.ОценкаПроизводительностиВнешнийКомпонент.Template.bin</Id>
+      <Path>CommonTemplate\ОценкаПроизводительностиВнешнийКомпонент\Template.bin</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>CommonTemplate.ОценкаПроизводительностиВнешнийКомпонент.xml</Id>
+      <Path>CommonTemplate\ОценкаПроизводительностиВнешнийКомпонент\ОценкаПроизводительностиВнешнийКомпонент.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>CommonTemplate.СтруктураПодчиненности.Template.xml</Id>
       <Path>CommonTemplate\СтруктураПодчиненности\Template.xml</Path>
     </FileInfo>
@@ -6504,6 +6572,14 @@
     <FileInfo>
       <Id>Constant.АлгоритмШифрования.xml</Id>
       <Path>Constant\АлгоритмШифрования\АлгоритмШифрования.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Constant.ВключатьРуководителейВГруппыДоступаПодчиненных.ValueManagerModule.txt</Id>
+      <Path>Constant\ВключатьРуководителейВГруппыДоступаПодчиненных\ValueManagerModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Constant.ВключатьРуководителейВГруппыДоступаПодчиненных.xml</Id>
+      <Path>Constant\ВключатьРуководителейВГруппыДоступаПодчиненных\ВключатьРуководителейВГруппыДоступаПодчиненных.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Constant.ВыполнятьПроверкуЭЦПНаСервере.xml</Id>
@@ -6724,6 +6800,14 @@
     <FileInfo>
       <Id>DataProcessor.АктивныеПользователи.Form.ФормаСпискаАктивныхПользователей.xml</Id>
       <Path>DataProcessor\АктивныеПользователи\Form\ФормаСпискаАктивныхПользователей\ФормаСпискаАктивныхПользователей.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.АктивныеПользователи.Help.ru.html</Id>
+      <Path>DataProcessor\АктивныеПользователи\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.АктивныеПользователи.Help.xml</Id>
+      <Path>DataProcessor\АктивныеПользователи\Help\Help.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>DataProcessor.АктивныеПользователи.xml</Id>
@@ -7216,6 +7300,34 @@
     <FileInfo>
       <Id>DataProcessor.ОбновлениеКонфигурации.xml</Id>
       <Path>DataProcessor\ОбновлениеКонфигурации\ОбновлениеКонфигурации.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.Form.Форма.Form.Module.txt</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\Form\Форма\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.Form.Форма.Form.xml</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\Form\Форма\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.Form.Форма.xml</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\Form\Форма\Форма.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.Help.ru.html</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\Help\ru.html</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.Help.xml</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\Help\Help.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.ObjectModule.txt</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\ObjectModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>DataProcessor.ОценкаПроизводительности.xml</Id>
+      <Path>DataProcessor\ОценкаПроизводительности\ОценкаПроизводительности.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>DataProcessor.ПолнотекстовыйПоискВДанных.Command.ПолнотекстовыйПоиск.CommandModule.txt</Id>
@@ -8366,6 +8478,10 @@
       <Path>Enum\ВидыДополнительныхОтчетовИОбработок\ВидыДополнительныхОтчетовИОбработок.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Enum.ВидыНазначенияДатЗапрета.xml</Id>
+      <Path>Enum\ВидыНазначенияДатЗапрета\ВидыНазначенияДатЗапрета.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Enum.ВидыПравилДляОбменаДанными.xml</Id>
       <Path>Enum\ВидыПравилДляОбменаДанными\ВидыПравилДляОбменаДанными.xml</Path>
     </FileInfo>
@@ -8388,6 +8504,22 @@
     <FileInfo>
       <Id>Enum.ИсточникиПравилДляОбменаДанными.xml</Id>
       <Path>Enum\ИсточникиПравилДляОбменаДанными\ИсточникиПравилДляОбменаДанными.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Enum.КлючевыеОперации.Form.ФормаВыбора.Form.Module.txt</Id>
+      <Path>Enum\КлючевыеОперации\Form\ФормаВыбора\Module.txt</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Enum.КлючевыеОперации.Form.ФормаВыбора.Form.xml</Id>
+      <Path>Enum\КлючевыеОперации\Form\ФормаВыбора\Form.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Enum.КлючевыеОперации.Form.ФормаВыбора.xml</Id>
+      <Path>Enum\КлючевыеОперации\Form\ФормаВыбора\ФормаВыбора.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Enum.КлючевыеОперации.xml</Id>
+      <Path>Enum\КлючевыеОперации\КлючевыеОперации.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Enum.ПоворотИзображения.xml</Id>
@@ -8862,6 +8994,10 @@
       <Path>InformationRegister\ГруппыЗначенийДоступа\ГруппыЗначенийДоступа.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>InformationRegister.ДатыЗапретаИзменения.Command.ДатыЗапретаЗагрузкиДанных.CommandModule.txt</Id>
+      <Path>InformationRegister\ДатыЗапретаИзменения\Command\ДатыЗапретаЗагрузкиДанных\CommandModule.txt</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>InformationRegister.ДатыЗапретаИзменения.Command.ДатыЗапретаИзмененияДанных.CommandModule.txt</Id>
       <Path>InformationRegister\ДатыЗапретаИзменения\Command\ДатыЗапретаИзмененияДанных\CommandModule.txt</Path>
     </FileInfo>
@@ -9012,6 +9148,10 @@
     <FileInfo>
       <Id>InformationRegister.ЗависимостиПравДоступа.xml</Id>
       <Path>InformationRegister\ЗависимостиПравДоступа\ЗависимостиПравДоступа.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>InformationRegister.ЗамерыВремени.xml</Id>
+      <Path>InformationRegister\ЗамерыВремени\ЗамерыВремени.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>InformationRegister.ЗначенияГруппДоступа.xml</Id>
@@ -10178,6 +10318,22 @@
       <Path>Role\ОбновлениеКонфигурацииБазыДанных\ОбновлениеКонфигурацииБазыДанных.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>Role.ОценкаПроизводительностиАнализЗамеров.Rights.xml</Id>
+      <Path>Role\ОценкаПроизводительностиАнализЗамеров\Rights.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Role.ОценкаПроизводительностиАнализЗамеров.xml</Id>
+      <Path>Role\ОценкаПроизводительностиАнализЗамеров\ОценкаПроизводительностиАнализЗамеров.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Role.ОценкаПроизводительностиВыполнениеЗамеров.Rights.xml</Id>
+      <Path>Role\ОценкаПроизводительностиВыполнениеЗамеров\Rights.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Role.ОценкаПроизводительностиВыполнениеЗамеров.xml</Id>
+      <Path>Role\ОценкаПроизводительностиВыполнениеЗамеров\ОценкаПроизводительностиВыполнениеЗамеров.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>Role.ПолныеПрава.Rights.xml</Id>
       <Path>Role\ПолныеПрава\Rights.xml</Path>
     </FileInfo>
@@ -10466,8 +10622,16 @@
       <Path>SessionParameter\ТекущийВнешнийПользователь\ТекущийВнешнийПользователь.xml</Path>
     </FileInfo>
     <FileInfo>
+      <Id>SessionParameter.ТекущийЗамерВремени.xml</Id>
+      <Path>SessionParameter\ТекущийЗамерВремени\ТекущийЗамерВремени.xml</Path>
+    </FileInfo>
+    <FileInfo>
       <Id>SessionParameter.ТекущийПользователь.xml</Id>
       <Path>SessionParameter\ТекущийПользователь\ТекущийПользователь.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>SettingsStorage.НастройкиОбработкиОценкаПроизводительности.xml</Id>
+      <Path>SettingsStorage\НастройкиОбработкиОценкаПроизводительности\НастройкиОбработкиОценкаПроизводительности.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>SettingsStorage.ХранилищеВариантовОтчетов.Form.ФормаЗагрузки.Form.Module.txt</Id>
@@ -10796,6 +10960,14 @@
     <FileInfo>
       <Id>Subsystem.СтандартныеПодсистемы.Subsystem.Организации.xml</Id>
       <Path>Subsystem\СтандартныеПодсистемы\Subsystem\Организации\Организации.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Subsystem.СтандартныеПодсистемы.Subsystem.ОценкаПроизводительности.CommandInterface.xml</Id>
+      <Path>Subsystem\СтандартныеПодсистемы\Subsystem\ОценкаПроизводительности\CommandInterface.xml</Path>
+    </FileInfo>
+    <FileInfo>
+      <Id>Subsystem.СтандартныеПодсистемы.Subsystem.ОценкаПроизводительности.xml</Id>
+      <Path>Subsystem\СтандартныеПодсистемы\Subsystem\ОценкаПроизводительности\ОценкаПроизводительности.xml</Path>
     </FileInfo>
     <FileInfo>
       <Id>Subsystem.СтандартныеПодсистемы.Subsystem.Печать.Help.ru.html</Id>

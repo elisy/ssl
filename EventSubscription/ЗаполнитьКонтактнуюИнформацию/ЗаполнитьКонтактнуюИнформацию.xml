@@ -11,6 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<Source>
+				<v8:Type>cfg:CatalogObject.Организации</v8:Type>
 				<v8:Type>cfg:CatalogObject.Пользователи</v8:Type>
 			</Source>
 			<Event>Filling</Event>

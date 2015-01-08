@@ -1,39 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<Configuration uuid="4ef3bb6b-7594-4863-b37d-ab518dc6890f" formatVersion="1.0">
+	<Configuration uuid="5f58ee6e-a640-4d52-ae80-b7921a469466" formatVersion="1.0">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>5de2d626-0d87-4b48-a7f5-99de8d399cd9</xr:ObjectId>
+				<xr:ObjectId>576d4946-1c1f-42b1-ac93-a4ea8ad17a84</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>ae2b3c58-481e-43a4-909a-cf387c6533e1</xr:ObjectId>
+				<xr:ObjectId>e13fb81c-35e8-4b76-b67b-dc81b592d9d8</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>bdd9b647-5925-4154-8da6-44cfb4527c87</xr:ObjectId>
+				<xr:ObjectId>b2be1c87-0a0e-48b0-a3cc-b98d88574292</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>3bff4f48-cc23-450e-bd6e-efa6481d3a42</xr:ObjectId>
+				<xr:ObjectId>a05bcdac-f626-4986-aabc-009224d33e1d</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>527d5c43-7dea-45b5-b6c4-6266cc727dfb</xr:ObjectId>
+				<xr:ObjectId>cf151ff5-b088-46eb-92d2-f0fc3857fb13</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>d726b2b9-d5f7-4b1f-9bdc-9361e8af8fc8</xr:ObjectId>
+				<xr:ObjectId>96633537-96d9-4113-8593-6bd21eba806e</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
 			<Name>БиблиотекаСтандартныхПодсистем</Name>
 			<Synonym>
-				<v8:item>
-					<v8:lang>fg</v8:lang>
-					<v8:content>Библиотека стандартных подсистем, редакция 1.1</v8:content>
-				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Библиотека стандартных подсистем, редакция 1.1</v8:content>
@@ -47,7 +43,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>1.1.1.11</Version>
+			<Version>1.1.2.3</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -94,18 +90,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Библиотека стандартных подсистем, редакция 1.1</v8:content>
 				</v8:item>
-				<v8:item>
-					<v8:lang>fg</v8:lang>
-					<v8:content>Библиотека стандартных подсистем, редакция 1.1</v8:content>
-				</v8:item>
 			</BriefInformation>
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Библиотека стандартных подсистем, редакция 1.1</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>fg</v8:lang>
 					<v8:content>Библиотека стандартных подсистем, редакция 1.1</v8:content>
 				</v8:item>
 			</DetailedInformation>
@@ -121,12 +109,7 @@
 					<v8:content>http://www.1c.ru</v8:content>
 				</v8:item>
 			</VendorInformationAddress>
-			<ConfigurationInformationAddress>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>http://v8.1c.ru/ssl</v8:content>
-				</v8:item>
-			</ConfigurationInformationAddress>
+			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>Use</ModalityUseMode>
@@ -246,6 +229,7 @@
 			<CommonPicture>ПараметрыОбменаДанными</CommonPicture>
 			<CommonPicture>Переключатель</CommonPicture>
 			<CommonPicture>ПереслатьЭлектронноеПисьмо</CommonPicture>
+			<CommonPicture>ПиктограммыПланОбменаУзел</CommonPicture>
 			<CommonPicture>ПиктограммыПользователя</CommonPicture>
 			<CommonPicture>ПиктограммыПользователя01</CommonPicture>
 			<CommonPicture>ПиктограммыПользователя02</CommonPicture>
@@ -315,6 +299,7 @@
 			<SessionParameter>ПравилаВыборочнойРегистрацииОбъектов</SessionParameter>
 			<SessionParameter>ПравилаРегистрацииОбъектов</SessionParameter>
 			<SessionParameter>ТекущийВнешнийПользователь</SessionParameter>
+			<SessionParameter>ТекущийЗамерВремени</SessionParameter>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Role>Администрирование</Role>
 			<Role>БазовыеПрава</Role>
@@ -349,6 +334,8 @@
 			<Role>ИспользованиеДополнительныхОтчетовИОбработок</Role>
 			<Role>ИспользованиеУчетныхЗаписейЭлектроннойПочты</Role>
 			<Role>ОбновлениеКонфигурацииБазыДанных</Role>
+			<Role>ОценкаПроизводительностиАнализЗамеров</Role>
+			<Role>ОценкаПроизводительностиВыполнениеЗамеров</Role>
 			<Role>ПолныеПрава</Role>
 			<Role>ПроверкаДоступныхОбновленийКонфигурации</Role>
 			<Role>ПросмотрЖурналаРегистрации</Role>
@@ -363,6 +350,7 @@
 			<Role>ЧтениеПерсональныхДанныхФизическихЛиц</Role>
 			<Role>ЧтениеФизическихЛиц</Role>
 			<CommonTemplate>КомпонентаTWAIN</CommonTemplate>
+			<CommonTemplate>ОценкаПроизводительностиВнешнийКомпонент</CommonTemplate>
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
 			<FilterCriterion>ВзаимодействияКонтакта</FilterCriterion>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
@@ -435,6 +423,9 @@
 			<CommonModule>ОбщегоНазначенияКлиентПовтИсп</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияПереопределяемый</CommonModule>
+			<CommonModule>ОценкаПроизводительностиКлиентГлобальный</CommonModule>
+			<CommonModule>ОценкаПроизводительностиКлиентСервер</CommonModule>
+			<CommonModule>ОценкаПроизводительностиСерверВызовСервера</CommonModule>
 			<CommonModule>ПолнотекстовыйПоискКлиентПереопределяемый</CommonModule>
 			<CommonModule>ПолнотекстовыйПоискСервер</CommonModule>
 			<CommonModule>ПолучениеФайловИзИнтернета</CommonModule>
@@ -549,6 +540,7 @@
 			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
 			<ScheduledJob>УведомлениеИсполнителейОНовыхЗадачах</ScheduledJob>
 			<ScheduledJob>УстановкаПериодаРассчитанныхИтогов</ScheduledJob>
+			<SettingsStorage>НастройкиОбработкиОценкаПроизводительности</SettingsStorage>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</FunctionalOption>
 			<FunctionalOption>ВариантыВерсионированияОбъектов</FunctionalOption>
@@ -618,6 +610,7 @@
 			<Constant>АлгоритмПодписи</Constant>
 			<Constant>АлгоритмХеширования</Constant>
 			<Constant>АлгоритмШифрования</Constant>
+			<Constant>ВключатьРуководителейВГруппыДоступаПодчиненных</Constant>
 			<Constant>ВыполнятьПроверкуЭЦПНаСервере</Constant>
 			<Constant>ДатаОбновленияПовторноИспользуемыхЗначенийМРО</Constant>
 			<Constant>ДатаУведомленияОНовыхЗадачах</Constant>
@@ -669,9 +662,11 @@
 			<CommonForm>ВыборПутиКАрхивуФайловТомов</CommonForm>
 			<CommonForm>ВыборСертификата</CommonForm>
 			<CommonForm>ВыборСертификатовШифрования</CommonForm>
+			<CommonForm>ВыборУзловПлановОбмена</CommonForm>
 			<CommonForm>ВыполнениеОбменаДанными</CommonForm>
 			<CommonForm>ДобавлениеПодписиИзФайла</CommonForm>
 			<CommonForm>ДополнительныеОтчетыИОбработки</CommonForm>
+			<CommonForm>ЗагрузкаСообщенияОбменаСИзменениямиКонфигурации</CommonForm>
 			<CommonForm>КарточкаФайлаИзБиблиотекиФайлов</CommonForm>
 			<CommonForm>МастерАнкетыПоРазделам</CommonForm>
 			<CommonForm>НапоминаниеПриРедактировании</CommonForm>
@@ -751,12 +746,14 @@
 			<Enum>ВариантыСжатияTIFF</Enum>
 			<Enum>ВерсииПодсистемыОбменаДанными</Enum>
 			<Enum>ВидыДополнительныхОтчетовИОбработок</Enum>
+			<Enum>ВидыНазначенияДатЗапрета</Enum>
 			<Enum>ВидыПравилДляОбменаДанными</Enum>
 			<Enum>ВидыТранспортаСообщенийОбмена</Enum>
 			<Enum>ДействияПриОбмене</Enum>
 			<Enum>ДействияПриСохраненииСЭЦП</Enum>
 			<Enum>ДействияСФайламиПоДвойномуЩелчку</Enum>
 			<Enum>ИсточникиПравилДляОбменаДанными</Enum>
+			<Enum>КлючевыеОперации</Enum>
 			<Enum>ПоворотИзображения</Enum>
 			<Enum>ПолФизическогоЛица</Enum>
 			<Enum>ПриоритетыОбъектовОбмена</Enum>
@@ -808,6 +805,7 @@
 			<DataProcessor>ЛегальностьПолученияОбновлений</DataProcessor>
 			<DataProcessor>НастройкаРезервногоКопированияИБ</DataProcessor>
 			<DataProcessor>ОбновлениеКонфигурации</DataProcessor>
+			<DataProcessor>ОценкаПроизводительности</DataProcessor>
 			<DataProcessor>ПолнотекстовыйПоискВДанных</DataProcessor>
 			<DataProcessor>ПомощникИнтерактивногоОбменаДанными</DataProcessor>
 			<DataProcessor>ПомощникСозданияОбменаДанными</DataProcessor>
@@ -833,6 +831,7 @@
 			<InformationRegister>ДокументыФизическихЛиц</InformationRegister>
 			<InformationRegister>ДополнительныеСведения</InformationRegister>
 			<InformationRegister>ЗависимостиПравДоступа</InformationRegister>
+			<InformationRegister>ЗамерыВремени</InformationRegister>
 			<InformationRegister>ЗначенияГруппДоступа</InformationRegister>
 			<InformationRegister>ИдентификаторыПолученныхЭлектронныхПисем</InformationRegister>
 			<InformationRegister>ИсполнителиЗадач</InformationRegister>

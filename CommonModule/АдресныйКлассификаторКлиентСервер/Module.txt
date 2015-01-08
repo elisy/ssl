@@ -88,3 +88,4 @@
 	Возврат "http://downloads.1c.ru/ipp/ITSREPV/V8Update/Configs/kladr/versions.xml";
 	
 КонецФункции
+

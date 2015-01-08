@@ -20,6 +20,26 @@
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Button name="ОткрытьПользователя" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Открыть</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ОткрытьПользователяExtendedTooltip" id="34"/>
+			</Button>
+			<Button name="РазорватьСеанс" id="31">
+				<Type>CommandBarButton</Type>
+				<UserVisible>
+					<xr:Common>false</xr:Common>
+					<xr:Value name="">false</xr:Value>
+					<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+					<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+					<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				</UserVisible>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.РазорватьСеанс</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="РазорватьСеансExtendedTooltip" id="35"/>
+			</Button>
 			<Button name="ЖурналРегистрации" id="16">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
@@ -28,7 +48,7 @@
 				<TextColor>style:ButtonTextColor</TextColor>
 				<BackColor>style:ButtonBackColor</BackColor>
 				<BorderColor>style:BorderColor</BorderColor>
-				<ExtendedTooltip name="ЖурналРегистрацииExtendedTooltip" id="33"/>
+				<ExtendedTooltip name="ЖурналРегистрацииExtendedTooltip" id="36"/>
 			</Button>
 			<Button name="СортировкаПоВозрастанию" id="26">
 				<Type>CommandBarButton</Type>
@@ -38,7 +58,7 @@
 				<TextColor>style:ButtonTextColor</TextColor>
 				<BackColor>style:ButtonBackColor</BackColor>
 				<BorderColor>style:BorderColor</BorderColor>
-				<ExtendedTooltip name="СортировкаПоВозрастаниюExtendedTooltip" id="34"/>
+				<ExtendedTooltip name="СортировкаПоВозрастаниюExtendedTooltip" id="37"/>
 			</Button>
 			<Button name="СортировкаПоУбыванию" id="27">
 				<Type>CommandBarButton</Type>
@@ -48,7 +68,7 @@
 				<TextColor>style:ButtonTextColor</TextColor>
 				<BackColor>style:ButtonBackColor</BackColor>
 				<BorderColor>style:BorderColor</BorderColor>
-				<ExtendedTooltip name="СортировкаПоУбываниюExtendedTooltip" id="35"/>
+				<ExtendedTooltip name="СортировкаПоУбываниюExtendedTooltip" id="38"/>
 			</Button>
 			<Button name="Обновить" id="18">
 				<Type>CommandBarButton</Type>
@@ -58,7 +78,7 @@
 				<TextColor>style:ButtonTextColor</TextColor>
 				<BackColor>style:ButtonBackColor</BackColor>
 				<BorderColor>style:BorderColor</BorderColor>
-				<ExtendedTooltip name="ОбновитьExtendedTooltip" id="36"/>
+				<ExtendedTooltip name="ОбновитьExtendedTooltip" id="39"/>
 			</Button>
 			<Button name="ПараметрыАдминистрированияИнформационнойБазы" id="30">
 				<Type>CommandBarButton</Type>
@@ -79,21 +99,7 @@
 						<v8:content>Параметры администрирования информационной базы</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ПараметрыАдминистрированияИнформационнойБазыExtendedTooltip" id="37"/>
-			</Button>
-			<Button name="РазорватьСоединение" id="31">
-				<Type>CommandBarButton</Type>
-				<UserVisible>
-					<xr:Common>false</xr:Common>
-					<xr:Value name="">false</xr:Value>
-					<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
-					<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
-					<xr:Value name="Role.ПолныеПрава">true</xr:Value>
-				</UserVisible>
-				<SkipOnInput>false</SkipOnInput>
-				<CommandName>Form.Command.РазорватьСоединение</CommandName>
-				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="РазорватьСоединениеExtendedTooltip" id="38"/>
+				<ExtendedTooltip name="ПараметрыАдминистрированияИнформационнойБазыExtendedTooltip" id="40"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -137,14 +143,14 @@
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Form.Command.ЖурналРегистрации</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="ЖурналРегистрацииКонтекстExtendedTooltip" id="39"/>
+						<ExtendedTooltip name="ЖурналРегистрацииКонтекстExtendedTooltip" id="41"/>
 					</Button>
 					<Button name="РазорватьСоединениеКонтекст" id="32">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>Form.Command.РазорватьСоединение</CommandName>
+						<CommandName>Form.Command.РазорватьСеанс</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="РазорватьСоединениеКонтекстExtendedTooltip" id="40"/>
+						<ExtendedTooltip name="РазорватьСоединениеКонтекстExtendedTooltip" id="42"/>
 					</Button>
 					<Button name="ОбновитьКонтекст" id="21">
 						<Type>CommandBarButton</Type>
@@ -154,35 +160,35 @@
 						<TextColor>style:ButtonTextColor</TextColor>
 						<BackColor>style:ButtonBackColor</BackColor>
 						<BorderColor>style:BorderColor</BorderColor>
-						<ExtendedTooltip name="ОбновитьКонтекстExtendedTooltip" id="41"/>
+						<ExtendedTooltip name="ОбновитьКонтекстExtendedTooltip" id="43"/>
 					</Button>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="23"/>
-			<ExtendedTooltip name="СписокПользователейExtendedTooltip" id="42"/>
-			<SearchStringAddition name="СписокПользователейSearchString" id="43">
+			<ExtendedTooltip name="СписокПользователейExtendedTooltip" id="44"/>
+			<SearchStringAddition name="СписокПользователейSearchString" id="45">
 				<Source>
 					<lf:elementId>2</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокПользователейSearchStringContextMenu" id="44"/>
-				<ExtendedTooltip name="СписокПользователейSearchStringExtendedTooltip" id="45"/>
+				<ContextMenu name="СписокПользователейSearchStringContextMenu" id="46"/>
+				<ExtendedTooltip name="СписокПользователейSearchStringExtendedTooltip" id="47"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокПользователейViewStatus" id="46">
+			<ViewStatusAddition name="СписокПользователейViewStatus" id="48">
 				<Source>
 					<lf:elementId>2</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокПользователейViewStatusContextMenu" id="47"/>
-				<ExtendedTooltip name="СписокПользователейViewStatusExtendedTooltip" id="48"/>
+				<ContextMenu name="СписокПользователейViewStatusContextMenu" id="49"/>
+				<ExtendedTooltip name="СписокПользователейViewStatusExtendedTooltip" id="50"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокПользователейSearchControl" id="49">
+			<SearchControlAddition name="СписокПользователейSearchControl" id="51">
 				<Source>
 					<lf:elementId>2</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокПользователейSearchControlContextMenu" id="50"/>
-				<ExtendedTooltip name="СписокПользователейSearchControlExtendedTooltip" id="51"/>
+				<ContextMenu name="СписокПользователейSearchControlContextMenu" id="52"/>
+				<ExtendedTooltip name="СписокПользователейSearchControlExtendedTooltip" id="53"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">СписокПользователейВыбор</Event>
@@ -195,7 +201,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="ПользовательКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="ПользовательExtendedTooltip" id="52"/>
+					<ExtendedTooltip name="ПользовательExtendedTooltip" id="54"/>
 				</InputField>
 				<InputField name="Приложение" id="8">
 					<DataPath>СписокПользователей.Приложение</DataPath>
@@ -204,7 +210,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="ПриложениеКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ПриложениеExtendedTooltip" id="53"/>
+					<ExtendedTooltip name="ПриложениеExtendedTooltip" id="55"/>
 				</InputField>
 				<InputField name="НачалоРаботы" id="10">
 					<DataPath>СписокПользователей.НачалоРаботы</DataPath>
@@ -213,7 +219,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="НачалоРаботыКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="НачалоРаботыExtendedTooltip" id="54"/>
+					<ExtendedTooltip name="НачалоРаботыExtendedTooltip" id="56"/>
 				</InputField>
 				<InputField name="Компьютер" id="12">
 					<DataPath>СписокПользователей.Компьютер</DataPath>
@@ -222,7 +228,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="КомпьютерКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="КомпьютерExtendedTooltip" id="55"/>
+					<ExtendedTooltip name="КомпьютерExtendedTooltip" id="57"/>
 				</InputField>
 				<InputField name="Сеанс" id="14">
 					<DataPath>СписокПользователей.Сеанс</DataPath>
@@ -231,7 +237,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="СеансКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="СеансExtendedTooltip" id="56"/>
+					<ExtendedTooltip name="СеансExtendedTooltip" id="58"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -240,7 +246,7 @@
 			<HorizontalAlign>Left</HorizontalAlign>
 			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 			<ContextMenu name="КоличествоАктивныхПользователейКонтекстноеМеню" id="7"/>
-			<ExtendedTooltip name="КоличествоАктивныхПользователейExtendedTooltip" id="57"/>
+			<ExtendedTooltip name="КоличествоАктивныхПользователейExtendedTooltip" id="59"/>
 		</LabelField>
 	</ChildItems>
 	<Attributes>
@@ -459,13 +465,35 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокПользователей</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокПользователей.Сеанс</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Font</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ЖурналРегистрации" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть журнал регистрации</v8:content>
+					<v8:content>Журнал регистрации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -539,17 +567,17 @@
 			</Picture>
 			<Action>СортироватьПоУбыванию</Action>
 		</Command>
-		<Command name="РазорватьСоединение" id="2">
+		<Command name="РазорватьСеанс" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Разорвать соединение</v8:content>
+					<v8:content>Разорвать сеанс</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Разорвать соединение</v8:content>
+					<v8:content>Разорвать сеанс</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Use>
@@ -588,7 +616,7 @@
 				<xr:Ref>CommonPicture.РазорватьСоединение</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>РазорватьСоединение</Action>
+			<Action>РазорватьСеанс</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ПараметрыАдминистрированияИнформационнойБазы" id="4">
@@ -605,6 +633,26 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПараметрыАдминистрированияИнформационнойБазы</Action>
+		</Command>
+		<Command name="Открыть" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию о пользователе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Magnifier</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПользователя</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

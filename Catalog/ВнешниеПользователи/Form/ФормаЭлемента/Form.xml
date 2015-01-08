@@ -102,6 +102,7 @@
 						<xr:Common>true</xr:Common>
 						<xr:Value name="">true</xr:Value>
 						<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">true</xr:Value>
+						<xr:Value name="Role.РедактированиеРеквизитовОбъектов">true</xr:Value>
 						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
 					</UserVisible>
 					<Title>

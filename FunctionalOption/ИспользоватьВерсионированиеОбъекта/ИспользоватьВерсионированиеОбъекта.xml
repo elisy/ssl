@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment>Управляет доступностью версионирования для каждого отдельного объекта</Comment>
 			<Location>InformationRegister.НастройкаВерсионированияОбъектов.Resource.Использовать</Location>
-			<PrivilegedGetMode>false</PrivilegedGetMode>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
 				<xr:Object>CommonCommand.ИсторияИзменений</xr:Object>
 			</Content>

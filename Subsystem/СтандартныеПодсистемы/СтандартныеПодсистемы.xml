@@ -14,9 +14,7 @@
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture/>
-			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Subsystem.СтандартныеПодсистемы</xr:Item>
-			</Content>
+			<Content/>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>АдресныйКлассификатор</Subsystem>
@@ -42,6 +40,7 @@
 			<Subsystem>ОбновлениеВерсииИБ</Subsystem>
 			<Subsystem>ОбновлениеКонфигурации</Subsystem>
 			<Subsystem>Организации</Subsystem>
+			<Subsystem>ОценкаПроизводительности</Subsystem>
 			<Subsystem>Печать</Subsystem>
 			<Subsystem>ПолнотекстовыйПоиск</Subsystem>
 			<Subsystem>ПолучениеФайловИзИнтернета</Subsystem>

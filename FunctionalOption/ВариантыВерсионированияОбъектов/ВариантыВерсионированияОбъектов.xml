@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<Location>InformationRegister.НастройкаВерсионированияОбъектов.Resource.Вариант</Location>
-			<PrivilegedGetMode>false</PrivilegedGetMode>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content/>
 		</Properties>
 	</FunctionalOption>

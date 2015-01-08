@@ -11,7 +11,14 @@
 			</Synonym>
 			<Comment/>
 			<Source>
+				<v8:Type>cfg:CatalogObject.ПапкиФайлов</v8:Type>
+				<v8:Type>cfg:BusinessProcessObject.Задание</v8:Type>
+				<v8:Type>cfg:DocumentObject.Встреча</v8:Type>
+				<v8:Type>cfg:DocumentObject.ЭлектронноеПисьмоВходящее</v8:Type>
+				<v8:Type>cfg:DocumentObject.ЗапланированноеВзаимодействие</v8:Type>
 				<v8:Type>cfg:ChartOfCharacteristicTypesObject.ВидыДоступа</v8:Type>
+				<v8:Type>cfg:DocumentObject.ТелефонныйЗвонок</v8:Type>
+				<v8:Type>cfg:DocumentObject.ЭлектронноеПисьмоИсходящее</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
 			<Handler>CommonModule.УправлениеДоступомСобытия.ЗаписатьНаборыЗначенийДоступа</Handler>

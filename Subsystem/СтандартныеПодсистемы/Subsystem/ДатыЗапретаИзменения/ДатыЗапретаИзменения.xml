@@ -23,6 +23,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДатыЗапретаИзмененияПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ДатыЗапретаИзменения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПересчетТекущихЗначенийОтносительныхДатЗапретаИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНазначенияДатЗапрета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммыПланОбменаУзел</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

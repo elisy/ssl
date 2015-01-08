@@ -56,6 +56,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОграничиватьДоступПоВидуУчетныеЗаписиЭлектроннойПочты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ПраваДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЗапрещенноеПравоДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВключатьРуководителейВГруппыДоступаПодчиненных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

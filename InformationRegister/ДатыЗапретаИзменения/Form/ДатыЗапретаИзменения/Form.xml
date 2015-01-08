@@ -13,13 +13,7 @@
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаПересчитать" id="316">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Пересчитать</CommandName>
-				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаПересчитатьExtendedTooltip" id="320"/>
-			</Button>
-			<Popup name="ФормаОтчеты" id="197">
+			<Popup name="ФормаОтчетыПоПользователям" id="197">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -29,41 +23,42 @@
 				<ToolTip>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Форма отчеты</v8:content>
+						<v8:content>Отчеты по датам запрета, установленным "По пользователям"</v8:content>
 					</v8:item>
 				</ToolTip>
 				<Picture>
 					<xr:Ref>StdPicture.Report</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
-				<ExtendedTooltip name="ФормаОтчетыExtendedTooltip" id="321"/>
+				<ExtendedTooltip name="ФормаОтчетыПоПользователямExtendedTooltip" id="317"/>
 				<ChildItems>
-					<Button name="ФормаОтчетПоПользователям" id="198">
+					<Button name="ОтчетПоПользователям" id="198">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ОтчетПоПользователям</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="ФормаОтчетПоПользователямExtendedTooltip" id="322"/>
+						<ExtendedTooltip name="ОтчетПоПользователямExtendedTooltip" id="318"/>
 					</Button>
-					<Button name="ФормаОтчетПоРазделамОбъектам" id="199">
+					<Button name="ОтчетПоРазделамОбъектамДляПользователей" id="199">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ОтчетПоРазделамОбъектам</CommandName>
+						<CommandName>Form.Command.ОтчетПоРазделамОбъектамДляПользователей</CommandName>
 						<Parameter xsi:nil="true"/>
-						<ExtendedTooltip name="ФормаОтчетПоРазделамОбъектамExtendedTooltip" id="323"/>
+						<ExtendedTooltip name="ОтчетПоРазделамОбъектамДляПользователейExtendedTooltip" id="319"/>
 					</Button>
 				</ChildItems>
 			</Popup>
-			<Button name="ФормаИспользованиеПриОбменеДанными" id="319">
+			<Button name="ФормаПересчитатьДаты" id="316">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ИспользованиеПриОбменеДанными</CommandName>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.ПересчитатьДаты</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаИспользованиеПриОбменеДаннымиExtendedTooltip" id="324"/>
+				<ExtendedTooltip name="ФормаПересчитатьДатыExtendedTooltip" id="320"/>
 			</Button>
 			<Button name="ФормаОбновить" id="200">
 				<Type>CommandBarButton</Type>
 				<OnlyInAllActions>false</OnlyInAllActions>
 				<CommandName>Form.Command.Обновить</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаОбновитьExtendedTooltip" id="325"/>
+				<ExtendedTooltip name="ФормаОбновитьExtendedTooltip" id="321"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -119,7 +114,7 @@
 				</xr:Item>
 			</ChoiceList>
 			<ContextMenu name="УстановкаДатыЗапретаКонтекстноеМеню" id="202"/>
-			<ExtendedTooltip name="УстановкаДатыЗапретаExtendedTooltip" id="326"/>
+			<ExtendedTooltip name="УстановкаДатыЗапретаExtendedTooltip" id="322"/>
 			<Events>
 				<Event name="Clearing">УстановкаДатыЗапретаОчистка</Event>
 				<Event name="ChoiceProcessing">УстановкаДатыЗапретаОбработкаВыбора</Event>
@@ -140,7 +135,7 @@
 			</ToolTip>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="НастройкаДатыЗапретаExtendedTooltip" id="327"/>
+			<ExtendedTooltip name="НастройкаДатыЗапретаExtendedTooltip" id="323"/>
 			<ChildItems>
 				<UsualGroup name="УстановкаПоПользователям" id="204">
 					<Title>
@@ -157,7 +152,7 @@
 					</ToolTip>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="УстановкаПоПользователямExtendedTooltip" id="328"/>
+					<ExtendedTooltip name="УстановкаПоПользователямExtendedTooltip" id="324"/>
 					<ChildItems>
 						<Table name="Пользователи" id="124">
 							<Representation>List</Representation>
@@ -195,7 +190,7 @@
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПодобратьПользователей</CommandName>
 										<Parameter xsi:nil="true"/>
-										<ExtendedTooltip name="ПользователиПодобратьExtendedTooltip" id="329"/>
+										<ExtendedTooltip name="ПользователиПодобратьExtendedTooltip" id="325"/>
 									</Button>
 									<ButtonGroup name="ПользователиСтандартныеКоманды" id="177">
 										<Title>
@@ -211,34 +206,34 @@
 											</v8:item>
 										</ToolTip>
 										<CommandSource>Item.Пользователи</CommandSource>
-										<ExtendedTooltip name="ПользователиСтандартныеКомандыExtendedTooltip" id="330"/>
+										<ExtendedTooltip name="ПользователиСтандартныеКомандыExtendedTooltip" id="326"/>
 									</ButtonGroup>
 								</ChildItems>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ПользователиExtendedTooltip" id="331"/>
-							<SearchStringAddition name="ПользователиSearchString" id="332">
+							<ExtendedTooltip name="ПользователиExtendedTooltip" id="327"/>
+							<SearchStringAddition name="ПользователиSearchString" id="328">
 								<Source>
 									<lf:elementId>124</lf:elementId>
 									<lf:additionId>0</lf:additionId>
 								</Source>
-								<ContextMenu name="ПользователиSearchStringContextMenu" id="333"/>
-								<ExtendedTooltip name="ПользователиSearchStringExtendedTooltip" id="334"/>
+								<ContextMenu name="ПользователиSearchStringContextMenu" id="329"/>
+								<ExtendedTooltip name="ПользователиSearchStringExtendedTooltip" id="330"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ПользователиViewStatus" id="335">
+							<ViewStatusAddition name="ПользователиViewStatus" id="331">
 								<Source>
 									<lf:elementId>124</lf:elementId>
 									<lf:additionId>1</lf:additionId>
 								</Source>
-								<ContextMenu name="ПользователиViewStatusContextMenu" id="336"/>
-								<ExtendedTooltip name="ПользователиViewStatusExtendedTooltip" id="337"/>
+								<ContextMenu name="ПользователиViewStatusContextMenu" id="332"/>
+								<ExtendedTooltip name="ПользователиViewStatusExtendedTooltip" id="333"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ПользователиSearchControl" id="338">
+							<SearchControlAddition name="ПользователиSearchControl" id="334">
 								<Source>
 									<lf:elementId>124</lf:elementId>
 									<lf:additionId>2</lf:additionId>
 								</Source>
-								<ContextMenu name="ПользователиSearchControlContextMenu" id="339"/>
-								<ExtendedTooltip name="ПользователиSearchControlExtendedTooltip" id="340"/>
+								<ContextMenu name="ПользователиSearchControlContextMenu" id="335"/>
+								<ExtendedTooltip name="ПользователиSearchControlExtendedTooltip" id="336"/>
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnEditEnd">ПользователиПриОкончанииРедактирования</Event>
@@ -265,7 +260,7 @@
 									<OpenButton>true</OpenButton>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="ПользователиПолноеПредставлениеКонтекстноеМеню" id="128"/>
-									<ExtendedTooltip name="ПользователиПолноеПредставлениеExtendedTooltip" id="341"/>
+									<ExtendedTooltip name="ПользователиПолноеПредставлениеExtendedTooltip" id="337"/>
 									<Events>
 										<Event name="OnChange">ПользователиПолноеПредставлениеПриИзменении</Event>
 										<Event name="AutoComplete">ПользователиПолноеПредставлениеАвтоПодбор</Event>
@@ -288,7 +283,7 @@
 									<Width>31</Width>
 									<ExtendedEdit>true</ExtendedEdit>
 									<ContextMenu name="ПользователиКомментарийКонтекстноеМеню" id="130"/>
-									<ExtendedTooltip name="ПользователиКомментарийExtendedTooltip" id="342"/>
+									<ExtendedTooltip name="ПользователиКомментарийExtendedTooltip" id="338"/>
 									<Events>
 										<Event name="OnChange">ПользователиКомментарийПриИзменении</Event>
 									</Events>
@@ -300,7 +295,7 @@
 							<TitleLocation>None</TitleLocation>
 							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 							<ContextMenu name="ТекущийПользовательПредставлениеКонтекстноеМеню" id="215"/>
-							<ExtendedTooltip name="ТекущийПользовательПредставлениеExtendedTooltip" id="343"/>
+							<ExtendedTooltip name="ТекущийПользовательПредставлениеExtendedTooltip" id="339"/>
 						</LabelField>
 					</ChildItems>
 				</UsualGroup>
@@ -318,7 +313,7 @@
 						</v8:item>
 					</ToolTip>
 					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="ДанныеПользователяExtendedTooltip" id="344"/>
+					<ExtendedTooltip name="ДанныеПользователяExtendedTooltip" id="340"/>
 					<ChildItems>
 						<Page name="ПользовательНеВыбран" id="267">
 							<Title>
@@ -333,7 +328,7 @@
 									<v8:content>Пользователь не выбран</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ПользовательНеВыбранExtendedTooltip" id="345"/>
+							<ExtendedTooltip name="ПользовательНеВыбранExtendedTooltip" id="341"/>
 							<ChildItems>
 								<LabelDecoration name="Заглушка4" id="269">
 									<Title formatted="false">
@@ -343,7 +338,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="Заглушка4КонтекстноеМеню" id="270"/>
-									<ExtendedTooltip name="Заглушка4ExtendedTooltip" id="346"/>
+									<ExtendedTooltip name="Заглушка4ExtendedTooltip" id="342"/>
 								</LabelDecoration>
 							</ChildItems>
 						</Page>
@@ -360,7 +355,7 @@
 									<v8:content>Пользователь выбран</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ПользовательВыбранExtendedTooltip" id="347"/>
+							<ExtendedTooltip name="ПользовательВыбранExtendedTooltip" id="343"/>
 							<ChildItems>
 								<InputField name="СпособУказанияДатыЗапрета" id="216">
 									<DataPath>СпособУказанияДатыЗапрета</DataPath>
@@ -421,7 +416,7 @@
 										</xr:Item>
 									</ChoiceList>
 									<ContextMenu name="СпособУказанияДатыЗапретаКонтекстноеМеню" id="217"/>
-									<ExtendedTooltip name="СпособУказанияДатыЗапретаExtendedTooltip" id="348"/>
+									<ExtendedTooltip name="СпособУказанияДатыЗапретаExtendedTooltip" id="344"/>
 									<Events>
 										<Event name="Clearing">СпособУказанияДатыЗапретаОчистка</Event>
 										<Event name="ChoiceProcessing">СпособУказанияДатыЗапретаОбработкаВыбора</Event>
@@ -441,7 +436,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СпособыУказанияExtendedTooltip" id="349"/>
+									<ExtendedTooltip name="СпособыУказанияExtendedTooltip" id="345"/>
 									<ChildItems>
 										<Page name="СпособУказанияОбщаяДата" id="219">
 											<Title>
@@ -456,11 +451,11 @@
 													<v8:content>Способ указания общая дата</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СпособУказанияОбщаяДатаExtendedTooltip" id="350"/>
+											<ExtendedTooltip name="СпособУказанияОбщаяДатаExtendedTooltip" id="346"/>
 											<ChildItems>
 												<LabelDecoration name="Отступ" id="220">
 													<ContextMenu name="ОтступКонтекстноеМеню" id="221"/>
-													<ExtendedTooltip name="ОтступExtendedTooltip" id="351"/>
+													<ExtendedTooltip name="ОтступExtendedTooltip" id="347"/>
 												</LabelDecoration>
 												<UsualGroup name="ДатаЗапретаСОписанием" id="222">
 													<Title>
@@ -478,7 +473,7 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ДатаЗапретаСОписаниемExtendedTooltip" id="352"/>
+													<ExtendedTooltip name="ДатаЗапретаСОписаниемExtendedTooltip" id="348"/>
 													<ChildItems>
 														<InputField name="ОписаниеДатыЗапрета" id="223">
 															<DataPath>ОписаниеДатыЗапрета</DataPath>
@@ -572,7 +567,7 @@
 																</xr:Item>
 															</ChoiceList>
 															<ContextMenu name="ОписаниеДатыЗапретаКонтекстноеМеню" id="224"/>
-															<ExtendedTooltip name="ОписаниеДатыЗапретаExtendedTooltip" id="353"/>
+															<ExtendedTooltip name="ОписаниеДатыЗапретаExtendedTooltip" id="349"/>
 															<Events>
 																<Event name="OnChange">ОписаниеДатыЗапретаПриИзменении</Event>
 															</Events>
@@ -591,7 +586,7 @@
 																</v8:item>
 															</ToolTip>
 															<PagesRepresentation>None</PagesRepresentation>
-															<ExtendedTooltip name="ПроизвольнаяДатаExtendedTooltip" id="354"/>
+															<ExtendedTooltip name="ПроизвольнаяДатаExtendedTooltip" id="350"/>
 															<ChildItems>
 																<Page name="ПроизвольнаяДатаИспользуется" id="226">
 																	<Title>
@@ -606,7 +601,7 @@
 																			<v8:content>Произвольная дата используется</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ПроизвольнаяДатаИспользуетсяExtendedTooltip" id="355"/>
+																	<ExtendedTooltip name="ПроизвольнаяДатаИспользуетсяExtendedTooltip" id="351"/>
 																	<ChildItems>
 																		<InputField name="ДатаЗапрета" id="227">
 																			<DataPath>ДатаЗапрета</DataPath>
@@ -619,7 +614,7 @@
 																			<TitleLocation>None</TitleLocation>
 																			<ClearButton>true</ClearButton>
 																			<ContextMenu name="ДатаЗапретаКонтекстноеМеню" id="228"/>
-																			<ExtendedTooltip name="ДатаЗапретаExtendedTooltip" id="356"/>
+																			<ExtendedTooltip name="ДатаЗапретаExtendedTooltip" id="352"/>
 																			<Events>
 																				<Event name="OnChange">ДатаЗапретаПриИзменении</Event>
 																			</Events>
@@ -639,11 +634,11 @@
 																			<v8:content>Произвольная дата не используется</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ПроизвольнаяДатаНеИспользуетсяExtendedTooltip" id="357"/>
+																	<ExtendedTooltip name="ПроизвольнаяДатаНеИспользуетсяExtendedTooltip" id="353"/>
 																	<ChildItems>
 																		<LabelDecoration name="Заглушка1" id="230">
 																			<ContextMenu name="Заглушка1КонтекстноеМеню" id="231"/>
-																			<ExtendedTooltip name="Заглушка1ExtendedTooltip" id="358"/>
+																			<ExtendedTooltip name="Заглушка1ExtendedTooltip" id="354"/>
 																		</LabelDecoration>
 																	</ChildItems>
 																</Page>
@@ -665,7 +660,7 @@
 														</v8:item>
 													</ToolTip>
 													<PagesRepresentation>None</PagesRepresentation>
-													<ExtendedTooltip name="СвойстваНепроизвольнойДатыExtendedTooltip" id="359"/>
+													<ExtendedTooltip name="СвойстваНепроизвольнойДатыExtendedTooltip" id="355"/>
 													<ChildItems>
 														<Page name="НепроизвольнаяДатаИспользуется" id="233">
 															<Title>
@@ -681,14 +676,14 @@
 																</v8:item>
 															</ToolTip>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="НепроизвольнаяДатаИспользуетсяExtendedTooltip" id="360"/>
+															<ExtendedTooltip name="НепроизвольнаяДатаИспользуетсяExtendedTooltip" id="356"/>
 															<ChildItems>
 																<CheckBoxField name="РазрешитьИзменениеДанныхДоДатыЗапрета" id="234">
 																	<DataPath>РазрешитьИзменениеДанныхДоДатыЗапрета</DataPath>
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="РазрешитьИзменениеДанныхДоДатыЗапретаКонтекстноеМеню" id="235"/>
-																	<ExtendedTooltip name="РазрешитьИзменениеДанныхДоДатыЗапретаExtendedTooltip" id="361"/>
+																	<ExtendedTooltip name="РазрешитьИзменениеДанныхДоДатыЗапретаExtendedTooltip" id="357"/>
 																	<Events>
 																		<Event name="OnChange">РазрешитьИзменениеДанныхДоДатыЗапретаПриИзменении</Event>
 																	</Events>
@@ -707,7 +702,7 @@
 																		</v8:item>
 																	</ToolTip>
 																	<PagesRepresentation>None</PagesRepresentation>
-																	<ExtendedTooltip name="СвойствоКоличествоДнейРазрешенияИзмененияExtendedTooltip" id="362"/>
+																	<ExtendedTooltip name="СвойствоКоличествоДнейРазрешенияИзмененияExtendedTooltip" id="358"/>
 																	<ChildItems>
 																		<Page name="ИзменениеДанныхДоДатыЗапретаРазрешено" id="237">
 																			<Title>
@@ -723,7 +718,7 @@
 																				</v8:item>
 																			</ToolTip>
 																			<Group>Horizontal</Group>
-																			<ExtendedTooltip name="ИзменениеДанныхДоДатыЗапретаРазрешеноExtendedTooltip" id="363"/>
+																			<ExtendedTooltip name="ИзменениеДанныхДоДатыЗапретаРазрешеноExtendedTooltip" id="359"/>
 																			<ChildItems>
 																				<LabelDecoration name="КоличествоДнейРазрешенияЗаголовок" id="238">
 																					<Title formatted="false">
@@ -733,7 +728,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="КоличествоДнейРазрешенияЗаголовокКонтекстноеМеню" id="239"/>
-																					<ExtendedTooltip name="КоличествоДнейРазрешенияЗаголовокExtendedTooltip" id="364"/>
+																					<ExtendedTooltip name="КоличествоДнейРазрешенияЗаголовокExtendedTooltip" id="360"/>
 																				</LabelDecoration>
 																				<InputField name="КоличествоДнейРазрешения" id="240">
 																					<DataPath>КоличествоДнейРазрешения</DataPath>
@@ -745,7 +740,7 @@
 																					</Title>
 																					<TitleLocation>Right</TitleLocation>
 																					<ContextMenu name="КоличествоДнейРазрешенияКонтекстноеМеню" id="241"/>
-																					<ExtendedTooltip name="КоличествоДнейРазрешенияExtendedTooltip" id="365"/>
+																					<ExtendedTooltip name="КоличествоДнейРазрешенияExtendedTooltip" id="361"/>
 																					<Events>
 																						<Event name="OnChange">КоличествоДнейРазрешенияПриИзменении</Event>
 																						<Event name="AutoComplete">КоличествоДнейРазрешенияАвтоПодбор</Event>
@@ -766,11 +761,11 @@
 																					<v8:content>Изменение данных до даты запрета не разрешено</v8:content>
 																				</v8:item>
 																			</ToolTip>
-																			<ExtendedTooltip name="ИзменениеДанныхДоДатыЗапретаНеРазрешеноExtendedTooltip" id="366"/>
+																			<ExtendedTooltip name="ИзменениеДанныхДоДатыЗапретаНеРазрешеноExtendedTooltip" id="362"/>
 																			<ChildItems>
 																				<LabelDecoration name="Заглушка3" id="243">
 																					<ContextMenu name="Заглушка3КонтекстноеМеню" id="244"/>
-																					<ExtendedTooltip name="Заглушка3ExtendedTooltip" id="367"/>
+																					<ExtendedTooltip name="Заглушка3ExtendedTooltip" id="363"/>
 																				</LabelDecoration>
 																			</ChildItems>
 																		</Page>
@@ -781,7 +776,7 @@
 																	<Height>3</Height>
 																	<TextColor>#000080</TextColor>
 																	<ContextMenu name="ПояснениеНепроизвольнойДатыКонтекстноеМеню" id="246"/>
-																	<ExtendedTooltip name="ПояснениеНепроизвольнойДатыExtendedTooltip" id="368"/>
+																	<ExtendedTooltip name="ПояснениеНепроизвольнойДатыExtendedTooltip" id="364"/>
 																</LabelDecoration>
 															</ChildItems>
 														</Page>
@@ -798,11 +793,11 @@
 																	<v8:content>Непроизвольная дата не используется</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="НепроизвольнаяДатаНеИспользуетсяExtendedTooltip" id="369"/>
+															<ExtendedTooltip name="НепроизвольнаяДатаНеИспользуетсяExtendedTooltip" id="365"/>
 															<ChildItems>
 																<LabelDecoration name="Заглушка2" id="248">
 																	<ContextMenu name="Заглушка2КонтекстноеМеню" id="249"/>
-																	<ExtendedTooltip name="Заглушка2ExtendedTooltip" id="370"/>
+																	<ExtendedTooltip name="Заглушка2ExtendedTooltip" id="366"/>
 																</LabelDecoration>
 															</ChildItems>
 														</Page>
@@ -823,7 +818,7 @@
 													<v8:content>Способ указания по разделам объектам</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СпособУказанияПоРазделамОбъектамExtendedTooltip" id="371"/>
+											<ExtendedTooltip name="СпособУказанияПоРазделамОбъектамExtendedTooltip" id="367"/>
 											<ChildItems>
 												<Pages name="ДатыЗапретаКомандныеПанели" id="277">
 													<Title>
@@ -839,7 +834,7 @@
 														</v8:item>
 													</ToolTip>
 													<PagesRepresentation>None</PagesRepresentation>
-													<ExtendedTooltip name="ДатыЗапретаКомандныеПанелиExtendedTooltip" id="372"/>
+													<ExtendedTooltip name="ДатыЗапретаКомандныеПанелиExtendedTooltip" id="368"/>
 													<ChildItems>
 														<Page name="ДатыЗапретаБезВыбораРазделовБезВыбораОбъектов" id="303">
 															<Title>
@@ -854,7 +849,7 @@
 																	<v8:content>Даты запрета без выбора разделов без выбора объектов</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ДатыЗапретаБезВыбораРазделовБезВыбораОбъектовExtendedTooltip" id="373"/>
+															<ExtendedTooltip name="ДатыЗапретаБезВыбораРазделовБезВыбораОбъектовExtendedTooltip" id="369"/>
 															<ChildItems>
 																<CommandBar name="ДатыЗапретаКоманднаяПанельБезВыбораРазделовБезВыбораОбъектов" id="305">
 																	<Title>
@@ -869,19 +864,19 @@
 																			<v8:content>Даты запрета командная панель без выбора разделов</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельБезВыбораРазделовБезВыбораОбъектовExtendedTooltip" id="374"/>
+																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельБезВыбораРазделовБезВыбораОбъектовExtendedTooltip" id="370"/>
 																	<ChildItems>
 																		<Button name="ДатыЗапретаИзменить4" id="308">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ДатыЗапретаИзменить</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаИзменить4ExtendedTooltip" id="375"/>
+																			<ExtendedTooltip name="ДатыЗапретаИзменить4ExtendedTooltip" id="371"/>
 																		</Button>
 																		<Button name="ДатыЗапретаУдалить4" id="309">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Delete</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаУдалить4ExtendedTooltip" id="376"/>
+																			<ExtendedTooltip name="ДатыЗапретаУдалить4ExtendedTooltip" id="372"/>
 																		</Button>
 																	</ChildItems>
 																</CommandBar>
@@ -900,7 +895,7 @@
 																	<v8:content>Даты запрета с выбором разделов без выбора объектов</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ДатыЗапретаСВыборомРазделовБезВыбораОбъектовExtendedTooltip" id="377"/>
+															<ExtendedTooltip name="ДатыЗапретаСВыборомРазделовБезВыбораОбъектовExtendedTooltip" id="373"/>
 															<ChildItems>
 																<CommandBar name="ДатыЗапретаКоманднаяПанельСВыборомРазделовБезВыбораОбъектов" id="310">
 																	<Title>
@@ -915,25 +910,25 @@
 																			<v8:content>Даты запрета командная панель с выбором разделов</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельСВыборомРазделовБезВыбораОбъектовExtendedTooltip" id="378"/>
+																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельСВыборомРазделовБезВыбораОбъектовExtendedTooltip" id="374"/>
 																	<ChildItems>
 																		<Button name="ДатыЗапретаРазделы1" id="311">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.Разделы</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаРазделы1ExtendedTooltip" id="379"/>
+																			<ExtendedTooltip name="ДатыЗапретаРазделы1ExtendedTooltip" id="375"/>
 																		</Button>
 																		<Button name="ДатыЗапретаИзменить5" id="314">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ДатыЗапретаИзменить</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаИзменить5ExtendedTooltip" id="380"/>
+																			<ExtendedTooltip name="ДатыЗапретаИзменить5ExtendedTooltip" id="376"/>
 																		</Button>
 																		<Button name="ДатыЗапретаУдалить5" id="315">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Delete</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаУдалить5ExtendedTooltip" id="381"/>
+																			<ExtendedTooltip name="ДатыЗапретаУдалить5ExtendedTooltip" id="377"/>
 																		</Button>
 																	</ChildItems>
 																</CommandBar>
@@ -952,7 +947,7 @@
 																	<v8:content>Даты запрета без выбора разделов с выбором объектов</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ДатыЗапретаБезВыбораРазделовСВыборомОбъектовExtendedTooltip" id="382"/>
+															<ExtendedTooltip name="ДатыЗапретаБезВыбораРазделовСВыборомОбъектовExtendedTooltip" id="378"/>
 															<ChildItems>
 																<CommandBar name="ДатыЗапретаКоманднаяПанельБезВыбораРазделовСВыборомОбъектов" id="280">
 																	<Title>
@@ -967,31 +962,31 @@
 																			<v8:content>Даты запрета командная панель без выбора разделов с выбором объектов</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельБезВыбораРазделовСВыборомОбъектовExtendedTooltip" id="383"/>
+																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельБезВыбораРазделовСВыборомОбъектовExtendedTooltip" id="379"/>
 																	<ChildItems>
 																		<Button name="ДатыЗапретаПодобрать1" id="282">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ПодобратьОбъекты</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаПодобрать1ExtendedTooltip" id="384"/>
+																			<ExtendedTooltip name="ДатыЗапретаПодобрать1ExtendedTooltip" id="380"/>
 																		</Button>
 																		<Button name="ДатыЗапретаДобавить1" id="283">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Add</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаДобавить1ExtendedTooltip" id="385"/>
+																			<ExtendedTooltip name="ДатыЗапретаДобавить1ExtendedTooltip" id="381"/>
 																		</Button>
 																		<Button name="ДатыЗапретаИзменить1" id="284">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ДатыЗапретаИзменить</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаИзменить1ExtendedTooltip" id="386"/>
+																			<ExtendedTooltip name="ДатыЗапретаИзменить1ExtendedTooltip" id="382"/>
 																		</Button>
 																		<Button name="ДатыЗапретаУдалить1" id="285">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Delete</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаУдалить1ExtendedTooltip" id="387"/>
+																			<ExtendedTooltip name="ДатыЗапретаУдалить1ExtendedTooltip" id="383"/>
 																		</Button>
 																	</ChildItems>
 																</CommandBar>
@@ -1010,7 +1005,7 @@
 																	<v8:content>Даты запрета с выбором разделов с выбором объектов</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ДатыЗапретаСВыборомРазделовСВыборомОбъектовExtendedTooltip" id="388"/>
+															<ExtendedTooltip name="ДатыЗапретаСВыборомРазделовСВыборомОбъектовExtendedTooltip" id="384"/>
 															<ChildItems>
 																<CommandBar name="ДатыЗапретаКоманднаяПанельСВыборомРазделов" id="281">
 																	<Title>
@@ -1025,37 +1020,37 @@
 																			<v8:content>Даты запрета командная панель с выбором разделов</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельСВыборомРазделовExtendedTooltip" id="389"/>
+																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельСВыборомРазделовExtendedTooltip" id="385"/>
 																	<ChildItems>
 																		<Button name="ДатыЗапретаРазделы" id="264">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.Разделы</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаРазделыExtendedTooltip" id="390"/>
+																			<ExtendedTooltip name="ДатыЗапретаРазделыExtendedTooltip" id="386"/>
 																		</Button>
 																		<Button name="ДатыЗапретаПодобрать2" id="286">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ПодобратьОбъекты</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаПодобрать2ExtendedTooltip" id="391"/>
+																			<ExtendedTooltip name="ДатыЗапретаПодобрать2ExtendedTooltip" id="387"/>
 																		</Button>
 																		<Button name="ДатыЗапретаДобавить2" id="287">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Add</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаДобавить2ExtendedTooltip" id="392"/>
+																			<ExtendedTooltip name="ДатыЗапретаДобавить2ExtendedTooltip" id="388"/>
 																		</Button>
 																		<Button name="ДатыЗапретаИзменить2" id="288">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ДатыЗапретаИзменить</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаИзменить2ExtendedTooltip" id="393"/>
+																			<ExtendedTooltip name="ДатыЗапретаИзменить2ExtendedTooltip" id="389"/>
 																		</Button>
 																		<Button name="ДатыЗапретаУдалить2" id="289">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Delete</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаУдалить2ExtendedTooltip" id="394"/>
+																			<ExtendedTooltip name="ДатыЗапретаУдалить2ExtendedTooltip" id="390"/>
 																		</Button>
 																	</ChildItems>
 																</CommandBar>
@@ -1074,7 +1069,7 @@
 																	<v8:content>Даты запрета с выбором общей даты с выбором объектов</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ДатыЗапретаСВыборомОбщейДатыСВыборомОбъектовExtendedTooltip" id="395"/>
+															<ExtendedTooltip name="ДатыЗапретаСВыборомОбщейДатыСВыборомОбъектовExtendedTooltip" id="391"/>
 															<ChildItems>
 																<CommandBar name="ДатыЗапретаКоманднаяПанельСВыборомОбщейДатыСВыборомОбъектов" id="297">
 																	<Title>
@@ -1089,7 +1084,7 @@
 																			<v8:content>Даты запрета командная панель с разделами</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельСВыборомОбщейДатыСВыборомОбъектовExtendedTooltip" id="396"/>
+																	<ExtendedTooltip name="ДатыЗапретаКоманднаяПанельСВыборомОбщейДатыСВыборомОбъектовExtendedTooltip" id="392"/>
 																	<ChildItems>
 																		<Button name="ДатыЗапретаОбщаяДата" id="298">
 																			<Type>CommandBarButton</Type>
@@ -1101,31 +1096,31 @@
 																					<v8:content>Общая дата</v8:content>
 																				</v8:item>
 																			</Title>
-																			<ExtendedTooltip name="ДатыЗапретаОбщаяДатаExtendedTooltip" id="397"/>
+																			<ExtendedTooltip name="ДатыЗапретаОбщаяДатаExtendedTooltip" id="393"/>
 																		</Button>
 																		<Button name="ДатыЗапретаПодобрать3" id="299">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ПодобратьОбъекты</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаПодобрать3ExtendedTooltip" id="398"/>
+																			<ExtendedTooltip name="ДатыЗапретаПодобрать3ExtendedTooltip" id="394"/>
 																		</Button>
 																		<Button name="ДатыЗапретаДобавить3" id="300">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Add</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаДобавить3ExtendedTooltip" id="399"/>
+																			<ExtendedTooltip name="ДатыЗапретаДобавить3ExtendedTooltip" id="395"/>
 																		</Button>
 																		<Button name="ДатыЗапретаИзменить3" id="301">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Command.ДатыЗапретаИзменить</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаИзменить3ExtendedTooltip" id="400"/>
+																			<ExtendedTooltip name="ДатыЗапретаИзменить3ExtendedTooltip" id="396"/>
 																		</Button>
 																		<Button name="ДатыЗапретаУдалить3" id="302">
 																			<Type>CommandBarButton</Type>
 																			<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Delete</CommandName>
 																			<Parameter xsi:nil="true"/>
-																			<ExtendedTooltip name="ДатыЗапретаУдалить3ExtendedTooltip" id="401"/>
+																			<ExtendedTooltip name="ДатыЗапретаУдалить3ExtendedTooltip" id="397"/>
 																		</Button>
 																	</ChildItems>
 																</CommandBar>
@@ -1166,19 +1161,19 @@
 																<Visible>false</Visible>
 																<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Add</CommandName>
 																<Parameter xsi:nil="true"/>
-																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюДобавитьExtendedTooltip" id="402"/>
+																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюДобавитьExtendedTooltip" id="398"/>
 															</Button>
 															<Button name="ДатыЗапретаКонтекстноеМенюИзменить" id="273">
 																<Type>CommandBarButton</Type>
 																<CommandName>Form.Command.ДатыЗапретаИзменить</CommandName>
 																<Parameter xsi:nil="true"/>
-																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюИзменитьExtendedTooltip" id="403"/>
+																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюИзменитьExtendedTooltip" id="399"/>
 															</Button>
 															<Button name="ДатыЗапретаКонтекстноеМенюУдалить" id="276">
 																<Type>CommandBarButton</Type>
 																<CommandName>Form.Item.ДатыЗапрета.StandardCommand.Delete</CommandName>
 																<Parameter xsi:nil="true"/>
-																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюУдалитьExtendedTooltip" id="404"/>
+																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюУдалитьExtendedTooltip" id="400"/>
 															</Button>
 															<ButtonGroup name="ДатыЗапретаКонтекстноеМенюСтандартныеКоманды" id="275">
 																<Title>
@@ -1194,37 +1189,37 @@
 																	</v8:item>
 																</ToolTip>
 																<CommandSource>Item.ДатыЗапрета</CommandSource>
-																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюСтандартныеКомандыExtendedTooltip" id="405"/>
+																<ExtendedTooltip name="ДатыЗапретаКонтекстноеМенюСтандартныеКомандыExtendedTooltip" id="401"/>
 															</ButtonGroup>
 														</ChildItems>
 													</ContextMenu>
 													<AutoCommandBar name="ДатыЗапретаКоманднаяПанель" id="134">
 														<Autofill>false</Autofill>
 													</AutoCommandBar>
-													<ExtendedTooltip name="ДатыЗапретаExtendedTooltip" id="406"/>
-													<SearchStringAddition name="ДатыЗапретаSearchString" id="407">
+													<ExtendedTooltip name="ДатыЗапретаExtendedTooltip" id="402"/>
+													<SearchStringAddition name="ДатыЗапретаSearchString" id="403">
 														<Source>
 															<lf:elementId>132</lf:elementId>
 															<lf:additionId>0</lf:additionId>
 														</Source>
-														<ContextMenu name="ДатыЗапретаSearchStringContextMenu" id="408"/>
-														<ExtendedTooltip name="ДатыЗапретаSearchStringExtendedTooltip" id="409"/>
+														<ContextMenu name="ДатыЗапретаSearchStringContextMenu" id="404"/>
+														<ExtendedTooltip name="ДатыЗапретаSearchStringExtendedTooltip" id="405"/>
 													</SearchStringAddition>
-													<ViewStatusAddition name="ДатыЗапретаViewStatus" id="410">
+													<ViewStatusAddition name="ДатыЗапретаViewStatus" id="406">
 														<Source>
 															<lf:elementId>132</lf:elementId>
 															<lf:additionId>1</lf:additionId>
 														</Source>
-														<ContextMenu name="ДатыЗапретаViewStatusContextMenu" id="411"/>
-														<ExtendedTooltip name="ДатыЗапретаViewStatusExtendedTooltip" id="412"/>
+														<ContextMenu name="ДатыЗапретаViewStatusContextMenu" id="407"/>
+														<ExtendedTooltip name="ДатыЗапретаViewStatusExtendedTooltip" id="408"/>
 													</ViewStatusAddition>
-													<SearchControlAddition name="ДатыЗапретаSearchControl" id="413">
+													<SearchControlAddition name="ДатыЗапретаSearchControl" id="409">
 														<Source>
 															<lf:elementId>132</lf:elementId>
 															<lf:additionId>2</lf:additionId>
 														</Source>
-														<ContextMenu name="ДатыЗапретаSearchControlContextMenu" id="414"/>
-														<ExtendedTooltip name="ДатыЗапретаSearchControlExtendedTooltip" id="415"/>
+														<ContextMenu name="ДатыЗапретаSearchControlContextMenu" id="410"/>
+														<ExtendedTooltip name="ДатыЗапретаSearchControlExtendedTooltip" id="411"/>
 													</SearchControlAddition>
 													<Events>
 														<Event name="OnEditEnd">ДатыЗапретаПриОкончанииРедактирования</Event>
@@ -1249,7 +1244,7 @@
 															<ChoiceButton>true</ChoiceButton>
 															<TextEdit>false</TextEdit>
 															<ContextMenu name="ДатыЗапретаПолноеПредставлениеКонтекстноеМеню" id="144"/>
-															<ExtendedTooltip name="ДатыЗапретаПолноеПредставлениеExtendedTooltip" id="416"/>
+															<ExtendedTooltip name="ДатыЗапретаПолноеПредставлениеExtendedTooltip" id="412"/>
 															<Events>
 																<Event name="StartChoice">ДатыЗапретаПолноеПредставлениеНачалоВыбора</Event>
 																<Event name="Clearing">ДатыЗапретаПолноеПредставлениеОчистка</Event>
@@ -1268,7 +1263,7 @@
 															<ChoiceButton>true</ChoiceButton>
 															<TextEdit>false</TextEdit>
 															<ContextMenu name="ДатыЗапретаОписаниеДатыЗапретаПредставлениеКонтекстноеМеню" id="142"/>
-															<ExtendedTooltip name="ДатыЗапретаОписаниеДатыЗапретаПредставлениеExtendedTooltip" id="417"/>
+															<ExtendedTooltip name="ДатыЗапретаОписаниеДатыЗапретаПредставлениеExtendedTooltip" id="413"/>
 														</InputField>
 														<InputField name="ДатыЗапретаДатаЗапрета" id="135">
 															<DataPath>ДатыЗапрета.ДатаЗапрета</DataPath>
@@ -1281,7 +1276,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<ClearButton>true</ClearButton>
 															<ContextMenu name="ДатыЗапретаДатаЗапретаКонтекстноеМеню" id="136"/>
-															<ExtendedTooltip name="ДатыЗапретаДатаЗапретаExtendedTooltip" id="418"/>
+															<ExtendedTooltip name="ДатыЗапретаДатаЗапретаExtendedTooltip" id="414"/>
 															<Events>
 																<Event name="OnChange">ДатыЗапретаДатаЗапретаПриИзменении</Event>
 															</Events>
@@ -1298,18 +1293,6 @@
 				</Pages>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="ХранилищеПредставленийСообщений" id="317">
-			<DataPath>УстановкаДатыЗапрета</DataPath>
-			<Visible>false</Visible>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Содержит представления сообщений пользователю в списке выбора</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="ХранилищеПредставленийСообщенийКонтекстноеМеню" id="318"/>
-			<ExtendedTooltip name="ХранилищеПредставленийСообщенийExtendedTooltip" id="419"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="ДатыЗапрета" id="1">
@@ -1508,6 +1491,8 @@
 						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
 						<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:Type>cfg:EnumRef.ВидыНазначенияДатЗапрета</v8:Type>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="Представление" id="11">
@@ -1755,6 +1740,8 @@
 						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
 						<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:Type>cfg:EnumRef.ВидыНазначенияДатЗапрета</v8:Type>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
 					</Type>
 				</Column>
 			</Columns>
@@ -1781,12 +1768,9 @@
 				<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
 				<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
 				<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
-				<v8:Type>xs:string</v8:Type>
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:EnumRef.ВидыНазначенияДатЗапрета</v8:Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПользователиТекущаяСтрока" id="16">
@@ -1946,29 +1930,16 @@
 				<v8:Type>cfg:ChartOfCharacteristicTypesRef.РазделыДатЗапретаИзменения</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ХранилищеПредставленийСообщений" id="9">
+		<Attribute name="ЗначениеДляВсехПользователей" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Содержит представления сообщений пользователю в списке выбора</v8:content>
+					<v8:content>Значение для всех пользователей</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:EnumRef.ВидыНазначенияДатЗапрета</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="НастройкиПриОбменеДаннымиПолноеИмяФормы" id="28">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки при обмене данными полное имя формы</v8:content>
-				</v8:item>
-			</Title>
-			<Type/>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -1988,7 +1959,9 @@
 							<dcsset:groupType>AndGroup</dcsset:groupType>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
 								<dcsset:left xsi:type="dcscor:Field">ПользователиДатЗапрета.Пользователь</dcsset:left>
-								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей</dcsset:right>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыНазначенияДатЗапрета.ДляВсехУзловПлановОбмена</dcsset:right>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
 								<dcsset:left xsi:type="dcscor:Field">ПользователиДатЗапрета.БезДатыЗапрета</dcsset:left>
@@ -2037,7 +2010,9 @@
 							<dcsset:groupType>AndGroup</dcsset:groupType>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
 								<dcsset:left xsi:type="dcscor:Field">ТекущийПользователь</dcsset:left>
-								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыНазначенияДатЗапрета.ДляВсехПользователей</dcsset:right>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыНазначенияДатЗапрета.ДляВсехУзловПлановОбмена</dcsset:right>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
 								<dcsset:left xsi:type="dcscor:Field">ДатыЗапрета.ЭтоРаздел</dcsset:left>
@@ -2085,7 +2060,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отчет по пользователю, группе пользователей</v8:content>
+					<v8:content>Отчет по пользователям, группам пользователей</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -2145,24 +2120,24 @@
 			</ToolTip>
 			<Action>ПодобратьПользователей</Action>
 		</Command>
-		<Command name="ОтчетПоРазделамОбъектам" id="2">
+		<Command name="ОтчетПоРазделамОбъектамДляПользователей" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отчет по разделам и объектам</v8:content>
+					<v8:content>Отчет по разделам и объектам для пользователей</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отчет по разделу и объекту</v8:content>
+					<v8:content>Отчет по разделам и объектам для пользователей и групп пользователей</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.Report</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ОтчетПоРазделамОбъектам</Action>
+			<Action>ОтчетПоРазделамОбъектамДляПользователей</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="Разделы" id="3">
@@ -2200,11 +2175,11 @@
 			</Picture>
 			<Action>ДатыЗапретаИзменить</Action>
 		</Command>
-		<Command name="Пересчитать" id="8">
+		<Command name="ПересчитатьДаты" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пересчитать</v8:content>
+					<v8:content>Пересчитать даты</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -2213,22 +2188,15 @@
 					<v8:content>Пересчитать текущие значения относительных дат запрета</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Пересчитать</Action>
-		</Command>
-		<Command name="ИспользованиеПриОбменеДанными" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Использование при обмене данными</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Использование при обмене данными</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ИспользованиеПриОбменеДанными</Action>
+			<Action>ПересчитатьДаты</Action>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ДатыЗапретаЗагрузкиДанных">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
 </Form>
