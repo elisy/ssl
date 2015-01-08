@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Subsystem uuid="842c8662-8f39-405e-9665-cbdabc116159">
+		<Properties>
+			<Name>ОбменДанными</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен данными</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ВыполнениеОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СценарииОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДействияПриОбмене</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПриоритетыОбъектовОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыВыполненияОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыТранспортаСообщенийОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПравилРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонвертацияОбъектовИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТранспортСообщенийОбменаFILE</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиТранспортаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастроитьПараметрыТранспортаСообщенийОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОбменДаннымиВключен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ПравилаРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостояниеОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ИспользуемыеПланыОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменДаннымиПередЗаписьюУзлаПланаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменДаннымиПередУдалениемУзлаПланаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыполнитьЗапускОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПрефиксУзлаРаспределеннойИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствиеОбъектовИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПравилДляОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПравилаДляОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИсточникиПравилДляОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ПравилаВыборочнойРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьПравилаКонвертацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьПравилаРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ПараметрыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникСозданияОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПараметрыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПравилКонвертацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СопоставлениеОбъектовИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникСопоставленияОбъектовИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТранспортСообщенийОбменаFTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТранспортСообщенийОбменаEMAIL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостояниеУспешныхОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СтатусыСопоставленияОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонвертацияОбъектовРаспределенныхИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьФормуУправленияОбменамиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВыполнитьОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьСценарииОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыполнениеОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеОбменаДаннымиУспех</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеОбменаДаннымиОшибка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаРедактировать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УправлениеОбменамиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Внимание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ВыполнениеОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ВыполнениеОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВыполнитьОбменДаннымиИнтерактивно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВерсииПодсистемыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ПоясняющийТекст</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УниверсальныйОбменДаннымиXML</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
